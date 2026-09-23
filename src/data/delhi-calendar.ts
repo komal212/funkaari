@@ -115,6 +115,8 @@ const DELHI_LISTINGS: KidsEvent[] = [
   },
 ];
 
-export const delhiEvents: KidsEvent[] = DELHI_LISTINGS.filter(isUpcomingEvent).sort(
+export const delhiEvents: KidsEvent[] = DELHI_LISTINGS.filter((event) =>
+  isUpcomingEvent(event),
+).sort(
   (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime(),
 );
