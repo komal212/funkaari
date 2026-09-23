@@ -1,4 +1,4 @@
-# Funkaari
+ # Funkaari
 
 **One place to see what's happening for little ones** — preschool workshops, open days, and play dates, curated from Instagram. Starting in Bangalore.
 
