@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "apify": {
+      "url": "https://mcp.apify.com/?tools=actors,docs,apify/instagram-scraper"
+    },
+    "instagram": {
+      "command": "node",
+      "args": ["mcp/instagram-mcp.mjs"],
+      "cwd": "/Users/komal/Desktop/bangalore-kids-events"
+    }
+  }
+}

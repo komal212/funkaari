@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-cream text-ink font-body antialiased;
+  }
+}
+
+@layer components {
+  .blob {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+
+  .blob-alt {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+
+  .pill-filter {
+    @apply rounded-full px-4 py-2 text-sm font-semibold transition-all duration-200;
+  }
+
+  .pill-filter-active {
+    @apply bg-lavender-400 text-white shadow-pill scale-105;
+  }
+
+  .pill-filter-inactive {
+    @apply bg-white text-ink/70 shadow-sm ring-1 ring-lavender-100 hover:bg-lavender-50 hover:text-ink hover:ring-lavender-200;
+  }
+
+  .activity-card {
+    @apply rounded-3xl bg-white shadow-card transition-all duration-300 overflow-hidden;
+  }
+
+  .activity-card:hover {
+    @apply -translate-y-1 shadow-card-hover;
+  }
+
+  .search-input {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  .search-input::-webkit-search-decoration,
+  .search-input::-webkit-search-cancel-button,
+  .search-input::-webkit-search-results-button,
+  .search-input::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+  }
+
+  .filter-select {
+    background-image: none;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-lavender-500 via-peach-400 to-mint-400 bg-clip-text text-transparent;
+  }
+}
