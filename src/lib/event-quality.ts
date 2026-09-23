@@ -1,4 +1,5 @@
 import { instagramPostUrl } from "@/lib/instagram";
+import type { EventCategory, KidsEvent } from "@/types/event";
 
 function stripListingChrome(value: string): string {
   return value
