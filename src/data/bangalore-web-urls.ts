@@ -1,7 +1,7 @@
 import { bangaloreInstagramUrls } from "@/data/bangalore-instagram-urls";
 
 export const PARALLEL_BANGALORE_OBJECTIVE =
-  "Extract upcoming dated kids workshops, playdates, open houses, pottery, storytime, music, treks, festivals, and online/Zoom sessions that Bengaluru parents can join (India / IST) in the next two months for children aged 6 months to 6 years. For each event include title, calendar date, time, venue or Online, neighbourhood, age range, price, booking URL and Instagram post URL if any. Skip adult-only sessions, admissions-only flyers, US-timezone classes, and undated weekly class schedules.";
+  "Extract upcoming dated events for children aged 6 months to 6 years that Bengaluru parents can join (India / IST) in the next two months: workshops, playdates, open houses, magic shows, play-café sessions, storytime, pottery, music, treks, farms, festivals, and similar. For each event include title, calendar date, time, venue or Online, neighbourhood, age range, price, booking URL and Instagram post URL if any. Skip adult-only sessions, admissions-only flyers, US-timezone classes, and undated weekly class schedules.";
 
 export const PARALLEL_BANGALORE_QUERIES = [
   "Bangalore kids events September October 2026",
@@ -42,6 +42,7 @@ export const BANGALORE_SEED_URLS = [
   "https://bangaloreinternationalcentre.org/events/",
   "https://ngma.gov.in/en/ngma-bengaluru.html",
   "https://www.phoenixmarketcity.com/bengaluru",
+  "https://www.popapuddle.com/",
   "https://prayag.in/",
   "https://www.forumsouthbangalore.com/",
 ];

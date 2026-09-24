@@ -36,12 +36,17 @@ jobs:
       - name: Scrape upcoming listings
         env:
           PARALLEL_API_KEY: ${{ secrets.PARALLEL_API_KEY }}
+          GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
+          GOOGLE_SHEET_TAB: ${{ secrets.GOOGLE_SHEET_TAB }}
+          GOOGLE_SHEET_SHARE_EMAIL: ${{ secrets.GOOGLE_SHEET_SHARE_EMAIL }}
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
         run: npx --yes tsx scripts/refresh-events.ts
       - name: Commit snapshot if listings changed
         run: |
           git config user.name "komal212"
           git config user.email "komal212@users.noreply.github.com"
-          git add src/data/live-bangalore.json
+          git add src/data/live-bangalore.json src/data/maps-places.json src/data/funkaari-events-sheet.csv
+          if [ -f src/data/google-sheet.json ]; then git add src/data/google-sheet.json; fi
           if git diff --staged --quiet; then
             echo "No listing changes"
             exit 0

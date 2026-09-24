@@ -1,21 +1,30 @@
 #!/usr/bin/env node
 /**
- * Scrape dated Bengaluru kids listings and write src/data/live-bangalore.json.
- * Does not print API keys. Does not invent events.
+ * Scrape dated Bengaluru kids listings, write src/data/live-bangalore.json,
+ * and sync the ops Google Sheet / CSV. Does not print API keys. Does not invent events.
  *
  *   npx tsx scripts/refresh-events.ts
  *   npx tsx scripts/refresh-events.ts --from-catalog
+ *   npx tsx scripts/refresh-events.ts --sheet-only
  */
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { scrapeBangaloreWide } from "@/lib/bangalore-wide-scrape";
 import { mergeEventFeeds } from "@/lib/merge-events";
-import type { LiveBangaloreFeed } from "@/lib/live-feed";
+import { events as catalog } from "@/data/events";
+import { writeEventsSheetCsv } from "@/lib/events-sheet";
+import { syncEventsGoogleSheet } from "@/lib/google-sheets";
 import type { KidsEvent } from "@/types/event";
+
+type LiveBangaloreFeed = {
+  refreshedAt: string;
+  source: string;
+  events: KidsEvent[];
+};
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const outFile = join(root, "src/data/live-bangalore.json");
+const sheetCsv = join(root, "src/data/funkaari-events-sheet.csv");
 
 function loadEnv() {
   const envFile = join(root, ".env.local");
@@ -55,30 +64,52 @@ function writeFeed(feed: LiveBangaloreFeed) {
   writeFileSync(outFile, `${JSON.stringify(feed, null, 2)}\n`, "utf8");
 }
 
+async function syncSheet(events: KidsEvent[]) {
+  writeEventsSheetCsv(sheetCsv, events);
+  try {
+    const synced = await syncEventsGoogleSheet(root, events);
+    if (synced.url) {
+      console.log(`google sheet: ${synced.rows} rows → ${synced.url}`);
+    } else if (synced.skipped) {
+      console.log(`google sheet skipped (${synced.skipped}); csv written`);
+    }
+  } catch (err) {
+    const message = err instanceof Error ? err.message : "sheet sync failed";
+    console.error(`google sheet: ${message.replace(/[A-Za-z0-9_\-]{20,}/g, "[redacted]")}`);
+  }
+}
+
 async function main() {
   loadEnv();
   const fromCatalog = process.argv.includes("--from-catalog");
+  const sheetOnly = process.argv.includes("--sheet-only");
   const existing = readExisting();
+
+  if (sheetOnly || fromCatalog) {
+    const events = mergeEventFeeds(existing?.events || [], catalog);
+    await syncSheet(events);
+    console.log(`sheet rows: ${events.length} (catalog + snapshot)`);
+    return;
+  }
 
   let live: KidsEvent[] = [];
   let source = "catalog";
   let scrapeError: string | undefined;
 
-  if (!fromCatalog) {
-    if (!process.env.PARALLEL_API_KEY?.trim()) {
-      console.error("missing PARALLEL_API_KEY");
-      process.exit(1);
-    }
-    const scraped = await scrapeBangaloreWide({ force: true });
-    live = scraped.events;
-    source = scraped.source === "parallel" ? "parallel-web" : scraped.source;
-    scrapeError = scraped.error;
-    if (scrapeError) {
-      console.error(`scrape note: ${scrapeError.slice(0, 240)}`);
-    }
+  if (!process.env.PARALLEL_API_KEY?.trim()) {
+    console.error("missing PARALLEL_API_KEY");
+    process.exit(1);
+  }
+  const { scrapeBangaloreWide } = await import("@/lib/bangalore-wide-scrape");
+  const scraped = await scrapeBangaloreWide({ force: true });
+  live = scraped.events;
+  source = scraped.source === "parallel" ? "parallel-web" : scraped.source;
+  scrapeError = scraped.error;
+  if (scrapeError) {
+    console.error(`scrape note: ${scrapeError.slice(0, 240)}`);
   }
 
-  const events = fromCatalog ? [] : mergeEventFeeds(live, []);
+  const events = mergeEventFeeds(live, []);
   if (events.length === 0 && existing?.events.length) {
     console.error("refresh found 0 upcoming events; keeping the previous snapshot");
     process.exit(1);
@@ -93,8 +124,10 @@ async function main() {
   const sameEvents =
     existing && eventsFingerprint(existing.events) === eventsFingerprint(events);
   writeFeed(feed);
+  const listed = mergeEventFeeds(events, catalog);
+  await syncSheet(listed);
   console.log(
-    `${sameEvents ? "snapshot timestamps updated" : "snapshot written"}: ${events.length} upcoming Bengaluru event${events.length === 1 ? "" : "s"} (${source})`,
+    `${sameEvents ? "snapshot timestamps updated" : "snapshot written"}: ${events.length} scraped, ${listed.length} sheet rows (${source})`,
   );
 }
 

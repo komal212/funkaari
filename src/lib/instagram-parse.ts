@@ -8,6 +8,8 @@ import { isInstagramPostUrl, normalizeHandle } from "@/lib/instagram";
 import { isUpcomingEvent } from "@/lib/event-date";
 import { AUDIENCE_MAX_YEARS, ageGroupsForRange, parseAgeMention } from "@/lib/age";
 import { isIndiaOnlineSession, isOnlineSession } from "@/lib/online";
+import { KIDS_EVENT_KIND } from "@/lib/kids-event";
+import { areaFromText } from "@/lib/bangalore-area";
 
 export interface InstagramMedia {
   id: string;
@@ -70,22 +72,8 @@ const BANGALORE_ACCOUNTS: Record<string, BangaloreArea> = {
   theloorooclub: "Koramangala",
   montivypreschools: "Whitefield",
   paperbirdmalini: "Koramangala",
+  popapuddle: "HSR Layout",
 };
-
-const AREA_MATCH: { re: RegExp; area: BangaloreArea }[] = [
-  { re: /koramangala|kormangala/i, area: "Koramangala" },
-  { re: /indiranagar/i, area: "Indiranagar" },
-  { re: /whitefield|itpl|hope farm/i, area: "Whitefield" },
-  { re: /hsr/i, area: "HSR Layout" },
-  { re: /jayanagar/i, area: "Jayanagar" },
-  { re: /bellandur|sarjapur/i, area: "Bellandur" },
-  { re: /jp\s*nagar|padmanabhanagar/i, area: "JP Nagar" },
-  { re: /mallesh?waram|sheshadripuram|sadashivanagar|kumara park/i, area: "Malleshwaram" },
-  { re: /manyata|nagawara|hebbal/i, area: "Hebbal" },
-  { re: /haralur|kasavanahalli|yemalur/i, area: "Bellandur" },
-  { re: /nagarabhavi|nagarbhavi/i, area: "Malleshwaram" },
-  { re: /electronic\s*city|e-?city/i, area: "Electronic City" },
-];
 
 function knownBangaloreArea(caption: string, username?: string): BangaloreArea | undefined {
   const handle = username ? normalizeHandle(username) : "";
@@ -100,10 +88,7 @@ function knownBangaloreArea(caption: string, username?: string): BangaloreArea |
 
 function detectArea(text: string, username?: string): string {
   if (isOnlineSession(text)) return "Online";
-  for (const row of AREA_MATCH) {
-    if (row.re.test(text)) return row.area;
-  }
-  return knownBangaloreArea(text, username) ?? "Koramangala";
+  return areaFromText(text) || knownBangaloreArea(text, username) || "Bengaluru";
 }
 
 function detectCategory(text: string): EventCategory {
@@ -213,8 +198,7 @@ export function shortEventBlurb(caption: string): string {
   return (sentence.endsWith(".") ? sentence : `${sentence}.`).slice(0, 140);
 }
 
-const ACTIVITY =
-  /\b(workshop|playdates?|play date|circle time|trek|festival|camp|story play|sensory play|class|session|open day|open house)\b/i;
+const ACTIVITY = KIDS_EVENT_KIND;
 
 const ADMISSION =
   /\b(admissions?\s*open|enrol(?:l)?(?:\s+today)?|limited seats|nursery admissions|preschool admissions)\b/i;

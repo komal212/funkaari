@@ -19,6 +19,16 @@ export function parseAgeMention(text: string): {
   maxYears?: number;
   openEnded: boolean;
 } | null {
+  const monthsToYears = text.match(
+    /(\d+)\s*m(?:o|onths?)\s*[-–]\s*(\d+(?:\.\d+)?)\s*(?:yo|yrs?|years?)?/i,
+  );
+  if (monthsToYears) {
+    const minYears = Number(monthsToYears[1]) / 12;
+    const maxYears = Number(monthsToYears[2]);
+    if (minYears > AUDIENCE_MAX_YEARS) return null;
+    return { minYears, maxYears, openEnded: false };
+  }
+
   const range = text.match(
     /(\d+(?:\.\d+)?)\s*[-–]\s*(\d+(?:\.\d+)?)\s*(?:yo|yrs?|years?)?/i,
   );

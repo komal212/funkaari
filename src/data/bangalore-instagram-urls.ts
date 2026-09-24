@@ -11,16 +11,17 @@ const ORGANISER_HANDLES = [
   "littlebeatsfestival",
   "ayanaoutdoorsindia",
   "funkaari.in",
+  "popapuddle",
 ];
 
 export const PARALLEL_INSTAGRAM_OBJECTIVE =
-  "Extract upcoming dated kids workshops, playdates, open houses, treks, festivals, and online/Zoom sessions for children aged 6 months to 6 years that Bengaluru parents can join (India / IST). For each event include the Instagram post URL (instagram.com/p/...), full caption, date, time, venue or Online, age range and organiser handle. Skip admissions-only posts, adult events, US-timezone classes, classroom recaps, and posts with no calendar date.";
+  "Extract upcoming dated events for children aged 6 months to 6 years that Bengaluru parents can join (India / IST): workshops, playdates, open houses, magic shows, play-café sessions, storytime, pottery, music, treks, festivals, and similar. For each event include the Instagram post URL (instagram.com/p/...), full caption, date, time, venue or Online, age range and organiser handle. Skip admissions-only posts, adult events, US-timezone classes, classroom recaps, and posts with no calendar date.";
 
 export const PARALLEL_INSTAGRAM_QUERIES = [
-  "Bangalore kids workshop",
-  "Bengaluru playdate open house",
+  "Bangalore kids events this weekend",
+  "Bengaluru playdate open house magic show",
+  "Pop-A-Puddle HSR kids",
   "online Zoom kids workshop India",
-  "instagram.com/p/",
 ];
 
 export function bangaloreInstagramUrls(): string[] {

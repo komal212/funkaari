@@ -16,6 +16,7 @@ import { isOffBriefListing } from "@/lib/event-quality";
 import { extractPages, searchPages, type ParallelPage } from "@/lib/parallel-web";
 import { runTaskJson } from "@/lib/parallel-task";
 import { parseWebEvents } from "@/lib/web-event-parse";
+import { enrichEventLocations } from "@/lib/maps-lookup";
 import type { KidsEvent } from "@/types/event";
 
 const CACHE_MS = 15 * 60 * 1000;
@@ -33,7 +34,7 @@ function taskInput(): string {
   const start = new Date();
   const end = new Date(start);
   end.setMonth(end.getMonth() + 2);
-  return `List as many distinct upcoming dated kids events as you can find for Bengaluru families between ${kolkataLabel(start)} and ${kolkataLabel(end)} for children aged 6 months to 6 years. Include in-person Bangalore workshops, playdates, open houses, pottery, storytime, music, treks, farms and festivals, plus dated online/Zoom sessions in India/IST that parents can join from home. Each event must have a real calendar date and a live booking, organiser website, or Instagram post URL. Do not invent events, do not copy the same weekly class across extra dates, and skip adult-only listings. Aim for up to 100 unique events.`;
+  return `List as many distinct upcoming dated kids events as you can find for Bengaluru families between ${kolkataLabel(start)} and ${kolkataLabel(end)} for children aged 6 months to 6 years. Include workshops, playdates, open houses, magic shows, play-café sessions, storytime, pottery, music, treks, farms, festivals, and similar, plus dated online/Zoom sessions in India/IST. Each event must have a real calendar date and a live booking, organiser website, or Instagram post URL. Do not invent events, do not copy the same weekly class across extra dates, and skip adult-only listings. Aim for up to 100 unique events.`;
 }
 
 type Scraped = {
@@ -138,7 +139,10 @@ export async function scrapeBangaloreWide(opts?: { force?: boolean }): Promise<S
 
   const instagram = eventsFromInstagramPages(pages);
   const web = pages.flatMap((page) => parseWebEvents(page.text, page.url, "bangalore"));
-  const events = dedupe([...instagram, ...web, ...task.events]);
+  const events = await enrichEventLocations(dedupe([...instagram, ...web, ...task.events]), {
+    webSearch: true,
+    persist: true,
+  });
 
   const value: Scraped = {
     events,

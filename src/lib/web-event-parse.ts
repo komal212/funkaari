@@ -3,6 +3,8 @@ import { parseCaptionSchedule } from "@/lib/instagram-parse";
 import { isUpcomingEvent } from "@/lib/event-date";
 import { AUDIENCE_MAX_YEARS, ageGroupsForRange, parseAgeMention } from "@/lib/age";
 import { isIndiaOnlineSession, isOnlineSession } from "@/lib/online";
+import { KIDS_EVENT_KIND } from "@/lib/kids-event";
+import { areaFromText } from "@/lib/bangalore-area";
 
 const SKIP =
   /\b(motorcycle|letsryde|yog nidra|sound immersion|photography exhibition|networking|masterclass|corporate outing|catan|kitty party|visitor registration|palette infinito|click trickk|salsa|flower arrangement|mug painting|mandala|embroidery|botanical watercolor|linocut|gond art|paint and stitch|stand-?up|comedy night|jamming|pub crawl|club night|90s vs|couple pottery|pichwai|crochet|outgoing)\b/i;
@@ -28,9 +30,9 @@ const WEEKLY_CLASS =
   /\b(every\s+(mon|tue|wed|thu|fri)|mon(?:day)?,\s*wed|tue-?\s*sun|regular classes|monthly \d+ class|phonics classes - online|weekend:\s*sunday|\d+\s*week course)\b/i;
 
 const KIDS =
-  /\b(kids?|child(?:ren)?|toddler|preschool|kidzania|kidywidy|playdate|open house|years?\s*old|\d+\s*[-–]\s*\d+\s*(?:yo|yrs?|years)|ages?\s*\d)\b/i;
+  /\b(kids?|child(?:ren)?|toddler|preschool|kidzania|kidywidy|playdate|open house|years?\s*old|\d+\s*[-–]\s*\d+\s*(?:yo|yrs?|years)|ages?\s*\d|magic show|playcafé|play[\s-]?cafe)\b/i;
 
-const KIDS_ACTIVITY = /\b(lippan|hand pottery|kids special|story ?time|sensory|messy play|circle time|workshop|festival|playdate|pottery|story play)\b/i;
+const KIDS_ACTIVITY = KIDS_EVENT_KIND;
 
 const DELHI_PLACE =
   /\b(delhi|ncr|noida|gurgaon|gurugram|pitampura|malviya|vasant|nizamuddin|india gate|kartavya|hauz khas|gk-?1|gk-?2|greater kailash|jor bagh|friends colony|ambience mall|nehru place)\b/i;
@@ -98,17 +100,7 @@ function detectArea(text: string, city: CityId): string {
   if (isOnlineSession(text)) return "Online";
   const t = text.toLowerCase();
   if (city === "bangalore") {
-    if (/koramangala/.test(t)) return "Koramangala";
-    if (/indiranagar/.test(t)) return "Indiranagar";
-    if (/whitefield/.test(t)) return "Whitefield";
-    if (/hsr/.test(t)) return "HSR Layout";
-    if (/jayanagar/.test(t)) return "Jayanagar";
-    if (/bellandur|sarjapur/.test(t)) return "Bellandur";
-    if (/jp\s*nagar|padmanabhanagar/.test(t)) return "JP Nagar";
-    if (/mallesh?waram|sheshadripuram/.test(t)) return "Malleshwaram";
-    if (/hebbal/.test(t)) return "Hebbal";
-    if (/electronic\s*city/.test(t)) return "Electronic City";
-    return "Bengaluru";
+    return areaFromText(t) || "Bengaluru";
   }
   if (/noida/.test(t)) return "Noida";
   if (/gurgaon|gurugram/.test(t)) return "Gurugram";
@@ -356,14 +348,14 @@ export function parseWebEvents(
     }
     if (city === "bangalore" && /outgoing\.world/i.test(sourceUrl)) continue;
     const kidsHeading =
-      /\b(kids?|child|children|toddler|preschool|playdate|open house|circle time|story play|montessori|klaydate|clown festival|little beats)\b/i.test(
+      /\b(kids?|child|children|toddler|preschool|playdate|open house|circle time|story play|montessori|magic show|playcafé|play cafe)\b/i.test(
         heading,
       );
     const alleventsYoung =
       /allevents\.in\/[^/]+\/(?!kids(?:--|\/|$)|children(?:--|\/|$)|family(?:--|\/|$))[a-z0-9-]+\/\d+/i.test(
         sourceUrl,
       ) && /age limit\s*-?\s*[0-6]\b/i.test(blob);
-    if (city === "bangalore" && !kidsHeading && !alleventsYoung && !isIndiaOnlineSession(`${heading}\n${blob}`)) {
+    if (city === "bangalore" && !kidsHeading && !alleventsYoung && !KIDS_EVENT_KIND.test(`${heading}\n${blob}`) && !isIndiaOnlineSession(`${heading}\n${blob}`)) {
       continue;
     }
     if (ADULT_EVENT.test(heading) && !/\bkids?\b/i.test(heading)) continue;

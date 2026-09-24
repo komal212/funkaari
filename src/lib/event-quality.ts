@@ -101,7 +101,7 @@ export function isOffBriefListing(event: KidsEvent): boolean {
   const live = /^(web-|ig-|task-)/.test(event.id);
   if (live) {
     const kidsish =
-      /\b(kids?|child|children|toddler|preschool|playdate|play date|open house|circle time|story play|montessori)\b/i.test(
+      /\b(kids?|child|children|toddler|preschool|playdate|play date|open house|circle time|story play|montessori|magic show|playcafé|play cafe|play-?cafe)\b/i.test(
         title,
       );
     if (!kidsish) return true;
@@ -148,6 +148,7 @@ const COVER_BY_ID: Record<string, string> = {
   "growing-wonders-open-house": "/events/growing-wonders-open-house.png",
   "looroo-ganesha-playdate": "/events/looroo-ganesha-playdate.png",
   "openhouse-ganesha-painting": "/events/openhouse-ganesha-painting.png",
+  "popapuddle-magic-show-26-sep": "/events/popapuddle-magic-show.png",
   "green-venture-lalbagh-walk": "/events/lalbagh-nature-walk.png",
   "delhi-kidzania-open-house": "/events/kidzania-open-house.png",
   "delhi-joinin-hand-pottery": "/events/hand-pottery.png",

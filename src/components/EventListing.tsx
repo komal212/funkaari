@@ -41,7 +41,10 @@ export function EventListing({ city }: EventListingProps) {
     const endpoint =
       city === "delhi" ? "/api/delhi/events" : "/api/instagram/events";
     fetch(endpoint)
-      .then((res) => res.json())
+      .then(async (res) => {
+        if (!res.ok) throw new Error("events api");
+        return res.json();
+      })
       .then((data) => {
         if (cancelled) return;
         if (Array.isArray(data.events) && data.events.length > 0) {
@@ -52,13 +55,7 @@ export function EventListing({ city }: EventListingProps) {
         }
       })
       .catch(() => {
-        if (!cancelled) {
-          setWarning(
-            city === "delhi"
-              ? "Could not refresh the Delhi list."
-              : "Could not refresh Bengaluru events.",
-          );
-        }
+        if (!cancelled) setFeed(fallback);
       })
       .finally(() => {
         if (!cancelled) setLoading(false);
