@@ -4,8 +4,6 @@ on:
   schedule:
     # 6:00 AM India time
     - cron: "30 0 * * *"
-    # 10:00 PM India time
-    - cron: "30 16 * * *"
   workflow_dispatch:
 
 concurrency:
