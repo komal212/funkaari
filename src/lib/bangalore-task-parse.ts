@@ -3,6 +3,7 @@ import { isInNextTwoMonths } from "@/lib/event-date";
 import { isInstagramPostUrl } from "@/lib/instagram";
 import { eventIsListable } from "@/lib/listable";
 import { AUDIENCE_MAX_YEARS, ageGroupsForRange } from "@/lib/age";
+import { isIndiaOnlineSession, isOnlineSession } from "@/lib/online";
 
 export type TaskEventRow = {
   title?: string;
@@ -81,6 +82,7 @@ function slug(value: string): string {
 
 function looksBangalore(row: TaskEventRow): boolean {
   const blob = `${row.title} ${row.venue} ${row.area} ${row.organizer} ${row.sourceUrl} ${row.description}`;
+  if (isIndiaOnlineSession(blob)) return true;
   return /\b(bangalore|bengaluru|blr|koramangala|indiranagar|whitefield|hsr|jayanagar|bellandur|jp\s*nagar|malleshwaram|hebbal)\b/i.test(
     blob,
   );
@@ -116,6 +118,8 @@ export function eventsFromTaskRows(rows: TaskEventRow[]): KidsEvent[] {
       ? row.instagramUrl
       : undefined;
     const organizer = row.organizer?.trim() || "Bengaluru organiser";
+    const blob = `${title} ${row.venue} ${row.area} ${row.description}`;
+    const online = isOnlineSession(blob);
     const event: KidsEvent = {
       id: `task-${slug(organizer)}-${slug(title)}-${day}`,
       title: title.slice(0, 72),
@@ -123,8 +127,8 @@ export function eventsFromTaskRows(rows: TaskEventRow[]): KidsEvent[] {
       endDate: row.endDate && isoDay(row.endDate) ? `${isoDay(row.endDate)}T18:00:00+05:30` : undefined,
       time: row.time?.trim() || "See listing",
       city: "bangalore",
-      area: row.area?.trim() || "Bengaluru",
-      venue: row.venue?.trim() || row.area?.trim() || "Bengaluru",
+      area: online ? "Online" : row.area?.trim() || "Bengaluru",
+      venue: online ? "Online" : row.venue?.trim() || row.area?.trim() || "Bengaluru",
       ageMinMonths: Math.round(minYears * 12),
       ageMaxYears: maxYears,
       ageGroups: groups,

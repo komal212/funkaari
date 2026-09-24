@@ -1,7 +1,7 @@
 import { bangaloreInstagramUrls } from "@/data/bangalore-instagram-urls";
 
 export const PARALLEL_BANGALORE_OBJECTIVE =
-  "Extract upcoming dated kids workshops, playdates, open houses, pottery, storytime, music, treks and festivals in Bangalore or Bengaluru between September and November 2026 for children aged 6 months to 6 years. For each event include title, calendar date, time, venue, neighbourhood, age range, price, booking URL and Instagram post URL if any. Skip adult-only sessions, admissions-only flyers, and undated weekly class schedules.";
+  "Extract upcoming dated kids workshops, playdates, open houses, pottery, storytime, music, treks, festivals, and online/Zoom sessions that Bengaluru parents can join (India / IST) in the next two months for children aged 6 months to 6 years. For each event include title, calendar date, time, venue or Online, neighbourhood, age range, price, booking URL and Instagram post URL if any. Skip adult-only sessions, admissions-only flyers, US-timezone classes, and undated weekly class schedules.";
 
 export const PARALLEL_BANGALORE_QUERIES = [
   "Bangalore kids events September October 2026",
@@ -37,6 +37,8 @@ export const BANGALORE_SEED_URLS = [
   "https://www.eurokidsindia.com/",
   "https://playhood.in/",
   "https://www.champaca.in/",
+  "https://allevents.in/online/kids",
+  "https://www.eventbrite.com/d/online/kids--events/",
   "https://bangaloreinternationalcentre.org/events/",
   "https://ngma.gov.in/en/ngma-bengaluru.html",
   "https://www.phoenixmarketcity.com/bengaluru",
@@ -52,7 +54,7 @@ export const BANGALORE_SEARCHES: {
   {
     objective: PARALLEL_BANGALORE_OBJECTIVE,
     searchQueries: [
-      "Bangalore kids events September October November 2026",
+      "Bangalore kids events this month next month",
       "Bengaluru toddler workshop weekend",
       "Bangalore preschool open house 2026",
       "kids playdate pottery storytime Bengaluru",
@@ -102,6 +104,15 @@ export const BANGALORE_SEARCHES: {
       "Bengaluru kids music class concert",
       "Bangalore toddler trek farm picnic",
       "Bengaluru kids art camp October",
+    ],
+  },
+  {
+    objective: PARALLEL_BANGALORE_OBJECTIVE,
+    searchQueries: [
+      "online kids workshop India Zoom IST toddler",
+      "virtual storytime preschool India rupees",
+      "Zoom kids art class India ages 3",
+      "online playdate kids India September October",
     ],
   },
 ];

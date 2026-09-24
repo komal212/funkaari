@@ -2,6 +2,7 @@ import type { EventFilters, KidsEvent } from "@/types/event";
 import { scoreEventSearch } from "@/lib/search";
 import { eventIsListable } from "@/lib/listable";
 import { compareListingEvents, isUpcomingEvent } from "@/lib/event-date";
+import { eventIsOnline } from "@/lib/online";
 
 function startOfLocalDay(value: Date): Date {
   const d = new Date(value);
@@ -55,11 +56,14 @@ export function filterEvents(
       return false;
     }
 
-    if (filters.category !== "all" && event.category !== filters.category) {
+    if (filters.area !== "all" && event.area !== filters.area) {
       return false;
     }
 
-    if (filters.area !== "all" && event.area !== filters.area) {
+    if (filters.place === "online" && !eventIsOnline(event)) {
+      return false;
+    }
+    if (filters.place === "offline" && eventIsOnline(event)) {
       return false;
     }
 

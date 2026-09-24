@@ -19,7 +19,22 @@ import { parseWebEvents } from "@/lib/web-event-parse";
 import type { KidsEvent } from "@/types/event";
 
 const CACHE_MS = 15 * 60 * 1000;
-const TASK_INPUT = `List as many distinct upcoming dated kids events as you can find in Bangalore / Bengaluru between 23 September 2026 and 23 November 2026 for children aged 6 months to 6 years. Include workshops, playdates, open houses, pottery, storytime, music, treks, farms and festivals. Each event must have a real calendar date and a live booking, organiser website, or Instagram post URL. Do not invent events, do not copy the same weekly class across extra dates, and skip adult-only listings. Aim for up to 100 unique events.`;
+
+function kolkataLabel(value: Date): string {
+  return value.toLocaleDateString("en-GB", {
+    timeZone: "Asia/Kolkata",
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+}
+
+function taskInput(): string {
+  const start = new Date();
+  const end = new Date(start);
+  end.setMonth(end.getMonth() + 2);
+  return `List as many distinct upcoming dated kids events as you can find for Bengaluru families between ${kolkataLabel(start)} and ${kolkataLabel(end)} for children aged 6 months to 6 years. Include in-person Bangalore workshops, playdates, open houses, pottery, storytime, music, treks, farms and festivals, plus dated online/Zoom sessions in India/IST that parents can join from home. Each event must have a real calendar date and a live booking, organiser website, or Instagram post URL. Do not invent events, do not copy the same weekly class across extra dates, and skip adult-only listings. Aim for up to 100 unique events.`;
+}
 
 type Scraped = {
   events: KidsEvent[];
@@ -85,7 +100,7 @@ async function searchAll(): Promise<{ urls: string[]; pages: ParallelPage[]; err
 
 async function taskEvents(): Promise<{ events: KidsEvent[]; error?: string }> {
   const task = await runTaskJson<{ events?: TaskEventRow[] }>({
-    input: TASK_INPUT,
+    input: taskInput(),
     jsonSchema: BANGALORE_TASK_SCHEMA,
     processor: "core",
     timeoutSec: 120,
@@ -94,9 +109,9 @@ async function taskEvents(): Promise<{ events: KidsEvent[]; error?: string }> {
   return { events: eventsFromTaskRows(rows), error: task.error };
 }
 
-export async function scrapeBangaloreWide(): Promise<Scraped> {
-  if (cache && Date.now() - cache.at < CACHE_MS) return cache.value;
-  if (inflight) return inflight;
+export async function scrapeBangaloreWide(opts?: { force?: boolean }): Promise<Scraped> {
+  if (!opts?.force && cache && Date.now() - cache.at < CACHE_MS) return cache.value;
+  if (!opts?.force && inflight) return inflight;
 
   inflight = (async () => {
 

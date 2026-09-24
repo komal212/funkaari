@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "refresh-events": "npx --yes tsx scripts/refresh-events.ts"
   },
   "dependencies": {
     "next": "^15.1.0",

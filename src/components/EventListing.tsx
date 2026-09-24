@@ -5,7 +5,6 @@ import type { CityId, EventFilters as Filters, KidsEvent } from "@/types/event";
 import { events as bangaloreEvents, delhiEvents } from "@/data/events";
 import { cityMeta } from "@/data/cities";
 import { filterEvents } from "@/lib/filters";
-import { compareListingEvents, isUpcomingEvent } from "@/lib/event-date";
 import { EventFilters } from "@/components/EventFilters";
 import { EventCard } from "@/components/EventCard";
 import { presentEvent } from "@/lib/event-quality";
@@ -13,9 +12,9 @@ import { presentEvent } from "@/lib/event-quality";
 const defaultFilters: Filters = {
   search: "",
   ageGroup: "all",
-  category: "all",
   area: "all",
   time: "all",
+  place: "all",
 };
 
 interface EventListingProps {
@@ -73,14 +72,6 @@ export function EventListing({ city }: EventListingProps) {
     () => filterEvents(feed, filters),
     [feed, filters],
   );
-  const upcomingEvents = useMemo(
-    () => filteredEvents.filter((event) => isUpcomingEvent(event)).sort(compareListingEvents),
-    [filteredEvents],
-  );
-  const overEvents = useMemo(
-    () => filteredEvents.filter((event) => !isUpcomingEvent(event)).sort(compareListingEvents),
-    [filteredEvents],
-  );
 
   return (
     <section id="events" className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16">
@@ -135,38 +126,23 @@ export function EventListing({ city }: EventListingProps) {
             No events match
           </p>
           <p className="mt-2 text-muted">
-            Try a simpler word
-            {city === "delhi"
-              ? " (pottery, Noida, Gurugram)"
-              : " (workshop, trek, Koramangala)"}{" "}
-            or pick another area.
+            {filters.place === "online"
+              ? "No dated online kids sessions in this list yet. Try Offline, or check back after a refresh."
+              : filters.place === "offline"
+                ? "No in-person listings match. Try All places or another area."
+                : `Try a simpler word${
+                    city === "delhi"
+                      ? " (pottery, Noida, Gurugram)"
+                      : " (workshop, trek, Koramangala)"
+                  } or pick another area.`}
           </p>
         </div>
       ) : (
-        <>
-          {upcomingEvents.length > 0 ? (
-            <div className="mt-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {upcomingEvents.map((event) => (
-                <EventCard key={event.id} event={event} />
-              ))}
-            </div>
-          ) : null}
-          {overEvents.length > 0 ? (
-            <div className="mt-12">
-              <h3 className="font-display text-2xl font-bold text-ink">
-                Just got over
-              </h3>
-              <p className="mt-1 text-sm text-muted">
-                Recently finished, still on the page.
-              </p>
-              <div className="mt-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                {overEvents.map((event) => (
-                  <EventCard key={event.id} event={event} />
-                ))}
-              </div>
-            </div>
-          ) : null}
-        </>
+        <div className="mt-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {filteredEvents.map((event) => (
+            <EventCard key={event.id} event={event} />
+          ))}
+        </div>
       )}
     </section>
   );

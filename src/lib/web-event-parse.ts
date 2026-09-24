@@ -2,6 +2,7 @@ import type { AgeGroup, CityId, EventCategory, KidsEvent } from "@/types/event";
 import { parseCaptionSchedule } from "@/lib/instagram-parse";
 import { isUpcomingEvent } from "@/lib/event-date";
 import { AUDIENCE_MAX_YEARS, ageGroupsForRange, parseAgeMention } from "@/lib/age";
+import { isIndiaOnlineSession, isOnlineSession } from "@/lib/online";
 
 const SKIP =
   /\b(motorcycle|letsryde|yog nidra|sound immersion|photography exhibition|networking|masterclass|corporate outing|catan|kitty party|visitor registration|palette infinito|click trickk|salsa|flower arrangement|mug painting|mandala|embroidery|botanical watercolor|linocut|gond art|paint and stitch|stand-?up|comedy night|jamming|pub crawl|club night|90s vs|couple pottery|pichwai|crochet|outgoing)\b/i;
@@ -94,6 +95,7 @@ function defaultArea(organizer: string, detected: string): string {
 }
 
 function detectArea(text: string, city: CityId): string {
+  if (isOnlineSession(text)) return "Online";
   const t = text.toLowerCase();
   if (city === "bangalore") {
     if (/koramangala/.test(t)) return "Koramangala";
@@ -361,7 +363,7 @@ export function parseWebEvents(
       /allevents\.in\/[^/]+\/(?!kids(?:--|\/|$)|children(?:--|\/|$)|family(?:--|\/|$))[a-z0-9-]+\/\d+/i.test(
         sourceUrl,
       ) && /age limit\s*-?\s*[0-6]\b/i.test(blob);
-    if (city === "bangalore" && !kidsHeading && !alleventsYoung) {
+    if (city === "bangalore" && !kidsHeading && !alleventsYoung && !isIndiaOnlineSession(`${heading}\n${blob}`)) {
       continue;
     }
     if (ADULT_EVENT.test(heading) && !/\bkids?\b/i.test(heading)) continue;
@@ -384,7 +386,9 @@ export function parseWebEvents(
     }
     const local =
       city === "bangalore"
-        ? BLR_PLACE.test(blob) || /bangalore|bengaluru/i.test(sourceUrl)
+        ? BLR_PLACE.test(blob) ||
+          /bangalore|bengaluru/i.test(sourceUrl) ||
+          isIndiaOnlineSession(`${heading}\n${blob}`)
         : DELHI_PLACE.test(blob) || DELHI_HOST.test(sourceUrl);
     if (!local) continue;
 
@@ -400,11 +404,14 @@ export function parseWebEvents(
     seen.add(key);
 
     const priced = priceFrom(blob);
-    const area = defaultArea(organizer, detectArea(blob, city));
-    const venueLine =
-      blob.match(/\|\s*([A-Za-z][^\n|]{3,60})/)?.[1]?.trim() ||
-      blob.match(/📍\s*([^\n]+)/)?.[1]?.trim() ||
-      area;
+    const area = isOnlineSession(`${heading}\n${blob}`)
+      ? "Online"
+      : defaultArea(organizer, detectArea(blob, city));
+    const venueLine = area === "Online"
+      ? "Online"
+      : blob.match(/\|\s*([A-Za-z][^\n|]{3,60})/)?.[1]?.trim() ||
+        blob.match(/📍\s*([^\n]+)/)?.[1]?.trim() ||
+        area;
 
     const event: KidsEvent = {
       id: `web-${slug(organizer)}-${slug(heading)}-${when.date.slice(0, 10)}`,

@@ -14,12 +14,12 @@ const ORGANISER_HANDLES = [
 ];
 
 export const PARALLEL_INSTAGRAM_OBJECTIVE =
-  "Extract upcoming dated kids workshops, playdates, open houses, treks and festivals in Bangalore or Bengaluru for children aged 6 months to 6 years. For each event include the Instagram post URL (instagram.com/p/...), full caption, date, time, venue, neighbourhood, age range and organiser handle. Skip admissions-only posts, adult events, classroom recaps, and posts with no calendar date.";
+  "Extract upcoming dated kids workshops, playdates, open houses, treks, festivals, and online/Zoom sessions for children aged 6 months to 6 years that Bengaluru parents can join (India / IST). For each event include the Instagram post URL (instagram.com/p/...), full caption, date, time, venue or Online, age range and organiser handle. Skip admissions-only posts, adult events, US-timezone classes, classroom recaps, and posts with no calendar date.";
 
 export const PARALLEL_INSTAGRAM_QUERIES = [
   "Bangalore kids workshop",
   "Bengaluru playdate open house",
-  "toddler preschool September October",
+  "online Zoom kids workshop India",
   "instagram.com/p/",
 ];
 

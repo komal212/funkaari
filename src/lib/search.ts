@@ -155,7 +155,7 @@ export function scoreEventSearch(event: KidsEvent, query: string): number {
 export interface SearchSuggestion {
   label: string;
   query: string;
-  kind: "event" | "preschool" | "area" | "category";
+  kind: "event" | "preschool" | "area";
 }
 
 export function buildSearchSuggestions(
@@ -185,10 +185,6 @@ export function buildSearchSuggestions(
     }
     if (normalize(event.area).includes(q) || fuzzyIncludes(normalize(event.area), q)) {
       push({ label: event.area, query: event.area, kind: "area" });
-    }
-    const cat = CATEGORY_LABELS[event.category];
-    if (normalize(cat).includes(q)) {
-      push({ label: cat, query: cat, kind: "category" });
     }
     if (out.length >= limit * 3) break;
   }

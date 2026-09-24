@@ -1,0 +1,50 @@
+name: Refresh Bengaluru events
+
+on:
+  schedule:
+    # 6:00 AM India time
+    - cron: "30 0 * * *"
+    # 10:00 PM India time
+    - cron: "30 16 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: refresh-bengaluru-events
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci
+      - name: Require Parallel key
+        env:
+          PARALLEL_API_KEY: ${{ secrets.PARALLEL_API_KEY }}
+        run: |
+          if [ -z "$PARALLEL_API_KEY" ]; then
+            echo "Add PARALLEL_API_KEY under Settings → Secrets and variables → Actions."
+            exit 1
+          fi
+      - name: Scrape upcoming listings
+        env:
+          PARALLEL_API_KEY: ${{ secrets.PARALLEL_API_KEY }}
+        run: npx --yes tsx scripts/refresh-events.ts
+      - name: Commit snapshot if listings changed
+        run: |
+          git config user.name "komal212"
+          git config user.email "komal212@users.noreply.github.com"
+          git add src/data/live-bangalore.json
+          if git diff --staged --quiet; then
+            echo "No listing changes"
+            exit 0
+          fi
+          git commit -m "Refresh Bengaluru event listings"
+          git push

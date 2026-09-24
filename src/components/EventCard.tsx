@@ -1,26 +1,14 @@
 "use client";
 
 import type { KidsEvent } from "@/types/event";
-import { CATEGORY_LABELS } from "@/data/events";
 import { formatEventDate, formatAgeRange } from "@/lib/filters";
 import {
   eventHasInstagramPost,
   eventInstagramCta,
   normalizeHandle,
 } from "@/lib/instagram";
-import { EventLogoCover, eventLogoKind } from "@/components/CategoryLogo";
-import { isUpcomingEvent } from "@/lib/event-date";
+import { EventLogoCover } from "@/components/CategoryLogo";
 import { displayEventDescription, displayEventTitle, isAggregatorIndexUrl } from "@/lib/event-quality";
-
-const categoryStyles: Record<string, { badge: string }> = {
-  workshop: { badge: "bg-mint-100 text-mint-500" },
-  camp: { badge: "bg-sky-100 text-sky-400" },
-  "open day": { badge: "bg-lavender-100 text-lavender-500" },
-  sports: { badge: "bg-peach-100 text-peach-500" },
-  art: { badge: "bg-pink-100 text-pink-600" },
-  music: { badge: "bg-sunny-100 text-sunny-400" },
-  festival: { badge: "bg-orange-100 text-orange-600" },
-};
 
 interface EventCardProps {
   event: KidsEvent;
@@ -48,13 +36,7 @@ function sourceCta(event: KidsEvent): { href: string; label: string; kind: "inst
 }
 
 export function EventCard({ event }: EventCardProps) {
-  const style = categoryStyles[event.category] ?? {
-    badge: "bg-gray-100 text-gray-700",
-  };
-  const mark = eventLogoKind(event);
-
   const cta = sourceCta(event);
-  const over = !isUpcomingEvent(event);
   const heading = displayEventTitle(event.title);
 
   const cover = <EventLogoCover event={event} />;
@@ -63,17 +45,7 @@ export function EventCard({ event }: EventCardProps) {
     <article className="activity-card group relative flex flex-col overflow-hidden">
       <div className="relative aspect-[4/5] overflow-hidden bg-lavender-50">
         {cover}
-        {over ? (
-          <span className="absolute right-3 top-3 z-20 rounded-full bg-ink/85 px-3.5 py-1.5 text-xs font-bold uppercase tracking-[0.18em] text-white shadow-md">
-            Over
-          </span>
-        ) : null}
         <div className="pointer-events-none absolute left-3 top-3 z-10 flex flex-wrap gap-2">
-          <span
-            className={`rounded-full px-3 py-1 text-xs font-bold capitalize shadow-sm ${style.badge}`}
-          >
-            {CATEGORY_LABELS[mark] ?? CATEGORY_LABELS[event.category]}
-          </span>
           <span
             className={`rounded-full px-3 py-1 text-xs font-bold shadow-sm ${
               event.isFree

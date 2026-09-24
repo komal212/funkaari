@@ -4,12 +4,12 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import type {
   EventFilters as Filters,
   AgeGroup,
-  EventCategory,
   TimeFilter,
+  PlaceFilter,
   KidsEvent,
   CityId,
 } from "@/types/event";
-import { AGE_GROUP_LABELS, CATEGORY_LABELS, AREAS, events as catalog } from "@/data/events";
+import { AGE_GROUP_LABELS, AREAS, events as catalog } from "@/data/events";
 import { areasFromEvents } from "@/lib/filters";
 import { buildSearchSuggestions } from "@/lib/search";
 
@@ -27,13 +27,18 @@ const KIND_LABEL: Record<string, string> = {
   event: "Event",
   preschool: "Place",
   area: "Area",
-  category: "Type",
 };
 
 const TIME_PILLS: { value: TimeFilter; label: string }[] = [
   { value: "all", label: "All dates" },
   { value: "this-week", label: "This week" },
   { value: "this-weekend", label: "Weekend" },
+];
+
+const PLACE_PILLS: { value: PlaceFilter; label: string }[] = [
+  { value: "all", label: "All places" },
+  { value: "offline", label: "Offline" },
+  { value: "online", label: "Online" },
 ];
 
 export function EventFilters({
@@ -79,9 +84,9 @@ export function EventFilters({
   const hasActiveFilters =
     filters.search ||
     filters.ageGroup !== "all" ||
-    filters.category !== "all" ||
     filters.area !== "all" ||
-    filters.time !== "all";
+    filters.time !== "all" ||
+    filters.place !== "all";
 
   return (
     <div className="space-y-4">
@@ -192,6 +197,24 @@ export function EventFilters({
             </button>
           ))}
 
+        <span className="mx-1 hidden h-6 w-px bg-lavender-200 sm:inline-block" aria-hidden />
+
+        {PLACE_PILLS.map((pill) => (
+          <button
+            key={pill.value}
+            type="button"
+            aria-pressed={filters.place === pill.value}
+            onClick={() => update("place", pill.value)}
+            className={
+              filters.place === pill.value
+                ? "h-10 rounded-full bg-lavender-500 px-4 text-sm font-semibold text-white"
+                : "h-10 rounded-full bg-white px-4 text-sm font-semibold text-ink/70 ring-1 ring-lavender-100 hover:bg-lavender-50"
+            }
+          >
+            {pill.label}
+          </button>
+        ))}
+
         <span className="relative">
           <select
             aria-label="Age"
@@ -226,25 +249,6 @@ export function EventFilters({
           <Chevron />
         </span>
 
-        <span className="relative">
-          <select
-            aria-label="Category"
-            value={filters.category}
-            onChange={(e) =>
-              update("category", e.target.value as EventCategory | "all")
-            }
-            className={selectClass}
-          >
-            <option value="all">Any type</option>
-            {Object.entries(CATEGORY_LABELS).map(([value, label]) => (
-              <option key={value} value={value}>
-                {label}
-              </option>
-            ))}
-          </select>
-          <Chevron />
-        </span>
-
         {hasActiveFilters && (
           <button
             type="button"
@@ -252,9 +256,9 @@ export function EventFilters({
               onChange({
                 search: "",
                 ageGroup: "all",
-                category: "all",
                 area: "all",
                 time: "all",
+                place: "all",
               })
             }
             className="h-10 px-3 text-sm font-semibold text-muted hover:text-ink"

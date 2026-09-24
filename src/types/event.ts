@@ -60,10 +60,12 @@ export interface KidsEvent {
 
 export type TimeFilter = "all" | "this-week" | "this-weekend";
 
+export type PlaceFilter = "all" | "offline" | "online";
+
 export interface EventFilters {
   search: string;
   ageGroup: AgeGroup | "all";
-  category: EventCategory | "all";
   area: EventArea | "all";
   time: TimeFilter;
+  place: PlaceFilter;
 }

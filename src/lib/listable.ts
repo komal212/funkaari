@@ -1,5 +1,5 @@
 import type { KidsEvent } from "@/types/event";
-import { isUpcomingEvent, isRecentlyOver } from "@/lib/event-date";
+import { isUpcomingEvent } from "@/lib/event-date";
 import { eventHasInstagramPost } from "@/lib/instagram";
 import {
   isAggregatorIndexUrl,
@@ -13,9 +13,9 @@ function hasEventPage(event: KidsEvent): boolean {
   return false;
 }
 
-/** A listing needs a real title, a date, and a booking page, website, or Instagram post. */
+/** A listing needs a real title, a date that has not passed, and a booking page, website, or Instagram post. Past events drop off the diary — do not keep a Just got over section. */
 export function eventIsListable(event: KidsEvent): boolean {
-  if (!isUpcomingEvent(event) && !isRecentlyOver(event)) return false;
+  if (!isUpcomingEvent(event)) return false;
   if (isOffBriefListing(event)) return false;
   return hasEventPage(event);
 }

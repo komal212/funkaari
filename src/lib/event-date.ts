@@ -16,22 +16,6 @@ export function isUpcomingEvent(
   return ymdInKolkata(last) >= ymdInKolkata(when);
 }
 
-/** Ended, but still recent enough to keep on the listing (blurred). */
-export function isRecentlyOver(
-  event: Pick<KidsEvent, "date" | "endDate" | "ongoing">,
-  now?: Date,
-  withinDays = 30,
-): boolean {
-  if (event.ongoing) return false;
-  if (isUpcomingEvent(event, now)) return false;
-  const when = now instanceof Date ? now : new Date();
-  const last = new Date(event.endDate || event.date);
-  if (Number.isNaN(last.getTime())) return false;
-  const cutoff = new Date(when);
-  cutoff.setDate(cutoff.getDate() - withinDays);
-  return last.getTime() >= cutoff.getTime();
-}
-
 /** Dated listings that start within the next two months. */
 export function isInNextTwoMonths(
   event: Pick<KidsEvent, "date" | "endDate" | "ongoing">,
@@ -51,7 +35,7 @@ export function isInListingWindow(
   event: Pick<KidsEvent, "date" | "endDate" | "ongoing">,
   now?: Date,
 ): boolean {
-  return isInNextTwoMonths(event, now) || isRecentlyOver(event, now);
+  return isInNextTwoMonths(event, now);
 }
 
 function startMs(event: Pick<KidsEvent, "date">): number {

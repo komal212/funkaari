@@ -7,6 +7,7 @@ import type {
 import { isInstagramPostUrl, normalizeHandle } from "@/lib/instagram";
 import { isUpcomingEvent } from "@/lib/event-date";
 import { AUDIENCE_MAX_YEARS, ageGroupsForRange, parseAgeMention } from "@/lib/age";
+import { isIndiaOnlineSession, isOnlineSession } from "@/lib/online";
 
 export interface InstagramMedia {
   id: string;
@@ -97,7 +98,8 @@ function knownBangaloreArea(caption: string, username?: string): BangaloreArea |
   return undefined;
 }
 
-function detectArea(text: string, username?: string): BangaloreArea {
+function detectArea(text: string, username?: string): string {
+  if (isOnlineSession(text)) return "Online";
   for (const row of AREA_MATCH) {
     if (row.re.test(text)) return row.area;
   }
@@ -132,7 +134,10 @@ function detectAgeGroups(text: string): AgeGroup[] {
   return [...groups];
 }
 
-function detectVenue(caption: string, area: BangaloreArea): string {
+function detectVenue(caption: string, area: string): string {
+  if (area === "Online" || isOnlineSession(caption)) {
+    return "Online";
+  }
   const pin = caption.match(/📍\s*([^\n#]+)/);
   if (pin?.[1]) return pin[1].replace(/@\w+/g, "").trim().slice(0, 80);
   const at = caption.match(/\bat\s+([^.,\n]{8,60})/i);
@@ -235,7 +240,9 @@ export function isBangaloreKidsEventCaption(
   if (ADMISSION.test(caption) && !ACTIVITY.test(caption)) return false;
   if (TEEN.test(caption) && !BABY_TODDLER.test(caption)) return false;
   if (OLDER_KID.test(caption) && !BABY_TODDLER.test(caption)) return false;
-  if (!BLR.test(caption) && !knownBangaloreArea(caption, username)) return false;
+  if (!BLR.test(caption) && !knownBangaloreArea(caption, username) && !isIndiaOnlineSession(caption)) {
+    return false;
+  }
   if (!ACTIVITY.test(caption)) return false;
   if (!captionHasEventDate(caption)) return false;
   return BABY_TODDLER.test(caption) || ACTIVITY.test(caption);
