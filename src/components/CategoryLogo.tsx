@@ -143,7 +143,6 @@ export function CategoryLogo({ category, className = "h-11 w-11" }: CategoryLogo
 }
 
 export function EventLogoCover({ event }: { event: KidsEvent }) {
-  const kind = eventLogoKind(event);
   const cover = eventCoverImage(event);
 
   return (

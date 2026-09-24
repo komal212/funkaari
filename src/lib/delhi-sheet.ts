@@ -1,10 +1,9 @@
 import type { AgeGroup, EventCategory, KidsEvent } from "@/types/event";
 import { isInstagramPostUrl, normalizeHandle } from "@/lib/instagram";
+import { AUDIENCE_MAX_YEARS, ageGroupsForRange, parseAgeMention } from "@/lib/age";
 
 export const DELHI_SHEET_CSV_URL =
   "https://docs.google.com/spreadsheets/d/1jsyvxM-Ux8zQAyCgboDTwbFFT4tiufUFC4aNtYn2_n0/export?format=csv&gid=981476459";
-
-const SITE_MAX_YEARS = 6;
 
 function parseCsv(text: string): string[][] {
   const rows: string[][] = [];
@@ -91,55 +90,24 @@ function detectCategory(text: string): EventCategory {
   return "workshop";
 }
 
-function groupsForYears(minYears: number, maxYears: number): AgeGroup[] {
-  const groups: AgeGroup[] = [];
-  if (minYears < 1 && maxYears >= 0.5) groups.push("6-12mo");
-  if (minYears < 2 && maxYears >= 1) groups.push("1-2yr");
-  if (minYears < 3 && maxYears >= 2) groups.push("2-3yr");
-  if (minYears < 4 && maxYears >= 3) groups.push("3-4yr");
-  if (minYears <= 6 && maxYears >= 4) groups.push("4-6yr");
-  return groups;
-}
-
 function parseAge(raw: string): {
   minMonths: number;
-  maxYears: number;
+  maxYears?: number;
   groups: AgeGroup[];
 } | null {
   const text = raw.toLowerCase().trim();
   if (!text) {
-    return { minMonths: 24, maxYears: SITE_MAX_YEARS, groups: groupsForYears(2, 6) };
+    return { minMonths: 24, groups: ageGroupsForRange(2) };
   }
 
-  const plus = text.match(/(\d+(?:\.\d+)?)\s*\+/);
-  const range = text.match(/(\d+(?:\.\d+)?)\s*[-–]\s*(\d+(?:\.\d+)?)/);
+  const mentioned = parseAgeMention(text);
   const kidsFamily = /kids\/?family|family|kids|varies/.test(text);
-
-  let minYears = 2;
-  let maxYears = SITE_MAX_YEARS;
-
-  if (range) {
-    minYears = Number(range[1]);
-    maxYears = Number(range[2]);
-  } else if (plus) {
-    minYears = Number(plus[1]);
-    maxYears = Math.max(minYears, SITE_MAX_YEARS);
-  } else if (kidsFamily) {
-    minYears = 2;
-    maxYears = SITE_MAX_YEARS;
-  }
-
-  if (minYears > SITE_MAX_YEARS) return null;
-
-  const cappedMax = Math.min(maxYears, SITE_MAX_YEARS);
-  const groups = groupsForYears(minYears, cappedMax);
+  const minYears = mentioned?.minYears ?? (kidsFamily ? 2 : 2);
+  if (minYears > AUDIENCE_MAX_YEARS) return null;
+  const maxYears = mentioned && !mentioned.openEnded ? mentioned.maxYears : undefined;
+  const groups = ageGroupsForRange(minYears, maxYears ?? AUDIENCE_MAX_YEARS);
   if (!groups.length) return null;
-
-  return {
-    minMonths: Math.round(minYears * 12),
-    maxYears: cappedMax,
-    groups,
-  };
+  return { minMonths: Math.round(minYears * 12), maxYears, groups };
 }
 
 function firstUrl(...values: string[]): string | undefined {

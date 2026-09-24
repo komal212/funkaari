@@ -32,6 +32,10 @@ yarn-error.log*
 # env files
 .env*
 
+# one-shot scrape dump
+scrape-followed-once.json
+scrape-following-list.json
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

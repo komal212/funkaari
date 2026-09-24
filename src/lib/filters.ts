@@ -126,14 +126,4 @@ export function areasFromEvents(events: KidsEvent[]): string[] {
   );
 }
 
-export function formatAgeRange(event: KidsEvent): string {
-  if (event.ageMinMonths < 12) {
-    const months = event.ageMinMonths;
-    return `${months} mo – ${event.ageMaxYears} yrs`;
-  }
-  const minYears = Math.floor(event.ageMinMonths / 12);
-  if (minYears === event.ageMaxYears) {
-    return `${minYears} yrs`;
-  }
-  return `${minYears} – ${event.ageMaxYears} yrs`;
-}
+export { formatAgeRange } from "@/lib/age";

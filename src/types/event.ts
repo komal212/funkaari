@@ -38,7 +38,8 @@ export interface KidsEvent {
   area: EventArea;
   venue: string;
   ageMinMonths: number;
-  ageMaxYears: number;
+  /** Omit when the source only says 3+ / 5+ — do not invent an upper age. */
+  ageMaxYears?: number;
   ageGroups: AgeGroup[];
   category: EventCategory;
   organizer: string;

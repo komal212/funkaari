@@ -1,8 +1,7 @@
 import type { AgeGroup, CityId, EventCategory, KidsEvent } from "@/types/event";
 import { parseCaptionSchedule } from "@/lib/instagram-parse";
 import { isUpcomingEvent } from "@/lib/event-date";
-
-const SITE_MAX_YEARS = 6;
+import { AUDIENCE_MAX_YEARS, ageGroupsForRange, parseAgeMention } from "@/lib/age";
 
 const SKIP =
   /\b(motorcycle|letsryde|yog nidra|sound immersion|photography exhibition|networking|masterclass|corporate outing|catan|kitty party|visitor registration|palette infinito|click trickk|salsa|flower arrangement|mug painting|mandala|embroidery|botanical watercolor|linocut|gond art|paint and stitch|stand-?up|comedy night|jamming|pub crawl|club night|90s vs|couple pottery|pichwai|crochet|outgoing)\b/i;
@@ -41,9 +40,6 @@ const DELHI_HOST =
 const BLR_PLACE =
   /\b(bangalore|bengaluru|blr|koramangala|indiranagar|whitefield|hsr|jayanagar|bellandur|jp\s*nagar|malleshwaram|malleswaram|hebbal|electronic\s*city|sarjapur|marathahalli|sheshadripuram|padmanabhanagar)\b/i;
 
-const BLR_HOST =
-  /allevents|insider\.in|bookmyshow|district\.in|skillboxes|eventbrite|kidsstoppress|whatsuplife|parentingnirvana|klay|vivero|jumpstart|headstart|eurokids|playhood|champaca|prayag|forum|phoenix|weekendr|funkaari/i;
-
 const HANDLES: Record<string, string> = {
   JoinIn: "joinin.co.in",
   "Alive Studio": "alivestudio.in",
@@ -65,38 +61,19 @@ function slug(value: string): string {
     .slice(0, 50);
 }
 
-function groupsForYears(minYears: number, maxYears: number): AgeGroup[] {
-  const groups: AgeGroup[] = [];
-  if (minYears < 1 && maxYears >= 0.5) groups.push("6-12mo");
-  if (minYears < 2 && maxYears >= 1) groups.push("1-2yr");
-  if (minYears < 3 && maxYears >= 2) groups.push("2-3yr");
-  if (minYears < 4 && maxYears >= 3) groups.push("3-4yr");
-  if (minYears <= 6 && maxYears >= 4) groups.push("4-6yr");
-  return groups;
-}
-
-function parseAge(text: string): { minMonths: number; maxYears: number; groups: AgeGroup[] } | null {
-  const range = text.match(/(\d+(?:\.\d+)?)\s*[-–]\s*(\d+(?:\.\d+)?)\s*(?:yo|yrs?|years?)?/i);
-  const plus = text.match(/(\d+(?:\.\d+)?)\s*\+\s*(?:years?|yrs?)?/i);
+function parseAge(
+  text: string,
+): { minMonths: number; maxYears?: number; groups: AgeGroup[] } | null {
+  const mentioned = parseAgeMention(text);
   const kids = /\b(kids?|child(?:ren)?)\b/i.test(text);
+  const minYears = mentioned?.minYears ?? (kids ? 2 : 3);
+  if (minYears > AUDIENCE_MAX_YEARS) return null;
 
-  let minYears = kids ? 2 : 3;
-  let maxYears = SITE_MAX_YEARS;
-
-  if (range) {
-    minYears = Number(range[1]);
-    maxYears = Number(range[2]);
-  } else if (plus) {
-    minYears = Number(plus[1]);
-    maxYears = Math.max(minYears, SITE_MAX_YEARS);
-    if (minYears >= 6 && !kids) return null;
-  }
-
-  if (minYears > SITE_MAX_YEARS) return null;
-  const capped = Math.min(maxYears, SITE_MAX_YEARS);
-  const groups = groupsForYears(minYears, capped);
+  const openEnded = mentioned ? mentioned.openEnded : true;
+  const maxYears = openEnded ? undefined : mentioned?.maxYears;
+  const groups = ageGroupsForRange(minYears, maxYears ?? AUDIENCE_MAX_YEARS);
   if (!groups.length) return null;
-  return { minMonths: Math.round(minYears * 12), maxYears: capped, groups };
+  return { minMonths: Math.round(minYears * 12), maxYears, groups };
 }
 
 function detectCategory(text: string): EventCategory {

@@ -1,7 +1,8 @@
-import type { AgeGroup, EventCategory, KidsEvent } from "@/types/event";
+import type { EventCategory, KidsEvent } from "@/types/event";
 import { isInNextTwoMonths } from "@/lib/event-date";
 import { isInstagramPostUrl } from "@/lib/instagram";
 import { eventIsListable } from "@/lib/listable";
+import { AUDIENCE_MAX_YEARS, ageGroupsForRange } from "@/lib/age";
 
 export type TaskEventRow = {
   title?: string;
@@ -62,16 +63,6 @@ const CATEGORIES: EventCategory[] = [
   "festival",
 ];
 
-function groupsForYears(minYears: number, maxYears: number): AgeGroup[] {
-  const groups: AgeGroup[] = [];
-  if (minYears < 1 && maxYears >= 0.5) groups.push("6-12mo");
-  if (minYears < 2 && maxYears >= 1) groups.push("1-2yr");
-  if (minYears < 3 && maxYears >= 2) groups.push("2-3yr");
-  if (minYears < 4 && maxYears >= 3) groups.push("3-4yr");
-  if (minYears <= 6 && maxYears >= 4) groups.push("4-6yr");
-  return groups;
-}
-
 function isoDay(value: string): string | null {
   const iso = value.trim().match(/^(\d{4})-(\d{2})-(\d{2})/);
   if (iso) return `${iso[1]}-${iso[2]}-${iso[3]}`;
@@ -108,9 +99,10 @@ export function eventsFromTaskRows(rows: TaskEventRow[]): KidsEvent[] {
     if (!looksBangalore(row)) continue;
 
     const minYears = Math.max(0.5, Number(row.ageMinYears) || 2);
-    const maxYears = Math.min(6, Number(row.ageMaxYears) || 6);
-    if (minYears > 6) continue;
-    const groups = groupsForYears(minYears, maxYears);
+    if (minYears > AUDIENCE_MAX_YEARS) continue;
+    const hasMax = Number.isFinite(Number(row.ageMaxYears));
+    const maxYears = hasMax ? Number(row.ageMaxYears) : undefined;
+    const groups = ageGroupsForRange(minYears, maxYears ?? AUDIENCE_MAX_YEARS);
     if (!groups.length) continue;
 
     const key = `${title.toLowerCase()}|${day}`;

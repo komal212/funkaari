@@ -6,6 +6,7 @@ import type {
 } from "@/types/event";
 import { isInstagramPostUrl, normalizeHandle } from "@/lib/instagram";
 import { isUpcomingEvent } from "@/lib/event-date";
+import { AUDIENCE_MAX_YEARS, ageGroupsForRange, parseAgeMention } from "@/lib/age";
 
 export interface InstagramMedia {
   id: string;
@@ -330,7 +331,10 @@ export function mediaToEvent(media: InstagramMedia): KidsEvent | null {
   const caption = media.caption?.trim() ?? "";
   if (!isBangaloreKidsEventCaption(caption, media.username)) return null;
 
-  const ageGroups = detectAgeGroups(caption);
+  const mentioned = parseAgeMention(caption);
+  const ageGroups = mentioned
+    ? ageGroupsForRange(mentioned.minYears, mentioned.maxYears ?? AUDIENCE_MAX_YEARS)
+    : detectAgeGroups(caption);
   if (!ageGroups.length) return null;
 
   const handle = normalizeHandle(media.username || "instagram");
@@ -348,8 +352,12 @@ export function mediaToEvent(media: InstagramMedia): KidsEvent | null {
     time: when.time,
     area,
     venue: detectVenue(caption, area),
-    ageMinMonths: ageGroups.includes("6-12mo") ? 6 : 12,
-    ageMaxYears: ageGroups.includes("4-6yr") ? 6 : 4,
+    ageMinMonths: mentioned
+      ? Math.round(mentioned.minYears * 12)
+      : ageGroups.includes("6-12mo")
+        ? 6
+        : 12,
+    ageMaxYears: mentioned && !mentioned.openEnded ? mentioned.maxYears : undefined,
     ageGroups,
     category: detectCategory(caption),
     organizer: handle,
