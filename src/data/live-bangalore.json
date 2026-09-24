@@ -1,5 +1,100 @@
 {
-  "refreshedAt": "2026-09-24T08:00:00.000Z",
-  "source": "catalog",
-  "events": []
+  "refreshedAt": "2026-09-24T08:49:34.059Z",
+  "source": "parallel-web",
+  "events": [
+    {
+      "id": "web-instagram-our-first-open-house-for-our-brand-new-campuses-is-2026-09-26",
+      "title": "Our first Open House for our brand-new campuses",
+      "date": "2026-09-26T10:00:00+05:30",
+      "time": "10 AM",
+      "city": "bangalore",
+      "area": "Bengaluru",
+      "venue": "Ekya Vana Early Years, Manyata Tech Park",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "festival",
+      "organizer": "instagram",
+      "description": "Ekya Vana Early Years, Manyata Tech Park C2, Behind Manyata Tech Park, Manyata Residency, Bengaluru, Karnataka 560045 Ekya Vana Early.",
+      "instagramHandle": "instagram",
+      "bookingUrl": "https://www.instagram.com/p/DdjGzV0SA8J/",
+      "website": "https://www.instagram.com/p/DdjGzV0SA8J/",
+      "isFree": false,
+      "price": "₹,",
+      "imageUrl": "/events/ekya-vana-open-house.png",
+      "instagramUrl": "https://www.instagram.com/p/DdjGzV0SA8J/"
+    },
+    {
+      "id": "web-allevents-child-events-in-bangalore-2026-09-26",
+      "title": "Child Events in Bangalore",
+      "date": "2026-09-26T10:30:00+05:30",
+      "time": "10:30 AM",
+      "city": "bangalore",
+      "area": "Bengaluru",
+      "venue": "Bengaluru",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "workshop",
+      "organizer": "allevents",
+      "description": "Book Klaydate Spot - Bangalore KLAY MCECHS: Bengaluru 6+ Interested Sat, 26 Sep • 06:00 PM ...",
+      "instagramHandle": "allevents",
+      "bookingUrl": "https://allevents.in/bangalore/book-klaydate-spot-bangalore/3900030666061305",
+      "website": "https://allevents.in/bangalore/child",
+      "isFree": false,
+      "imageUrl": "/events/story-play.png"
+    },
+    {
+      "id": "ig-ig-DdWQ--sqoTY",
+      "title": "Kids Workshop",
+      "date": "2026-10-31T10:00:00+05:30",
+      "time": "10:00 AM – 12:00 PM",
+      "area": "Jayanagar",
+      "venue": "Eravoo, Jayanagar",
+      "ageMinMonths": 36,
+      "ageGroups": [
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "workshop",
+      "organizer": "instagram",
+      "description": "Kids Workshop in Jayanagar.",
+      "instagramHandle": "instagram",
+      "instagramUrl": "https://www.instagram.com/p/DdWQ--sqoTY/",
+      "instagramCaption": "只ペス EXPLORE NEW IDEAS CREATE FREELY GET MESSY & EXPRESS HAVE & BELONG MAKE FRIENDS &CONNECT Dates: Saturdays 3ਾশ, 17h&31 31st October 10:00 AM Triming: to 12:00 PM Ages: Years and above ALL MATERIALS PROVIDED For ₹6,000/- The Month We provide natural and recyclable materials creative possibilities! Please Bring Water Bottle And Light Snack.\n\n...\n\nA place to try, create, play and have fun.\nArt Play is an open-ended art experience for children aged 3+, where they can explore materials, follow their ideas, get creative and enjoy making things together.\n✨ Explore new ideas\n✨ Create freely\n✨ Get messy & express\n✨ Have fun & connect\n📅 3rd • 17th • 31st October\n⏰ 10:00 AM – 12:00 PM\n📍 Eravoo, Jayanagar\n👧 For ages 3+\n💰 ₹6,000 for the month\n🎨 All materials provided\nWe’ll be using a mix of natural and recyclable materials for children to explore and create with.\nPlease bring a water bottle and a light snack.\n🔗 Link in bio to register\n💌 Or DM us to register.\n\n...\n\n(Art, kids art, art activities for kids, kids workshop, creative activities, weekend activities for kids, play based learning, kids enrichment, Jayanagar, Bangalore, Bangalore parents, activities for children , kids workshop in Jayanagar , kids workshop in Bengaluru , parents )",
+      "fromInstagram": true,
+      "city": "bangalore",
+      "isFree": false,
+      "imageUrl": "/events/eravoo-art-play.png"
+    },
+    {
+      "id": "web-in-kids-workshop-2026-11-07",
+      "title": "Kids Workshop",
+      "date": "2026-11-07T18:00:00+05:30",
+      "time": "6:00 PM",
+      "city": "bangalore",
+      "area": "Bengaluru",
+      "venue": "Bengaluru",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "art",
+      "organizer": "in",
+      "description": "About The Event Origami - 21st November Pottery - 28th November Location: Bhartiya Mall of Bengaluru Time: 6:00 PM onwards Limited seats! Bo.",
+      "instagramHandle": "in",
+      "bookingUrl": "https://in.bookmyshow.com/events/kids-workshop/ET00468019",
+      "website": "https://in.bookmyshow.com/events/kids-workshop/ET00468019",
+      "isFree": false,
+      "imageUrl": "/events/eravoo-art-play.png"
+    }
+  ]
 }
