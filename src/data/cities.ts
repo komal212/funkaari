@@ -14,7 +14,7 @@ export const CITIES: {
     href: "/bangalore",
     chip: "Bengaluru",
     listingLine:
-      "Playdates, workshops and open houses for ages 6 months to 6 years.",
+      "Park playdates, café mornings, playschool workshops — whatever’s on nearby for ages 6 months to 6 years.",
     footerLine:
       "Funkaari helps Bengaluru parents find exciting, age-appropriate experiences for their little ones, easily and confidently.",
   },

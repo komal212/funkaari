@@ -24,8 +24,8 @@ export function Hero({ city = "bangalore" }: { city?: CityId }) {
         </h1>
 
         <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-ink/80">
-          Workshops, playdates and weekend adventures for children aged 6 months
-          to 6 years — all in {place}.
+          All kinds of events happening nearby — a small playdate in a park, an
+          activity at a local café, or a workshop at a playschool.
         </p>
 
         <a
