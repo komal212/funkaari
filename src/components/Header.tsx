@@ -12,6 +12,12 @@ export function Header() {
         </Link>
 
         <div className="flex items-center gap-3">
+          <Link
+            href="/submit"
+            className="rounded-full border-2 border-lavender-300 px-4 py-1.5 text-xs font-bold text-lavender-500 transition hover:bg-lavender-50 sm:px-5 sm:py-2 sm:text-sm"
+          >
+            Submit event
+          </Link>
           <CitySwitcher />
           <InstagramLink />
         </div>
