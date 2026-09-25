@@ -40,13 +40,10 @@ export function Footer() {
             </h4>
             <ul className="mt-4 space-y-2.5 text-sm text-muted">
               <li>
-                <a href="#events" className="transition hover:text-ink">All events</a>
+                <a href="/#events" className="transition hover:text-ink">All events</a>
               </li>
               <li>
-                <a href="#about" className="transition hover:text-ink">About Funkaari</a>
-              </li>
-              <li>
-                <a href="#how" className="transition hover:text-ink">How listings work</a>
+                <a href="/submit" className="transition hover:text-ink">About Funkaari</a>
               </li>
             </ul>
           </div>
