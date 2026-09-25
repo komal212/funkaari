@@ -19,14 +19,19 @@ export function Hero({ city = "bangalore" }: { city?: CityId }) {
           {place}
         </p>
 
-        <h1 className="mt-4 font-display text-4xl font-bold leading-tight text-ink sm:text-5xl text-balance">
-          Little humans. Big adventures. All in one place.
+        <h1 className="mt-4 font-display text-4xl font-bold leading-tight text-ink sm:text-5xl">
+          <span className="block">Little humans.</span>
+          <span className="block">Big adventures.</span>
+          <span className="block">All in one place.</span>
         </h1>
 
-        <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-ink/80">
-          Playdates, workshops, open houses, nature walks — scattered across
-          Instagram, websites and a hundred other places. We bring them all
-          here. Ages 6&nbsp;mo–6&nbsp;yr.
+        <p className="mx-auto mt-6 max-w-lg text-lg leading-relaxed text-ink/80">
+          Playdates, workshops, open houses, nature walks —
+          scattered across Instagram, websites and a hundred
+          other places.
+        </p>
+        <p className="mx-auto mt-2 max-w-lg text-lg font-semibold text-ink">
+          We bring them all here. Ages 6&nbsp;mo–6&nbsp;yr.
         </p>
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
