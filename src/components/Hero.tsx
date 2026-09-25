@@ -20,19 +20,21 @@ export function Hero({ city = "bangalore" }: { city?: CityId }) {
         </p>
 
         <h1 className="mt-4 font-display text-4xl font-bold leading-tight text-ink sm:text-5xl text-balance">
-          Make every little moment count.
+          Every kids’ event in {place}. One page.
         </h1>
 
         <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-ink/80">
-          All kinds of events happening nearby — a small playdate in a park, an
-          activity at a local café, or a workshop at a playschool.
+          Built by a mum who got tired of digging through WhatsApp groups
+          and Instagram just to find one good activity. Park playdates,
+          café workshops, playschool open houses — if it’s for little ones
+          aged 6&nbsp;months to 6&nbsp;years, it’s here.
         </p>
 
         <a
           href="#events"
           className="mt-8 inline-flex rounded-full bg-gradient-to-r from-peach-400 to-peach-500 px-8 py-3.5 font-display font-bold text-white shadow-card transition hover:from-peach-500 hover:to-peach-400"
         >
-          See what’s on
+          Find something now
         </a>
       </div>
     </section>

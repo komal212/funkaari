@@ -77,7 +77,7 @@ export function EventListing({ city }: EventListingProps) {
           {meta.label} diary
         </p>
         <h2 className="mt-2 font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl">
-          What’s on in {meta.label}
+          What’s happening in {meta.label}
         </h2>
         <p className="mt-2 max-w-xl text-base leading-relaxed text-muted">
           {meta.listingLine}

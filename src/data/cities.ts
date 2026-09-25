@@ -14,9 +14,9 @@ export const CITIES: {
     href: "/bangalore",
     chip: "Bengaluru",
     listingLine:
-      "Park playdates, café mornings, playschool workshops — whatever’s on nearby for ages 6 months to 6 years.",
+      "Playdates in the park, art sessions at cafés, open houses at playschools — if it’s for little ones, it’s here.",
     footerLine:
-      "Funkaari helps Bengaluru parents find exciting, age-appropriate experiences for their little ones, easily and confidently.",
+      "We find every kids’ event in Bengaluru so you don’t have to. Updated weekly.",
   },
 ];
 
