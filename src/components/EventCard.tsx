@@ -28,8 +28,14 @@ function sourceCta(event: KidsEvent): { href: string; label: string; kind: "inst
     return { ...instagram, kind: "instagram" };
   }
   const booking = event.bookingUrl;
-  if (booking && !isAggregatorIndexUrl(booking) && /allevents\.in/i.test(booking)) {
-    return { href: booking, label: "Open on AllEvents", kind: "web" };
+  const website = event.website;
+  const webUrl = booking && !isAggregatorIndexUrl(booking) ? booking : website && !isAggregatorIndexUrl(website) ? website : null;
+  if (webUrl && !/instagram\.com/i.test(webUrl)) {
+    const host = webUrl.replace(/^https?:\/\/(www\.)?/, "").split("/")[0];
+    const label = /allevents\.in/i.test(webUrl) ? "Open on AllEvents"
+      : /bookmyshow/i.test(webUrl) ? "Book on BookMyShow"
+      : `Open ${host}`;
+    return { href: webUrl, label, kind: "web" };
   }
   if (instagram) return { ...instagram, kind: "instagram" };
   return null;
