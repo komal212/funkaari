@@ -133,7 +133,7 @@ function detectVenue(caption: string, area: string): string {
 function tidyLine(line: string): string {
   return line
     .replace(/[#@].*$/g, "")
-    .replace(/[✨‼️❗🎉🌿🤍💛]/g, "")
+    .replace(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}\u{FE00}-\u{FE0F}\u{200D}]/gu, " ")
     .replace(/\s+/g, " ")
     .trim();
 }
@@ -168,7 +168,9 @@ export function eventTitleFromCaption(caption: string): string {
       .map(tidyLine)
       .find((l) => l.length > 8 && l.length < 70 && !skip.test(l)) ?? tidyLine(caption).slice(0, 60);
 
-  return line.replace(/\s+/g, " ").slice(0, 62);
+  const raw = line.replace(/\s+/g, " ");
+  if (raw.length <= 62) return raw;
+  return raw.slice(0, 59).replace(/\s+\S*$/, "") + "...";
 }
 
 export function shortEventBlurb(caption: string): string {
@@ -195,7 +197,9 @@ export function shortEventBlurb(caption: string): string {
 
   if (raw.length < 12) return "A kids event in Bangalore. See the Instagram post for details.";
   const sentence = raw.charAt(0).toUpperCase() + raw.slice(1);
-  return (sentence.endsWith(".") ? sentence : `${sentence}.`).slice(0, 140);
+  const full = sentence.endsWith(".") ? sentence : `${sentence}.`;
+  if (full.length <= 140) return full;
+  return full.slice(0, 137).replace(/\s+\S*$/, "") + "...";
 }
 
 const ACTIVITY = KIDS_EVENT_KIND;

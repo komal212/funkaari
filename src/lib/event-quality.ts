@@ -27,7 +27,7 @@ export function displayEventTitle(title: string): string {
 }
 
 const JUNK_DESCRIPTION =
-  /\[\]\(|google calendar|outlook calendar|ical calendar|add to calendar|cozy craft session|profile picture|followers|happeningnext|stayhappening|thumpn|allevents/i;
+  /\[\]\(|google calendar|outlook calendar|ical calendar|add to calendar|cozy craft session|profile picture|followers|happeningnext|stayhappening|thumpn|allevents|about the event\b|more events like this|popular\s+(sun|mon|tue|wed|thu|fri|sat)\b.*\d+\+?\s*interested|\d+\+?\s*interested\s*\|/i;
 
 export function displayEventDescription(event: KidsEvent): string {
   const title = displayEventTitle(event.title);
@@ -58,11 +58,21 @@ export function displayEventDescription(event: KidsEvent): string {
 /** Headings scraped from directory pages, Instagram chrome, or truncated captions. */
 export function isJunkTitle(title: string): boolean {
   const t = displayEventTitle(title);
-  if (t.length < 8 || t.length > 72) return true;
+  if (t.length < 10 || t.length > 72) return true;
+  if (
+    /^(children|kids|festivals?|workshops?|sports|events?|activities|highlights|schedule)$/i.test(t)
+  ) {
+    return true;
+  }
   if (
     /followers|profile picture|open app|^allevents$|^highlights$|^sports$|^festivals$|^workshops$|^schedule$/i.test(
       t,
     )
+  ) {
+    return true;
+  }
+  if (
+    /events?\s+in\s+(bangalore|bengaluru|delhi|mumbai|pune|india)/i.test(t)
   ) {
     return true;
   }
@@ -105,7 +115,10 @@ export function isOffBriefListing(event: KidsEvent): boolean {
         title,
       );
     if (!kidsish) return true;
+    if (/^(children|kids)$/i.test(title)) return true;
     if (JUNK_DESCRIPTION.test(event.description || "")) return true;
+    const desc = (event.description || "").replace(/\.$/, "").trim().toLowerCase();
+    if (desc && desc === title.toLowerCase()) return true;
   }
   return false;
 }
