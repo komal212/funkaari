@@ -68,4 +68,5 @@ export interface EventFilters {
   area: EventArea | "all";
   time: TimeFilter;
   place: PlaceFilter;
+  category: EventCategory | "all";
 }

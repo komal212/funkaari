@@ -15,6 +15,7 @@ const defaultFilters: Filters = {
   area: "all",
   time: "all",
   place: "all",
+  category: "all",
 };
 
 interface EventListingProps {

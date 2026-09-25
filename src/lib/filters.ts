@@ -60,6 +60,10 @@ export function filterEvents(
       return false;
     }
 
+    if (filters.category !== "all" && event.category !== filters.category) {
+      return false;
+    }
+
     if (filters.place === "online" && !eventIsOnline(event)) {
       return false;
     }

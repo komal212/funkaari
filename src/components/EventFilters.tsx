@@ -4,12 +4,13 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import type {
   EventFilters as Filters,
   AgeGroup,
+  EventCategory,
   TimeFilter,
   PlaceFilter,
   KidsEvent,
   CityId,
 } from "@/types/event";
-import { AGE_GROUP_LABELS, AREAS, events as catalog } from "@/data/events";
+import { AGE_GROUP_LABELS, AREAS, CATEGORY_LABELS, events as catalog } from "@/data/events";
 import { areasFromEvents } from "@/lib/filters";
 import { buildSearchSuggestions } from "@/lib/search";
 
@@ -86,7 +87,8 @@ export function EventFilters({
     filters.ageGroup !== "all" ||
     filters.area !== "all" ||
     filters.time !== "all" ||
-    filters.place !== "all";
+    filters.place !== "all" ||
+    filters.category !== "all";
 
   return (
     <div className="space-y-4">
@@ -217,6 +219,23 @@ export function EventFilters({
 
         <span className="relative">
           <select
+            aria-label="Type"
+            value={filters.category}
+            onChange={(e) => update("category", e.target.value as EventCategory | "all")}
+            className={selectClass}
+          >
+            <option value="all">All types</option>
+            {Object.entries(CATEGORY_LABELS).map(([value, label]) => (
+              <option key={value} value={value}>
+                {label}
+              </option>
+            ))}
+          </select>
+          <Chevron />
+        </span>
+
+        <span className="relative">
+          <select
             aria-label="Age"
             value={filters.ageGroup}
             onChange={(e) => update("ageGroup", e.target.value as AgeGroup | "all")}
@@ -259,6 +278,7 @@ export function EventFilters({
                 area: "all",
                 time: "all",
                 place: "all",
+                category: "all",
               })
             }
             className="h-10 px-3 text-sm font-semibold text-muted hover:text-ink"
