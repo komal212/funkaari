@@ -20,22 +20,29 @@ export function Hero({ city = "bangalore" }: { city?: CityId }) {
         </p>
 
         <h1 className="mt-4 font-display text-4xl font-bold leading-tight text-ink sm:text-5xl text-balance">
-          Every kids’ event near you. One page.
+          Little humans. Big adventures. All in one place.
         </h1>
 
         <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-ink/80">
-          Built by a mum who got tired of digging through WhatsApp groups
-          and Instagram just to find one good activity. Park playdates,
-          café workshops, playschool open houses — if it’s for little ones
-          aged 6&nbsp;months to 6&nbsp;years, it’s here.
+          Playdates, workshops, open houses, nature walks — scattered across
+          Instagram, websites and a hundred other places. We bring them all
+          here. Ages 6&nbsp;mo–6&nbsp;yr.
         </p>
 
-        <a
-          href="#events"
-          className="mt-8 inline-flex rounded-full bg-gradient-to-r from-peach-400 to-peach-500 px-8 py-3.5 font-display font-bold text-white shadow-card transition hover:from-peach-500 hover:to-peach-400"
-        >
-          Find something now
-        </a>
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+          <a
+            href="#events"
+            className="inline-flex rounded-full bg-gradient-to-r from-peach-400 to-peach-500 px-8 py-3.5 font-display font-bold text-white shadow-card transition hover:from-peach-500 hover:to-peach-400"
+          >
+            Let&apos;s go!
+          </a>
+          <a
+            href="/submit"
+            className="inline-flex rounded-full border-2 border-lavender-300 px-8 py-3.5 font-display font-bold text-lavender-500 transition hover:bg-lavender-50"
+          >
+            Submit an event
+          </a>
+        </div>
       </div>
     </section>
   );

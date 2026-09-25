@@ -23,16 +23,16 @@ export function Footer() {
       <div className="relative mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-14">
         <Logo compact />
         <p className="mt-4 max-w-lg font-display text-xl font-bold leading-snug text-ink">
-          Built by a mum, for mums.
+          Started by a mum, powered by mums.
         </p>
         <p className="mt-3 max-w-lg text-sm leading-relaxed text-muted">
-          I got tired of digging through WhatsApp groups and Instagram just to
-          find one activity for my 1.5-year-old. So I built Funkaari — we
-          don&apos;t organise events, we find them so you don&apos;t have to.
+          Funkaari was born out of nap time and a mum&apos;s frustration. We
+          scour the internet, playschool pages and local communities to find
+          every kids&apos; event — you just show up.
         </p>
         <InstagramLink variant="footer" />
         <p className="mt-10 border-t border-white/60 pt-6 text-center text-xs font-medium text-muted">
-          Your kids&apos; event guide — updated weekly.
+          Less scrolling, more giggling.
         </p>
       </div>
     </footer>
