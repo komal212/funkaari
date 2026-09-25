@@ -20,7 +20,7 @@ export function Hero({ city = "bangalore" }: { city?: CityId }) {
         </p>
 
         <h1 className="mt-4 font-display text-4xl font-bold leading-tight text-ink sm:text-5xl text-balance">
-          Every kids’ event in {place}. One page.
+          Every kids’ event near you. One page.
         </h1>
 
         <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-ink/80">

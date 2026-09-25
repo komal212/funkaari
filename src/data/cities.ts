@@ -16,7 +16,7 @@ export const CITIES: {
     listingLine:
       "Playdates in the park, art sessions at cafés, open houses at playschools — if it’s for little ones, it’s here.",
     footerLine:
-      "We find every kids’ event in Bengaluru so you don’t have to. Updated weekly.",
+      "We find every kids’ event near you so you don’t have to. Updated weekly.",
   },
 ];
 
