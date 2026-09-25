@@ -67,12 +67,13 @@ export function isJunkTitle(title: string): boolean {
     return true;
   }
   if (
-    /list of all upcoming|kids events in bangalore|check out happening|happeningnext|section:/i.test(
+    /list of all upcoming|kids events in bangalore|children events in bangalore|check out happening|happeningnext|section:/i.test(
       t,
     )
   ) {
     return true;
   }
+  if (/^(children|kids|events?)$/i.test(t)) return true;
   if (/^[*•\s]*[\d,]+\s*followers/i.test(t)) return true;
   if (/^(n us |ontessori|ssori|we offer children)/i.test(t)) return true;
   if (/may be an image of/i.test(t)) return true;
@@ -100,11 +101,13 @@ export function isOffBriefListing(event: KidsEvent): boolean {
 
   const live = /^(web-|ig-|task-)/.test(event.id);
   if (live) {
-    const kidsish =
-      /\b(kids?|child|children|toddler|preschool|playdate|play date|open house|circle time|story play|montessori|magic show|playcafé|play cafe|play-?cafe)\b/i.test(
-        title,
-      );
-    if (!kidsish) return true;
+    if (!event.fromInstagram) {
+      const kidsish =
+        /\b(kids?|child|children|toddler|preschool|playdate|play date|open house|circle time|story play|montessori|magic show|playcafé|play cafe|play-?cafe|workshop|pottery|story ?time|festival|camp|sensory)\b/i.test(
+          `${title} ${event.description || ""}`,
+        );
+      if (!kidsish) return true;
+    }
     if (JUNK_DESCRIPTION.test(event.description || "")) return true;
   }
   return false;

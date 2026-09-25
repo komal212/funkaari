@@ -1,4 +1,8 @@
-import { bangaloreInstagramUrls } from "@/data/bangalore-instagram-urls";
+import {
+  PARALLEL_INSTAGRAM_OBJECTIVE,
+  bangaloreInstagramUrls,
+  bangaloreOrganiserHandles,
+} from "@/data/bangalore-instagram-urls";
 
 export const PARALLEL_BANGALORE_OBJECTIVE =
   "Extract upcoming dated events for children aged 6 months to 6 years that Bengaluru parents can join (India / IST) in the next two months: workshops, playdates, open houses, magic shows, play-café sessions, storytime, pottery, music, treks, farms, festivals, and similar. For each event include title, calendar date, time, venue or Online, neighbourhood, age range, price, booking URL and Instagram post URL if any. Skip adult-only sessions, admissions-only flyers, US-timezone classes, and undated weekly class schedules.";
@@ -47,11 +51,14 @@ export const BANGALORE_SEED_URLS = [
   "https://www.forumsouthbangalore.com/",
 ];
 
-export const BANGALORE_SEARCHES: {
+export type BangaloreSearchJob = {
   objective: string;
   searchQueries: string[];
   includeDomains?: string[];
-}[] = [
+  afterDate?: string;
+};
+
+export const BANGALORE_SEARCHES: BangaloreSearchJob[] = [
   {
     objective: PARALLEL_BANGALORE_OBJECTIVE,
     searchQueries: [
@@ -118,6 +125,31 @@ export const BANGALORE_SEARCHES: {
   },
 ];
 
-export function bangaloreWideUrls(): string[] {
-  return [...new Set([...BANGALORE_SEED_URLS, ...bangaloreInstagramUrls()])];
+export function bangaloreWideUrls(extraHandles: string[] = []): string[] {
+  return [...new Set([...bangaloreInstagramUrls(extraHandles), ...BANGALORE_SEED_URLS])];
+}
+
+/** Search Instagram posts from followed organisers — not their login-walled profile homepages. */
+export function instagramHandleSearchJobs(handles: string[]): BangaloreSearchJob[] {
+  const unique = bangaloreOrganiserHandles(handles).slice(0, 120);
+  const queries: string[] = [];
+  for (let i = 0; i < unique.length; i += 20) {
+    const group = unique.slice(i, i + 20);
+    queries.push(
+      `site:instagram.com/p/ (${group.join(" OR ")}) (workshop OR playdate OR "open house" OR pottery OR storytime OR "magic show" OR festival) (September OR October OR November) (Bangalore OR Bengaluru)`,
+    );
+  }
+  const afterDate = new Date();
+  afterDate.setDate(afterDate.getDate() - 75);
+  const after = afterDate.toISOString().slice(0, 10);
+  const jobs: BangaloreSearchJob[] = [];
+  for (let i = 0; i < queries.length; i += 4) {
+    jobs.push({
+      objective: PARALLEL_INSTAGRAM_OBJECTIVE,
+      searchQueries: queries.slice(i, i + 4),
+      includeDomains: ["instagram.com"],
+      afterDate: after,
+    });
+  }
+  return jobs.slice(0, 3);
 }

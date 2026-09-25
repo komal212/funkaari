@@ -3,6 +3,7 @@ import {
   PARALLEL_BANGALORE_OBJECTIVE,
   PARALLEL_BANGALORE_QUERIES,
   bangaloreWideUrls,
+  instagramHandleSearchJobs,
 } from "@/data/bangalore-web-urls";
 import {
   BANGALORE_TASK_SCHEMA,
@@ -17,6 +18,9 @@ import { extractPages, searchPages, type ParallelPage } from "@/lib/parallel-web
 import { runTaskJson } from "@/lib/parallel-task";
 import { parseWebEvents } from "@/lib/web-event-parse";
 import { enrichEventLocations } from "@/lib/maps-lookup";
+import { refreshFunkaariFollowing } from "@/lib/instagram-following";
+import { isInstagramPostUrl } from "@/lib/instagram";
+import { FUNKAARI_FOLLOWED_SCHOOLS } from "@/data/funkaari-followed-schools";
 import type { KidsEvent } from "@/types/event";
 
 const CACHE_MS = 15 * 60 * 1000;
@@ -30,11 +34,45 @@ function kolkataLabel(value: Date): string {
   });
 }
 
-function taskInput(): string {
+function organiserBrief(handles: string[]): string {
+  const byHandle = new Map(FUNKAARI_FOLLOWED_SCHOOLS.map((row) => [row.handle, row]));
+  const lines = handles.slice(0, 140).flatMap((handle) => {
+    const school = byHandle.get(handle);
+    if (school?.city === "other") return [];
+    if (school) {
+      return [`@${handle} (${school.name}${school.area ? `, ${school.area}` : ", Bengaluru"})`];
+    }
+    return [`@${handle}`];
+  });
+  return lines.join(", ");
+}
+
+function taskInput(handles: string[]): string {
   const start = new Date();
   const end = new Date(start);
   end.setMonth(end.getMonth() + 2);
-  return `List as many distinct upcoming dated kids events as you can find for Bengaluru families between ${kolkataLabel(start)} and ${kolkataLabel(end)} for children aged 6 months to 6 years. Include workshops, playdates, open houses, magic shows, play-café sessions, storytime, pottery, music, treks, farms, festivals, and similar, plus dated online/Zoom sessions in India/IST. Each event must have a real calendar date and a live booking, organiser website, or Instagram post URL. Do not invent events, do not copy the same weekly class across extra dates, and skip adult-only listings. Aim for up to 100 unique events.`;
+  const organisers = organiserBrief(handles);
+  return `List as many distinct upcoming dated kids events as you can find for Bengaluru families between ${kolkataLabel(start)} and ${kolkataLabel(end)} for children aged 6 months to 6 years. Include workshops, playdates, open houses, magic shows, play-café sessions, storytime, pottery, music, treks, farms, festivals, and similar, plus dated online/Zoom sessions in India/IST. Each event must have a real calendar date and a live booking, organiser website, or Instagram post URL (instagram.com/p/... or /reel/...). Prefer events announced by these Instagram accounts Funkaari follows: ${organisers}. Search their websites and public Instagram posts, not profile homepages. Do not invent events, do not copy the same weekly class across extra dates, and skip adult-only listings. Aim for up to 100 unique events.`;
+}
+
+function urlsWorthExtracting(followingHandles: string[], found: string[]): string[] {
+  const seed = bangaloreWideUrls(followingHandles);
+  const ranked: string[] = [];
+  const seen = new Set<string>();
+  const add = (url: string) => {
+    const key = url.replace(/\/+$/, "").toLowerCase();
+    if (!url || seen.has(key)) return;
+    seen.add(key);
+    ranked.push(url);
+  };
+  for (const url of found) {
+    if (isInstagramPostUrl(url)) add(url);
+  }
+  for (const url of [...seed, ...found]) {
+    if (/instagram\.com/i.test(url) && !isInstagramPostUrl(url)) continue;
+    add(url);
+  }
+  return ranked;
 }
 
 type Scraped = {
@@ -43,6 +81,7 @@ type Scraped = {
   pages: number;
   searched: number;
   taskCount: number;
+  following: number;
   error?: string;
 };
 
@@ -70,14 +109,18 @@ function dedupe(events: KidsEvent[]): KidsEvent[] {
     .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
 }
 
-async function searchAll(): Promise<{ urls: string[]; pages: ParallelPage[]; error?: string }> {
+async function searchAll(
+  handles: string[],
+): Promise<{ urls: string[]; pages: ParallelPage[]; error?: string }> {
+  const jobs = [...BANGALORE_SEARCHES, ...instagramHandleSearchJobs(handles)];
   const settled = await Promise.allSettled(
-    BANGALORE_SEARCHES.map((job) =>
+    jobs.map((job) =>
       searchPages({
         objective: job.objective,
         searchQueries: job.searchQueries,
         maxResults: 20,
         includeDomains: job.includeDomains,
+        afterDate: job.afterDate,
       }),
     ),
   );
@@ -99,12 +142,12 @@ async function searchAll(): Promise<{ urls: string[]; pages: ParallelPage[]; err
   return { urls: [...urls], pages, error: errors[0] };
 }
 
-async function taskEvents(): Promise<{ events: KidsEvent[]; error?: string }> {
+async function taskEvents(handles: string[]): Promise<{ events: KidsEvent[]; error?: string }> {
   const task = await runTaskJson<{ events?: TaskEventRow[] }>({
-    input: taskInput(),
+    input: taskInput(handles),
     jsonSchema: BANGALORE_TASK_SCHEMA,
     processor: "core",
-    timeoutSec: 120,
+    timeoutSec: 180,
   });
   const rows = task.content?.events || [];
   return { events: eventsFromTaskRows(rows), error: task.error };
@@ -115,15 +158,15 @@ export async function scrapeBangaloreWide(opts?: { force?: boolean }): Promise<S
   if (!opts?.force && inflight) return inflight;
 
   inflight = (async () => {
-
-  const searchPromise = searchAll();
-  const taskPromise = taskEvents().catch((err) => ({
+  const following = await refreshFunkaariFollowing();
+  const searchPromise = searchAll(following.handles);
+  const taskPromise = taskEvents(following.handles).catch((err) => ({
     events: [] as KidsEvent[],
     error: err instanceof Error ? err.message : "task failed",
   }));
 
   const found = await searchPromise;
-  const extractUrls = [...new Set([...bangaloreWideUrls(), ...found.urls])];
+  const extractUrls = urlsWorthExtracting(following.handles, found.urls);
   const extracted = await extractPages(
     extractUrls,
     PARALLEL_BANGALORE_OBJECTIVE,
@@ -150,7 +193,11 @@ export async function scrapeBangaloreWide(opts?: { force?: boolean }): Promise<S
     pages: pages.length,
     searched: found.urls.length,
     taskCount: task.events.length,
-    error: [extracted.error, found.error, task.error].filter(Boolean).join(" · ") || undefined,
+    following: following.handles.length,
+    error:
+      [following.error, extracted.error, found.error, task.error]
+        .filter(Boolean)
+        .join(" · ") || undefined,
   };
   cache = { at: Date.now(), value };
   return value;

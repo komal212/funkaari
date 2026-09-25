@@ -1,8 +1,10 @@
+import { isInstagramPostUrl } from "@/lib/instagram";
+
 const EXTRACT_URL = "https://api.parallel.ai/v1/extract";
 const SEARCH_URL = "https://api.parallel.ai/v1/search";
 const BATCH = 20;
-const EXTRACT_CAP = 100;
-const EXTRACT_CONCURRENCY = 2;
+const EXTRACT_CAP = Number(process.env.PARALLEL_EXTRACT_CAP || "250") || 250;
+const EXTRACT_CONCURRENCY = 4;
 
 export type ParallelPage = {
   url: string;
@@ -78,7 +80,10 @@ export async function extractPages(
   }
 
   try {
-    const batches = chunk([...new Set(urls)].slice(0, EXTRACT_CAP), BATCH);
+    const unique = [...new Set(urls)].filter(
+      (url) => !/instagram\.com/i.test(url) || isInstagramPostUrl(url),
+    );
+    const batches = chunk(unique.slice(0, EXTRACT_CAP), BATCH);
     const pages: ParallelPage[] = [];
     const errors: string[] = [];
     for (let i = 0; i < batches.length; i += EXTRACT_CONCURRENCY) {
@@ -112,6 +117,7 @@ export async function searchPages(options: {
   searchQueries: string[];
   maxResults?: number;
   includeDomains?: string[];
+  afterDate?: string;
 }): Promise<{ urls: string[]; pages: ParallelPage[]; error?: string }> {
   const apiKey = process.env.PARALLEL_API_KEY?.trim();
   if (!apiKey) return { urls: [], pages: [], error: "missing_parallel_api_key" };
@@ -129,6 +135,16 @@ export async function searchPages(options: {
       advanced_settings: {
         max_results: options.maxResults ?? 20,
         location: "in",
+        ...(options.includeDomains?.length || options.afterDate
+          ? {
+              source_policy: {
+                ...(options.includeDomains?.length
+                  ? { include_domains: options.includeDomains }
+                  : {}),
+                ...(options.afterDate ? { after_date: options.afterDate } : {}),
+              },
+            }
+          : {}),
       },
     }),
     cache: "no-store",

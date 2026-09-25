@@ -6,8 +6,10 @@ const POST_RE =
   /instagram\.com\/(?:[A-Za-z0-9._]+\/)?(?:p|reel|tv)\/([A-Za-z0-9_-]+)/gi;
 
 function handleFromSource(url: string): string {
-  const post = url.match(/instagram\.com\/(?:p|reel|tv)\//i);
-  if (post) return "";
+  const withUser = url.match(/instagram\.com\/([A-Za-z0-9._]+)\/(?:p|reel|tv)\//i);
+  if (withUser?.[1] && !/^(p|reel|tv|explore|tags)$/i.test(withUser[1])) {
+    return normalizeHandle(withUser[1]);
+  }
   const tag = url.match(/instagram\.com\/explore\/tags\//i);
   if (tag) return "";
   const profile = url.match(/instagram\.com\/([A-Za-z0-9._]+)\/?$/i);

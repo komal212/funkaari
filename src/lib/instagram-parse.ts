@@ -1,15 +1,11 @@
-import type {
-  AgeGroup,
-  BangaloreArea,
-  EventCategory,
-  KidsEvent,
-} from "@/types/event";
+import type { AgeGroup, EventCategory, KidsEvent } from "@/types/event";
 import { isInstagramPostUrl, normalizeHandle } from "@/lib/instagram";
 import { isUpcomingEvent } from "@/lib/event-date";
 import { AUDIENCE_MAX_YEARS, ageGroupsForRange, parseAgeMention } from "@/lib/age";
 import { isIndiaOnlineSession, isOnlineSession } from "@/lib/online";
 import { KIDS_EVENT_KIND } from "@/lib/kids-event";
 import { areaFromText } from "@/lib/bangalore-area";
+import { FUNKAARI_FOLLOWED_SCHOOLS } from "@/data/funkaari-followed-schools";
 
 export interface InstagramMedia {
   id: string;
@@ -31,51 +27,26 @@ const BLR =
   /\b(bangalore|bengaluru|blr|koramangala|indiranagar|whitefield|hsr|jayanagar|bellandur|jp\s*nagar|malleshwaram|malleswaram|hebbal|electronic\s*city|sarjapur|marathahalli|padmanabhanagar)\b/i;
 
 /** Organisers we have already placed in Bengaluru — captions often skip the city. */
-const BANGALORE_ACCOUNTS: Record<string, BangaloreArea> = {
-  "prayag.montessori": "JP Nagar",
+const BANGALORE_ACCOUNTS: Record<string, string> = {
   play_cove: "Malleshwaram",
   forumsouthbengaluru: "JP Nagar",
   the_two_messy_hands: "Koramangala",
   littlebeatsfestival: "Jayanagar",
   ayanaoutdoorsindia: "Koramangala",
-  auramontessori0823: "Koramangala",
-  "ekyavana.earlyyears": "Hebbal",
-  "eravoo.blr": "Jayanagar",
-  beruearlyyears: "Jayanagar",
-  acemontessori: "Jayanagar",
-  thefreethinkingschool: "Koramangala",
-  kara4kidsofficial: "Koramangala",
-  jumpstartpreschools: "Koramangala",
-  klaypreschools: "Whitefield",
-  kangarookidspreschool_official: "Koramangala",
-  juniortoes_nagarabhavi: "Malleshwaram",
-  "footprints.preschool": "Bellandur",
-  vivero_international: "Whitefield",
-  neevearlyyears: "Koramangala",
-  cherubs_montessori_sompura: "Whitefield",
-  _chimes_montessori: "Koramangala",
-  cubbytales: "Koramangala",
-  boogiewoogiepreschool: "Koramangala",
-  airaa_academy: "Jayanagar",
-  incarnation_foundation_school: "Koramangala",
-  "openhouse.school": "HSR Layout",
-  growingwonders_official: "Jayanagar",
-  neevliteraturefestival: "Bellandur",
-  "kai.early.years": "Whitefield",
-  kovebyklay: "Whitefield",
-  juniortoes_jpnagar_metro_st: "JP Nagar",
-  "eurokids.nagarbhavi": "Malleshwaram",
-  littleelly_vijaynagar: "Malleshwaram",
-  little_millennium_nallurhalli: "Whitefield",
-  arka_learning_space: "Hebbal",
-  agreenventurenaturewalks: "Malleshwaram",
-  theloorooclub: "Koramangala",
-  montivypreschools: "Whitefield",
-  paperbirdmalini: "Koramangala",
   popapuddle: "HSR Layout",
 };
 
-function knownBangaloreArea(caption: string, username?: string): BangaloreArea | undefined {
+for (const school of FUNKAARI_FOLLOWED_SCHOOLS) {
+  if (school.city !== "bangalore") continue;
+  BANGALORE_ACCOUNTS[school.handle] = school.area || "Bengaluru";
+}
+
+function isFollowedBangaloreOrganiser(username?: string): boolean {
+  const handle = username ? normalizeHandle(username) : "";
+  return Boolean(handle && BANGALORE_ACCOUNTS[handle]);
+}
+
+function knownBangaloreArea(caption: string, username?: string): string | undefined {
   const handle = username ? normalizeHandle(username) : "";
   if (handle && BANGALORE_ACCOUNTS[handle]) return BANGALORE_ACCOUNTS[handle];
   const mentions = caption.match(/@([A-Za-z0-9._]+)/g) || [];
@@ -203,15 +174,54 @@ const ACTIVITY = KIDS_EVENT_KIND;
 const ADMISSION =
   /\b(admissions?\s*open|enrol(?:l)?(?:\s+today)?|limited seats|nursery admissions|preschool admissions)\b/i;
 
-export function captionHasEventDate(caption: string): boolean {
-  return Boolean(
-    caption.match(
-      /\b(\d{1,2})(?:st|nd|rd|th)?\s+(jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|jun(?:e)?|jul(?:y)?|aug(?:ust)?|sep(?:t(?:ember)?)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)\b/i,
-    ) ||
-      caption.match(
-        /\b(jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|jun(?:e)?|jul(?:y)?|aug(?:ust)?|sep(?:t(?:ember)?)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)\s+(\d{1,2})(?:st|nd|rd|th)?\b/i,
-      ),
+const MONTH_NAME =
+  "jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|jun(?:e)?|jul(?:y)?|aug(?:ust)?|sep(?:t(?:ember)?)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?";
+
+function parseNumericCaptionDate(
+  caption: string,
+): { year: number; month: number; day: number } | undefined {
+  const full = caption.match(/\b(\d{1,2})[./-](\d{1,2})[./-](20\d{2}|\d{2})\b/);
+  if (!full) return undefined;
+  let day = Number(full[1]);
+  let month = Number(full[2]);
+  const yearRaw = full[3];
+  const year = yearRaw.length === 2 ? 2000 + Number(yearRaw) : Number(yearRaw);
+  if (month > 12 && day <= 12) {
+    const swap = day;
+    day = month;
+    month = swap;
+  }
+  if (month < 1 || month > 12 || day < 1 || day > 31) return undefined;
+  if (year < 2026 || year > 2030) return undefined;
+  return { year, month: month - 1, day };
+}
+
+function parseNamedCaptionDate(
+  caption: string,
+): { year: number; month: number; day: number } | undefined {
+  const dmy = caption.match(
+    new RegExp(`\\b(\\d{1,2})(?:st|nd|rd|th)?\\s+(${MONTH_NAME})\\b`, "i"),
   );
+  const mdy = caption.match(
+    new RegExp(`\\b(${MONTH_NAME})\\s+(\\d{1,2})(?:st|nd|rd|th)?\\b`, "i"),
+  );
+  let day: number | undefined;
+  let month: number | undefined;
+  if (dmy) {
+    day = Number(dmy[1]);
+    month = monthIndex(dmy[2]);
+  } else if (mdy) {
+    month = monthIndex(mdy[1]);
+    day = Number(mdy[2]);
+  }
+  if (!day || month === undefined || day < 1 || day > 31) return undefined;
+  const yearMatch = caption.match(/\b(20\d{2})\b/);
+  const year = yearMatch ? Number(yearMatch[1]) : new Date().getFullYear();
+  return { year, month, day };
+}
+
+export function captionHasEventDate(caption: string): boolean {
+  return Boolean(parseNumericCaptionDate(caption) || parseNamedCaptionDate(caption));
 }
 
 export function isBangaloreKidsEventCaption(
@@ -227,9 +237,11 @@ export function isBangaloreKidsEventCaption(
   if (!BLR.test(caption) && !knownBangaloreArea(caption, username) && !isIndiaOnlineSession(caption)) {
     return false;
   }
-  if (!ACTIVITY.test(caption)) return false;
+  if (!ACTIVITY.test(caption) && !isFollowedBangaloreOrganiser(username) && !knownBangaloreArea(caption, username)) {
+    return false;
+  }
   if (!captionHasEventDate(caption)) return false;
-  return BABY_TODDLER.test(caption) || ACTIVITY.test(caption);
+  return true;
 }
 
 const MONTH_INDEX: Record<string, number> = {
@@ -279,25 +291,10 @@ export function parseCaptionSchedule(
   caption: string,
   fallbackIso?: string,
 ): { date: string; time: string } {
-  const yearMatch = caption.match(/\b(20\d{2})\b/);
-  const year = yearMatch ? Number(yearMatch[1]) : new Date().getFullYear();
-
-  const dmy = caption.match(
-    /\b(\d{1,2})(?:st|nd|rd|th)?\s+(jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|jun(?:e)?|jul(?:y)?|aug(?:ust)?|sep(?:t(?:ember)?)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)\b/i,
-  );
-  const mdy = caption.match(
-    /\b(jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|jun(?:e)?|jul(?:y)?|aug(?:ust)?|sep(?:t(?:ember)?)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)\s+(\d{1,2})(?:st|nd|rd|th)?\b/i,
-  );
-
-  let day: number | undefined;
-  let month: number | undefined;
-  if (dmy) {
-    day = Number(dmy[1]);
-    month = monthIndex(dmy[2]);
-  } else if (mdy) {
-    month = monthIndex(mdy[1]);
-    day = Number(mdy[2]);
-  }
+  const parsed = parseNumericCaptionDate(caption) || parseNamedCaptionDate(caption);
+  const day = parsed?.day;
+  const month = parsed?.month;
+  const year = parsed?.year ?? new Date().getFullYear();
 
   const range = caption.match(
     /\b(\d{1,2})(?::(\d{2}))?\s*(am|pm)\s*(?:to|–|-|—)\s*(\d{1,2})(?::(\d{2}))?\s*(am|pm)\b/i,
@@ -323,9 +320,12 @@ export function mediaToEvent(media: InstagramMedia): KidsEvent | null {
   if (!isBangaloreKidsEventCaption(caption, media.username)) return null;
 
   const mentioned = parseAgeMention(caption);
-  const ageGroups = mentioned
+  let ageGroups = mentioned
     ? ageGroupsForRange(mentioned.minYears, mentioned.maxYears ?? AUDIENCE_MAX_YEARS)
     : detectAgeGroups(caption);
+  if (!ageGroups.length && isFollowedBangaloreOrganiser(media.username)) {
+    ageGroups = ["1-2yr", "2-3yr", "3-4yr"];
+  }
   if (!ageGroups.length) return null;
 
   const handle = normalizeHandle(media.username || "instagram");

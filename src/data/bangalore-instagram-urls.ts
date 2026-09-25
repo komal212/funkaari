@@ -1,7 +1,5 @@
-import { INSTAGRAM_HASHTAGS } from "@/lib/instagram-parse";
 import { POST_URL } from "@/data/post-photos";
 import { BANGALORE_FOLLOWED_HANDLES } from "@/data/funkaari-followed-schools";
-import { instagramProfileUrl } from "@/lib/instagram";
 
 const ORGANISER_HANDLES = [
   ...BANGALORE_FOLLOWED_HANDLES,
@@ -24,13 +22,13 @@ export const PARALLEL_INSTAGRAM_QUERIES = [
   "online Zoom kids workshop India",
 ];
 
-export function bangaloreInstagramUrls(): string[] {
-  const tags = INSTAGRAM_HASHTAGS.slice(0, 3).map(
-    (tag) => `https://www.instagram.com/explore/tags/${encodeURIComponent(tag)}/`,
-  );
-  const profiles = [...new Set(ORGANISER_HANDLES)].map((handle) =>
-    instagramProfileUrl(handle),
-  );
+export function bangaloreInstagramUrls(_extraHandles: string[] = []): string[] {
   const posts = Object.values(POST_URL);
-  return [...new Set([...posts, ...profiles, ...tags])];
+  return [...new Set(posts)];
+}
+
+export function bangaloreOrganiserHandles(extraHandles: string[] = []): string[] {
+  return [...new Set([...ORGANISER_HANDLES, ...extraHandles])].filter(
+    (handle) => handle && handle !== "instagram",
+  );
 }

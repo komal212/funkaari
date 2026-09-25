@@ -127,7 +127,7 @@ async function main() {
   const listed = mergeEventFeeds(events, catalog);
   await syncSheet(listed);
   console.log(
-    `${sameEvents ? "snapshot timestamps updated" : "snapshot written"}: ${events.length} scraped, ${listed.length} sheet rows (${source})`,
+    `${sameEvents ? "snapshot timestamps updated" : "snapshot written"}: ${events.length} scraped, ${listed.length} sheet rows, ${scraped.following} followed accounts (${source})`,
   );
 }
 
