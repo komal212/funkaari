@@ -176,48 +176,16 @@ export function EventFilters({
       </div>
 
       <div className="flex flex-wrap items-center gap-2">
-        {TIME_PILLS.map((pill) => (
-            <button
-              key={pill.value}
-              type="button"
-              onClick={() => update("time", pill.value)}
-              className={
-                filters.time === pill.value
-                  ? "h-10 rounded-full bg-ink px-4 text-sm font-semibold text-white"
-                  : "h-10 rounded-full bg-white px-4 text-sm font-semibold text-ink/70 ring-1 ring-lavender-100 hover:bg-lavender-50"
-              }
-            >
-              {pill.label}
-            </button>
-          ))}
-
-        <span className="relative">
-          <select
-            aria-label="Type"
-            value={filters.category}
-            onChange={(e) => update("category", e.target.value as EventCategory | "all")}
-            className={selectClass}
-          >
-            <option value="all">All types</option>
-            {Object.entries(CATEGORY_LABELS).map(([value, label]) => (
-              <option key={value} value={value}>
-                {label}
-              </option>
-            ))}
-          </select>
-          <Chevron />
-        </span>
-
         <button
           type="button"
           onClick={() => setShowMore((v) => !v)}
           className={
-            showMore || filters.ageGroup !== "all" || filters.area !== "all"
+            showMore || hasActiveFilters
               ? "h-10 rounded-full bg-lavender-500 px-4 text-sm font-semibold text-white"
               : "h-10 rounded-full bg-white px-4 text-sm font-semibold text-ink/70 ring-1 ring-lavender-100 hover:bg-lavender-50"
           }
         >
-          More filters
+          Filters
         </button>
 
         {hasActiveFilters && (
@@ -243,6 +211,38 @@ export function EventFilters({
 
       {showMore && (
         <div className="flex flex-wrap items-center gap-2">
+          {TIME_PILLS.map((pill) => (
+            <button
+              key={pill.value}
+              type="button"
+              onClick={() => update("time", pill.value)}
+              className={
+                filters.time === pill.value
+                  ? "h-10 rounded-full bg-ink px-4 text-sm font-semibold text-white"
+                  : "h-10 rounded-full bg-white px-4 text-sm font-semibold text-ink/70 ring-1 ring-lavender-100 hover:bg-lavender-50"
+              }
+            >
+              {pill.label}
+            </button>
+          ))}
+
+          <span className="relative">
+            <select
+              aria-label="Type"
+              value={filters.category}
+              onChange={(e) => update("category", e.target.value as EventCategory | "all")}
+              className={selectClass}
+            >
+              <option value="all">All types</option>
+              {Object.entries(CATEGORY_LABELS).map(([value, label]) => (
+                <option key={value} value={value}>
+                  {label}
+                </option>
+              ))}
+            </select>
+            <Chevron />
+          </span>
+
           <span className="relative">
             <select
               aria-label="Age"
