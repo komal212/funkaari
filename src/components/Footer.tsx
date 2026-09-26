@@ -35,16 +35,20 @@ export function Footer() {
 
           <div>
             <h4 className="font-display text-sm font-bold uppercase tracking-widest text-ink">
-              Explore
+              About Funkaari
             </h4>
-            <ul className="mt-4 space-y-2.5 text-sm text-muted">
-              <li>
-                <Link href="/#events" className="transition hover:text-ink">All events</Link>
-              </li>
-              <li>
-                <Link href="/about" className="transition hover:text-ink">About Funkaari</Link>
-              </li>
-            </ul>
+            <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted">
+              Started by a mum who spent nap times scrolling through Instagram
+              and WhatsApp groups just to find one fun thing to do with her
+              little one. Funkaari puts every kids&apos; event in one place
+              &mdash; so you never miss a moment.
+            </p>
+            <Link
+              href="/about"
+              className="mt-3 inline-block text-sm font-bold text-lavender-500 transition hover:text-lavender-400"
+            >
+              Read our story &rarr;
+            </Link>
           </div>
 
           <div>
