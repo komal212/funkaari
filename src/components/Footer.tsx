@@ -24,13 +24,12 @@ export function Footer() {
           <div>
             <Logo compact />
             <p className="mt-4 max-w-xs font-display text-lg font-bold leading-snug text-ink">
-              Built by a mum who gets it.
+              Built by a mum, for mums.
             </p>
             <p className="mt-3 max-w-xs text-sm leading-relaxed text-muted">
-              Funkaari started with a simple wish — to find fun things for little
-              ones without endless scrolling. We bring together events from
-              Instagram, playschool pages and local communities so you can spend
-              less time searching and more time playing.
+              We know how precious every weekend is — so we find the best
+              kids&apos; events and put them all in one place. You just pick
+              and go.
             </p>
           </div>
 
