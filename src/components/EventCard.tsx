@@ -62,22 +62,6 @@ export function EventCard({ event }: EventCardProps) {
             {event.isFree ? "Free" : event.price ?? "Paid"}
           </span>
         </div>
-        {cta ? (
-          <a
-            href={cta.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={
-              cta.kind === "instagram"
-                ? "absolute inset-x-0 bottom-0 z-20 flex items-center justify-center gap-2 bg-[#E1306C] px-4 py-3 text-sm font-bold text-white shadow-md transition hover:bg-[#c42a5d]"
-                : "absolute inset-x-0 bottom-0 z-20 flex items-center justify-center gap-2 bg-lavender-500 px-4 py-3 text-sm font-bold text-white shadow-md transition hover:bg-lavender-400"
-            }
-          >
-            {cta.kind === "instagram" ? <InstagramGlyph /> : null}
-            {cta.label}
-            <span aria-hidden="true">↗</span>
-          </a>
-        ) : null}
       </div>
 
       <div className="flex flex-1 flex-col p-5 sm:p-6">
@@ -129,6 +113,22 @@ export function EventCard({ event }: EventCardProps) {
             <p className="text-center text-xs font-medium text-muted">
               @{normalizeHandle(event.instagramHandle)}
             </p>
+          ) : null}
+          {cta ? (
+            <a
+              href={cta.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={
+                cta.kind === "instagram"
+                  ? "mt-3 flex items-center justify-center gap-2 rounded-full bg-[#E1306C] px-4 py-3 text-sm font-bold text-white shadow-md transition hover:bg-[#c42a5d]"
+                  : "mt-3 flex items-center justify-center gap-2 rounded-full bg-lavender-500 px-4 py-3 text-sm font-bold text-white shadow-md transition hover:bg-lavender-400"
+              }
+            >
+              {cta.kind === "instagram" ? <InstagramGlyph /> : null}
+              {cta.label}
+              <span aria-hidden="true">↗</span>
+            </a>
           ) : null}
         </div>
       </div>
