@@ -78,11 +78,22 @@ export default function AboutPage() {
           all in one page, always up to date.
         </p>
 
+        <p className="rounded-3xl bg-mint-50 px-6 py-5 text-sm leading-relaxed text-ink">
+          <span className="font-display text-base font-bold">Why these early years matter so much</span>
+          <br /><br />
+          90% of a child&apos;s brain develops before the age of 5. In these
+          first few years, over a million new neural connections form every
+          single second. Every song they hear, every texture they touch, every
+          new face they meet &mdash; it&apos;s not just play. It&apos;s their
+          brain growing, learning, becoming. The simple things &mdash; splashing
+          in puddles, squishing clay, dancing to music &mdash; are actually
+          building the foundation for a lifetime of learning.
+        </p>
+
         <p>
-          Because these little years don&apos;t wait. Every giggle, every messy
-          painting, every wide-eyed &ldquo;wow&rdquo; &mdash; these are the
-          moments that become memories. And no parent should miss out on them
-          just because they didn&apos;t see a post in time.
+          That&apos;s why every experience counts. And that&apos;s why no parent
+          should miss out on them just because they didn&apos;t see a post in
+          time.
         </p>
 
         <p className="rounded-3xl bg-lavender-50 px-6 py-5 text-center font-display text-lg font-bold text-ink">
