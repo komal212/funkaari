@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { FUNKAARI_INSTAGRAM_HANDLE, FUNKAARI_INSTAGRAM_URL } from "@/lib/instagram";
 
 export const metadata: Metadata = {
   title: "Submit an Event — Funkaari",
   description:
-    "Preschools and activity centers: share your Instagram event post to be listed for Bangalore parents.",
+    "Organisers: list your kids' event on Funkaari for free. Workshops, camps, open days — parents are looking.",
 };
+
+const inputClass =
+  "mt-2 w-full rounded-2xl border-0 bg-lavender-50/80 px-4 py-3.5 text-sm font-medium ring-1 ring-lavender-100 focus:bg-white focus:outline-none focus:ring-2 focus:ring-lavender-300";
 
 export default function SubmitPage() {
   return (
@@ -18,7 +20,7 @@ export default function SubmitPage() {
         href="/"
         className="inline-flex items-center gap-1 rounded-full bg-lavender-50 px-4 py-2 text-sm font-bold text-lavender-500 transition hover:bg-lavender-100"
       >
-        ← Back to events
+        &larr; Back to events
       </Link>
 
       <div className="mt-8 flex items-center gap-4">
@@ -27,27 +29,19 @@ export default function SubmitPage() {
         </span>
         <div>
           <h1 className="font-display text-3xl font-bold text-ink sm:text-4xl">
-            Submit an event
+            List your event
           </h1>
           <p className="mt-1 text-sm font-medium text-lavender-400">
-            Share your event with Bangalore parents
+            It&apos;s free &mdash; parents are looking
           </p>
         </div>
       </div>
 
       <p className="mt-6 leading-relaxed text-muted">
-        Running a workshop, camp, or open day for children{" "}
-        <strong className="font-bold text-ink">6 months to 6 years</strong> in Bangalore?
-        Share your Instagram post (or tag{" "}
-        <a
-          href={FUNKAARI_INSTAGRAM_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="font-bold text-lavender-500 hover:text-lavender-400"
-        >
-          @{FUNKAARI_INSTAGRAM_HANDLE}
-        </a>
-        ) and we&apos;ll add it to our curated feed — free for MVP.
+        Running a workshop, camp, open day, or any activity for kids?
+        Fill in the details below and we&apos;ll add it to Funkaari &mdash;{" "}
+        <strong className="font-bold text-ink">completely free</strong>.
+        No Instagram account needed.
       </p>
 
       <form
@@ -57,57 +51,161 @@ export default function SubmitPage() {
         className="mt-10 space-y-6 rounded-4xl bg-white/90 p-6 shadow-card ring-1 ring-lavender-100 sm:p-8"
       >
         <div>
-          <label htmlFor="preschool" className="block text-sm font-bold text-ink">
-            Preschool / organizer name
+          <label htmlFor="eventName" className="block text-sm font-bold text-ink">
+            Event name *
           </label>
           <input
-            id="preschool"
-            name="preschool"
+            id="eventName"
+            name="eventName"
             type="text"
             required
-            placeholder="e.g. Little Sprouts Montessori"
-            className="mt-2 w-full rounded-2xl border-0 bg-lavender-50/80 px-4 py-3.5 text-sm font-medium ring-1 ring-lavender-100 focus:bg-white focus:outline-none focus:ring-2 focus:ring-lavender-300"
+            placeholder="e.g. Messy Play Morning"
+            className={inputClass}
+          />
+        </div>
+
+        <div className="grid gap-6 sm:grid-cols-2">
+          <div>
+            <label htmlFor="date" className="block text-sm font-bold text-ink">
+              Date *
+            </label>
+            <input
+              id="date"
+              name="date"
+              type="date"
+              required
+              className={inputClass}
+            />
+          </div>
+          <div>
+            <label htmlFor="time" className="block text-sm font-bold text-ink">
+              Time *
+            </label>
+            <input
+              id="time"
+              name="time"
+              type="text"
+              required
+              placeholder="e.g. 10:00 AM – 12:00 PM"
+              className={inputClass}
+            />
+          </div>
+        </div>
+
+        <div>
+          <label htmlFor="venue" className="block text-sm font-bold text-ink">
+            Venue name *
+          </label>
+          <input
+            id="venue"
+            name="venue"
+            type="text"
+            required
+            placeholder="e.g. Cubbon Park, Little Elly Koramangala"
+            className={inputClass}
           />
         </div>
 
         <div>
-          <label htmlFor="instagram" className="block text-sm font-bold text-ink">
-            Instagram post URL
+          <label htmlFor="location" className="block text-sm font-bold text-ink">
+            Location / Area *
           </label>
           <input
-            id="instagram"
-            name="instagram"
+            id="location"
+            name="location"
+            type="text"
+            required
+            placeholder="e.g. Koramangala, Indiranagar, Whitefield"
+            className={inputClass}
+          />
+        </div>
+
+        <div className="grid gap-6 sm:grid-cols-2">
+          <div>
+            <label htmlFor="ageGroup" className="block text-sm font-bold text-ink">
+              Age group *
+            </label>
+            <input
+              id="ageGroup"
+              name="ageGroup"
+              type="text"
+              required
+              placeholder="e.g. 1–3 years, 2–6 years"
+              className={inputClass}
+            />
+          </div>
+          <div>
+            <label htmlFor="price" className="block text-sm font-bold text-ink">
+              Price
+            </label>
+            <input
+              id="price"
+              name="price"
+              type="text"
+              placeholder="e.g. Free, ₹500, ₹200 per child"
+              className={inputClass}
+            />
+          </div>
+        </div>
+
+        <hr className="border-lavender-100" />
+
+        <p className="text-xs font-bold uppercase tracking-widest text-lavender-400">
+          Organiser details
+        </p>
+
+        <div>
+          <label htmlFor="organizer" className="block text-sm font-bold text-ink">
+            Organiser / brand name *
+          </label>
+          <input
+            id="organizer"
+            name="organizer"
+            type="text"
+            required
+            placeholder="e.g. Tiny Toes Academy"
+            className={inputClass}
+          />
+        </div>
+
+        <div className="grid gap-6 sm:grid-cols-2">
+          <div>
+            <label htmlFor="instagram" className="block text-sm font-bold text-ink">
+              Instagram handle
+            </label>
+            <input
+              id="instagram"
+              name="instagram"
+              type="text"
+              placeholder="@yourpage"
+              className={inputClass}
+            />
+          </div>
+          <div>
+            <label htmlFor="contact" className="block text-sm font-bold text-ink">
+              Phone / WhatsApp *
+            </label>
+            <input
+              id="contact"
+              name="contact"
+              type="text"
+              required
+              placeholder="For parents to RSVP or ask questions"
+              className={inputClass}
+            />
+          </div>
+        </div>
+
+        <div>
+          <label htmlFor="source" className="block text-sm font-bold text-ink">
+            Event link or post URL
+          </label>
+          <input
+            id="source"
+            name="source"
             type="url"
-            required
-            placeholder="https://www.instagram.com/yourpreschool/"
-            className="mt-2 w-full rounded-2xl border-0 bg-lavender-50/80 px-4 py-3.5 text-sm font-medium ring-1 ring-lavender-100 focus:bg-white focus:outline-none focus:ring-2 focus:ring-lavender-300"
-          />
-        </div>
-
-        <div>
-          <label htmlFor="details" className="block text-sm font-bold text-ink">
-            Event details (optional)
-          </label>
-          <textarea
-            id="details"
-            name="details"
-            rows={4}
-            placeholder="Date, time, location, age range, and anything else parents should know"
-            className="mt-2 w-full rounded-2xl border-0 bg-lavender-50/80 px-4 py-3.5 text-sm font-medium ring-1 ring-lavender-100 focus:bg-white focus:outline-none focus:ring-2 focus:ring-lavender-300"
-          />
-        </div>
-
-        <div>
-          <label htmlFor="contact" className="block text-sm font-bold text-ink">
-            Your email or phone
-          </label>
-          <input
-            id="contact"
-            name="contact"
-            type="text"
-            required
-            placeholder="We'll reach out if we need more info"
-            className="mt-2 w-full rounded-2xl border-0 bg-lavender-50/80 px-4 py-3.5 text-sm font-medium ring-1 ring-lavender-100 focus:bg-white focus:outline-none focus:ring-2 focus:ring-lavender-300"
+            placeholder="Instagram post, website, or booking page"
+            className={inputClass}
           />
         </div>
 
@@ -115,7 +213,7 @@ export default function SubmitPage() {
           type="submit"
           className="w-full rounded-full bg-gradient-to-r from-lavender-400 to-lavender-500 py-4 font-display font-bold text-white shadow-card transition hover:from-lavender-500 hover:to-lavender-400 hover:shadow-card-hover"
         >
-          Send submission ✨
+          Submit event
         </button>
       </form>
 
