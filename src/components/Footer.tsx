@@ -36,7 +36,7 @@ export function Footer() {
       </div>
 
       <div className="relative mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-14">
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
           <div>
             <Logo compact />
             <p className="mt-4 max-w-xs font-display text-lg font-bold leading-snug text-ink">
@@ -47,12 +47,9 @@ export function Footer() {
               art class, every first splash in the rain &mdash; these are the
               memories that stay. We make sure you never miss a moment.
             </p>
-          </div>
-
-          <div>
             <Link
               href="/about"
-              className="font-display text-sm font-bold uppercase tracking-widest text-ink transition hover:text-lavender-500"
+              className="mt-3 inline-block text-sm font-bold text-lavender-500 transition hover:text-lavender-400"
             >
               Our Story &hearts;
             </Link>
@@ -60,19 +57,18 @@ export function Footer() {
 
           <div>
             <h4 className="font-display text-sm font-bold uppercase tracking-widest text-ink">
-              Quick Links
+              Organisers
             </h4>
-            <ul className="mt-4 space-y-2.5 text-sm text-muted">
-              <li>
-                <Link href="/#events" className="transition hover:text-ink">All events</Link>
-              </li>
-              <li>
-                <Link href="/submit" className="transition hover:text-ink">Submit an event</Link>
-              </li>
-              <li>
-                <Link href="/about" className="transition hover:text-ink">Our story</Link>
-              </li>
-            </ul>
+            <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted">
+              Running a kids&apos; event? List it on Funkaari for free &mdash;
+              no Instagram needed.
+            </p>
+            <Link
+              href="/submit"
+              className="mt-4 inline-flex rounded-full border-2 border-lavender-300 px-5 py-2 text-sm font-bold text-lavender-500 transition hover:bg-lavender-50"
+            >
+              Submit an event
+            </Link>
           </div>
 
           <div>
