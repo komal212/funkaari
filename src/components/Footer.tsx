@@ -27,7 +27,7 @@ export function Footer() {
               Built by a mum, for mums.
             </p>
             <p className="mt-3 max-w-xs text-sm leading-relaxed text-muted">
-              They&apos;re only this little once. Every giggle, every messy
+              These little years fly by so fast. Every giggle, every messy
               art class, every first splash in the rain — these are the
               memories that stay. We make sure you never miss a moment.
             </p>
