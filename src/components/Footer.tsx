@@ -27,9 +27,9 @@ export function Footer() {
               Built by a mum, for mums.
             </p>
             <p className="mt-3 max-w-xs text-sm leading-relaxed text-muted">
-              Every giggle, every messy art class, every first splash
-              in the rain — these are the memories that stay forever.
-              We make sure you never miss a moment.
+              Hold on to every little moment. Every giggle, every messy
+              art class, every first splash in the rain — these are the
+              memories that stay. We make sure you never miss a moment.
             </p>
           </div>
 
