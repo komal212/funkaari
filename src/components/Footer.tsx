@@ -50,20 +50,11 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-display text-sm font-bold uppercase tracking-widest text-ink">
-              About Funkaari
-            </h4>
-            <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted">
-              Started by a mum who spent nap times scrolling through Instagram
-              and WhatsApp groups just to find one fun thing to do with her
-              little one. Funkaari puts every kids&apos; event in one place
-              &mdash; so you never miss a moment.
-            </p>
             <Link
               href="/about"
-              className="mt-3 inline-block text-sm font-bold text-lavender-500 transition hover:text-lavender-400"
+              className="font-display text-sm font-bold uppercase tracking-widest text-ink transition hover:text-lavender-500"
             >
-              Read our story &rarr;
+              About Funkaari &rarr;
             </Link>
           </div>
 
