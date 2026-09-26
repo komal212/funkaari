@@ -49,7 +49,7 @@ export function EventCard({ event }: EventCardProps) {
 
   return (
     <article className="activity-card group relative flex flex-col overflow-hidden">
-      <div className="relative aspect-[4/5] overflow-hidden bg-lavender-50">
+      <div className="relative aspect-[4/3] overflow-hidden bg-lavender-50 sm:aspect-[4/4]">
         {cover}
         <div className="pointer-events-none absolute left-3 top-3 z-10 flex flex-wrap gap-2">
           <span

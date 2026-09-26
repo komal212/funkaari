@@ -1,8 +1,8 @@
 "use client";
 
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Logo } from "@/components/Logo";
-import { InstagramLink } from "@/components/InstagramLink";
 import { CITIES, cityMeta } from "@/data/cities";
 import type { CityId } from "@/types/event";
 
@@ -11,7 +11,6 @@ export function Footer() {
   const cityId = (CITIES.find((city) => pathname.startsWith(city.href))?.id ??
     "bangalore") as CityId;
   const city = cityMeta(pathname === "/" ? "bangalore" : cityId);
-  const line = city.footerLine;
 
   return (
     <footer className="relative mt-auto overflow-hidden bg-gradient-to-br from-lavender-100 via-peach-50 to-mint-100">
@@ -40,7 +39,7 @@ export function Footer() {
             </h4>
             <ul className="mt-4 space-y-2.5 text-sm text-muted">
               <li>
-                <a href="/#events" className="transition hover:text-ink">All events</a>
+                <Link href="/#events" className="transition hover:text-ink">All events</Link>
               </li>
               <li>
                 <a href="/submit" className="transition hover:text-ink">About Funkaari</a>

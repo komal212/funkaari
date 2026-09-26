@@ -19,10 +19,10 @@ export function Hero({ city = "bangalore" }: { city?: CityId }) {
           {place}
         </p>
 
-        <h1 className="mt-4 font-display text-4xl font-bold leading-tight text-ink sm:text-5xl">
-          <span className="block">Little humans.</span>
-          <span className="block">Big adventures.</span>
-          <span className="block">All in one place.</span>
+        <h1 className="mt-4 flex flex-col items-center gap-1 font-display text-4xl font-bold text-ink sm:text-5xl sm:gap-2">
+          <span>Little humans.</span>
+          <span>Big adventures.</span>
+          <span>All in one place.</span>
         </h1>
 
         <p className="mx-auto mt-6 max-w-lg text-lg leading-relaxed text-ink/80">
