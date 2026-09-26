@@ -3,12 +3,14 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import type {
   EventFilters as Filters,
+  AgeGroup,
   EventCategory,
   TimeFilter,
   KidsEvent,
   CityId,
 } from "@/types/event";
-import { CATEGORY_LABELS, events as catalog } from "@/data/events";
+import { AGE_GROUP_LABELS, AREAS, CATEGORY_LABELS, events as catalog } from "@/data/events";
+import { areasFromEvents } from "@/lib/filters";
 import { buildSearchSuggestions } from "@/lib/search";
 
 interface EventFiltersProps {
@@ -69,10 +71,17 @@ export function EventFilters({
     setOpen(false);
   };
 
+  const [showMore, setShowMore] = useState(false);
+
+  const areaOptions = areasFromEvents(events);
+  const areas = areaOptions.length > 0 ? areaOptions : [...AREAS];
+
   const hasActiveFilters =
     filters.search ||
     filters.time !== "all" ||
-    filters.category !== "all";
+    filters.category !== "all" ||
+    filters.ageGroup !== "all" ||
+    filters.area !== "all";
 
   return (
     <div className="space-y-4">
@@ -199,10 +208,23 @@ export function EventFilters({
           <Chevron />
         </span>
 
+        <button
+          type="button"
+          onClick={() => setShowMore((v) => !v)}
+          className={
+            showMore || filters.ageGroup !== "all" || filters.area !== "all"
+              ? "h-10 rounded-full bg-lavender-500 px-4 text-sm font-semibold text-white"
+              : "h-10 rounded-full bg-white px-4 text-sm font-semibold text-ink/70 ring-1 ring-lavender-100 hover:bg-lavender-50"
+          }
+        >
+          More filters
+        </button>
+
         {hasActiveFilters && (
           <button
             type="button"
-            onClick={() =>
+            onClick={() => {
+              setShowMore(false);
               onChange({
                 search: "",
                 ageGroup: "all",
@@ -210,14 +232,52 @@ export function EventFilters({
                 time: "all",
                 place: "all",
                 category: "all",
-              })
-            }
+              });
+            }}
             className="h-10 px-3 text-sm font-semibold text-muted hover:text-ink"
           >
             Reset
           </button>
         )}
       </div>
+
+      {showMore && (
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="relative">
+            <select
+              aria-label="Age"
+              value={filters.ageGroup}
+              onChange={(e) => update("ageGroup", e.target.value as AgeGroup | "all")}
+              className={selectClass}
+            >
+              <option value="all">Any age</option>
+              {Object.entries(AGE_GROUP_LABELS).map(([value, label]) => (
+                <option key={value} value={value}>
+                  {label}
+                </option>
+              ))}
+            </select>
+            <Chevron />
+          </span>
+
+          <span className="relative">
+            <select
+              aria-label="Area"
+              value={filters.area}
+              onChange={(e) => update("area", e.target.value)}
+              className={selectClass}
+            >
+              <option value="all">Any area</option>
+              {areas.map((area) => (
+                <option key={area} value={area}>
+                  {area}
+                </option>
+              ))}
+            </select>
+            <Chevron />
+          </span>
+        </div>
+      )}
     </div>
   );
 }
