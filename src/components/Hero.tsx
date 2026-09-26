@@ -39,7 +39,7 @@ export function Hero({ city = "bangalore" }: { city?: CityId }) {
             href="#events"
             className="inline-flex rounded-full bg-gradient-to-r from-peach-400 to-peach-500 px-8 py-3.5 font-display font-bold text-white shadow-card transition hover:from-peach-500 hover:to-peach-400"
           >
-            Let&apos;s go!
+            Explore events
           </a>
           <a
             href="/submit"
