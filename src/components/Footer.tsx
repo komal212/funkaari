@@ -42,7 +42,7 @@ export function Footer() {
                 <Link href="/#events" className="transition hover:text-ink">All events</Link>
               </li>
               <li>
-                <a href="/submit" className="transition hover:text-ink">About Funkaari</a>
+                <Link href="/about" className="transition hover:text-ink">About Funkaari</Link>
               </li>
             </ul>
           </div>
