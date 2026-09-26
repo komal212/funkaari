@@ -51,7 +51,7 @@ export default function SubmitPage() {
       </p>
 
       <form
-        action="mailto:hello@funkaari.in?subject=Event%20submission"
+        action="mailto:hello@funkaari.co.in?subject=Event%20submission"
         method="POST"
         encType="text/plain"
         className="mt-10 space-y-6 rounded-4xl bg-white/90 p-6 shadow-card ring-1 ring-lavender-100 sm:p-8"
@@ -122,10 +122,10 @@ export default function SubmitPage() {
       <p className="mt-6 text-center text-sm text-muted">
         Prefer email? Write to{" "}
         <a
-          href="mailto:hello@funkaari.in?subject=Event%20submission"
+          href="mailto:hello@funkaari.co.in?subject=Event%20submission"
           className="font-bold text-lavender-500 hover:text-lavender-400"
         >
-          hello@funkaari.in
+          hello@funkaari.co.in
         </a>
       </p>
     </div>

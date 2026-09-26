@@ -60,7 +60,7 @@ export function Footer() {
                 <a href="/submit" className="transition hover:text-ink">Submit an event</a>
               </li>
               <li>
-                <a href="mailto:hello@funkaari.in?subject=Event%20listing" className="transition hover:text-ink">Email a listing</a>
+                <a href="mailto:hello@funkaari.co.in?subject=Event%20listing" className="transition hover:text-ink">Email a listing</a>
               </li>
             </ul>
           </div>
@@ -81,8 +81,8 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:hello@funkaari.in" className="transition hover:text-ink">
-                  hello@funkaari.in
+                <a href="mailto:hello@funkaari.co.in" className="transition hover:text-ink">
+                  hello@funkaari.co.in
                 </a>
               </li>
             </ul>
