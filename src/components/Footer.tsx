@@ -27,9 +27,9 @@ export function Footer() {
               Built by a mum, for mums.
             </p>
             <p className="mt-3 max-w-xs text-sm leading-relaxed text-muted">
-              We know how precious every weekend is — so we find the best
-              kids&apos; events and put them all in one place. You just pick
-              and go.
+              They&apos;re only this little once. Every giggle, every messy
+              art class, every first splash in the rain — these are the
+              memories that stay. We make sure you never miss a moment.
             </p>
           </div>
 
