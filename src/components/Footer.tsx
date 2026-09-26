@@ -54,7 +54,7 @@ export function Footer() {
               href="/about"
               className="font-display text-sm font-bold uppercase tracking-widest text-ink transition hover:text-lavender-500"
             >
-              About Funkaari &rarr;
+              Our Story &rarr;
             </Link>
           </div>
 
