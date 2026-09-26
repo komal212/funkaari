@@ -45,7 +45,7 @@ export function Hero({ city = "bangalore" }: { city?: CityId }) {
             href="/submit"
             className="inline-flex rounded-full border-2 border-lavender-300 px-8 py-3.5 font-display font-bold text-lavender-500 transition hover:bg-lavender-50"
           >
-            Submit an event
+            Organisers: Add your event
           </a>
         </div>
       </div>

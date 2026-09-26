@@ -16,7 +16,7 @@ export function Header() {
             href="/submit"
             className="rounded-full border-2 border-lavender-300 px-4 py-1.5 text-xs font-bold text-lavender-500 transition hover:bg-lavender-50 sm:px-5 sm:py-2 sm:text-sm"
           >
-            Submit event
+            Add your event
           </Link>
           <CitySwitcher />
           <InstagramLink />
