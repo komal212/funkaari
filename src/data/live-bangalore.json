@@ -1,32 +1,7 @@
 {
-  "refreshedAt": "2026-09-26T05:20:13.724Z",
+  "refreshedAt": "2026-09-27T05:37:32.104Z",
   "source": "parallel-web",
   "events": [
-    {
-      "id": "web-instagram-our-first-open-house-for-our-brand-new-campuses-is-2026-09-26",
-      "title": "Our first Open House for our brand-new campuses",
-      "date": "2026-09-26T10:00:00+05:30",
-      "time": "10 AM",
-      "city": "bangalore",
-      "area": "Bellandur",
-      "venue": "Ekya Vana Early Years, Manyata Tech Park",
-      "ageMinMonths": 24,
-      "ageGroups": [
-        "2-3yr",
-        "3-4yr",
-        "4-6yr"
-      ],
-      "category": "festival",
-      "organizer": "instagram",
-      "description": "Ekya Vana Early Years, Manyata Tech Park C2, Behind Manyata Tech Park, Manyata Residency, Bengaluru, Karnataka 560045 Ekya Vana Early.",
-      "instagramHandle": "instagram",
-      "bookingUrl": "https://www.instagram.com/p/DdjGzV0SA8J/",
-      "website": "https://www.instagram.com/p/DdjGzV0SA8J/",
-      "isFree": false,
-      "price": "₹,",
-      "imageUrl": "/events/ekya-vana-open-house.png",
-      "instagramUrl": "https://www.instagram.com/p/DdjGzV0SA8J/"
-    },
     {
       "id": "web-allevents-playdate-with-parents-2026-10-11",
       "title": "Playdate with Parents",
