@@ -133,6 +133,9 @@ function organizerFromUrl(url: string): string {
   if (host.includes("earthenaura")) return "Earthen Aura Ceramics";
   if (host.includes("taabur")) return "Fun With Clay";
   if (host.includes("clayingthoughts")) return "Claying Thoughts";
+  if (/^[a-z]{2,3}\.bookmyshow\.com$/i.test(host)) return "BookMyShow";
+  if (host.includes("bookmyshow")) return "BookMyShow";
+  if (host.includes("allevents")) return "AllEvents";
   return host.split(".")[0];
 }
 
@@ -228,11 +231,23 @@ function priceFrom(block: string): { isFree: boolean; price?: string } {
   return { isFree: false };
 }
 
-function bookingFrom(block: string, fallback: string): string {
+const INVALID_HANDLES = new Set(["allevents", "in", "bookmyshow", "eventbrite", "stayhappening", "happeningnext"]);
+
+function validHandle(raw: string): string {
+  if (!raw || INVALID_HANDLES.has(raw)) return "instagram";
+  return raw;
+}
+
+function bookingFrom(block: string, fallback: string, title?: string): string {
   const md = block.match(/\((https?:\/\/[^\s)]+)\)/);
-  if (md?.[1]) return md[1];
-  const raw = block.match(/https?:\/\/[^\s)]+/);
-  return raw?.[0] || fallback;
+  const url = md?.[1] || block.match(/https?:\/\/[^\s)]+/)?.[0] || fallback;
+  if (title && /allevents\.in/i.test(url)) {
+    const titleSlug = title.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim().split(" ")[0];
+    if (titleSlug.length >= 4 && !url.toLowerCase().includes(titleSlug)) {
+      return fallback;
+    }
+  }
+  return url;
 }
 
 function headingBlocks(markdown: string): HeadingBlock[] {
@@ -399,11 +414,13 @@ export function parseWebEvents(
     const area = isOnlineSession(`${heading}\n${blob}`)
       ? "Online"
       : defaultArea(organizer, detectArea(blob, city));
-    const venueLine = area === "Online"
+    const cleanedBlob = blob.replace(/\[([^\]]*)\]\([^)]*\)/g, "$1");
+    let venueLine = area === "Online"
       ? "Online"
-      : blob.match(/\|\s*([A-Za-z][^\n|]{3,60})/)?.[1]?.trim() ||
-        blob.match(/📍\s*([^\n]+)/)?.[1]?.trim() ||
+      : cleanedBlob.match(/\|\s*([A-Za-z][^\n|]{3,60})/)?.[1]?.trim() ||
+        cleanedBlob.match(/📍\s*([^\n]+)/)?.[1]?.trim() ||
         area;
+    if (/^(INR|₹|Rs\.?)\s*[\d,]/i.test(venueLine)) venueLine = area;
 
     const event: KidsEvent = {
       id: `web-${slug(organizer)}-${slug(heading)}-${when.date.slice(0, 10)}`,
@@ -422,11 +439,15 @@ export function parseWebEvents(
         .replace(/\[([^\]]*)\]\((https?:\/\/[^)]*)\)/g, "$1")
         .replace(/https?:\/\/\S+/g, " ")
         .replace(/[#*_]/g, " ")
+        .replace(/^about the event\s*/i, "")
+        .replace(/more events like this.*/i, "")
+        .replace(/popular\s+(sun|mon|tue|wed|thu|fri|sat)\b.*/i, "")
+        .replace(/\d+\+?\s*interested\b.*/i, "")
         .replace(/\s+/g, " ")
         .trim()
         .slice(0, 140),
-      instagramHandle: HANDLES[organizer] || slug(organizer).replace(/-/g, "") || "instagram",
-      bookingUrl: bookingFrom(blob, sourceUrl),
+      instagramHandle: validHandle(HANDLES[organizer] || slug(organizer).replace(/-/g, "")),
+      bookingUrl: bookingFrom(blob, sourceUrl, heading),
       website: sourceUrl,
       isFree: priced.isFree,
       price: priced.price,

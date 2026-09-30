@@ -324,6 +324,7 @@ const FEATURED: KidsEvent[] = [
     description:
       "A little wonder, a few impossible tricks, and lots of wide-eyed smiles. 6 months–8 years. 10% off at Popman’s Café. Limited spots.",
     instagramHandle: "popapuddle",
+    instagramUrl: POST_URL.Dda1c8pRfGo,
     imageUrl: "/events/popapuddle-magic-show.png",
     fromInstagram: true,
     city: "bangalore",

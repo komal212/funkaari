@@ -3,9 +3,9 @@ import Link from "next/link";
 import { FUNKAARI_INSTAGRAM_HANDLE, FUNKAARI_INSTAGRAM_URL } from "@/lib/instagram";
 
 export const metadata: Metadata = {
-  title: "About — Funkaari",
+  title: "About Funkaari — Our Story",
   description:
-    "Funkaari was started by a mum so Bengaluru parents can find dated playdates, workshops, and nearby fun for children aged 6 months to 6 years — in one place.",
+    "Funkaari was started by a mum who wanted to make it easier for parents to find the best kids' events. Here's our story.",
 };
 
 export default function AboutPage() {
@@ -27,70 +27,120 @@ export default function AboutPage() {
         ← Back to events
       </Link>
 
-      <p className="mt-8 text-xs font-bold uppercase tracking-[0.18em] text-peach-400">
-        Started by a mum
-      </p>
-      <h1 className="mt-3 font-display text-3xl font-bold text-ink sm:text-4xl">
-        About Funkaari
-      </h1>
-      <p className="mt-6 text-lg leading-relaxed text-ink/85">
-        Funkaari was started by a mum who knew that feeling: a Saturday with a
-        little one, and no idea what was actually on. The playdate lived in a
-        WhatsApp group. The café morning was an Instagram story that vanished.
-        The workshop was three scrolls down a preschool page, between last
-        week&apos;s photos and an admissions flyer. By the time she found it, it
-        was already over.
-      </p>
-      <p className="mt-5 leading-relaxed text-muted">
-        These years are short —{" "}
-        <strong className="font-bold text-ink">6 months to 6 years</strong> —
-        and they should not be spent hunting. Funkaari is one calm place for
-        dated things little kids can go to in Bengaluru: a park playdate, a
-        local café, a playschool workshop, a magic show, a nature walk, or an
-        India/IST morning online. Not a school directory. Just what&apos;s on,
-        while the little moment is still in front of you.
-      </p>
+      <div className="mt-8 flex items-center gap-4">
+        <span className="flex h-16 w-16 items-center justify-center rounded-3xl bg-gradient-to-br from-lavender-200 to-peach-200 text-3xl shadow-soft">
+          ♥
+        </span>
+        <h1 className="font-display text-3xl font-bold text-ink sm:text-4xl">
+          Our Story
+        </h1>
+      </div>
 
-      <h2 id="listings" className="mt-10 font-display text-xl font-bold text-ink">
-        How listings work
-      </h2>
-      <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-relaxed text-muted">
-        <li>Every card has a real calendar date. Past days drop off by themselves.</li>
-        <li>
-          We look at public event pages and Instagram posts — not profile homepages
-          or undated weekly class flyers.
-        </li>
-        <li>We do not invent dates, venues, or events.</li>
-        <li>Funkaari is not a school or preschool directory.</li>
-      </ul>
+      <div className="mt-10 space-y-6 text-base leading-relaxed text-muted">
+        <p className="text-lg font-semibold text-ink">
+          Funkaari was born from a mother&apos;s heart.
+        </p>
 
-      <h2 className="mt-10 font-display text-xl font-bold text-ink">
-        Organisers
-      </h2>
-      <p className="mt-4 leading-relaxed text-muted">
-        Running something for this age group?{" "}
-        <Link href="/submit" className="font-bold text-lavender-500 hover:text-lavender-400">
-          Submit an event
-        </Link>{" "}
-        or tag{" "}
-        <a
-          href={FUNKAARI_INSTAGRAM_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="font-bold text-lavender-500 hover:text-lavender-400"
-        >
-          @{FUNKAARI_INSTAGRAM_HANDLE}
-        </a>
-        . Every listing is reviewed first — we post it only after it is approved.
-      </p>
+        <p>
+          I&apos;m a mum to a curious, giggly little one who lights up at every
+          new sound, colour, and tiny adventure. And like every parent, I wanted
+          to give my child the world — starting with the world right outside our
+          door.
+        </p>
+
+        <p>
+          But finding things to do? That was a different story. A playdate
+          announcement buried in an Instagram story. A workshop I found out about
+          the day after it happened. A nature walk someone mentioned in a
+          WhatsApp group I wasn&apos;t part of. The events were out there —
+          just scattered across a hundred different places.
+        </p>
+
+        <p>
+          I&apos;d spend nap times scrolling through pages and groups, trying to
+          piece together a weekend plan. And I kept thinking —{" "}
+          <em className="font-semibold text-ink">
+            why isn&apos;t there just one place for all of this?
+          </em>
+        </p>
+
+        <p>So I built one.</p>
+
+        <p className="text-lg font-semibold text-ink">That&apos;s Funkaari.</p>
+
+        <p>
+          A simple place where parents can find every kids&apos; event happening
+          nearby — playdates in the park, art workshops at a cafe, open days at
+          playschools, music sessions, nature walks, festivals — all in one
+          page, always up to date. For little ones aged{" "}
+          <strong className="font-bold text-ink">6 months to 6 years</strong>.
+          Not a school directory. Just what&apos;s on.
+        </p>
+
+        <p className="rounded-3xl bg-mint-50 px-6 py-5 text-sm leading-relaxed text-ink">
+          <span className="font-display text-base font-bold">
+            Why these early years matter so much
+          </span>
+          <br />
+          <br />
+          90% of a child&apos;s brain develops before the age of 5. In these
+          first few years, over a million new neural connections form every
+          single second. Every song they hear, every texture they touch, every
+          new face they meet — it&apos;s not just play. It&apos;s their brain
+          growing, learning, becoming. The simple things — splashing in
+          puddles, squishing clay, dancing to music — are actually building the
+          foundation for a lifetime of learning.
+        </p>
+
+        <p>
+          That&apos;s why every experience counts. And that&apos;s why no parent
+          should miss out on them just because they didn&apos;t see a post in
+          time.
+        </p>
+
+        <p className="rounded-3xl bg-lavender-50 px-6 py-5 text-center font-display text-lg font-bold text-ink">
+          Less scrolling. More giggling.
+          <br />
+          That&apos;s the promise.
+        </p>
+
+        <p>
+          Funkaari is made with love, late nights, and a whole lot of chai. If
+          you&apos;re a parent, I hope this helps you find your next little
+          adventure. If you run events for kids, I&apos;d love to{" "}
+          <Link
+            href="/submit"
+            className="font-bold text-lavender-500 hover:text-lavender-400"
+          >
+            feature your event
+          </Link>{" "}
+          — it&apos;s free. Every listing is reviewed first. We post it only
+          after it is approved. You can also tag{" "}
+          <a
+            href={FUNKAARI_INSTAGRAM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-bold text-lavender-500 hover:text-lavender-400"
+          >
+            @{FUNKAARI_INSTAGRAM_HANDLE}
+          </a>
+          .
+        </p>
+
+        <p className="font-semibold text-ink">
+          With love,
+          <br />
+          A mum who gets it ♥
+        </p>
+      </div>
 
       <p className="mt-10 text-sm text-muted">
         Questions? Write to{" "}
         <a
-          href="mailto:hello@funkaari.in"
+          href="mailto:hello@funkaari.co.in"
           className="font-bold text-lavender-500 hover:text-lavender-400"
         >
-          hello@funkaari.in
+          hello@funkaari.co.in
         </a>
         .
       </p>

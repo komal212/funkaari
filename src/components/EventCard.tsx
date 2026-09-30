@@ -28,8 +28,14 @@ function sourceCta(event: KidsEvent): { href: string; label: string; kind: "inst
     return { ...instagram, kind: "instagram" };
   }
   const booking = event.bookingUrl;
-  if (booking && !isAggregatorIndexUrl(booking) && /allevents\.in/i.test(booking)) {
-    return { href: booking, label: "Open on AllEvents", kind: "web" };
+  const website = event.website;
+  const webUrl = booking && !isAggregatorIndexUrl(booking) ? booking : website && !isAggregatorIndexUrl(website) ? website : null;
+  if (webUrl && !/instagram\.com/i.test(webUrl)) {
+    const host = webUrl.replace(/^https?:\/\/(www\.)?/, "").split("/")[0];
+    const label = /allevents\.in/i.test(webUrl) ? "Open on AllEvents"
+      : /bookmyshow/i.test(webUrl) ? "Book on BookMyShow"
+      : `Open ${host}`;
+    return { href: webUrl, label, kind: "web" };
   }
   if (instagram) return { ...instagram, kind: "instagram" };
   return null;
@@ -43,7 +49,7 @@ export function EventCard({ event }: EventCardProps) {
 
   return (
     <article className="activity-card group relative flex flex-col overflow-hidden">
-      <div className="relative aspect-[4/5] overflow-hidden bg-lavender-50">
+      <div className="relative aspect-[4/3] overflow-hidden bg-lavender-50 sm:aspect-[4/4]">
         {cover}
         <div className="pointer-events-none absolute inset-x-0 top-0 z-10 flex items-center bg-white/90 px-3 py-2 backdrop-blur-[2px]">
           <span
@@ -56,22 +62,6 @@ export function EventCard({ event }: EventCardProps) {
             {event.isFree ? "Free" : event.price ?? "Paid"}
           </span>
         </div>
-        {cta ? (
-          <a
-            href={cta.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={
-              cta.kind === "instagram"
-                ? "absolute inset-x-0 bottom-0 z-20 flex items-center justify-center gap-2 bg-[#E1306C] px-4 py-3 text-sm font-bold text-white shadow-md transition hover:bg-[#c42a5d]"
-                : "absolute inset-x-0 bottom-0 z-20 flex items-center justify-center gap-2 bg-lavender-500 px-4 py-3 text-sm font-bold text-white shadow-md transition hover:bg-lavender-400"
-            }
-          >
-            {cta.kind === "instagram" ? <InstagramGlyph /> : null}
-            {cta.label}
-            <span aria-hidden="true">↗</span>
-          </a>
-        ) : null}
       </div>
 
       <div className="flex flex-1 flex-col p-5 sm:p-6">
@@ -123,6 +113,22 @@ export function EventCard({ event }: EventCardProps) {
             <p className="text-center text-xs font-medium text-muted">
               @{normalizeHandle(event.instagramHandle)}
             </p>
+          ) : null}
+          {cta ? (
+            <a
+              href={cta.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={
+                cta.kind === "instagram"
+                  ? "mt-3 flex items-center justify-center gap-2 rounded-full bg-[#E1306C] px-4 py-3 text-sm font-bold text-white shadow-md transition hover:bg-[#c42a5d]"
+                  : "mt-3 flex items-center justify-center gap-2 rounded-full bg-lavender-500 px-4 py-3 text-sm font-bold text-white shadow-md transition hover:bg-lavender-400"
+              }
+            >
+              {cta.kind === "instagram" ? <InstagramGlyph /> : null}
+              {cta.label}
+              <span aria-hidden="true">↗</span>
+            </a>
           ) : null}
         </div>
       </div>

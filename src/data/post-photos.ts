@@ -23,6 +23,7 @@ export const POST_URL: Record<string, string> = {
   DdBm5sxBi_t: "https://www.instagram.com/p/DdBm5sxBi_t/",
   DdJtleHH0kK: "https://www.instagram.com/p/DdJtleHH0kK/",
   DcgqY_KGjHq: "https://www.instagram.com/p/DcgqY_KGjHq/",
+  Dda1c8pRfGo: "https://www.instagram.com/p/Dda1c8pRfGo/",
 };
 
 export type EventPostKey = "playcove" | "trek" | "circletime" | "littlebeats";

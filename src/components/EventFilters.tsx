@@ -39,7 +39,7 @@ const TIME_PILLS: { value: TimeFilter; label: string }[] = [
 
 const PLACE_PILLS: { value: PlaceFilter; label: string }[] = [
   { value: "all", label: "All places" },
-  { value: "offline", label: "Offline" },
+  { value: "offline", label: "In person" },
   { value: "online", label: "Online" },
 ];
 
@@ -79,17 +79,31 @@ export function EventFilters({
     setOpen(false);
   };
 
+  const [showMore, setShowMore] = useState(false);
+
   const areaOptions = areasFromEvents(events);
   const areas = areaOptions.length > 0 ? areaOptions : [...AREAS];
-  const showDates = true;
 
-  const hasActiveFilters =
+  const hasActiveFilters = Boolean(
     filters.search ||
-    filters.ageGroup !== "all" ||
-    filters.area !== "all" ||
-    filters.time !== "all" ||
-    filters.place !== "all" ||
-    filters.kind !== "all";
+      filters.time !== "all" ||
+      filters.place !== "all" ||
+      filters.kind !== "all" ||
+      filters.ageGroup !== "all" ||
+      filters.area !== "all",
+  );
+
+  const resetFilters = () => {
+    setShowMore(false);
+    onChange({
+      search: "",
+      ageGroup: "all",
+      area: "all",
+      time: "all",
+      place: "all",
+      kind: "all",
+    });
+  };
 
   return (
     <div className="space-y-4">
@@ -184,42 +198,6 @@ export function EventFilters({
       </div>
 
       <div className="flex flex-wrap items-center gap-2">
-        {showDates &&
-          TIME_PILLS.map((pill) => (
-            <button
-              key={pill.value}
-              type="button"
-              onClick={() => update("time", pill.value)}
-              className={
-                filters.time === pill.value
-                  ? "h-10 rounded-full bg-ink px-4 text-sm font-semibold text-white"
-                  : "h-10 rounded-full bg-white px-4 text-sm font-semibold text-ink/70 ring-1 ring-lavender-100 hover:bg-lavender-50"
-              }
-            >
-              {pill.label}
-            </button>
-          ))}
-
-        <span className="mx-1 hidden h-6 w-px bg-lavender-200 sm:inline-block" aria-hidden />
-
-        {PLACE_PILLS.map((pill) => (
-          <button
-            key={pill.value}
-            type="button"
-            aria-pressed={filters.place === pill.value}
-            onClick={() => update("place", pill.value)}
-            className={
-              filters.place === pill.value
-                ? "h-10 rounded-full bg-lavender-500 px-4 text-sm font-semibold text-white"
-                : "h-10 rounded-full bg-white px-4 text-sm font-semibold text-ink/70 ring-1 ring-lavender-100 hover:bg-lavender-50"
-            }
-          >
-            {pill.label}
-          </button>
-        ))}
-
-        <span className="mx-1 hidden h-6 w-px bg-lavender-200 sm:inline-block" aria-hidden />
-
         <button
           type="button"
           aria-pressed={filters.kind === "all"}
@@ -248,60 +226,99 @@ export function EventFilters({
             {LISTING_KIND_LABEL[kind]}
           </button>
         ))}
+      </div>
 
-        <span className="relative">
-          <select
-            aria-label="Age"
-            value={filters.ageGroup}
-            onChange={(e) => update("ageGroup", e.target.value as AgeGroup | "all")}
-            className={selectClass}
-          >
-            <option value="all">Any age</option>
-            {Object.entries(AGE_GROUP_LABELS).map(([value, label]) => (
-              <option key={value} value={value}>
-                {label}
-              </option>
-            ))}
-          </select>
-          <Chevron />
-        </span>
-
-        <span className="relative">
-          <select
-            aria-label="Area"
-            value={filters.area}
-            onChange={(e) => update("area", e.target.value)}
-            className={selectClass}
-          >
-            <option value="all">Any area</option>
-            {areas.map((area) => (
-              <option key={area} value={area}>
-                {area}
-              </option>
-            ))}
-          </select>
-          <Chevron />
-        </span>
+      <div className="flex flex-wrap items-center gap-2">
+        <button
+          type="button"
+          onClick={() => setShowMore((v) => !v)}
+          className={
+            showMore || hasActiveFilters
+              ? "h-10 rounded-full bg-lavender-500 px-4 text-sm font-semibold text-white"
+              : "h-10 rounded-full bg-white px-4 text-sm font-semibold text-ink/70 ring-1 ring-lavender-100 hover:bg-lavender-50"
+          }
+        >
+          Filters
+        </button>
 
         {hasActiveFilters && (
           <button
             type="button"
-            onClick={() =>
-              onChange({
-                search: "",
-                ageGroup: "all",
-                area: "all",
-                time: "all",
-                place: "all",
-                kind: "all",
-              })
-            }
+            onClick={resetFilters}
             className="h-10 px-3 text-sm font-semibold text-muted hover:text-ink"
           >
             Reset
           </button>
         )}
       </div>
+
+      {showMore && (
+        <div className="flex flex-wrap items-center gap-2">
+          {TIME_PILLS.map((pill) => (
+            <button
+              key={pill.value}
+              type="button"
+              onClick={() => update("time", pill.value)}
+              className={
+                filters.time === pill.value
+                  ? "h-10 rounded-full bg-ink px-4 text-sm font-semibold text-white"
+                  : "h-10 rounded-full bg-white px-4 text-sm font-semibold text-ink/70 ring-1 ring-lavender-100 hover:bg-lavender-50"
+              }
+            >
+              {pill.label}
+            </button>
+          ))}
+
+          {PLACE_PILLS.map((pill) => (
+            <button
+              key={pill.value}
+              type="button"
+              onClick={() => update("place", pill.value)}
+              className={
+                filters.place === pill.value
+                  ? "h-10 rounded-full bg-ink px-4 text-sm font-semibold text-white"
+                  : "h-10 rounded-full bg-white px-4 text-sm font-semibold text-ink/70 ring-1 ring-lavender-100 hover:bg-lavender-50"
+              }
+            >
+              {pill.label}
+            </button>
+          ))}
+
+          <span className="relative">
+            <select
+              aria-label="Age"
+              value={filters.ageGroup}
+              onChange={(e) => update("ageGroup", e.target.value as AgeGroup | "all")}
+              className={selectClass}
+            >
+              <option value="all">Any age</option>
+              {Object.entries(AGE_GROUP_LABELS).map(([value, label]) => (
+                <option key={value} value={value}>
+                  {label}
+                </option>
+              ))}
+            </select>
+            <Chevron />
+          </span>
+
+          <span className="relative">
+            <select
+              aria-label="Area"
+              value={filters.area}
+              onChange={(e) => update("area", e.target.value)}
+              className={selectClass}
+            >
+              <option value="all">Any area</option>
+              {areas.map((area) => (
+                <option key={area} value={area}>
+                  {area}
+                </option>
+              ))}
+            </select>
+            <Chevron />
+          </span>
+        </div>
+      )}
     </div>
   );
 }
