@@ -77,20 +77,13 @@ export function EventListing({ city }: EventListingProps) {
         <h1 className="font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl">
           What’s on in {meta.label}
         </h1>
-        <p className="mt-2 max-w-xl text-base leading-relaxed text-muted">
-          {meta.listingLine}
+        <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted">
+          Playdates, workshops, open houses, nature walks — scattered across
+          Instagram, websites and a hundred other places.
         </p>
-        <div className="mt-4 flex flex-wrap gap-2">
-          <span className="rounded-full bg-peach-100 px-3.5 py-1.5 text-xs font-bold text-peach-500">
-            6 months – 6 years
-          </span>
-          <span className="rounded-full bg-mint-100 px-3.5 py-1.5 text-xs font-bold text-mint-500">
-            {city === "delhi" ? "This week & weekend" : "Next 2 months"}
-          </span>
-          <span className="rounded-full bg-lavender-100 px-3.5 py-1.5 text-xs font-bold text-lavender-500">
-            {meta.chip}
-          </span>
-        </div>
+        <p className="mt-3 max-w-2xl font-display text-lg font-bold text-ink">
+          We bring them all here.
+        </p>
       </div>
       {loading && (
         <p className="mb-4 text-sm font-medium text-muted">Loading events…</p>

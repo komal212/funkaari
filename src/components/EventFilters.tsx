@@ -6,12 +6,12 @@ import type {
   AgeGroup,
   KidsEvent,
   CityId,
+  ListingKind,
 } from "@/types/event";
 import { AGE_GROUP_LABELS, AREAS, events as catalog } from "@/data/events";
 import { areasFromEvents } from "@/lib/filters";
 import { buildSearchSuggestions } from "@/lib/search";
 import { LISTING_KIND_LABEL, LISTING_KINDS } from "@/lib/listing-kind";
-import { ListingKindIcon } from "@/components/CategoryLogo";
 
 interface EventFiltersProps {
   filters: Filters;
@@ -178,43 +178,31 @@ export function EventFilters({
         )}
       </div>
 
-      <div>
-        <p className="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-muted">
-          Type
-        </p>
-        <div className="flex flex-wrap items-center gap-2">
-          <button
-            type="button"
-            aria-pressed={filters.kind === "all"}
-            onClick={() => update("kind", "all")}
-            className={
-              filters.kind === "all"
-                ? "h-10 rounded-full bg-peach-400 px-4 text-sm font-semibold text-white"
-                : "h-10 rounded-full bg-white px-4 text-sm font-semibold text-ink/70 ring-1 ring-lavender-100 hover:bg-lavender-50"
-            }
-          >
-            All types
-          </button>
-          {LISTING_KINDS.map((kind) => (
-            <button
-              key={kind}
-              type="button"
-              aria-pressed={filters.kind === kind}
-              onClick={() => update("kind", kind)}
-              className={
-                filters.kind === kind
-                  ? "flex h-10 items-center gap-1.5 rounded-full bg-peach-400 px-3 text-sm font-semibold text-white"
-                  : "flex h-10 items-center gap-1.5 rounded-full bg-white px-3 text-sm font-semibold text-ink/70 ring-1 ring-lavender-100 hover:bg-lavender-50"
-              }
-            >
-              <ListingKindIcon kind={kind} className="h-5 w-5" />
-              {LISTING_KIND_LABEL[kind]}
-            </button>
-          ))}
-        </div>
-      </div>
-
       <div className="flex flex-wrap items-end gap-3">
+        <div>
+          <p className="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-muted">
+            Type
+          </p>
+          <span className="relative inline-block">
+            <select
+              aria-label="Type"
+              value={filters.kind}
+              onChange={(e) =>
+                update("kind", e.target.value as ListingKind | "all")
+              }
+              className={selectClass}
+            >
+              <option value="all">All types</option>
+              {LISTING_KINDS.map((kind) => (
+                <option key={kind} value={kind}>
+                  {LISTING_KIND_LABEL[kind]}
+                </option>
+              ))}
+            </select>
+            <Chevron />
+          </span>
+        </div>
+
         <div>
           <p className="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-muted">
             Age

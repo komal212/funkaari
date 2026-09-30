@@ -4,7 +4,6 @@ export const CITIES: {
   id: CityId;
   label: string;
   href: string;
-  chip: string;
   listingLine: string;
   footerLine: string;
 }[] = [
@@ -12,9 +11,8 @@ export const CITIES: {
     id: "bangalore",
     label: "Bengaluru",
     href: "/bangalore",
-    chip: "Bengaluru",
     listingLine:
-      "Playdates in the park, art sessions at cafés, open houses at playschools — if it’s for little ones, it’s here.",
+      "Playdates, workshops, open houses, nature walks — scattered across Instagram, websites and a hundred other places.",
     footerLine:
       "We find every kids’ event near you so you don’t have to. Updated weekly.",
   },
