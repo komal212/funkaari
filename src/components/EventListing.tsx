@@ -72,26 +72,27 @@ export function EventListing({ city }: EventListingProps) {
   );
 
   return (
-    <section id="events" className="mx-auto max-w-7xl px-4 pb-12 pt-6 sm:px-6 sm:pb-16 sm:pt-8">
-      <div className="mb-6 flex items-start justify-between gap-3 sm:gap-6">
-        <div className="min-w-0 flex-1">
+    <section id="events" className="mx-auto max-w-7xl overflow-x-clip px-4 pb-12 pt-2 sm:px-6 sm:pb-16 sm:pt-4">
+      <div className="relative mb-2 sm:mb-8 sm:min-h-[17.5rem] lg:min-h-[20rem]">
+        <div className="relative z-10 max-w-xl pt-4 sm:max-w-lg sm:py-8 lg:py-10">
           <h1 className="font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl">
             What’s on in {meta.label}
           </h1>
-          <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted">
+          <p className="mt-3 text-base leading-relaxed text-muted">
             Playdates, workshops, open houses, nature walks — scattered across
             Instagram, websites and a hundred other places.
           </p>
-          <p className="mt-3 max-w-2xl font-display text-lg font-bold text-ink">
+          <p className="mt-3 font-display text-lg font-bold text-ink">
             We bring them all here.
           </p>
         </div>
         <img
-          src="/kids-playing-together.jpg"
-          alt="A baby giggling while playing with other little kids"
-          width={400}
-          height={400}
-          className="-mt-1 h-24 w-24 shrink-0 object-contain sm:h-36 sm:w-36 lg:h-44 lg:w-44"
+          src="/listing-playdate-scene.webp"
+          alt=""
+          width={1280}
+          height={720}
+          aria-hidden="true"
+          className="pointer-events-none -mr-[18%] -mt-2 ml-auto block h-auto w-[92%] max-w-none select-none [mask-image:radial-gradient(ellipse_80%_74%_at_64%_48%,#000_22%,transparent_72%)] [-webkit-mask-image:radial-gradient(ellipse_80%_74%_at_64%_48%,#000_22%,transparent_72%)] sm:absolute sm:bottom-0 sm:right-[-6%] sm:mt-0 sm:mr-0 sm:ml-0 sm:h-[108%] sm:w-auto xl:right-[calc((80rem-100vw)/2-1.5rem)]"
         />
       </div>
       {loading && (
@@ -103,12 +104,7 @@ export function EventListing({ city }: EventListingProps) {
         </p>
       )}
 
-      <EventFilters
-        filters={filters}
-        onChange={setFilters}
-        events={feed}
-        city={city}
-      />
+      <EventFilters filters={filters} onChange={setFilters} events={feed} />
 
       <p className="mt-6 text-sm text-muted">
         {filteredEvents.length} event{filteredEvents.length !== 1 ? "s" : ""}
@@ -122,12 +118,7 @@ export function EventListing({ city }: EventListingProps) {
           <p className="mt-4 font-display text-xl font-bold text-ink">
             No events match
           </p>
-          <p className="mt-2 text-muted">
-            Try another type, age, or area
-            {city === "delhi"
-              ? " — or search pottery, Noida, Gurugram."
-              : " — or search workshop, trek, Koramangala."}
-          </p>
+          <p className="mt-2 text-muted">Try another type, age, or area.</p>
         </div>
       ) : (
         <div className="mt-3 grid grid-cols-2 gap-2.5 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
