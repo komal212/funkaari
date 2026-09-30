@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-29T06:02:03.314Z",
+  "refreshedAt": "2026-09-30T05:51:40.260Z",
   "source": "parallel-web",
   "events": [
     {
@@ -28,6 +28,52 @@
       "imageUrl": "/events/story-play.png"
     },
     {
+      "id": "web-happeningnext-bangalore-kids-events-2026-10-03",
+      "title": "Bangalore Kids Events",
+      "date": "2026-10-03T10:00:00+05:30",
+      "time": "See post",
+      "city": "bangalore",
+      "area": "Bengaluru",
+      "venue": "Bengaluru",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "festival",
+      "organizer": "happeningnext",
+      "description": "Kids Events Happening Next in Bangalore, KA International Clown Festival - Bengaluru Good Shepherd Auditorium: Bengaluru 3 Oct 2026.",
+      "instagramHandle": "instagram",
+      "bookingUrl": "https://happeningnext.com/event/olympian-circus-bangalore-eid1u7v96l115h",
+      "website": "https://happeningnext.com/bangalore/kids",
+      "isFree": false,
+      "imageUrl": "/events/around-the-world.png"
+    },
+    {
+      "id": "web-happeningnext-kids-events-happening-next-in-bangalore-ka-2026-10-03",
+      "title": "Kids Events Happening Next in Bangalore, KA",
+      "date": "2026-10-03T10:00:00+05:30",
+      "time": "See post",
+      "city": "bangalore",
+      "area": "Bengaluru",
+      "venue": "Bengaluru",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "festival",
+      "organizer": "happeningnext",
+      "description": "International Clown Festival - Bengaluru Good Shepherd Auditorium: Bengaluru 3 Oct 2026.",
+      "instagramHandle": "instagram",
+      "bookingUrl": "https://happeningnext.com/event/international-clown-festival-bengaluru-eid1u7v95vl3xx",
+      "website": "https://happeningnext.com/bangalore/kids",
+      "isFree": false,
+      "imageUrl": "/events/around-the-world.png"
+    },
+    {
       "id": "web-instagram-yaanai-studio-yaanai-firefly-dussehra-parent-toddl-2026-10-03",
       "title": "Yaanai Studio | Yaanai × Firefly · Dussehra Parent Toddler ...",
       "date": "2026-10-03T10:00:00+05:30",
@@ -53,6 +99,52 @@
       "instagramUrl": "https://www.instagram.com/reel/Ddn4XyBpjGh"
     },
     {
+      "id": "web-happeningnext-bangalore-kids-events-2026-10-11",
+      "title": "Bangalore Kids Events",
+      "date": "2026-10-11T10:00:00+05:30",
+      "time": "See post",
+      "city": "bangalore",
+      "area": "Malleshwaram",
+      "venue": "Malleshwaram",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "workshop",
+      "organizer": "happeningnext",
+      "description": "Kids Events Happening Next in Bangalore, KA Nagarbhavi Biggest open air Dandiya Garba - 2026 The Soda Factory: Bengaluru 11 Oct 2026 NAVRATR.",
+      "instagramHandle": "instagram",
+      "bookingUrl": "https://happeningnext.com/event/nagarbhavi-biggest-open-air-dandiya-garba-2026-eid1u7v8w7pf3h",
+      "website": "https://happeningnext.com/bangalore/kids",
+      "isFree": false,
+      "imageUrl": "/events/story-play.png"
+    },
+    {
+      "id": "web-happeningnext-kids-events-happening-next-in-bangalore-ka-2026-10-11",
+      "title": "Kids Events Happening Next in Bangalore, KA",
+      "date": "2026-10-11T10:00:00+05:30",
+      "time": "See post",
+      "city": "bangalore",
+      "area": "Malleshwaram",
+      "venue": "Malleshwaram",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "workshop",
+      "organizer": "happeningnext",
+      "description": "Nagarbhavi Biggest open air Dandiya Garba - 2026 The Soda Factory: Bengaluru 11 Oct 2026 NAVRATRI OLYMPIAN CIRCUS BANGALORE Dr B.R. Ambedkar.",
+      "instagramHandle": "instagram",
+      "bookingUrl": "https://happeningnext.com/event/nagarbhavi-biggest-open-air-dandiya-garba-2026-eid1u7v8w7pf3h",
+      "website": "https://happeningnext.com/bangalore/kids",
+      "isFree": false,
+      "imageUrl": "/events/story-play.png"
+    },
+    {
       "id": "web-allevents-playdate-with-parents-2026-10-11",
       "title": "Playdate with Parents",
       "date": "2026-10-11T20:00:00+05:30",
@@ -72,6 +164,29 @@
       "instagramHandle": "instagram",
       "bookingUrl": "https://allevents.in/bangalore/playdate-with-parents/3900030684955455",
       "website": "https://allevents.in/bangalore/playdate-with-parents/3900030684955455",
+      "isFree": false,
+      "imageUrl": "/events/eravoo-art-play.png"
+    },
+    {
+      "id": "ig-ig-DdWQ--sqoTY",
+      "title": "Kids Workshop",
+      "date": "2026-10-31T10:00:00+05:30",
+      "time": "10:00 AM – 12:00 PM",
+      "area": "Jayanagar",
+      "venue": "Eravoo, Jayanagar",
+      "ageMinMonths": 36,
+      "ageGroups": [
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "workshop",
+      "organizer": "instagram",
+      "description": "Kids Workshop in Jayanagar.",
+      "instagramHandle": "instagram",
+      "instagramUrl": "https://www.instagram.com/p/DdWQ--sqoTY/",
+      "instagramCaption": "Photo by Eravoo Centre of Learning on September 16, 2026. May be an illustration of card, lego, poster and text that says 'ERA E VOO ART PLAY Explore. Create. ERAVOO Have Fun. AYANACH Ajoyful, open Enrichment Program where explore, things, creative and have lots fun! space to imagine, create and enjoy together.\n只ペス EXPLORE NEW IDEAS CREATE FREELY GET MESSY & EXPRESS HAVE & BELONG MAKE FRIENDS &CONNECT Dates: Saturdays 3ਾশ, 17h&31 31st October 10:00 AM Triming: to 12:00 PM Ages: Years and above ALL MATERIALS PROVIDED For ₹6,000/- The Month We provide natural and recyclable materials creative possibilities! Please Bring Water Bottle And Light Snack.\n\n...\n\nA place to try, create, play and have fun.\nArt Play is an open-ended art experience for children aged 3+, where they can explore materials, follow their ideas, get creative and enjoy making things together.\n✨ Explore new ideas\n✨ Create freely\n✨ Get messy & express\n✨ Have fun & connect\n📅 3rd • 17th • 31st October\n⏰ 10:00 AM – 12:00 PM\n📍 Eravoo, Jayanagar\n👧 For ages 3+\n💰 ₹6,000 for the month\n🎨 All materials provided\nWe’ll be using a mix of natural and recyclable materials for children to explore and create with.\nPlease bring a water bottle and a light snack.\n🔗 Link in bio to register\n💌 Or DM us to register.\n\n...\n\n(Art, kids art, art activities for kids, kids workshop, creative activities, weekend activities for kids, play based learning, kids enrichment, Jayanagar, Bangalore, Bangalore parents, activities for children , kids workshop in Jayanagar , kids workshop in Bengaluru , parents )",
+      "fromInstagram": true,
+      "city": "bangalore",
       "isFree": false,
       "imageUrl": "/events/eravoo-art-play.png"
     }
