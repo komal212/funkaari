@@ -1,0 +1,226 @@
+{
+  "events": [
+    {
+      "id": "forum-south-around-the-world",
+      "title": "Around the World at Forum South",
+      "date": "2026-09-22T16:00:00+05:30",
+      "endDate": "2026-09-30T23:59:59+05:30",
+      "time": "Workshops through 30 Sep",
+      "area": "JP Nagar",
+      "venue": "Forum South Bengaluru, Kanakapura Road",
+      "ageMinMonths": 24,
+      "ageMaxYears": 6,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "workshop",
+      "organizer": "Forum South Bengaluru",
+      "description": "USA, Egypt, Japan and Madagascar zones with workshops for little travellers.",
+      "instagramHandle": "forumsouthbengaluru",
+      "instagramUrl": "https://www.instagram.com/p/Dda3gUgkWj7/",
+      "imageUrl": "/events/around-the-world.png",
+      "fromInstagram": true,
+      "city": "bangalore",
+      "bookingUrl": "https://in.bookmyshow.com/events/around-the-world-forum-south-bengaluru/ET00517740",
+      "isFree": false,
+      "organizerHandle": "forumsouthbengaluru",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": null,
+          "url": "https://www.instagram.com/p/Dda3gUgkWj7/",
+          "postedBy": "forumsouthbengaluru",
+          "kind": "announcement",
+          "seenAt": "2026-09-30T12:34:16.291Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "Dda3gUgkWj7"
+        ],
+        "bookingIds": [
+          "bms:ET00517740"
+        ]
+      },
+      "seeded": true,
+      "createdAt": "2026-09-30T12:34:16.291Z",
+      "updatedAt": "2026-09-30T12:37:18.854Z"
+    },
+    {
+      "id": "aura-circle-time",
+      "title": "Circle Time at Áura Montessori",
+      "date": "2026-10-03T10:00:00+05:30",
+      "time": "Saturday",
+      "area": "Koramangala",
+      "venue": "Áura Montessori, 1st Block Koramangala",
+      "ageMinMonths": 18,
+      "ageMaxYears": 6,
+      "ageGroups": [
+        "1-2yr",
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "workshop",
+      "organizer": "Áura Montessori",
+      "description": "Paint, craft, sing, dance and a story. Kids take home a handmade instrument.",
+      "instagramHandle": "the_two_messy_hands",
+      "instagramUrl": "https://www.instagram.com/p/Ddi6EEpgjE2/",
+      "imageUrl": "/events/circle-time.png",
+      "fromInstagram": true,
+      "city": "bangalore",
+      "isFree": false,
+      "organizerHandle": "the_two_messy_hands",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": null,
+          "url": "https://www.instagram.com/p/Ddi6EEpgjE2/",
+          "postedBy": "the_two_messy_hands",
+          "kind": "announcement",
+          "seenAt": "2026-09-30T12:34:16.291Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "Ddi6EEpgjE2"
+        ],
+        "bookingIds": []
+      },
+      "seeded": true,
+      "createdAt": "2026-09-30T12:34:16.291Z",
+      "updatedAt": "2026-09-30T12:37:18.854Z"
+    },
+    {
+      "id": "eravoo-art-play-october",
+      "title": "Art Play at Eravoo",
+      "date": "2026-10-03T10:00:00+05:30",
+      "endDate": "2026-10-31T12:00:00+05:30",
+      "time": "Saturdays 10:00 AM – 12:00 PM (3, 17 & 31 Oct)",
+      "area": "Jayanagar",
+      "venue": "Eravoo, Jayanagar",
+      "ageMinMonths": 36,
+      "ageGroups": [
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "art",
+      "organizer": "Eravoo Centre of Learning",
+      "description": "Open-ended art for ages 3+ with natural and recyclable materials. ₹6,000 for the month; all materials included.",
+      "instagramHandle": "eravoo.blr",
+      "instagramUrl": "https://www.instagram.com/p/DdWQ--sqoTY/",
+      "imageUrl": "/events/eravoo-art-play.png",
+      "fromInstagram": true,
+      "city": "bangalore",
+      "website": "https://eravoo.com/",
+      "bookingUrl": "https://eravoo.com/",
+      "isFree": false,
+      "price": "₹6,000 / month",
+      "organizerHandle": "eravoo.blr",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": null,
+          "url": "https://www.instagram.com/p/DdWQ--sqoTY/",
+          "postedBy": "eravoo.blr",
+          "kind": "announcement",
+          "seenAt": "2026-09-30T12:34:16.291Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdWQ--sqoTY"
+        ],
+        "bookingIds": []
+      },
+      "seeded": true,
+      "createdAt": "2026-09-30T12:34:16.291Z",
+      "updatedAt": "2026-09-30T12:34:16.291Z"
+    },
+    {
+      "id": "allevents-clown-festival",
+      "title": "International Clown Festival",
+      "date": "2026-10-03T15:00:00+05:30",
+      "time": "3:00 PM – 5:00 PM",
+      "area": "Richmond Town",
+      "venue": "Good Shepherd Auditorium, Museum Road",
+      "ageMinMonths": 36,
+      "ageGroups": [
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "festival",
+      "organizer": "International Clown Festival",
+      "description": "A two-hour clown show for ages 3 and up. Tickets on AllEvents.",
+      "instagramHandle": "instagram",
+      "imageUrl": "/events/around-the-world.png",
+      "city": "bangalore",
+      "bookingUrl": "https://allevents.in/bangalore/international-clown-festival-bengaluru/3900030490915719",
+      "website": "https://allevents.in/bangalore/kids",
+      "isFree": false,
+      "organizerHandle": "instagram",
+      "status": "scheduled",
+      "sources": [],
+      "matchKeys": {
+        "shortcodes": [],
+        "bookingIds": [
+          "allevents:3900030490915719"
+        ]
+      },
+      "seeded": true,
+      "createdAt": "2026-09-30T12:34:16.291Z",
+      "updatedAt": "2026-09-30T12:34:16.291Z"
+    },
+    {
+      "id": "little-beats-festival",
+      "title": "Little Beats Festival",
+      "date": "2026-11-15T12:00:00+05:30",
+      "time": "12 PM–3 PM or 4 PM–7 PM",
+      "area": "Jayanagar",
+      "venue": "Kalyani Kala Mandir",
+      "ageMinMonths": 12,
+      "ageMaxYears": 6,
+      "ageGroups": [
+        "1-2yr",
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "festival",
+      "organizer": "Little Beats Festival",
+      "description": "A first music festival for little ones. Tickets from ₹399.",
+      "instagramHandle": "littlebeatsfestival",
+      "instagramUrl": "https://www.instagram.com/p/DdjxfZWzyGg/",
+      "imageUrl": "/events/little-beats.png",
+      "fromInstagram": true,
+      "city": "bangalore",
+      "bookingUrl": "https://in.bookmyshow.com/activities/little-beats-festival/ET00515504",
+      "isFree": false,
+      "price": "From ₹399",
+      "organizerHandle": "littlebeatsfestival",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": null,
+          "url": "https://www.instagram.com/p/DdjxfZWzyGg/",
+          "postedBy": "littlebeatsfestival",
+          "kind": "announcement",
+          "seenAt": "2026-09-30T12:34:16.291Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdjxfZWzyGg"
+        ],
+        "bookingIds": [
+          "bms:ET00515504"
+        ]
+      },
+      "seeded": true,
+      "createdAt": "2026-09-30T12:34:16.291Z",
+      "updatedAt": "2026-09-30T12:34:16.291Z"
+    }
+  ]
+}

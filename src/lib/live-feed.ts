@@ -2,6 +2,7 @@ import type { KidsEvent } from "@/types/event";
 import { events as catalog } from "@/data/events";
 import { mergeEventFeeds } from "@/lib/merge-events";
 import bundled from "@/data/live-bangalore.json";
+import instagramBundled from "@/data/instagram-events.json";
 
 export type LiveBangaloreFeed = {
   refreshedAt: string;
@@ -26,7 +27,10 @@ export function listingFromLiveFeed(feed: LiveBangaloreFeed): {
   refreshedAt: string;
   warning?: string;
 } {
-  const events = mergeEventFeeds(feed.events, catalog);
+  // Pipeline events come last so they win over the web scrape on the same post URL.
+  const pipeline = (instagramBundled as { events?: unknown[] }).events;
+  const instagram = Array.isArray(pipeline) ? (pipeline as KidsEvent[]) : [];
+  const events = mergeEventFeeds([...feed.events, ...instagram], catalog);
   const refreshedAt = feed.refreshedAt;
   const age = refreshedAt ? Date.now() - new Date(refreshedAt).getTime() : Number.POSITIVE_INFINITY;
   const warning =

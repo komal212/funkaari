@@ -39,3 +39,4 @@ scrape-following-list.json
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+.context/
