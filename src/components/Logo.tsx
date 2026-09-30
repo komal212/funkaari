@@ -68,7 +68,7 @@ export function Logo({ compact = false, subtitle = true }: LogoProps) {
         </span>
         {subtitle && !compact && (
           <span className="mt-1 hidden text-[11px] font-semibold uppercase tracking-wider text-peach-400 sm:block">
-            every little moment
+            every little adventure
           </span>
         )}
       </span>

@@ -20,7 +20,7 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "Funkaari — Make every little moment count",
+  title: "Funkaari — Every little adventure",
   description:
     "Discover the best workshops, playdates, classes, and weekend adventures for children aged 6 months to 6 years in Bengaluru—all in one place.",
 };

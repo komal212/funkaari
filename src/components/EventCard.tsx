@@ -45,12 +45,12 @@ export function EventCard({ event }: EventCardProps) {
     <article className="activity-card group relative flex flex-col overflow-hidden">
       <div className="relative aspect-[4/5] overflow-hidden bg-lavender-50">
         {cover}
-        <div className="pointer-events-none absolute left-3 top-3 z-10 flex flex-wrap gap-2">
+        <div className="pointer-events-none absolute inset-x-0 top-0 z-10 bg-gradient-to-b from-ink/70 via-ink/40 to-transparent px-3 pb-10 pt-3">
           <span
-            className={`rounded-full px-3 py-1 text-xs font-bold shadow-sm ${
+            className={`inline-flex items-center rounded-full px-3 py-1 text-xs font-bold shadow-sm ${
               event.isFree
-                ? "bg-white/90 text-mint-500"
-                : "bg-white/90 text-peach-500"
+                ? "bg-white text-mint-500"
+                : "bg-white text-peach-500"
             }`}
           >
             {event.isFree ? "Free" : event.price ?? "Paid"}

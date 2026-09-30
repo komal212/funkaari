@@ -5,7 +5,7 @@ import { FUNKAARI_INSTAGRAM_HANDLE, FUNKAARI_INSTAGRAM_URL } from "@/lib/instagr
 export const metadata: Metadata = {
   title: "Submit an Event — Funkaari",
   description:
-    "Preschools and activity centers: share your Instagram event post to be listed for Bangalore parents.",
+    "Share your event with Bengaluru parents. Funkaari reviews every submission and posts it only after approval.",
 };
 
 export default function SubmitPage() {
@@ -30,14 +30,14 @@ export default function SubmitPage() {
             Submit an event
           </h1>
           <p className="mt-1 text-sm font-medium text-lavender-400">
-            Share your event with Bangalore parents
+            Share your event with Bengaluru parents
           </p>
         </div>
       </div>
 
       <p className="mt-6 leading-relaxed text-muted">
         Running a workshop, camp, or open day for children{" "}
-        <strong className="font-bold text-ink">6 months to 6 years</strong> in Bangalore?
+        <strong className="font-bold text-ink">6 months to 6 years</strong> in Bengaluru?
         Share your Instagram post (or tag{" "}
         <a
           href={FUNKAARI_INSTAGRAM_URL}
@@ -47,7 +47,8 @@ export default function SubmitPage() {
         >
           @{FUNKAARI_INSTAGRAM_HANDLE}
         </a>
-        ) and we&apos;ll add it to our curated feed — free for MVP.
+        ). It is free. We review every submission and post it on Funkaari only
+        after it is approved — nothing goes live automatically.
       </p>
 
       <form
@@ -110,6 +111,13 @@ export default function SubmitPage() {
             className="mt-2 w-full rounded-2xl border-0 bg-lavender-50/80 px-4 py-3.5 text-sm font-medium ring-1 ring-lavender-100 focus:bg-white focus:outline-none focus:ring-2 focus:ring-lavender-300"
           />
         </div>
+
+        <p className="rounded-2xl bg-lavender-50/90 px-4 py-3 text-sm leading-relaxed text-ink/80 ring-1 ring-lavender-100">
+          <strong className="font-bold text-ink">We approve before posting.</strong>{" "}
+          Your event will not appear on the site until we have reviewed the
+          date, age group, and details. We may email or message you if something
+          is missing.
+        </p>
 
         <button
           type="submit"
