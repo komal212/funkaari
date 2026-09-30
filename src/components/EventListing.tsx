@@ -72,7 +72,7 @@ export function EventListing({ city }: EventListingProps) {
   );
 
   return (
-    <section id="events" className="mx-auto max-w-6xl px-4 pb-12 pt-6 sm:px-6 sm:pb-16 sm:pt-8">
+    <section id="events" className="mx-auto max-w-7xl px-4 pb-12 pt-6 sm:px-6 sm:pb-16 sm:pt-8">
       <div className="mb-6">
         <h1 className="font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl">
           What’s on in {meta.label}
@@ -121,19 +121,14 @@ export function EventListing({ city }: EventListingProps) {
             No events match
           </p>
           <p className="mt-2 text-muted">
-            {filters.place === "online"
-              ? "No dated online kids sessions in this list yet. Try Offline, or check back after a refresh."
-              : filters.place === "offline"
-                ? "No in-person listings match. Try All places or another area."
-                : `Try a simpler word${
-                    city === "delhi"
-                      ? " (pottery, Noida, Gurugram)"
-                      : " (workshop, trek, Koramangala)"
-                  } or pick another area.`}
+            Try another type, age, or area
+            {city === "delhi"
+              ? " — or search pottery, Noida, Gurugram."
+              : " — or search workshop, trek, Koramangala."}
           </p>
         </div>
       ) : (
-        <div className="mt-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-3 grid grid-cols-2 gap-3 lg:grid-cols-3 xl:grid-cols-4">
           {filteredEvents.map((event) => (
             <EventCard key={event.id} event={event} />
           ))}

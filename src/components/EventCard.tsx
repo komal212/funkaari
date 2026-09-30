@@ -49,14 +49,14 @@ export function EventCard({ event }: EventCardProps) {
 
   return (
     <article className="activity-card group relative flex flex-col overflow-hidden">
-      <div className="relative aspect-[4/3] overflow-hidden bg-lavender-50 sm:aspect-[4/4]">
+      <div className="relative h-24 overflow-hidden bg-lavender-50">
         {cover}
-        <div className="pointer-events-none absolute inset-x-0 top-0 z-10 flex items-center bg-white/90 px-3 py-2 backdrop-blur-[2px]">
+        <div className="pointer-events-none absolute left-2 top-2 z-10">
           <span
-            className={`inline-flex items-center rounded-full px-3 py-1 text-xs font-bold shadow-sm ${
+            className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-[11px] font-bold shadow-sm ${
               event.isFree
-                ? "bg-mint-100 text-mint-500"
-                : "bg-peach-100 text-peach-500"
+                ? "bg-white/90 text-mint-500"
+                : "bg-white/90 text-peach-500"
             }`}
           >
             {event.isFree ? "Free" : event.price ?? "Paid"}
@@ -64,18 +64,18 @@ export function EventCard({ event }: EventCardProps) {
         </div>
       </div>
 
-      <div className="flex flex-1 flex-col p-5 sm:p-6">
-        <h3 className="font-display text-xl font-bold text-ink group-hover:text-lavender-500 transition-colors leading-snug">
+      <div className="flex flex-1 flex-col p-3.5 sm:p-4">
+        <h3 className="font-display text-base font-bold leading-snug text-ink transition-colors group-hover:text-lavender-500 sm:text-lg">
           {heading}
         </h3>
 
-        <p className="mt-2 text-sm text-muted leading-relaxed">
+        <p className="mt-1.5 line-clamp-2 text-sm leading-relaxed text-muted">
           {displayEventDescription(event)}
         </p>
 
-        <dl className="mt-4 space-y-2.5 text-sm">
-          <div className="flex items-start gap-2.5">
-            <dt className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-lavender-50 text-sm">
+        <dl className="mt-3 space-y-1.5 text-xs sm:text-sm">
+          <div className="flex items-start gap-2">
+            <dt className="flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-lavender-50 text-xs">
               📅
             </dt>
             <dd>
@@ -85,32 +85,32 @@ export function EventCard({ event }: EventCardProps) {
               <span className="text-muted"> · {event.time}</span>
             </dd>
           </div>
-          <div className="flex items-start gap-2.5">
-            <dt className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-mint-50 text-sm">
+          <div className="flex items-start gap-2">
+            <dt className="flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-mint-50 text-xs">
               📍
             </dt>
-            <dd>
+            <dd className="line-clamp-2">
               <span className="font-semibold text-ink">{event.area}</span>
               <span className="text-muted"> · {event.venue}</span>
             </dd>
           </div>
-          <div className="flex items-start gap-2.5">
-            <dt className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-peach-50 text-sm">
+          <div className="flex items-start gap-2">
+            <dt className="flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-peach-50 text-xs">
               👶
             </dt>
             <dd className="font-medium text-ink">{formatAgeRange(event)}</dd>
           </div>
-          <div className="flex items-start gap-2.5">
-            <dt className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-sky-50 text-sm">
+          <div className="flex items-start gap-2">
+            <dt className="flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-sky-50 text-xs">
               🏫
             </dt>
-            <dd className="font-medium text-ink">{event.organizer}</dd>
+            <dd className="line-clamp-1 font-medium text-ink">{event.organizer}</dd>
           </div>
         </dl>
 
-        <div className="mt-auto pt-5">
+        <div className="mt-auto pt-3">
           {event.instagramHandle && event.instagramHandle !== "instagram" ? (
-            <p className="text-center text-xs font-medium text-muted">
+            <p className="text-center text-[11px] font-medium text-muted">
               @{normalizeHandle(event.instagramHandle)}
             </p>
           ) : null}
@@ -121,8 +121,8 @@ export function EventCard({ event }: EventCardProps) {
               rel="noopener noreferrer"
               className={
                 cta.kind === "instagram"
-                  ? "mt-3 flex items-center justify-center gap-2 rounded-full bg-[#E1306C] px-4 py-3 text-sm font-bold text-white shadow-md transition hover:bg-[#c42a5d]"
-                  : "mt-3 flex items-center justify-center gap-2 rounded-full bg-lavender-500 px-4 py-3 text-sm font-bold text-white shadow-md transition hover:bg-lavender-400"
+                  ? "mt-2 flex items-center justify-center gap-1.5 rounded-full bg-[#E1306C] px-3 py-2 text-xs font-bold text-white shadow-md transition hover:bg-[#c42a5d] sm:text-sm"
+                  : "mt-2 flex items-center justify-center gap-1.5 rounded-full bg-lavender-500 px-3 py-2 text-xs font-bold text-white shadow-md transition hover:bg-lavender-400 sm:text-sm"
               }
             >
               {cta.kind === "instagram" ? <InstagramGlyph /> : null}

@@ -168,16 +168,16 @@ export function EventLogoCover({ event }: { event: KidsEvent }) {
   const label = LISTING_KIND_LABEL[kind];
 
   return (
-    <div className={`relative h-full min-h-[16rem] w-full ${style.field}`}>
-      <div className="pointer-events-none absolute -left-8 top-16 h-40 w-40 rounded-full bg-white/40 blur-2xl" />
-      <div className="pointer-events-none absolute -right-10 bottom-20 h-36 w-36 rounded-full bg-white/30 blur-2xl" />
-      <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 px-4 pb-16 pt-8">
+    <div className={`relative h-full w-full ${style.field}`}>
+      <div className="pointer-events-none absolute -left-6 -top-8 h-24 w-24 rounded-full bg-white/40 blur-2xl" />
+      <div className="pointer-events-none absolute -right-8 -bottom-10 h-24 w-24 rounded-full bg-white/30 blur-2xl" />
+      <div className="absolute inset-0 flex items-center justify-center gap-2.5 px-3">
         <span
-          className={`flex h-28 w-28 items-center justify-center rounded-[2rem] shadow-card ring-4 ring-white/80 ${style.badge}`}
+          className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl shadow-md ring-2 ring-white/80 ${style.badge}`}
         >
-          <ListingKindIcon kind={kind} className="h-16 w-16" />
+          <ListingKindIcon kind={kind} className="h-7 w-7" />
         </span>
-        <p className={`font-display text-2xl font-bold ${style.label}`}>{label}</p>
+        <p className={`font-display text-base font-bold ${style.label}`}>{label}</p>
       </div>
     </div>
   );

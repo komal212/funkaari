@@ -34,7 +34,7 @@
   }
 
   .activity-card {
-    @apply rounded-3xl bg-white shadow-card transition-all duration-300 overflow-hidden;
+    @apply overflow-hidden rounded-2xl bg-white shadow-card transition-all duration-300;
   }
 
   .activity-card:hover {

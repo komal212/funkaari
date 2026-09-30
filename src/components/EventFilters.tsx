@@ -4,8 +4,6 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import type {
   EventFilters as Filters,
   AgeGroup,
-  TimeFilter,
-  PlaceFilter,
   KidsEvent,
   CityId,
 } from "@/types/event";
@@ -25,23 +23,11 @@ interface EventFiltersProps {
 const selectClass =
   "filter-select h-10 min-w-[8.5rem] appearance-none rounded-full border-0 bg-lavender-50 px-4 pr-9 text-sm font-semibold text-ink focus:outline-none focus:ring-2 focus:ring-lavender-300";
 
-const KIND_LABEL: Record<string, string> = {
+const SUGGESTION_KIND: Record<string, string> = {
   event: "Event",
   preschool: "Place",
   area: "Area",
 };
-
-const TIME_PILLS: { value: TimeFilter; label: string }[] = [
-  { value: "all", label: "All dates" },
-  { value: "this-week", label: "This week" },
-  { value: "this-weekend", label: "Weekend" },
-];
-
-const PLACE_PILLS: { value: PlaceFilter; label: string }[] = [
-  { value: "all", label: "All places" },
-  { value: "offline", label: "In person" },
-  { value: "online", label: "Online" },
-];
 
 export function EventFilters({
   filters,
@@ -79,22 +65,17 @@ export function EventFilters({
     setOpen(false);
   };
 
-  const [showMore, setShowMore] = useState(false);
-
   const areaOptions = areasFromEvents(events);
   const areas = areaOptions.length > 0 ? areaOptions : [...AREAS];
 
   const hasActiveFilters = Boolean(
     filters.search ||
-      filters.time !== "all" ||
-      filters.place !== "all" ||
       filters.kind !== "all" ||
       filters.ageGroup !== "all" ||
       filters.area !== "all",
   );
 
   const resetFilters = () => {
-    setShowMore(false);
     onChange({
       search: "",
       ageGroup: "all",
@@ -188,7 +169,7 @@ export function EventFilters({
                 >
                   <span className="font-medium text-ink">{item.label}</span>
                   <span className="shrink-0 text-xs font-semibold text-muted">
-                    {KIND_LABEL[item.kind]}
+                    {SUGGESTION_KIND[item.kind]}
                   </span>
                 </button>
               </li>
@@ -197,94 +178,48 @@ export function EventFilters({
         )}
       </div>
 
-      <div className="flex flex-wrap items-center gap-2">
-        <button
-          type="button"
-          aria-pressed={filters.kind === "all"}
-          onClick={() => update("kind", "all")}
-          className={
-            filters.kind === "all"
-              ? "h-10 rounded-full bg-peach-400 px-4 text-sm font-semibold text-white"
-              : "h-10 rounded-full bg-white px-4 text-sm font-semibold text-ink/70 ring-1 ring-lavender-100 hover:bg-lavender-50"
-          }
-        >
-          All types
-        </button>
-        {LISTING_KINDS.map((kind) => (
+      <div>
+        <p className="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-muted">
+          Type
+        </p>
+        <div className="flex flex-wrap items-center gap-2">
           <button
-            key={kind}
             type="button"
-            aria-pressed={filters.kind === kind}
-            onClick={() => update("kind", kind)}
+            aria-pressed={filters.kind === "all"}
+            onClick={() => update("kind", "all")}
             className={
-              filters.kind === kind
-                ? "flex h-10 items-center gap-1.5 rounded-full bg-peach-400 px-3 text-sm font-semibold text-white"
-                : "flex h-10 items-center gap-1.5 rounded-full bg-white px-3 text-sm font-semibold text-ink/70 ring-1 ring-lavender-100 hover:bg-lavender-50"
+              filters.kind === "all"
+                ? "h-10 rounded-full bg-peach-400 px-4 text-sm font-semibold text-white"
+                : "h-10 rounded-full bg-white px-4 text-sm font-semibold text-ink/70 ring-1 ring-lavender-100 hover:bg-lavender-50"
             }
           >
-            <ListingKindIcon kind={kind} className="h-5 w-5" />
-            {LISTING_KIND_LABEL[kind]}
+            All types
           </button>
-        ))}
-      </div>
-
-      <div className="flex flex-wrap items-center gap-2">
-        <button
-          type="button"
-          onClick={() => setShowMore((v) => !v)}
-          className={
-            showMore || hasActiveFilters
-              ? "h-10 rounded-full bg-lavender-500 px-4 text-sm font-semibold text-white"
-              : "h-10 rounded-full bg-white px-4 text-sm font-semibold text-ink/70 ring-1 ring-lavender-100 hover:bg-lavender-50"
-          }
-        >
-          Filters
-        </button>
-
-        {hasActiveFilters && (
-          <button
-            type="button"
-            onClick={resetFilters}
-            className="h-10 px-3 text-sm font-semibold text-muted hover:text-ink"
-          >
-            Reset
-          </button>
-        )}
-      </div>
-
-      {showMore && (
-        <div className="flex flex-wrap items-center gap-2">
-          {TIME_PILLS.map((pill) => (
+          {LISTING_KINDS.map((kind) => (
             <button
-              key={pill.value}
+              key={kind}
               type="button"
-              onClick={() => update("time", pill.value)}
+              aria-pressed={filters.kind === kind}
+              onClick={() => update("kind", kind)}
               className={
-                filters.time === pill.value
-                  ? "h-10 rounded-full bg-ink px-4 text-sm font-semibold text-white"
-                  : "h-10 rounded-full bg-white px-4 text-sm font-semibold text-ink/70 ring-1 ring-lavender-100 hover:bg-lavender-50"
+                filters.kind === kind
+                  ? "flex h-10 items-center gap-1.5 rounded-full bg-peach-400 px-3 text-sm font-semibold text-white"
+                  : "flex h-10 items-center gap-1.5 rounded-full bg-white px-3 text-sm font-semibold text-ink/70 ring-1 ring-lavender-100 hover:bg-lavender-50"
               }
             >
-              {pill.label}
+              <ListingKindIcon kind={kind} className="h-5 w-5" />
+              {LISTING_KIND_LABEL[kind]}
             </button>
           ))}
+        </div>
+      </div>
 
-          {PLACE_PILLS.map((pill) => (
-            <button
-              key={pill.value}
-              type="button"
-              onClick={() => update("place", pill.value)}
-              className={
-                filters.place === pill.value
-                  ? "h-10 rounded-full bg-ink px-4 text-sm font-semibold text-white"
-                  : "h-10 rounded-full bg-white px-4 text-sm font-semibold text-ink/70 ring-1 ring-lavender-100 hover:bg-lavender-50"
-              }
-            >
-              {pill.label}
-            </button>
-          ))}
-
-          <span className="relative">
+      <div className="flex flex-wrap items-end gap-3">
+        <div>
+          <p className="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-muted">
+            Age
+          </p>
+          <span className="relative inline-block">
             <select
               aria-label="Age"
               value={filters.ageGroup}
@@ -300,8 +235,13 @@ export function EventFilters({
             </select>
             <Chevron />
           </span>
+        </div>
 
-          <span className="relative">
+        <div>
+          <p className="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-muted">
+            Area
+          </p>
+          <span className="relative inline-block">
             <select
               aria-label="Area"
               value={filters.area}
@@ -318,7 +258,17 @@ export function EventFilters({
             <Chevron />
           </span>
         </div>
-      )}
+
+        {hasActiveFilters && (
+          <button
+            type="button"
+            onClick={resetFilters}
+            className="h-10 px-3 text-sm font-semibold text-muted hover:text-ink"
+          >
+            Reset
+          </button>
+        )}
+      </div>
     </div>
   );
 }
