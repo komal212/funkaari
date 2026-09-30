@@ -78,6 +78,9 @@ export function EventListing({ city }: EventListingProps) {
           <h1 className="font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl">
             What’s on in {meta.label}
           </h1>
+          <p className="mt-2 font-display text-lg font-semibold text-peach-500 sm:text-xl">
+            For your little ones.
+          </p>
           <p className="mt-3 text-base leading-relaxed text-muted">
             Playdates, workshops, open houses, nature walks — scattered across
             Instagram, websites and a hundred other places.
@@ -121,7 +124,7 @@ export function EventListing({ city }: EventListingProps) {
           <p className="mt-2 text-muted">Try another type, age, or area.</p>
         </div>
       ) : (
-        <div className="mt-3 grid grid-cols-2 gap-2.5 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+        <div className="mt-4 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-3 xl:grid-cols-4">
           {filteredEvents.map((event) => (
             <EventCard key={event.id} event={event} />
           ))}

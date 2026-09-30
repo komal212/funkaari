@@ -270,9 +270,9 @@ export function EventLogoCover({ event }: { event: KidsEvent }) {
   return (
     <div className={`relative h-full w-full ${style.field}`}>
       <div className="pointer-events-none absolute -left-4 -top-6 h-16 w-16 rounded-full bg-white/50 blur-xl" />
-      <div className="absolute inset-0 flex items-center gap-2 px-2.5">
-        <KindLogoMark kind={kind} className="h-9 w-9" />
-        <p className={`font-display text-sm font-bold ${style.label}`}>{label}</p>
+      <div className="absolute inset-0 flex items-center gap-2.5 px-3.5">
+        <KindLogoMark kind={kind} className="h-10 w-10" />
+        <p className={`font-display text-base font-bold ${style.label}`}>{label}</p>
       </div>
     </div>
   );
