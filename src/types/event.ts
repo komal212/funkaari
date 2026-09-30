@@ -62,10 +62,21 @@ export type TimeFilter = "all" | "this-week" | "this-weekend";
 
 export type PlaceFilter = "all" | "offline" | "online";
 
+export type ListingKind =
+  | "playdate"
+  | "workshop"
+  | "open-house"
+  | "nature"
+  | "art"
+  | "music"
+  | "festival"
+  | "sports";
+
 export interface EventFilters {
   search: string;
   ageGroup: AgeGroup | "all";
   area: EventArea | "all";
   time: TimeFilter;
   place: PlaceFilter;
+  kind: ListingKind | "all";
 }

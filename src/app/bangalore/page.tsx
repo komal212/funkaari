@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Hero } from "@/components/Hero";
 import { EventListing } from "@/components/EventListing";
 
 export const metadata: Metadata = {
@@ -9,10 +8,5 @@ export const metadata: Metadata = {
 };
 
 export default function BangalorePage() {
-  return (
-    <>
-      <Hero city="bangalore" />
-      <EventListing city="bangalore" />
-    </>
-  );
+  return <EventListing city="bangalore" />;
 }

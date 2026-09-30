@@ -15,6 +15,7 @@ const defaultFilters: Filters = {
   area: "all",
   time: "all",
   place: "all",
+  kind: "all",
 };
 
 interface EventListingProps {
@@ -71,14 +72,11 @@ export function EventListing({ city }: EventListingProps) {
   );
 
   return (
-    <section id="events" className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16">
-      <div className="mb-8">
-        <p className="text-xs font-bold uppercase tracking-[0.2em] text-peach-400">
-          {meta.label} diary
-        </p>
-        <h2 className="mt-2 font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl">
+    <section id="events" className="mx-auto max-w-6xl px-4 pb-12 pt-6 sm:px-6 sm:pb-16 sm:pt-8">
+      <div className="mb-6">
+        <h1 className="font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl">
           What’s on in {meta.label}
-        </h2>
+        </h1>
         <p className="mt-2 max-w-xl text-base leading-relaxed text-muted">
           {meta.listingLine}
         </p>

@@ -1,161 +1,184 @@
 import type { EventCategory, KidsEvent } from "@/types/event";
-import { coverForEvent } from "@/lib/event-quality";
+import {
+  LISTING_KIND_LABEL,
+  listingKind,
+  type ListingKind,
+} from "@/lib/listing-kind";
 
-const wrap: Record<EventCategory, { bg: string; ring: string; wash: string }> = {
+const STYLE: Record<ListingKind, { field: string; badge: string; label: string }> = {
+  playdate: {
+    field: "bg-gradient-to-br from-peach-100 via-peach-50 to-lavender-100",
+    badge: "bg-peach-200",
+    label: "text-peach-500",
+  },
   workshop: {
-    bg: "bg-mint-100",
-    ring: "ring-mint-200",
-    wash: "from-mint-200 to-mint-400",
+    field: "bg-gradient-to-br from-mint-100 via-mint-50 to-sky-100",
+    badge: "bg-mint-200",
+    label: "text-mint-500",
   },
-  camp: {
-    bg: "bg-sky-100",
-    ring: "ring-sky-200",
-    wash: "from-sky-200 to-sky-400",
+  "open-house": {
+    field: "bg-gradient-to-br from-lavender-100 via-lavender-50 to-peach-100",
+    badge: "bg-lavender-200",
+    label: "text-lavender-500",
   },
-  "open day": {
-    bg: "bg-lavender-100",
-    ring: "ring-lavender-200",
-    wash: "from-lavender-200 to-lavender-400",
-  },
-  sports: {
-    bg: "bg-peach-100",
-    ring: "ring-peach-200",
-    wash: "from-peach-200 to-peach-400",
+  nature: {
+    field: "bg-gradient-to-br from-sky-100 via-mint-50 to-mint-100",
+    badge: "bg-sky-200",
+    label: "text-sky-400",
   },
   art: {
-    bg: "bg-pink-100",
-    ring: "ring-pink-200",
-    wash: "from-pink-200 to-pink-400",
+    field: "bg-gradient-to-br from-pink-100 via-peach-50 to-lavender-100",
+    badge: "bg-pink-200",
+    label: "text-pink-500",
   },
   music: {
-    bg: "bg-sunny-100",
-    ring: "ring-sunny-200",
-    wash: "from-sunny-200 to-sunny-300",
+    field: "bg-gradient-to-br from-sunny-100 via-peach-50 to-lavender-100",
+    badge: "bg-sunny-200",
+    label: "text-sunny-400",
   },
   festival: {
-    bg: "bg-orange-100",
-    ring: "ring-orange-200",
-    wash: "from-orange-200 to-orange-400",
+    field: "bg-gradient-to-br from-orange-100 via-peach-50 to-sunny-100",
+    badge: "bg-orange-200",
+    label: "text-orange-500",
+  },
+  sports: {
+    field: "bg-gradient-to-br from-peach-100 via-sunny-50 to-sky-100",
+    badge: "bg-peach-200",
+    label: "text-peach-500",
   },
 };
 
-/** Illustration that matches this listing — never an Instagram flyer. */
-export function eventCoverImage(event: KidsEvent): string {
-  return coverForEvent(event, eventLogoKind(event));
-}
-
-export function eventLogoKind(event: KidsEvent): EventCategory {
-  const text = `${event.title} ${event.description}`.toLowerCase();
-  if (/paint|craft|clay|collage|colour|color|messy|circle time/.test(text)) return "art";
-  if (/trek|hike|nature|farm|camp|walk|outdoor/.test(text)) return "camp";
-  if (/music|beats|drum|sing|song|shaker/.test(text)) {
-    return event.category === "festival" ? "festival" : "music";
-  }
-  if (/football|gym|yoga|sport|kick|turf/.test(text)) return "sports";
-  if (/story|book|library|playdate|sensory/.test(text)) return "workshop";
-  if (/kidzania|role.?play|open house/.test(text)) return "festival";
-  if (/marathon|run|race/.test(text)) return "sports";
-  return event.category;
-}
-
-function Icon({ kind }: { kind: EventCategory }) {
-  const common = "h-full w-full";
+export function ListingKindIcon({
+  kind,
+  className = "h-8 w-8",
+}: {
+  kind: ListingKind;
+  className?: string;
+}) {
+  const common = className;
   switch (kind) {
-    case "art":
+    case "playdate":
       return (
-        <svg viewBox="0 0 32 32" className={common} aria-hidden="true">
-          <circle cx="10" cy="11" r="4" fill="#F472B6" />
-          <circle cx="22" cy="10" r="3.2" fill="#FB923C" />
-          <circle cx="16" cy="20" r="4.2" fill="#A78BFA" />
+        <svg viewBox="0 0 48 48" className={common} aria-hidden="true">
+          <circle cx="16" cy="16" r="6" fill="#F4845F" />
+          <circle cx="32" cy="16" r="6" fill="#8B7FD4" />
           <path
-            d="M8 24c2-5 6-8 10-8 3 0 6 1 8 4"
+            d="M8 38c2-8 6-12 8-12s6 2 8 8c2-6 6-8 8-8s6 4 8 12"
             fill="none"
-            stroke="#5B4B8A"
-            strokeWidth="1.6"
+            stroke="#2D3142"
+            strokeWidth="2.4"
             strokeLinecap="round"
           />
         </svg>
       );
-    case "sports":
+    case "workshop":
       return (
-        <svg viewBox="0 0 32 32" className={common} aria-hidden="true">
-          <circle cx="16" cy="16" r="10" fill="#FDBA74" />
-          <path
-            d="M16 6c3 3 5 6 5 10s-2 7-5 10c-3-3-5-6-5-10s2-7 5-10z"
-            fill="none"
-            stroke="#fff"
-            strokeWidth="1.4"
-          />
-          <path d="M7 12h18M7 20h18" fill="none" stroke="#fff" strokeWidth="1.4" />
+        <svg viewBox="0 0 48 48" className={common} aria-hidden="true">
+          <rect x="8" y="10" width="22" height="28" rx="3" fill="#fff" />
+          <rect x="12" y="16" width="14" height="2.5" rx="1.2" fill="#2BB8AD" />
+          <rect x="12" y="22" width="12" height="2.5" rx="1.2" fill="#A8EDD4" />
+          <path d="M28 8h12l-3 14H26L28 8z" fill="#F5D547" />
+        </svg>
+      );
+    case "open-house":
+      return (
+        <svg viewBox="0 0 48 48" className={common} aria-hidden="true">
+          <path d="M8 22L24 8l16 14v18H8V22z" fill="#C4B5FD" />
+          <rect x="20" y="28" width="8" height="12" rx="1.5" fill="#fff" />
+          <circle cx="26" cy="34" r="1.1" fill="#8B7FD4" />
+        </svg>
+      );
+    case "nature":
+      return (
+        <svg viewBox="0 0 48 48" className={common} aria-hidden="true">
+          <circle cx="34" cy="12" r="6" fill="#F5D547" />
+          <path d="M10 38l8-16 7 10 5-8 12 14H10z" fill="#7DD3FC" />
+          <path d="M18 38V24l6 8" fill="none" stroke="#2BB8AD" strokeWidth="2.2" />
+        </svg>
+      );
+    case "art":
+      return (
+        <svg viewBox="0 0 48 48" className={common} aria-hidden="true">
+          <circle cx="16" cy="16" r="7" fill="#F472B6" />
+          <circle cx="32" cy="14" r="5.5" fill="#FB923C" />
+          <circle cx="24" cy="30" r="8" fill="#A78BFA" />
         </svg>
       );
     case "music":
-    case "festival":
       return (
-        <svg viewBox="0 0 32 32" className={common} aria-hidden="true">
+        <svg viewBox="0 0 48 48" className={common} aria-hidden="true">
           <path
-            d="M12 22a4 4 0 1 1-1-2.8V9l12-3v13.2A4 4 0 1 1 22 22V10.2L12 13v9z"
-            fill="#EAB308"
+            d="M16 36a6 6 0 1 1-1.5-4.1V12l20-5v20.4A6 6 0 1 1 32 36V16.4L16 20.2V36z"
+            fill="#E8C030"
           />
         </svg>
       );
-    case "camp":
+    case "festival":
       return (
-        <svg viewBox="0 0 32 32" className={common} aria-hidden="true">
-          <path d="M4 22l6-10 5 7 3-5 10 8H4z" fill="#7DD3FC" />
-          <circle cx="22" cy="9" r="3" fill="#FDE047" />
+        <svg viewBox="0 0 48 48" className={common} aria-hidden="true">
+          <path d="M8 10h32" stroke="#2D3142" strokeWidth="2.4" strokeLinecap="round" />
+          <path d="M12 10l6 14-6 2-4-16z" fill="#F4845F" />
+          <path d="M24 10l5 16-6 1-3-17z" fill="#8B7FD4" />
+          <path d="M36 10l4 15-6 2-4-17z" fill="#F5D547" />
         </svg>
       );
-    case "open day":
+    case "sports":
       return (
-        <svg viewBox="0 0 32 32" className={common} aria-hidden="true">
-          <path d="M6 14l10-8 10 8v12H6V14z" fill="#C4B5FD" />
-          <rect x="13" y="18" width="6" height="8" rx="1" fill="#fff" />
-        </svg>
-      );
-    default:
-      return (
-        <svg viewBox="0 0 32 32" className={common} aria-hidden="true">
-          <rect x="6" y="8" width="14" height="18" rx="1.5" fill="#fff" />
-          <rect x="8" y="11" width="10" height="1.4" rx="0.7" fill="#34D399" />
-          <rect x="8" y="15" width="8" height="1.4" rx="0.7" fill="#A8EDD4" />
-          <path d="M18 6h6l-2 8h-6L18 6z" fill="#FBBF24" />
+        <svg viewBox="0 0 48 48" className={common} aria-hidden="true">
+          <circle cx="24" cy="24" r="14" fill="#FDBA74" />
+          <path
+            d="M24 10c4 4 7 8 7 14s-3 10-7 14c-4-4-7-8-7-14s3-10 7-14z"
+            fill="none"
+            stroke="#fff"
+            strokeWidth="2"
+          />
+          <path d="M12 20h24M12 28h24" fill="none" stroke="#fff" strokeWidth="2" />
         </svg>
       );
   }
 }
 
-interface CategoryLogoProps {
+export function CategoryLogo({
+  category,
+  className = "h-11 w-11",
+}: {
   category: EventCategory;
   className?: string;
-}
-
-export function CategoryLogo({ category, className = "h-11 w-11" }: CategoryLogoProps) {
-  const style = wrap[category] ?? wrap.workshop;
+}) {
+  const kind: ListingKind =
+    category === "camp"
+      ? "nature"
+      : category === "open day"
+        ? "open-house"
+        : (category as ListingKind);
+  const style = STYLE[kind] ?? STYLE.workshop;
   return (
     <span
-      className={`inline-flex items-center justify-center rounded-2xl p-1.5 shadow-md ring-2 ring-white ${style.bg} ${style.ring} ${className}`}
+      className={`inline-flex items-center justify-center rounded-2xl p-1.5 shadow-md ring-2 ring-white ${style.badge} ${className}`}
       aria-hidden="true"
     >
-      <Icon kind={category} />
+      <ListingKindIcon kind={kind} className="h-full w-full" />
     </span>
   );
 }
 
 export function EventLogoCover({ event }: { event: KidsEvent }) {
-  const cover = eventCoverImage(event);
+  const kind = listingKind(event);
+  const style = STYLE[kind];
+  const label = LISTING_KIND_LABEL[kind];
 
   return (
-    <div className="relative h-full min-h-[16rem] w-full bg-lavender-50">
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src={cover}
-        alt=""
-        className="absolute inset-0 h-full w-full object-cover object-center"
-        onError={(e) => {
-          e.currentTarget.src = "/events/story-play.png";
-        }}
-      />
+    <div className={`relative h-full min-h-[16rem] w-full ${style.field}`}>
+      <div className="pointer-events-none absolute -left-8 top-16 h-40 w-40 rounded-full bg-white/40 blur-2xl" />
+      <div className="pointer-events-none absolute -right-10 bottom-20 h-36 w-36 rounded-full bg-white/30 blur-2xl" />
+      <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 px-4 pb-16 pt-8">
+        <span
+          className={`flex h-28 w-28 items-center justify-center rounded-[2rem] shadow-card ring-4 ring-white/80 ${style.badge}`}
+        >
+          <ListingKindIcon kind={kind} className="h-16 w-16" />
+        </span>
+        <p className={`font-display text-2xl font-bold ${style.label}`}>{label}</p>
+      </div>
     </div>
   );
 }

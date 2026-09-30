@@ -3,6 +3,7 @@ import { scoreEventSearch } from "@/lib/search";
 import { eventIsListable } from "@/lib/listable";
 import { compareListingEvents, isUpcomingEvent } from "@/lib/event-date";
 import { eventIsOnline } from "@/lib/online";
+import { listingKind } from "@/lib/listing-kind";
 
 function startOfLocalDay(value: Date): Date {
   const d = new Date(value);
@@ -64,6 +65,10 @@ export function filterEvents(
       return false;
     }
     if (filters.place === "offline" && eventIsOnline(event)) {
+      return false;
+    }
+
+    if (filters.kind !== "all" && listingKind(event) !== filters.kind) {
       return false;
     }
 

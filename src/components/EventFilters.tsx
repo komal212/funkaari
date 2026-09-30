@@ -12,6 +12,8 @@ import type {
 import { AGE_GROUP_LABELS, AREAS, events as catalog } from "@/data/events";
 import { areasFromEvents } from "@/lib/filters";
 import { buildSearchSuggestions } from "@/lib/search";
+import { LISTING_KIND_LABEL, LISTING_KINDS } from "@/lib/listing-kind";
+import { ListingKindIcon } from "@/components/CategoryLogo";
 
 interface EventFiltersProps {
   filters: Filters;
@@ -86,7 +88,8 @@ export function EventFilters({
     filters.ageGroup !== "all" ||
     filters.area !== "all" ||
     filters.time !== "all" ||
-    filters.place !== "all";
+    filters.place !== "all" ||
+    filters.kind !== "all";
 
   return (
     <div className="space-y-4">
@@ -215,6 +218,37 @@ export function EventFilters({
           </button>
         ))}
 
+        <span className="mx-1 hidden h-6 w-px bg-lavender-200 sm:inline-block" aria-hidden />
+
+        <button
+          type="button"
+          aria-pressed={filters.kind === "all"}
+          onClick={() => update("kind", "all")}
+          className={
+            filters.kind === "all"
+              ? "h-10 rounded-full bg-peach-400 px-4 text-sm font-semibold text-white"
+              : "h-10 rounded-full bg-white px-4 text-sm font-semibold text-ink/70 ring-1 ring-lavender-100 hover:bg-lavender-50"
+          }
+        >
+          All types
+        </button>
+        {LISTING_KINDS.map((kind) => (
+          <button
+            key={kind}
+            type="button"
+            aria-pressed={filters.kind === kind}
+            onClick={() => update("kind", kind)}
+            className={
+              filters.kind === kind
+                ? "flex h-10 items-center gap-1.5 rounded-full bg-peach-400 px-3 text-sm font-semibold text-white"
+                : "flex h-10 items-center gap-1.5 rounded-full bg-white px-3 text-sm font-semibold text-ink/70 ring-1 ring-lavender-100 hover:bg-lavender-50"
+            }
+          >
+            <ListingKindIcon kind={kind} className="h-5 w-5" />
+            {LISTING_KIND_LABEL[kind]}
+          </button>
+        ))}
+
         <span className="relative">
           <select
             aria-label="Age"
@@ -259,6 +293,7 @@ export function EventFilters({
                 area: "all",
                 time: "all",
                 place: "all",
+                kind: "all",
               })
             }
             className="h-10 px-3 text-sm font-semibold text-muted hover:text-ink"
