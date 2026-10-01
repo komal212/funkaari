@@ -210,40 +210,57 @@ export function KindLogoMark({
   );
 }
 
+const KIND_COVER: Record<ListingKind, string> = {
+  playdate: "/events/circle-time.png",
+  workshop: "/events/hand-pottery.png",
+  "open-house": "/events/prayag-open-house.png",
+  nature: "/events/lalbagh-nature-walk.png",
+  art: "/events/eravoo-art-play.png",
+  music: "/events/little-beats.png",
+  festival: "/events/around-the-world.png",
+  sports: "/events/kidywidy-marathon.png",
+};
+
 const ALL_KINDS_PREVIEW: ListingKind[] = [
   "playdate",
-  "workshop",
   "art",
   "nature",
+  "music",
 ];
-
-export function AllKindsMark({ className = "h-9 w-9" }: { className?: string }) {
-  return (
-    <span
-      className={`grid shrink-0 grid-cols-2 gap-px overflow-hidden rounded-xl ring-2 ring-white ${className}`}
-      aria-hidden="true"
-    >
-      {ALL_KINDS_PREVIEW.map((kind) => (
-        <span
-          key={kind}
-          className={`flex items-center justify-center ${KIND_STYLE[kind].badge}`}
-        >
-          <ListingKindIcon kind={kind} className="h-[85%] w-[85%]" />
-        </span>
-      ))}
-    </span>
-  );
-}
 
 export function TypeFilterLogo({
   kind,
-  className = "h-8 w-8",
+  className = "h-8",
 }: {
   kind: ListingKind | "all";
   className?: string;
 }) {
-  if (kind === "all") return <AllKindsMark className={className} />;
-  return <KindLogoMark kind={kind} className={className} />;
+  if (kind === "all") {
+    return (
+      <span
+        className={`grid aspect-square shrink-0 grid-cols-2 gap-px overflow-hidden rounded-md ${className}`}
+        aria-hidden="true"
+      >
+        {ALL_KINDS_PREVIEW.map((item) => (
+          <img
+            key={item}
+            src={KIND_COVER[item]}
+            alt=""
+            className="h-full w-full object-cover"
+          />
+        ))}
+      </span>
+    );
+  }
+
+  return (
+    <span
+      className={`inline-block aspect-[3/4] shrink-0 overflow-hidden rounded-md ${className}`}
+      aria-hidden="true"
+    >
+      <img src={KIND_COVER[kind]} alt="" className="h-full w-full object-cover" />
+    </span>
+  );
 }
 
 export function CategoryLogo({

@@ -77,7 +77,7 @@ export function EventFilters({
             onClick={() => setTypeOpen((v) => !v)}
             className={`${selectClass} inline-flex min-w-[11.5rem] items-center gap-2 pl-2.5 text-left`}
           >
-            <TypeFilterLogo kind={filters.kind} className="h-8 w-8" />
+            <TypeFilterLogo kind={filters.kind} className="h-8" />
             <span className="flex-1 truncate">
               {filters.kind === "all"
                 ? "All types"
@@ -105,7 +105,7 @@ export function EventFilters({
                       : "text-ink/80 hover:bg-lavender-50"
                   }`}
                 >
-                  <TypeFilterLogo kind="all" className="h-8 w-8" />
+                  <TypeFilterLogo kind="all" className="h-10" />
                   All types
                 </button>
               </li>
@@ -125,7 +125,7 @@ export function EventFilters({
                         : "text-ink/80 hover:bg-lavender-50"
                     }`}
                   >
-                    <TypeFilterLogo kind={kind} className="h-8 w-8" />
+                    <TypeFilterLogo kind={kind} className="h-10" />
                     {LISTING_KIND_LABEL[kind]}
                   </button>
                 </li>
