@@ -1,0 +1,208 @@
+{
+  "run": "2026-10-01-b2",
+  "fetch": {
+    "at": "2026-10-01T10:59:18.499Z",
+    "handles": [
+      {
+        "handle": "jumpstartpreschools",
+        "fetched": 68,
+        "added": 68,
+        "refreshed": 0,
+        "images": 43,
+        "error": null
+      },
+      {
+        "handle": "ekyavana.earlyyears",
+        "fetched": 37,
+        "added": 37,
+        "refreshed": 0,
+        "images": 33,
+        "error": null
+      },
+      {
+        "handle": "cherubs_montessori_sompura",
+        "fetched": 12,
+        "added": 12,
+        "refreshed": 0,
+        "images": 5,
+        "error": null
+      },
+      {
+        "handle": "beruearlyyears",
+        "fetched": 13,
+        "added": 13,
+        "refreshed": 0,
+        "images": 10,
+        "error": null
+      },
+      {
+        "handle": "prayag.montessori",
+        "fetched": 42,
+        "added": 42,
+        "refreshed": 0,
+        "images": 31,
+        "error": null
+      },
+      {
+        "handle": "acemontessori",
+        "fetched": 32,
+        "added": 32,
+        "refreshed": 0,
+        "images": 15,
+        "error": null
+      },
+      {
+        "handle": "auramontessori0823",
+        "fetched": 17,
+        "added": 17,
+        "refreshed": 0,
+        "images": 11,
+        "error": null
+      },
+      {
+        "handle": "neevearlyyears",
+        "fetched": 8,
+        "added": 8,
+        "refreshed": 0,
+        "images": 5,
+        "error": null
+      },
+      {
+        "handle": "nps_gmc",
+        "fetched": 25,
+        "added": 25,
+        "refreshed": 0,
+        "images": 14,
+        "error": null
+      },
+      {
+        "handle": "juniortoes_nagarabhavi",
+        "fetched": 20,
+        "added": 20,
+        "refreshed": 0,
+        "images": 9,
+        "error": null
+      },
+      {
+        "handle": "bodhimontessori_",
+        "fetched": 9,
+        "added": 9,
+        "refreshed": 0,
+        "images": 7,
+        "error": null
+      },
+      {
+        "handle": "_chimes_montessori",
+        "fetched": 23,
+        "added": 23,
+        "refreshed": 0,
+        "images": 1,
+        "error": null
+      },
+      {
+        "handle": "akshatha01_kulkarni",
+        "fetched": 29,
+        "added": 29,
+        "refreshed": 0,
+        "images": 14,
+        "error": null
+      },
+      {
+        "handle": "kara4kidsofficial",
+        "fetched": 91,
+        "added": 91,
+        "refreshed": 0,
+        "images": 60,
+        "error": null
+      },
+      {
+        "handle": "thefreethinkingschool",
+        "fetched": 11,
+        "added": 11,
+        "refreshed": 0,
+        "images": 5,
+        "error": null
+      },
+      {
+        "handle": "airaa_academy",
+        "fetched": 25,
+        "added": 25,
+        "refreshed": 0,
+        "images": 14,
+        "error": null
+      },
+      {
+        "handle": "vivero_international",
+        "fetched": 26,
+        "added": 26,
+        "refreshed": 0,
+        "images": 29,
+        "error": null
+      },
+      {
+        "handle": "klaypreschools",
+        "fetched": 27,
+        "added": 27,
+        "refreshed": 0,
+        "images": 18,
+        "error": null
+      },
+      {
+        "handle": "kangarookidspreschool_official",
+        "fetched": 23,
+        "added": 23,
+        "refreshed": 0,
+        "images": 8,
+        "error": null
+      },
+      {
+        "handle": "boogiewoogiepreschool",
+        "fetched": 8,
+        "added": 8,
+        "refreshed": 0,
+        "images": 4,
+        "error": null
+      }
+    ],
+    "fetched": 546,
+    "added": 546,
+    "images": 336,
+    "errors": 0
+  },
+  "updatedAt": "2026-10-01T11:04:59.412Z",
+  "pack": {
+    "at": "2026-10-01T11:02:31.468Z",
+    "pending": 269,
+    "skippedOld": 277,
+    "packets": [
+      {
+        "packet": 1,
+        "posts": 53
+      },
+      {
+        "packet": 2,
+        "posts": 53
+      },
+      {
+        "packet": 3,
+        "posts": 53
+      },
+      {
+        "packet": 4,
+        "posts": 55
+      },
+      {
+        "packet": 5,
+        "posts": 55
+      }
+    ]
+  },
+  "match": {
+    "at": "2026-10-01T11:04:59.412Z",
+    "counts": {
+      "not_event": 268,
+      "resolve": 1
+    },
+    "resolvePackets": 1
+  }
+}
