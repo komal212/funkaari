@@ -1,0 +1,94 @@
+{
+  "run": "2026-10-01",
+  "fetch": {
+    "at": "2026-10-01T09:44:01.604Z",
+    "handles": [
+      {
+        "handle": "play_cove",
+        "fetched": 12,
+        "added": 12,
+        "images": 12,
+        "error": null
+      },
+      {
+        "handle": "eravoo.blr",
+        "fetched": 25,
+        "added": 25,
+        "images": 19,
+        "error": null
+      },
+      {
+        "handle": "the_two_messy_hands",
+        "fetched": 46,
+        "added": 46,
+        "images": 30,
+        "error": null
+      },
+      {
+        "handle": "popapuddle",
+        "fetched": 20,
+        "added": 20,
+        "images": 13,
+        "error": null
+      },
+      {
+        "handle": "forumsouthbengaluru",
+        "fetched": 77,
+        "added": 77,
+        "images": 50,
+        "error": null
+      }
+    ],
+    "fetched": 180,
+    "added": 180,
+    "images": 124,
+    "errors": 0
+  },
+  "updatedAt": "2026-10-01T09:48:08.693Z",
+  "pack": {
+    "at": "2026-10-01T09:44:50.179Z",
+    "pending": 95,
+    "skippedOld": 85,
+    "packets": [
+      {
+        "packet": 1,
+        "posts": 6
+      },
+      {
+        "packet": 2,
+        "posts": 9
+      },
+      {
+        "packet": 3,
+        "posts": 13
+      },
+      {
+        "packet": 4,
+        "posts": 28
+      },
+      {
+        "packet": 5,
+        "posts": 39
+      }
+    ]
+  },
+  "match": {
+    "at": "2026-10-01T09:47:22.432Z",
+    "counts": {
+      "new": 1,
+      "not_event": 90,
+      "resolve": 2,
+      "attach": 2
+    },
+    "resolvePackets": 1
+  },
+  "apply": {
+    "at": "2026-10-01T09:48:08.683Z",
+    "created": 3,
+    "attached": 2,
+    "updated": 0,
+    "cancelled": 0,
+    "notEvent": 90,
+    "siteEvents": 3
+  }
+}

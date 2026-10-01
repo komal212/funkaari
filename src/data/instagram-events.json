@@ -1,5 +1,75 @@
 {
-  "generatedAt": "",
-  "run": "",
-  "events": []
+  "generatedAt": "2026-10-01T09:48:08.683Z",
+  "run": "2026-10-01",
+  "events": [
+    {
+      "id": "ig-play_cove-2026-10-02-rhino-storytime-playdate-at-hobb",
+      "title": "Rhino storytime playdate at Hobby Ghar",
+      "date": "2026-10-02T10:00:00+05:30",
+      "time": "10:00 AM – 11:30 AM",
+      "city": "bangalore",
+      "area": "Malleshwaram",
+      "venue": "Hobby Ghar, Sheshadripuram",
+      "ageMinMonths": 24,
+      "ageMaxYears": 6,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "workshop",
+      "organizer": "PlayCove",
+      "description": "Children explore a rhino-and-pancake story through sensory play, movement and hands-on making.",
+      "instagramHandle": "play_cove",
+      "instagramUrl": "https://www.instagram.com/p/Dd0hsA6Boqh/",
+      "fromInstagram": true,
+      "isFree": false,
+      "price": "₹1,199"
+    },
+    {
+      "id": "ig-eravoo.blr-2026-10-12-baala-sambrahma-dasara-celebrati",
+      "title": "Baala Sambrahma Dasara celebration",
+      "date": "2026-10-12T10:00:00+05:30",
+      "endDate": "2026-10-15T23:59:59+05:30",
+      "time": "10:00 AM – 12:00 PM, Monday to Thursday",
+      "city": "bangalore",
+      "area": "Jayanagar",
+      "venue": "Eravoo, Jayanagar",
+      "ageMinMonths": 36,
+      "ageMaxYears": 8,
+      "ageGroups": [
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "festival",
+      "organizer": "Eravoo",
+      "description": "Four days of Dasara stories, crafts and cultural play as children explore festive traditions.",
+      "instagramHandle": "eravoo.blr",
+      "instagramUrl": "https://www.instagram.com/p/Dd0h3ovKFvw/",
+      "fromInstagram": true,
+      "isFree": false,
+      "price": "₹6,000 per child"
+    },
+    {
+      "id": "ig-the_two_messy_hands-2026-10-12-the-makers-edit-craft-camp-for-k",
+      "title": "The Maker's Edit craft camp for kids",
+      "date": "2026-10-12T10:30:00+05:30",
+      "endDate": "2026-10-16T23:59:59+05:30",
+      "time": "10:30 AM – 1:00 PM, Monday to Friday",
+      "city": "bangalore",
+      "area": "Jayanagar",
+      "venue": "Prayag Montessori, Jayanagar",
+      "ageMinMonths": 48,
+      "ageGroups": [
+        "4-6yr"
+      ],
+      "category": "camp",
+      "organizer": "The Two Messy Hands",
+      "description": "Kids create, explore and take home a craft project over a week of themed making sessions.",
+      "instagramHandle": "the_two_messy_hands",
+      "instagramUrl": "https://www.instagram.com/reel/Dd39D4xhGrI/",
+      "fromInstagram": true,
+      "isFree": false
+    }
+  ]
 }

@@ -49,6 +49,49 @@
       "updatedAt": "2026-09-30T12:37:18.854Z"
     },
     {
+      "id": "ig-play_cove-2026-10-02-rhino-storytime-playdate-at-hobb",
+      "title": "Rhino storytime playdate at Hobby Ghar",
+      "date": "2026-10-02T10:00:00+05:30",
+      "time": "10:00 AM – 11:30 AM",
+      "city": "bangalore",
+      "area": "Malleshwaram",
+      "venue": "Hobby Ghar, Sheshadripuram",
+      "ageMinMonths": 24,
+      "ageMaxYears": 6,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "workshop",
+      "organizer": "PlayCove",
+      "description": "Children explore a rhino-and-pancake story through sensory play, movement and hands-on making.",
+      "instagramHandle": "play_cove",
+      "instagramUrl": "https://www.instagram.com/p/Dd0hsA6Boqh/",
+      "fromInstagram": true,
+      "isFree": false,
+      "price": "₹1,199",
+      "organizerHandle": "play_cove",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18082648736334515",
+          "url": "https://www.instagram.com/p/Dd0hsA6Boqh/",
+          "postedBy": "play_cove",
+          "kind": "announcement",
+          "seenAt": "2026-10-01T09:48:08.683Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "Dd0hsA6Boqh"
+        ],
+        "bookingIds": []
+      },
+      "createdAt": "2026-10-01T09:48:08.683Z",
+      "updatedAt": "2026-10-01T09:48:08.683Z"
+    },
+    {
       "id": "aura-circle-time",
       "title": "Circle Time at Áura Montessori",
       "date": "2026-10-03T10:00:00+05:30",
@@ -81,6 +124,13 @@
           "postedBy": "the_two_messy_hands",
           "kind": "announcement",
           "seenAt": "2026-09-30T12:34:16.291Z"
+        },
+        {
+          "postId": "18484269649111273",
+          "url": "https://www.instagram.com/reel/Ddi6EEpgjE2/",
+          "postedBy": "the_two_messy_hands",
+          "kind": "repost",
+          "seenAt": "2026-10-01T09:48:08.683Z"
         }
       ],
       "matchKeys": {
@@ -91,7 +141,7 @@
       },
       "seeded": true,
       "createdAt": "2026-09-30T12:34:16.291Z",
-      "updatedAt": "2026-09-30T12:37:18.854Z"
+      "updatedAt": "2026-10-01T09:48:08.683Z"
     },
     {
       "id": "eravoo-art-play-october",
@@ -127,6 +177,13 @@
           "postedBy": "eravoo.blr",
           "kind": "announcement",
           "seenAt": "2026-09-30T12:34:16.291Z"
+        },
+        {
+          "postId": "17889131292682065",
+          "url": "https://www.instagram.com/p/DdWQ--sqoTY/",
+          "postedBy": "eravoo.blr",
+          "kind": "repost",
+          "seenAt": "2026-10-01T09:48:08.683Z"
         }
       ],
       "matchKeys": {
@@ -137,7 +194,7 @@
       },
       "seeded": true,
       "createdAt": "2026-09-30T12:34:16.291Z",
-      "updatedAt": "2026-09-30T12:34:16.291Z"
+      "updatedAt": "2026-10-01T09:48:08.683Z"
     },
     {
       "id": "allevents-clown-festival",
@@ -172,6 +229,89 @@
       "seeded": true,
       "createdAt": "2026-09-30T12:34:16.291Z",
       "updatedAt": "2026-09-30T12:34:16.291Z"
+    },
+    {
+      "id": "ig-eravoo.blr-2026-10-12-baala-sambrahma-dasara-celebrati",
+      "title": "Baala Sambrahma Dasara celebration",
+      "date": "2026-10-12T10:00:00+05:30",
+      "endDate": "2026-10-15T23:59:59+05:30",
+      "time": "10:00 AM – 12:00 PM, Monday to Thursday",
+      "city": "bangalore",
+      "area": "Jayanagar",
+      "venue": "Eravoo, Jayanagar",
+      "ageMinMonths": 36,
+      "ageMaxYears": 8,
+      "ageGroups": [
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "festival",
+      "organizer": "Eravoo",
+      "description": "Four days of Dasara stories, crafts and cultural play as children explore festive traditions.",
+      "instagramHandle": "eravoo.blr",
+      "instagramUrl": "https://www.instagram.com/p/Dd0h3ovKFvw/",
+      "fromInstagram": true,
+      "isFree": false,
+      "price": "₹6,000 per child",
+      "organizerHandle": "eravoo.blr",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "17936641845383581",
+          "url": "https://www.instagram.com/p/Dd0h3ovKFvw/",
+          "postedBy": "eravoo.blr",
+          "kind": "announcement",
+          "seenAt": "2026-10-01T09:48:08.683Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "Dd0h3ovKFvw"
+        ],
+        "bookingIds": []
+      },
+      "createdAt": "2026-10-01T09:48:08.683Z",
+      "updatedAt": "2026-10-01T09:48:08.683Z"
+    },
+    {
+      "id": "ig-the_two_messy_hands-2026-10-12-the-makers-edit-craft-camp-for-k",
+      "title": "The Maker's Edit craft camp for kids",
+      "date": "2026-10-12T10:30:00+05:30",
+      "endDate": "2026-10-16T23:59:59+05:30",
+      "time": "10:30 AM – 1:00 PM, Monday to Friday",
+      "city": "bangalore",
+      "area": "Jayanagar",
+      "venue": "Prayag Montessori, Jayanagar",
+      "ageMinMonths": 48,
+      "ageGroups": [
+        "4-6yr"
+      ],
+      "category": "camp",
+      "organizer": "The Two Messy Hands",
+      "description": "Kids create, explore and take home a craft project over a week of themed making sessions.",
+      "instagramHandle": "the_two_messy_hands",
+      "instagramUrl": "https://www.instagram.com/reel/Dd39D4xhGrI/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "the_two_messy_hands",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18117425237057708",
+          "url": "https://www.instagram.com/reel/Dd39D4xhGrI/",
+          "postedBy": "the_two_messy_hands",
+          "kind": "announcement",
+          "seenAt": "2026-10-01T09:48:08.683Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "Dd39D4xhGrI"
+        ],
+        "bookingIds": []
+      },
+      "createdAt": "2026-10-01T09:48:08.683Z",
+      "updatedAt": "2026-10-01T09:48:08.683Z"
     },
     {
       "id": "little-beats-festival",
