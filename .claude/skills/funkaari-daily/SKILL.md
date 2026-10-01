@@ -15,7 +15,7 @@ Set `RUN` to today's date in IST as `YYYY-MM-DD` (the scripts default to this wh
 npm run ig:fetch -- --run $RUN
 ```
 
-Needs network access outside the sandbox. Exit code 2 means the Instagram token is rejected: stop and tell the user to renew `INSTAGRAM_ACCESS_TOKEN`. Per-handle errors are fine; they are logged and the run continues.
+Needs network access outside the sandbox. Exit code 2 means the Instagram token is rejected: stop and tell the user to renew `INSTAGRAM_ACCESS_TOKEN`. The current token is a Facebook Page token and does not expire; if it is ever revoked, the user generates a fresh short-lived token in Graph API Explorer, pastes it into `.env.local`, and you run `node scripts/ig/token.mjs` to mint a permanent one again (needs `FB_APP_ID` and `FB_APP_SECRET` in `.env.local`). Per-handle errors are fine; they are logged and the run continues.
 
 ## 2. Pack
 

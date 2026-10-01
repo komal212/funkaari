@@ -52,8 +52,8 @@ npm start
 - Next.js 15 (App Router)
 - TypeScript
 - Tailwind CSS
-- Static event data in `src/data/events.ts`
-- Client-side filtering (no database)
+- Event data: curated `src/data/calendar.ts` + pipeline output `src/data/instagram-events.json` + web scrape `src/data/live-bangalore.json`
+- Client-side filtering; the "database" is committed JSON under `db/`
 
 ## Project structure
 
@@ -88,6 +88,26 @@ Copy `env.example` to `.env.local` and add `INSTAGRAM_ACCESS_TOKEN` + `INSTAGRAM
 - Extend listings to **6–12 years** (after-school programs, sports leagues, coding camps)
 - **Family events** — weekend outings, festivals, and activities for mixed-age groups
 - Keep the same curated-feed model; age filters grow with the catalog
+
+## Instagram → events pipeline (daily)
+
+The main data source. Pulls every new post from the accounts in `src/data/funkaari-following.json` through Meta's Graph API (`business_discovery`), has Sonnet workers decide which posts are kids' events, dedupes them against the event database, and publishes upcoming ones to the site.
+
+```
+npm run ig:fetch       # new posts per handle → db/posts/<handle>.json (watermark + id dedup)
+npm run ig:pack        # pending posts → .context/runs/<date>/packets/*.json
+                       # Sonnet workers write extract/*.json  (see .claude/skills/funkaari-daily)
+npm run ig:validate    # schema + vocab check on worker output
+npm run ig:match       # auto-attach by post code / booking id; shortlist look-alikes by date ±1 day and location
+                       # Sonnet workers answer resolve/*.answers.json for shortlisted posts
+npm run ig:apply       # db/events.json, db/triage.json, src/data/instagram-events.json
+```
+
+- Run the whole thing with the `funkaari-daily` skill: Opus orchestrates, Sonnet medium workers read captions and images.
+- State lives in git under `db/` (see `db/README.md`). The site only reads `src/data/instagram-events.json`, merged in `src/lib/live-feed.ts` alongside the web scrape and the curated `calendar.ts`.
+- `npm run ig:seed` registers `calendar.ts` listings once so their posts are recognised as already listed.
+- Token: `node scripts/ig/token.mjs` exchanges a short-lived Graph API Explorer token for a Facebook Page token that never expires. Needs `FB_APP_ID` and `FB_APP_SECRET` in `.env.local`.
+- The GitHub Action `refresh-events.yml` (Parallel web scrape) still runs alongside; retire it once the pipeline has run cleanly for a couple of weeks.
 
 ## Instagram MCP
 
