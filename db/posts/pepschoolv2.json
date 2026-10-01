@@ -1,0 +1,35 @@
+{
+  "handle": "pepschoolv2",
+  "latestPostAt": "2026-09-14T08:18:24.000Z",
+  "lastFetchedAt": "2026-10-01T11:41:42.310Z",
+  "fetchError": null,
+  "posts": [
+    {
+      "id": "18116623984975801",
+      "shortcode": "DdQsG8vkTs6",
+      "url": "https://www.instagram.com/p/DdQsG8vkTs6/",
+      "type": "CAROUSEL_ALBUM",
+      "postedAt": "2026-09-14T08:18:24.000Z",
+      "caption": "Why do Montessori classrooms use so many materials?\n\nBecause for young children, abstract ideas become much easier to understand when they can see, touch, move and manipulate them.\n\nA bead can represent a number. A pattern can be built and changed. Letters can be handled before they become words on a page. The hands give the mind something concrete to work with, while children build concentration, coordination and an understanding of how things fit together.\n\nThat’s the thinking behind Montessori materials: making ideas tangible, and gradually helping children move from concrete experience to abstract understanding.",
+      "mediaCount": 11,
+      "likes": 10,
+      "comments": 0,
+      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "fetchedAt": "2026-10-01T11:41:42.310Z"
+    },
+    {
+      "id": "18093541472387620",
+      "shortcode": "Dcv5I79GZSP",
+      "url": "https://www.instagram.com/p/Dcv5I79GZSP/",
+      "type": "CAROUSEL_ALBUM",
+      "postedAt": "2026-09-01T14:37:20.000Z",
+      "caption": "August had a bit of everything.\n\nOur students spent time on the farm, worked alongside people in new settings, celebrated Independence Day and Onam, made things with their hands, and found plenty of reasons to pause and enjoy being together.\n\nA few moments from the month that was.🌸",
+      "mediaCount": 10,
+      "likes": 13,
+      "comments": 0,
+      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "fetchedAt": "2026-10-01T11:41:42.310Z"
+    }
+  ],
+  "mediaCount": 421
+}

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-01T10:38:10.198Z",
-  "run": "2026-10-01",
+  "generatedAt": "2026-10-01T12:50:41.321Z",
+  "run": "2026-10-01-b01",
   "events": [
     {
       "id": "ig-play_cove-2026-10-02-rhino-storytime-playdate-at-hobb",
@@ -25,6 +25,30 @@
       "fromInstagram": true,
       "isFree": false,
       "price": "₹1,199"
+    },
+    {
+      "id": "ig-bangaloredrumjam-2026-10-10-community-drum-circle-in-whitefi",
+      "title": "Community drum circle in Whitefield",
+      "date": "2026-10-10T17:00:00+05:30",
+      "time": "5:00 PM onwards",
+      "city": "bangalore",
+      "area": "Whitefield",
+      "venue": "URU, Whitefield",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "music",
+      "organizer": "Bangalore Drum Jam",
+      "description": "Families play drums together in an open circle, with no experience required.",
+      "instagramHandle": "bangaloredrumjam",
+      "instagramUrl": "https://www.instagram.com/reel/Dd5KtmiB9Hc/",
+      "fromInstagram": true,
+      "bookingUrl": "https://sl1nk.com/zxdyyw4",
+      "isFree": false,
+      "price": "₹199"
     },
     {
       "id": "ig-eravoo.blr-2026-10-12-baala-sambrahma-dasara-celebrati",

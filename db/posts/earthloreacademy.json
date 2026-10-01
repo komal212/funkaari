@@ -1,0 +1,48 @@
+{
+  "handle": "earthloreacademy",
+  "latestPostAt": "2026-09-09T04:25:13.000Z",
+  "lastFetchedAt": "2026-10-01T11:41:42.310Z",
+  "fetchError": null,
+  "posts": [
+    {
+      "id": "18229352020323663",
+      "shortcode": "DdDZWKrBiMr",
+      "url": "https://www.instagram.com/reel/DdDZWKrBiMr/",
+      "type": "VIDEO",
+      "postedAt": "2026-09-09T04:25:13.000Z",
+      "caption": "Capturing those innocent convos with God✨🥺#earthloreacademy #montessori #electroniccity #farmschool #handsonlearning",
+      "mediaCount": 1,
+      "likes": 51,
+      "comments": 1,
+      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "fetchedAt": "2026-10-01T11:41:42.310Z"
+    },
+    {
+      "id": "17884584804617502",
+      "shortcode": "Dc6Cg9BB50Q",
+      "url": "https://www.instagram.com/reel/Dc6Cg9BB50Q/",
+      "type": "VIDEO",
+      "postedAt": "2026-09-05T13:12:31.000Z",
+      "caption": "Happy teacher’s day! #earthloreacademy #montessori #teacher #teachersday #farmschool",
+      "mediaCount": 1,
+      "likes": 22,
+      "comments": 2,
+      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "fetchedAt": "2026-10-01T11:41:42.310Z"
+    },
+    {
+      "id": "18119120378302035",
+      "shortcode": "Dc0xXduBf8v",
+      "url": "https://www.instagram.com/reel/Dc0xXduBf8v/",
+      "type": "VIDEO",
+      "postedAt": "2026-09-03T12:06:20.000Z",
+      "caption": "Letting them get creative today 🚀🥰 #earthloreacademy #montessori #electroniccity #farmschool #handsonlearning",
+      "mediaCount": 1,
+      "likes": 28,
+      "comments": 0,
+      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "fetchedAt": "2026-10-01T11:41:42.310Z"
+    }
+  ],
+  "mediaCount": 96
+}
