@@ -73,14 +73,12 @@ export function EventListing({ city }: EventListingProps) {
 
   return (
     <section id="events" className="mx-auto max-w-7xl px-4 pb-12 pt-2 sm:px-6 sm:pb-16 sm:pt-4">
-      <div className="mb-4 max-w-xl pt-4 sm:mb-5">
-        <h1 className="font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl">
-          What’s on in {meta.label}
+      <div className="mb-4 pt-4 sm:mb-5">
+        <h1 className="whitespace-nowrap font-display text-[clamp(0.95rem,3.5vw,1.35rem)] font-bold leading-none tracking-tight text-ink sm:text-3xl lg:text-4xl">
+          What’s on in {meta.label}{" "}
+          <span className="font-semibold text-peach-500">for your little ones.</span>
         </h1>
-        <p className="mt-2 font-display text-lg font-semibold text-peach-500 sm:text-xl">
-          For your little ones.
-        </p>
-        <p className="mt-3 text-base leading-relaxed text-muted">
+        <p className="mt-3 max-w-xl text-base leading-relaxed text-muted">
           Playdates, workshops, open houses, nature walks — scattered across
           Instagram, websites and a hundred other places.
         </p>
@@ -99,7 +97,7 @@ export function EventListing({ city }: EventListingProps) {
 
       <EventFilters filters={filters} onChange={setFilters} events={feed} />
 
-      <p className="mt-6 text-sm text-muted">
+      <p className="mt-3 text-sm text-muted sm:mt-6">
         {filteredEvents.length} event{filteredEvents.length !== 1 ? "s" : ""}
       </p>
 
