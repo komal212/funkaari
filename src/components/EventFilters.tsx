@@ -77,7 +77,7 @@ export function EventFilters({
                       : "text-ink/80 hover:bg-lavender-50"
                   }`}
                 >
-                  <TypeFilterLogo kind={kind} className="h-11" />
+                  <TypeFilterLogo kind={kind} className="h-12 w-12" />
                   <span className="min-w-0 leading-tight">
                     {kind === "all" ? "All types" : LISTING_KIND_LABEL[kind]}
                   </span>

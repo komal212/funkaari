@@ -210,17 +210,6 @@ export function KindLogoMark({
   );
 }
 
-const KIND_COVER: Record<ListingKind, string> = {
-  playdate: "/events/circle-time.png",
-  workshop: "/events/hand-pottery.png",
-  "open-house": "/events/prayag-open-house.png",
-  nature: "/events/lalbagh-nature-walk.png",
-  art: "/events/eravoo-art-play.png",
-  music: "/events/little-beats.png",
-  festival: "/events/around-the-world.png",
-  sports: "/events/kidywidy-marathon.png",
-};
-
 const ALL_KINDS_PREVIEW: ListingKind[] = [
   "playdate",
   "art",
@@ -230,7 +219,7 @@ const ALL_KINDS_PREVIEW: ListingKind[] = [
 
 export function TypeFilterLogo({
   kind,
-  className = "h-8",
+  className = "h-12 w-12",
 }: {
   kind: ListingKind | "all";
   className?: string;
@@ -238,29 +227,22 @@ export function TypeFilterLogo({
   if (kind === "all") {
     return (
       <span
-        className={`grid aspect-square shrink-0 grid-cols-2 gap-px overflow-hidden rounded-md ${className}`}
+        className={`grid shrink-0 grid-cols-2 gap-0.5 overflow-hidden rounded-xl shadow-sm ring-2 ring-white ${className}`}
         aria-hidden="true"
       >
         {ALL_KINDS_PREVIEW.map((item) => (
-          <img
+          <span
             key={item}
-            src={KIND_COVER[item]}
-            alt=""
-            className="h-full w-full object-cover"
-          />
+            className={`flex items-center justify-center ${KIND_STYLE[item].badge}`}
+          >
+            <ListingKindIcon kind={item} className="h-[78%] w-[78%]" />
+          </span>
         ))}
       </span>
     );
   }
 
-  return (
-    <span
-      className={`inline-block aspect-[3/4] shrink-0 overflow-hidden rounded-md ${className}`}
-      aria-hidden="true"
-    >
-      <img src={KIND_COVER[kind]} alt="" className="h-full w-full object-cover" />
-    </span>
-  );
+  return <KindLogoMark kind={kind} className={className} />;
 }
 
 export function CategoryLogo({
