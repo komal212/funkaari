@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Logo } from "@/components/Logo";
 import { CitySwitcher } from "@/components/CitySwitcher";
-import { InstagramLink } from "@/components/InstagramLink";
 
 export function Header() {
   return (
@@ -20,7 +19,6 @@ export function Header() {
             <span className="sm:hidden">Submit</span>
             <span className="hidden sm:inline">Submit an event</span>
           </Link>
-          <InstagramLink />
         </div>
       </div>
     </header>
