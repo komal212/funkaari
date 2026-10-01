@@ -5,10 +5,11 @@
  *
  *   node scripts/ig/apply.mjs --run 2026-10-01 [--dry]
  */
-import { existsSync } from "node:fs";
+import { copyFileSync, existsSync, mkdirSync } from "node:fs";
 import { join } from "node:path";
 import {
   EVENTS_FILE,
+  ROOT,
   SITE_FILE,
   TRIAGE_FILE,
   ageGroupsForRange,
@@ -27,7 +28,71 @@ import {
   writeJson,
 } from "./lib.mjs";
 
-const TRACKING = new Set(["organizerHandle", "status", "sources", "matchKeys", "createdAt", "updatedAt", "seeded"]);
+/** Fields kept in db/events.json but stripped from the site file until the UI uses them. */
+const TRACKING = new Set(["organizerHandle", "status", "sources", "matchKeys", "details", "createdAt", "updatedAt", "seeded"]);
+const POST_IMAGE_DIR = join(ROOT, "public/events/posts");
+
+/** Copy the first downloaded image of a post into public/ and return its site path. */
+function savePostImage(rec) {
+  const src = rec.images?.[0];
+  if (!src || !rec.shortcode || !existsSync(src)) return null;
+  mkdirSync(POST_IMAGE_DIR, { recursive: true });
+  const dest = join(POST_IMAGE_DIR, `${rec.shortcode}.jpg`);
+  if (!existsSync(dest)) copyFileSync(src, dest);
+  return `/events/posts/${rec.shortcode}.jpg`;
+}
+
+function sourceFrom(rec, kind, now) {
+  return {
+    postId: rec.postId,
+    url: rec.url,
+    postedBy: rec.handle,
+    postedAt: rec.postedAt || null,
+    kind,
+    likes: rec.likes ?? null,
+    comments: rec.comments ?? null,
+    seenAt: now,
+  };
+}
+
+function emptyDetails() {
+  return {
+    bookingNote: null,
+    contactPhone: null,
+    availability: null,
+    collaborators: [],
+    postImage: null,
+    announcedAt: null,
+    lastPostedAt: null,
+    postCount: 0,
+    engagement: { likes: 0, comments: 0 },
+  };
+}
+
+/** Recompute the derived part of details from sources; keep the extracted part. */
+function refreshDetails(event) {
+  const d = { ...emptyDetails(), ...(event.details || {}) };
+  const dated = (event.sources || []).filter((s) => s.postedAt);
+  d.postCount = (event.sources || []).length;
+  d.announcedAt = dated.length ? dated.map((s) => s.postedAt).sort()[0] : d.announcedAt;
+  d.lastPostedAt = dated.length ? dated.map((s) => s.postedAt).sort().at(-1) : d.lastPostedAt;
+  d.engagement = (event.sources || []).reduce(
+    (acc, s) => ({ likes: acc.likes + (s.likes || 0), comments: acc.comments + (s.comments || 0) }),
+    { likes: 0, comments: 0 },
+  );
+  event.details = d;
+}
+
+/** Merge extracted extras into details; a later post fills gaps and refreshes availability. */
+function mergeExtras(event, ev) {
+  const d = event.details || (event.details = emptyDetails());
+  if (ev?.bookingNote && !d.bookingNote) d.bookingNote = ev.bookingNote;
+  if (ev?.contactPhone && !d.contactPhone) d.contactPhone = ev.contactPhone;
+  if (ev?.availability) d.availability = ev.availability;
+  for (const h of ev?.collaborators || []) {
+    if (h !== event.organizerHandle && !d.collaborators.includes(h)) d.collaborators.push(h);
+  }
+}
 
 function time12(hhmm) {
   const [h, m] = hhmm.split(":").map(Number);
@@ -79,38 +144,61 @@ function buildEvent(rec, taken, now) {
     ...(ev.price ? { price: ev.price } : {}),
     organizerHandle: ev.organizerHandle,
     status: ev.kind === "cancellation" ? "cancelled" : "scheduled",
-    sources: [{ postId: rec.postId, url: rec.url, postedBy: rec.handle, kind: ev.kind, seenAt: now }],
+    sources: [sourceFrom(rec, ev.kind, now)],
     matchKeys: { shortcodes: code ? [code] : [], bookingIds: bkey ? [bkey] : [] },
+    details: emptyDetails(),
     createdAt: now,
     updatedAt: now,
   };
+  mergeExtras(event, ev);
+  event.details.postImage = savePostImage(rec);
+  refreshDetails(event);
   return event;
 }
 
 function attach(event, rec, kind, now) {
   const ev = rec.event;
-  if (!event.sources.some((s) => s.postId === rec.postId)) {
-    event.sources.push({ postId: rec.postId, url: rec.url, postedBy: rec.handle, kind, seenAt: now });
-  }
   const code = shortcodeFromUrl(rec.url);
+  // Same post already recorded (seeded rows have postId null but a URL): enrich it in place.
+  const dup = event.sources.find((s) => s.postId === rec.postId || (code && shortcodeFromUrl(s.url) === code));
+  if (dup) {
+    Object.assign(dup, { postId: rec.postId, postedAt: rec.postedAt || dup.postedAt || null, likes: rec.likes ?? dup.likes ?? null, comments: rec.comments ?? dup.comments ?? null });
+  } else {
+    event.sources.push(sourceFrom(rec, kind, now));
+  }
   const bkey = bookingKey(ev?.bookingUrl);
   event.matchKeys ||= { shortcodes: [], bookingIds: [] };
   if (code && !event.matchKeys.shortcodes.includes(code)) event.matchKeys.shortcodes.push(code);
   if (bkey && !event.matchKeys.bookingIds.includes(bkey)) event.matchKeys.bookingIds.push(bkey);
-  // The organiser's own post beats a repost as the card link.
+  mergeExtras(event, ev);
+  // The organiser's own post beats a repost as the card link and image.
   const currentPoster = event.sources.find((s) => s.url === event.instagramUrl)?.postedBy;
-  if (rec.handle === event.organizerHandle && currentPoster !== event.organizerHandle) event.instagramUrl = rec.url;
+  const takeOver = rec.handle === event.organizerHandle && currentPoster !== event.organizerHandle;
+  if (takeOver) event.instagramUrl = rec.url;
+  if (takeOver || !event.details?.postImage) {
+    const image = savePostImage(rec);
+    if (image) event.details.postImage = image;
+  }
   if (ev?.bookingUrl && !event.bookingUrl) event.bookingUrl = ev.bookingUrl;
   if (ev?.kind === "cancellation") event.status = "cancelled";
+  refreshDetails(event);
   event.updatedAt = now;
 }
 
 const CHANGE_FIELDS = new Set(["title", "startDate", "endDate", "startTime", "timeText", "venue", "area", "price", "isFree", "bookingUrl", "description", "ageMinMonths", "ageMaxYears", "status"]);
+const DETAIL_CHANGE_FIELDS = new Set(["bookingNote", "contactPhone", "availability"]);
 
 function applyChanges(event, changes, now) {
   const applied = [];
   for (const [key, value] of Object.entries(changes || {})) {
-    if (!CHANGE_FIELDS.has(key) || value == null) continue;
+    if (value == null) continue;
+    if (DETAIL_CHANGE_FIELDS.has(key)) {
+      event.details ||= emptyDetails();
+      event.details[key] = value;
+      applied.push(key);
+      continue;
+    }
+    if (!CHANGE_FIELDS.has(key)) continue;
     applied.push(key);
     if (key === "startDate") event.date = isoDate(value, changes.startTime || event.date.slice(11, 16));
     else if (key === "endDate") event.endDate = `${value}T23:59:59+05:30`;
@@ -187,7 +275,8 @@ function main() {
         mark("error", { note: `attach target ${p.eventId} missing` });
         continue;
       }
-      attach(target, rec, rec.event.kind === "announcement" ? "repost" : rec.event.kind, now);
+      const own = rec.handle === target.organizerHandle;
+      attach(target, rec, own ? rec.event.kind : rec.event.kind === "announcement" ? "repost" : rec.event.kind, now);
       mark(rec.event.kind === "cancellation" ? "update" : "duplicate", { eventId: target.id });
       (rec.event.kind === "cancellation" ? out.cancelled : out.attached).push(`${target.title} ← @${rec.handle} (${p.via})`);
       continue;

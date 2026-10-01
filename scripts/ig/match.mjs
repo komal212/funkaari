@@ -55,7 +55,9 @@ function score(incoming, handle, candidate) {
   let s = 0;
   const org = candidate.organizerHandle || candidate.instagramHandle;
   const posters = new Set((candidate.sources || []).map((x) => x.postedBy));
-  const sameOrg = org === incoming.organizerHandle || org === handle || posters.has(handle) || posters.has(incoming.organizerHandle);
+  for (const c of candidate.details?.collaborators || []) posters.add(c);
+  const mine = new Set([handle, incoming.organizerHandle, ...(incoming.collaborators || [])]);
+  const sameOrg = mine.has(org) || [...mine].some((h) => posters.has(h));
   if (sameOrg) s += 3;
   const sameArea = !isGenericArea(incoming.area) && normalizeArea(incoming.area) === normalizeArea(candidate.area);
   if (sameArea) s += 2;

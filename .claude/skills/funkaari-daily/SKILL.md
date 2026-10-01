@@ -66,7 +66,7 @@ Apply prints created, attached, updated and cancelled events. If the build fails
 
 ## 7. Commit
 
-Stage only pipeline outputs: `db/`, `src/data/instagram-events.json`. Commit as `Daily Instagram refresh $RUN`. Show the user the apply summary. Ask before pushing; a push deploys.
+Stage only pipeline outputs: `db/`, `src/data/instagram-events.json`, `public/events/posts/`. Commit as `Daily Instagram refresh $RUN`. Show the user the apply summary. Ask before pushing; a push deploys.
 
 ## Notes
 

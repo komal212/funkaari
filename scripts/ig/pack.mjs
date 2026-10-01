@@ -59,9 +59,12 @@ function main() {
       byHandle.get(file.handle).push({
         postId: post.id,
         handle: file.handle,
+        shortcode: post.shortcode,
         url: post.url,
         postedAt: post.postedAt,
         type: post.type,
+        likes: post.likes ?? null,
+        comments: post.comments ?? null,
         caption: post.caption,
         images: imagesFor(run, post.shortcode),
       });

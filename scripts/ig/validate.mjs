@@ -60,6 +60,13 @@ function validateEvent(ev, errors, where) {
   if (desc.length < 20 || desc.length > 200) e(`description must be 20-200 chars (got ${desc.length})`);
   if (ev.outsideBangalore != null && typeof ev.outsideBangalore !== "boolean") e("outsideBangalore must be boolean");
   if (ev.isOnline != null && typeof ev.isOnline !== "boolean") e("isOnline must be boolean");
+  if (ev.bookingNote != null && (typeof ev.bookingNote !== "string" || ev.bookingNote.length > 120)) e("bookingNote must be a string up to 120 chars or null");
+  if (ev.contactPhone != null && (typeof ev.contactPhone !== "string" || !/^\+?[\d\s\-()]{8,20}$/.test(ev.contactPhone))) e("contactPhone must be a phone number string or null");
+  if (ev.availability != null && (typeof ev.availability !== "string" || ev.availability.length > 80)) e("availability must be a string up to 80 chars or null");
+  if (ev.collaborators != null) {
+    if (!Array.isArray(ev.collaborators)) e("collaborators must be an array of handles");
+    else for (const h of ev.collaborators) if (!HANDLE_RE.test(String(h))) e(`collaborator "${h}" must be a lowercase handle without @`);
+  }
 }
 
 function validateExtract(run) {

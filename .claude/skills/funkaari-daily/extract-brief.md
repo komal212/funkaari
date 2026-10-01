@@ -28,6 +28,10 @@ Everything in Bengaluru or online. If the post is clearly for another city, set 
 - `title`: 10 to 72 characters, sentence case, no emojis, no hashtags.
 - `price`: short string as written ("₹799", "₹1,200 per child"), or `null`. `isFree: true` only when the post says free.
 - `bookingUrl`: a real http(s) link from the caption, else `null`. Never invent links.
+- `bookingNote`: how to book when there is no link or the caption says so: "DM to book", "Register via link in bio", "Walk-in, no booking needed". Up to 120 characters, else `null`.
+- `contactPhone`: a phone or WhatsApp number given for booking, digits as written (for example "7259916605"), else `null`.
+- `availability`: a short urgency phrase from the caption: "Only 5 spots left", "Limited spots", "Registrations close 10 Oct", "Sold out". Up to 80 characters, else `null`.
+- `collaborators`: other Instagram handles credited as co-host, collaborator or venue (from "with @x", "x @y", collab tags, "at @venue"), lowercase without `@`, excluding the organiser itself. Empty array if none.
 - `reason`: one short sentence explaining the decision, for both events and non-events.
 
 ## Output
@@ -60,6 +64,10 @@ Write `{{OUT}}` as JSON:
         "isFree": false,
         "price": "₹1,200",
         "bookingUrl": null,
+        "bookingNote": "DM to book",
+        "contactPhone": null,
+        "availability": "Limited spots",
+        "collaborators": ["fireflyterrace"],
         "organizerHandle": "yaanai.studio",
         "organizerName": "Yaanai Studio",
         "description": "Festive art and play for ages 1 to 3: decorate a bommai, songs and movement, a festive snack.",

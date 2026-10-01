@@ -11,7 +11,7 @@ Read exactly one file: `{{PACKET}}`. Write exactly one file: `{{OUT}}`. Do not r
 ## Decide per item
 
 - `same`: the incoming post is about the same happening as a candidate (a reminder, repost, collab post, or the organiser's own announcement of something an aggregator already posted). Same organiser or venue, same or adjacent date, same activity. Different wording, a shifted time within the same day, or a different price format do not make it different.
-- `update`: same happening, but the incoming post carries a real change: a new date, time, venue, price, or a cancellation or postponement. Give only the changed fields in `changes` using keys from this list: `title, startDate, endDate, startTime, timeText, venue, area, price, isFree, bookingUrl, description, ageMinMonths, ageMaxYears, status` (status is `cancelled` or `postponed`).
+- `update`: same happening, but the incoming post carries a real change: a new date, time, venue, price, or a cancellation or postponement. Give only the changed fields in `changes` using keys from this list: `title, startDate, endDate, startTime, timeText, venue, area, price, isFree, bookingUrl, bookingNote, contactPhone, availability, description, ageMinMonths, ageMaxYears, status` (status is `cancelled` or `postponed`). A reminder that only adds "few spots left" is an `update` with just `availability`.
 - `different`: a separate happening, even if by the same organiser on the same day (for example two different workshops at a festival, or a morning and an evening show that are sold separately).
 
 Prefer `same` when in doubt between `same` and `different` and the organiser and date match. Prefer `different` when the activities are clearly not the same thing.

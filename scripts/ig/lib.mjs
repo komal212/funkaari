@@ -282,8 +282,12 @@ export function readExtracts(run) {
         ...record,
         packet: packet.packet,
         handle: post.handle,
+        shortcode: post.shortcode,
         url: post.url,
         postedAt: post.postedAt,
+        likes: post.likes ?? null,
+        comments: post.comments ?? null,
+        images: post.images || [],
       });
     }
   }

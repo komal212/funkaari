@@ -8,9 +8,11 @@
  *   node scripts/ig/fetch.mjs --backfill-days 60    # first fetch window per handle (default 60)
  *   node scripts/ig/fetch.mjs --image-days 30       # download images for posts newer than this
  *   node scripts/ig/fetch.mjs --run 2026-10-01      # run id (default: today in IST)
+ *   node scripts/ig/fetch.mjs --since-days 60       # ignore the watermark and rescan this window
  *
  * Only posts newer than each handle's watermark (minus 2 days of slack) are requested.
- * Posts are deduped by id, so overlaps are harmless. Never prints the token.
+ * Posts are deduped by id; a post seen again only has its like/comment counts refreshed.
+ * Never prints the token.
  */
 import { existsSync, mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
@@ -33,7 +35,7 @@ const GRAPH = "https://graph.facebook.com/v21.0";
 const PAGE = 50;
 const MAX_PAGES = 10;
 const MEDIA_FIELDS =
-  "id,timestamp,permalink,media_type,caption,media_url,thumbnail_url,children{media_url,media_type}";
+  "id,timestamp,permalink,media_type,caption,like_count,comments_count,media_url,thumbnail_url,children{media_url,media_type}";
 
 class TokenError extends Error {}
 
@@ -131,6 +133,7 @@ async function main() {
 
   const run = args.run || todayKolkata();
   const backfillDays = Number(args["backfill-days"] || 60);
+  const sinceDays = args["since-days"] ? Number(args["since-days"]) : null;
   const imageDays = Number(args["image-days"] || 30);
   const handles = args.handles
     ? String(args.handles).split(",").map((h) => h.trim().toLowerCase()).filter(Boolean)
@@ -142,13 +145,16 @@ async function main() {
   const summary = [];
   for (const handle of handles) {
     const file = readPostsFile(handle);
-    const known = new Set(file.posts.map((p) => p.id));
-    const sinceIso = file.latestPostAt
-      ? new Date(new Date(file.latestPostAt).getTime() - 2 * 86_400_000).toISOString()
-      : new Date(now.getTime() - backfillDays * 86_400_000).toISOString();
+    const known = new Map(file.posts.map((p) => [p.id, p]));
+    const sinceIso = sinceDays
+      ? new Date(now.getTime() - sinceDays * 86_400_000).toISOString()
+      : file.latestPostAt
+        ? new Date(new Date(file.latestPostAt).getTime() - 2 * 86_400_000).toISOString()
+        : new Date(now.getTime() - backfillDays * 86_400_000).toISOString();
 
     let fetched = 0;
     let added = 0;
+    let refreshed = 0;
     let images = 0;
     let error = null;
     try {
@@ -156,22 +162,34 @@ async function main() {
       fetched = items.length;
       const fresh = [];
       for (const item of items) {
-        if (!item.id || known.has(item.id)) continue;
-        known.add(item.id);
+        if (!item.id) continue;
         const postedAt = toIso(item.timestamp);
-        const post = {
-          id: String(item.id),
-          shortcode: shortcodeFromUrl(item.permalink) || null,
-          url: item.permalink || null,
-          type: item.media_type || null,
-          postedAt,
-          caption: item.caption || "",
-          mediaCount: 1 + (item.children?.data?.length || 0),
-          fetchedAt: now.toISOString(),
-        };
-        fresh.push(post);
-        if (postedAt && postedAt >= imageCutoff && post.shortcode) {
-          images += await downloadImages(join(mediaRoot, post.shortcode), mediaUrls(item));
+        const shortcode = shortcodeFromUrl(item.permalink) || null;
+        const existing = known.get(String(item.id));
+        if (existing) {
+          existing.likes = item.like_count ?? existing.likes ?? null;
+          existing.comments = item.comments_count ?? existing.comments ?? null;
+          existing.engagementAt = now.toISOString();
+          refreshed += 1;
+        } else {
+          const post = {
+            id: String(item.id),
+            shortcode,
+            url: item.permalink || null,
+            type: item.media_type || null,
+            postedAt,
+            caption: item.caption || "",
+            mediaCount: 1 + (item.children?.data?.length || 0),
+            likes: item.like_count ?? null,
+            comments: item.comments_count ?? null,
+            engagementAt: now.toISOString(),
+            fetchedAt: now.toISOString(),
+          };
+          known.set(post.id, post);
+          fresh.push(post);
+        }
+        if (postedAt && postedAt >= imageCutoff && shortcode && !existsSync(join(mediaRoot, shortcode))) {
+          images += await downloadImages(join(mediaRoot, shortcode), mediaUrls(item));
         }
       }
       added = fresh.length;
@@ -195,9 +213,9 @@ async function main() {
       file.lastFetchedAt = now.toISOString();
     }
     writeJson(postsFile(handle), file);
-    summary.push({ handle, fetched, added, images, error });
+    summary.push({ handle, fetched, added, refreshed, images, error });
     console.log(
-      `${handle.padEnd(32)} fetched ${String(fetched).padStart(3)}  new ${String(added).padStart(3)}  images ${String(images).padStart(3)}${error ? `  ERROR ${error}` : ""}`,
+      `${handle.padEnd(32)} fetched ${String(fetched).padStart(3)}  new ${String(added).padStart(3)}  refreshed ${String(refreshed).padStart(3)}  images ${String(images).padStart(3)}${error ? `  ERROR ${error}` : ""}`,
     );
   }
 
