@@ -47,14 +47,24 @@ function main() {
 
   const byHandle = new Map();
   let skippedOld = 0;
+  let duplicates = 0;
   for (const file of readAllPosts(handles)) {
-    for (const post of file.posts) {
+    // Identical captions within one handle (campus-by-campus reposts) are triaged once.
+    const seenCaption = new Map();
+    for (const post of [...file.posts].sort((a, b) => String(a.postedAt).localeCompare(String(b.postedAt)))) {
       if (triage[post.id]) continue;
       if (!post.postedAt || post.postedAt < cutoff) {
         triage[post.id] = { status: "skipped_old", at: now, handle: file.handle };
         skippedOld += 1;
         continue;
       }
+      const key = String(post.caption || "").toLowerCase().replace(/\s+/g, " ").trim();
+      if (key.length > 40 && seenCaption.has(key)) {
+        triage[post.id] = { status: "duplicate_post", at: now, handle: file.handle, ofPostId: seenCaption.get(key) };
+        duplicates += 1;
+        continue;
+      }
+      if (key.length > 40) seenCaption.set(key, post.id);
       if (!byHandle.has(file.handle)) byHandle.set(file.handle, []);
       byHandle.get(file.handle).push({
         postId: post.id,
@@ -70,7 +80,7 @@ function main() {
       });
     }
   }
-  if (skippedOld) writeJson(TRIAGE_FILE, triage);
+  if (skippedOld || duplicates) writeJson(TRIAGE_FILE, triage);
 
   // Greedy balance: biggest handle groups first, each into the lightest packet.
   const groups = [...byHandle.values()].sort((a, b) => b.length - a.length);
@@ -107,9 +117,9 @@ function main() {
     });
   });
   writeJson(join(dir, "index.json"), index);
-  updateRunLog(run, { pack: { at: now, pending, skippedOld, packets: index.packets.map((p) => ({ packet: p.packet, posts: p.posts })) } });
+  updateRunLog(run, { pack: { at: now, pending, skippedOld, duplicates, packets: index.packets.map((p) => ({ packet: p.packet, posts: p.posts })) } });
 
-  console.log(`run ${run}: ${pending} pending posts across ${byHandle.size} handles; ${skippedOld} skipped as older than ${triageDays} days`);
+  console.log(`run ${run}: ${pending} pending posts across ${byHandle.size} handles; ${skippedOld} skipped as older than ${triageDays} days; ${duplicates} duplicate captions`);
   for (const p of index.packets) console.log(`packet ${p.packet}: ${p.posts} posts (${p.handles.join(", ")})\n  in:  ${p.file}\n  out: ${p.out}`);
   if (!index.packets.length) console.log("nothing to extract");
 }

@@ -79,7 +79,8 @@ function main() {
     process.exit(1);
   }
   const db = readEvents();
-  const live = db.events.filter((ev) => ev.status !== "cancelled" && (ev.ongoing || eventRange(ev).end >= today));
+  // Past events stay in the pool so a late repost of a September event attaches instead of duplicating it.
+  const live = db.events.filter((ev) => ev.status !== "cancelled");
 
   const plans = [];
   const resolveItems = [];
@@ -124,7 +125,8 @@ function main() {
         .filter(({ sameOrg }) => sameOrg)
         .sort((a, b) => b.s - a.s)
         .slice(0, MAX_CANDIDATES);
-      if (!candidates.length) {
+      // An undated ongoing listing (recurring class, exhibition) is new when nothing of the organiser's matches.
+      if (!candidates.length && !ev.ongoing) {
         plans.push({ postId: rec.postId, handle: rec.handle, action: "not_event", note: `${ev.kind} without a date and no matching upcoming event` });
         continue;
       }

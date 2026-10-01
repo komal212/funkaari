@@ -38,7 +38,9 @@ function validateEvent(ev, errors, where) {
   const kind = str(ev.kind);
   if (!SOURCE_KINDS.includes(kind) || kind === "repost") e(`kind must be one of announcement|reminder|update|cancellation`);
   if (ev.startDate != null && !isValidYmd(ev.startDate)) e("startDate must be YYYY-MM-DD or null");
-  if (ev.startDate == null && !ev.ongoing && kind === "announcement") e("announcement needs a startDate (or ongoing: true)");
+  if (!["dated", "ongoing", "save-the-date"].includes(ev.listingType)) e("listingType must be dated|ongoing|save-the-date");
+  if (ev.listingType === "ongoing" && ev.ongoing !== true) e("listingType ongoing requires ongoing: true");
+  if (ev.listingType !== "ongoing" && ev.startDate == null && kind === "announcement") e("dated or save-the-date announcement needs a startDate");
   if (ev.endDate != null) {
     if (!isValidYmd(ev.endDate)) e("endDate must be YYYY-MM-DD or null");
     else if (ev.startDate && ev.endDate < ev.startDate) e("endDate before startDate");
@@ -46,8 +48,8 @@ function validateEvent(ev, errors, where) {
   if (ev.startTime != null && !TIME_RE.test(String(ev.startTime))) e("startTime must be HH:MM (24h) or null");
   if (ev.timeText != null && typeof ev.timeText !== "string") e("timeText must be a string or null");
   if (ev.ongoing != null && typeof ev.ongoing !== "boolean") e("ongoing must be boolean");
-  if (!str(ev.venue)) e("venue required (use the organiser name or 'Online' if unknown)");
-  if (!str(ev.area)) e("area required (use 'Bengaluru' if unknown, 'Online' for online)");
+  if (ev.venue != null && !str(ev.venue)) e("venue must be a non-empty string or null");
+  if (ev.area != null && !str(ev.area)) e("area must be a non-empty string or null");
   if (!Number.isInteger(ev.ageMinMonths) || ev.ageMinMonths < 0 || ev.ageMinMonths > 72) e("ageMinMonths must be an integer 0-72");
   if (ev.ageMaxYears != null && (typeof ev.ageMaxYears !== "number" || ev.ageMaxYears < 1 || ev.ageMaxYears > 18)) e("ageMaxYears must be a number 1-18 or null");
   if (!CATEGORIES.includes(ev.category)) e(`category must be one of ${CATEGORIES.join("|")}`);

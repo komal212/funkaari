@@ -57,6 +57,8 @@ function sourceFrom(rec, kind, now) {
 
 function emptyDetails() {
   return {
+    listingType: "dated",
+    missing: [],
     bookingNote: null,
     contactPhone: null,
     availability: null,
@@ -72,6 +74,15 @@ function emptyDetails() {
 /** Recompute the derived part of details from sources; keep the extracted part. */
 function refreshDetails(event) {
   const d = { ...emptyDetails(), ...(event.details || {}) };
+  d.missing = [
+    !event.venue && "venue",
+    !event.area && "area",
+    !event.date && "date",
+    (!event.time || event.time === "See post") && "time",
+    event.ageMinMonths == null && "age",
+    !event.isFree && !event.price && "price",
+    !event.bookingUrl && !d.bookingNote && !d.contactPhone && "booking",
+  ].filter(Boolean);
   const dated = (event.sources || []).filter((s) => s.postedAt);
   d.postCount = (event.sources || []).length;
   d.announcedAt = dated.length ? dated.map((s) => s.postedAt).sort()[0] : d.announcedAt;
@@ -128,8 +139,8 @@ function buildEvent(rec, taken, now) {
     ...(ev.ongoing ? { ongoing: true } : {}),
     time: ev.timeText || (ev.startTime ? time12(ev.startTime) : "See post"),
     city: "bangalore",
-    area: ev.isOnline ? "Online" : ev.area.trim(),
-    venue: ev.venue.trim(),
+    area: ev.isOnline ? "Online" : ev.area?.trim() || null,
+    venue: ev.venue?.trim() || null,
     ageMinMonths: ev.ageMinMonths,
     ...(ev.ageMaxYears != null ? { ageMaxYears: ev.ageMaxYears } : {}),
     ageGroups: ageGroupsForRange(minYears, ev.ageMaxYears ?? 6),
@@ -151,6 +162,7 @@ function buildEvent(rec, taken, now) {
     updatedAt: now,
   };
   mergeExtras(event, ev);
+  event.details.listingType = ev.listingType || (ev.ongoing ? "ongoing" : "dated");
   event.details.postImage = savePostImage(rec);
   refreshDetails(event);
   return event;
@@ -171,6 +183,17 @@ function attach(event, rec, kind, now) {
   if (code && !event.matchKeys.shortcodes.includes(code)) event.matchKeys.shortcodes.push(code);
   if (bkey && !event.matchKeys.bookingIds.includes(bkey)) event.matchKeys.bookingIds.push(bkey);
   mergeExtras(event, ev);
+  // A fuller later post fills gaps left by a save-the-date teaser.
+  if (ev) {
+    if (!event.venue && ev.venue) event.venue = ev.venue.trim();
+    if (!event.area && ev.area) event.area = ev.isOnline ? "Online" : ev.area.trim();
+    if ((!event.time || event.time === "See post") && (ev.timeText || ev.startTime)) {
+      event.time = ev.timeText || time12(ev.startTime);
+      if (ev.startTime) event.date = isoDate(event.date.slice(0, 10), ev.startTime);
+    }
+    if (!event.price && ev.price) event.price = ev.price;
+    if (event.details?.listingType === "save-the-date" && ev.listingType === "dated") event.details.listingType = "dated";
+  }
   // The organiser's own post beats a repost as the card link and image.
   const currentPoster = event.sources.find((s) => s.url === event.instagramUrl)?.postedBy;
   const takeOver = rec.handle === event.organizerHandle && currentPoster !== event.organizerHandle;
@@ -220,6 +243,8 @@ function siteView(events, today) {
   return events
     .filter((ev) => !ev.seeded && ev.status === "scheduled" && (ev.ongoing || eventRange(ev).end >= today))
     .map((ev) => Object.fromEntries(Object.entries(ev).filter(([k]) => !TRACKING.has(k))))
+    // The site type needs strings here; the db keeps the nulls and details.missing for filtering later.
+    .map((ev) => ({ ...ev, venue: ev.venue || ev.organizer, area: ev.area || "Bengaluru" }))
     .sort((a, b) => a.date.localeCompare(b.date));
 }
 
@@ -249,6 +274,8 @@ function main() {
 
   const db = readEvents();
   const triage = readTriage();
+  // Keep every pipeline event's details block current with the latest schema and derived fields.
+  for (const ev of db.events) if (!ev.seeded) refreshDetails(ev);
   const byId = new Map(db.events.map((e) => [e.id, e]));
   const taken = new Set(byId.keys());
   const createdIdFor = new Map(); // "new:<postId>" -> real id
@@ -315,7 +342,7 @@ function main() {
       byId.set(event.id, event);
       createdIdFor.set(`new:${rec.postId}`, event.id);
       mark("new_event", { eventId: event.id });
-      out.created.push(`${event.title} · ${event.date.slice(0, 10)} · ${event.area} · @${event.organizerHandle}`);
+      out.created.push(`${event.title} · ${event.date.slice(0, 10)} · ${event.area || "?"} · @${event.organizerHandle} · ${event.details.listingType}${event.details.missing.length ? ` · missing ${event.details.missing.join(",")}` : ""}`);
       continue;
     }
     mark("error", { note: `unhandled plan ${p.action}` });
