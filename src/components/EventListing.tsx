@@ -124,7 +124,7 @@ export function EventListing({ city }: EventListingProps) {
           <p className="mt-2 text-muted">Try another type, age, or area.</p>
         </div>
       ) : (
-        <div className="mt-4 grid grid-cols-1 gap-6 md:grid-cols-2">
+        <div className="mt-2">
           {filteredEvents.map((event) => (
             <EventCard key={event.id} event={event} />
           ))}
