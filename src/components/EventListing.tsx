@@ -73,30 +73,20 @@ export function EventListing({ city }: EventListingProps) {
 
   return (
     <section id="events" className="mx-auto max-w-7xl px-4 pb-12 pt-2 sm:px-6 sm:pb-16 sm:pt-4">
-      <div className="relative mb-4 overflow-x-clip sm:mb-5">
-        <div className="relative z-10 max-w-xl pt-4 sm:max-w-[54%] lg:max-w-lg">
-          <h1 className="font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl">
-            What’s on in {meta.label}
-          </h1>
-          <p className="mt-2 font-display text-lg font-semibold text-peach-500 sm:text-xl">
-            For your little ones.
-          </p>
-          <p className="mt-3 text-base leading-relaxed text-muted">
-            Playdates, workshops, open houses, nature walks — scattered across
-            Instagram, websites and a hundred other places.
-          </p>
-          <p className="mt-3 font-display text-lg font-bold text-ink">
-            We bring them all here.
-          </p>
-        </div>
-        <img
-          src="/listing-playdate-scene.webp"
-          alt=""
-          width={1280}
-          height={720}
-          aria-hidden="true"
-          className="pointer-events-none hidden h-auto select-none object-contain object-right [mask-image:radial-gradient(ellipse_90%_84%_at_58%_52%,#000_42%,transparent_80%)] [-webkit-mask-image:radial-gradient(ellipse_90%_84%_at_58%_52%,#000_42%,transparent_80%)] sm:absolute sm:right-8 sm:top-1 sm:block sm:h-44 sm:w-auto sm:max-w-[38%] lg:right-14 lg:h-52"
-        />
+      <div className="mb-4 max-w-xl pt-4 sm:mb-5">
+        <h1 className="font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl">
+          What’s on in {meta.label}
+        </h1>
+        <p className="mt-2 font-display text-lg font-semibold text-peach-500 sm:text-xl">
+          For your little ones.
+        </p>
+        <p className="mt-3 text-base leading-relaxed text-muted">
+          Playdates, workshops, open houses, nature walks — scattered across
+          Instagram, websites and a hundred other places.
+        </p>
+        <p className="mt-3 font-display text-lg font-bold text-ink">
+          We bring them all here.
+        </p>
       </div>
       {loading && (
         <p className="mb-4 text-sm font-medium text-muted">Loading events…</p>
