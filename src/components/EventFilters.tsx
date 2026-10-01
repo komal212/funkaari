@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useRef, useState } from "react";
 import type {
   EventFilters as Filters,
   AgeGroup,
@@ -28,6 +29,17 @@ export function EventFilters({
     onChange({ ...filters, [key]: value });
   };
 
+  const [typeOpen, setTypeOpen] = useState(false);
+  const typeRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const onClick = (e: MouseEvent) => {
+      if (!typeRef.current?.contains(e.target as Node)) setTypeOpen(false);
+    };
+    document.addEventListener("mousedown", onClick);
+    return () => document.removeEventListener("mousedown", onClick);
+  }, []);
+
   const areaOptions = areasFromEvents(events);
   const areas = areaOptions.length > 0 ? areaOptions : [...AREAS];
 
@@ -52,53 +64,68 @@ export function EventFilters({
   const typeOptions: Array<typeof filters.kind> = ["all", ...LISTING_KINDS];
 
   return (
-    <div className="space-y-4">
-      <div>
-        <p className="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-muted">
-          Type
-        </p>
-        <ul
-          className="grid grid-cols-2 gap-1.5 rounded-2xl bg-white p-1.5 shadow-card ring-1 ring-lavender-100 sm:grid-cols-3 lg:grid-cols-5"
-          role="listbox"
-          aria-label="Type"
-        >
-          {typeOptions.map((kind) => {
-            const selected = filters.kind === kind;
-            return (
-              <li key={kind}>
-                <button
-                  type="button"
-                  role="option"
-                  aria-selected={selected}
-                  onClick={() => update("kind", kind)}
-                  className={`flex w-full items-center gap-2 rounded-xl px-2 py-1.5 text-left text-sm font-semibold ${
-                    selected
-                      ? "bg-lavender-50 text-ink ring-1 ring-lavender-200"
-                      : "text-ink/80 hover:bg-lavender-50"
-                  }`}
-                >
-                  <TypeFilterLogo kind={kind} className="h-12 w-12" />
-                  <span className="min-w-0 leading-tight">
-                    {kind === "all" ? "All types" : LISTING_KIND_LABEL[kind]}
-                  </span>
-                </button>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
+    <div>
+      <div className="grid grid-cols-1 gap-3 sm:flex sm:flex-wrap sm:items-end">
+        <div ref={typeRef} className="relative">
+          <p className="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-muted">
+            Type
+          </p>
+          <button
+            type="button"
+            aria-haspopup="listbox"
+            aria-expanded={typeOpen}
+            aria-label="Type"
+            onClick={() => setTypeOpen((v) => !v)}
+            className={`${selectClass} inline-flex w-full items-center gap-2 pl-1.5 text-left sm:w-auto sm:min-w-[11.5rem]`}
+          >
+            <TypeFilterLogo kind={filters.kind} className="h-8 w-8" />
+            <span className="min-w-0 flex-1 truncate">
+              {filters.kind === "all" ? "All types" : LISTING_KIND_LABEL[filters.kind]}
+            </span>
+          </button>
+          <Chevron />
+          {typeOpen && (
+            <ul
+              className="absolute left-0 top-full z-30 mt-1 max-h-80 w-full min-w-[16rem] overflow-auto rounded-2xl bg-white py-1 shadow-card ring-1 ring-lavender-100"
+              role="listbox"
+              aria-label="Type"
+            >
+              {typeOptions.map((kind) => {
+                const selected = filters.kind === kind;
+                return (
+                  <li key={kind}>
+                    <button
+                      type="button"
+                      role="option"
+                      aria-selected={selected}
+                      onClick={() => {
+                        update("kind", kind);
+                        setTypeOpen(false);
+                      }}
+                      className={`flex w-full items-center gap-2.5 px-2.5 py-1.5 text-left text-sm font-semibold ${
+                        selected ? "bg-lavender-50 text-ink" : "text-ink/80 hover:bg-lavender-50"
+                      }`}
+                    >
+                      <TypeFilterLogo kind={kind} className="h-9 w-9" />
+                      {kind === "all" ? "All types" : LISTING_KIND_LABEL[kind]}
+                    </button>
+                  </li>
+                );
+              })}
+            </ul>
+          )}
+        </div>
 
-      <div className="flex flex-wrap items-end gap-3">
         <div>
           <p className="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-muted">
             Age
           </p>
-          <span className="relative inline-block">
+          <span className="relative block sm:inline-block">
             <select
               aria-label="Age"
               value={filters.ageGroup}
               onChange={(e) => update("ageGroup", e.target.value as AgeGroup | "all")}
-              className={selectClass}
+              className={`${selectClass} w-full sm:w-auto`}
             >
               <option value="all">Any age</option>
               {Object.entries(AGE_GROUP_LABELS).map(([value, label]) => (
@@ -115,12 +142,12 @@ export function EventFilters({
           <p className="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-muted">
             Area
           </p>
-          <span className="relative inline-block">
+          <span className="relative block sm:inline-block">
             <select
               aria-label="Area"
               value={filters.area}
               onChange={(e) => update("area", e.target.value)}
-              className={selectClass}
+              className={`${selectClass} w-full sm:w-auto`}
             >
               <option value="all">Any area</option>
               {areas.map((area) => (

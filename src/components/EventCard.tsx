@@ -65,8 +65,9 @@ export function EventCard({ event }: EventCardProps) {
   const blurb = event.description.trim();
 
   return (
-    <article className="grid min-w-0 grid-cols-[3.25rem_minmax(0,1fr)] items-start gap-x-3 gap-y-3 border-b border-lavender-100 py-6 sm:flex sm:gap-8 sm:py-8">
-      <div className="pt-1 text-center sm:w-16 sm:shrink-0">
+    <article className="border-b border-lavender-100 py-5 sm:flex sm:items-start sm:gap-8 sm:py-8">
+      <div className="flex items-start gap-3 sm:contents">
+      <div className="w-12 shrink-0 text-center sm:w-16 sm:pt-1">
         <p className="text-[11px] font-semibold tracking-[0.18em] text-muted sm:text-xs sm:tracking-[0.22em]">
           {month}
         </p>
@@ -76,7 +77,7 @@ export function EventCard({ event }: EventCardProps) {
         </p>
       </div>
       <div
-        className={`aspect-[3/4] w-full min-w-0 overflow-hidden bg-lavender-50 sm:w-48 sm:shrink-0 ${style.field}`}
+        className={`aspect-[3/4] w-[7.5rem] shrink-0 overflow-hidden rounded-xl bg-lavender-50 sm:w-48 sm:rounded-none ${style.field}`}
       >
         {event.imageUrl ? (
           <img
@@ -90,7 +91,8 @@ export function EventCard({ event }: EventCardProps) {
           </div>
         )}
       </div>
-      <div className="col-start-2 min-w-0 sm:col-auto sm:flex-1 sm:pt-1">
+      </div>
+      <div className="mt-3 min-w-0 sm:mt-0 sm:flex-1 sm:pt-1">
         <p className={`flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] ${style.label}`}>
           <KindLogoMark kind={kind} className="h-8 w-8" />
           {LISTING_KIND_LABEL[kind]}
