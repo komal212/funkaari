@@ -11,8 +11,15 @@ export function Header() {
           <Logo />
         </Link>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-3">
           <CitySwitcher />
+          <Link
+            href="/submit"
+            className="inline-flex h-10 items-center rounded-full bg-peach-400 px-3 text-sm font-bold text-white shadow-sm transition hover:bg-peach-500 sm:px-4"
+          >
+            <span className="sm:hidden">Submit</span>
+            <span className="hidden sm:inline">Submit an event</span>
+          </Link>
           <InstagramLink />
         </div>
       </div>
