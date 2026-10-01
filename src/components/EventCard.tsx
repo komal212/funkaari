@@ -91,7 +91,8 @@ export function EventCard({ event }: EventCardProps) {
         )}
       </div>
       <div className="col-start-2 min-w-0 sm:col-auto sm:flex-1 sm:pt-1">
-        <p className={`text-xs font-bold uppercase tracking-[0.16em] ${style.label}`}>
+        <p className={`flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] ${style.label}`}>
+          <KindLogoMark kind={kind} className="h-8 w-8" />
           {LISTING_KIND_LABEL[kind]}
         </p>
         <h3 className="mt-1 font-display text-lg font-bold leading-snug text-ink [overflow-wrap:anywhere] sm:text-2xl">
