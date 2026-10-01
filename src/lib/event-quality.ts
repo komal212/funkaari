@@ -29,6 +29,38 @@ export function displayEventTitle(title: string): string {
 const JUNK_DESCRIPTION =
   /\[\]\(|google calendar|outlook calendar|ical calendar|add to calendar|cozy craft session|profile picture|followers|happeningnext|stayhappening|thumpn|allevents|about the event\b|more events like this|popular\s+(sun|mon|tue|wed|thu|fri|sat)\b.*\d+\+?\s*interested|\d+\+?\s*interested\s*\|/i;
 
+/** Directory pages paste neighbouring titles, dates, and venues into one line. */
+function isListingDump(text: string): boolean {
+  if (
+    /open post on instagram|check ticket price|primary image|events in bangalore|happening next|explore events|frequently asked|can be booked here/i.test(
+      text,
+    )
+  ) {
+    return true;
+  }
+  const dates =
+    text.match(
+      /\b(?:sun|mon|tue|wed|thu|fri|sat),?\s+\d{1,2}\b|\b\d{1,2}\s+(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\s+20\d{2}\b|\b\d{1,2}:\d{2}\s*(?:am|pm)\b/gi,
+    ) || [];
+  if (dates.length >= 2) return true;
+  if (dates.length >= 1 && /:\s*(bengaluru|bangalore|delhi)\b/i.test(text)) return true;
+  if ((text.match(/\bbengaluru\b|\bbangalore\b/gi) || []).length >= 2) return true;
+  return false;
+}
+
+function repeatsTitle(text: string, title: string, area?: string): boolean {
+  const norm = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+  const body = norm(text);
+  const heading = norm(title);
+  const place = norm(area || "");
+  if (!body || !heading) return false;
+  return (
+    body === heading ||
+    body === `${heading} in ${place}` ||
+    body === `${heading} ${place}`
+  );
+}
+
 export function displayEventDescription(event: KidsEvent): string {
   const title = displayEventTitle(event.title);
   let text = stripListingChrome(event.description || "")
@@ -42,13 +74,11 @@ export function displayEventDescription(event: KidsEvent): string {
     !text ||
     text.length < 20 ||
     JUNK_DESCRIPTION.test(text) ||
+    isListingDump(text) ||
+    repeatsTitle(text, title, event.area) ||
     /\bworkshop\s+\w[\w'’ ]{0,40}\s+workshop\b/i.test(text)
   ) {
-    const place =
-      event.area && !/^bengaluru|bangalore|delhi ncr$/i.test(event.area)
-        ? ` in ${event.area}`
-        : "";
-    return `${title}${place}.`;
+    return "";
   }
 
   if (!/[.!?]$/.test(text)) text = `${text}.`;
