@@ -73,7 +73,7 @@ export function EventListing({ city }: EventListingProps) {
 
   return (
     <section id="events" className="mx-auto max-w-7xl px-4 pb-12 pt-2 sm:px-6 sm:pb-16 sm:pt-4">
-      <div className="relative mb-2 overflow-x-clip sm:mb-8 sm:min-h-[17.5rem] lg:min-h-[20rem]">
+      <div className="relative overflow-x-clip sm:mb-8 sm:min-h-[17.5rem] lg:min-h-[20rem]">
         <div className="relative z-10 max-w-xl pt-4 sm:max-w-[50%] sm:py-8 lg:max-w-lg lg:py-10">
           <h1 className="font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl">
             What’s on in {meta.label}
@@ -95,7 +95,7 @@ export function EventListing({ city }: EventListingProps) {
           width={1280}
           height={720}
           aria-hidden="true"
-          className="pointer-events-none mx-auto mt-2 block h-auto w-[min(100%,24rem)] select-none [mask-image:radial-gradient(ellipse_90%_84%_at_58%_52%,#000_42%,transparent_80%)] [-webkit-mask-image:radial-gradient(ellipse_90%_84%_at_58%_52%,#000_42%,transparent_80%)] sm:absolute sm:right-0 sm:top-1/2 sm:mx-0 sm:mt-0 sm:w-[min(46%,34rem)] sm:-translate-y-1/2"
+          className="pointer-events-none hidden h-auto select-none [mask-image:radial-gradient(ellipse_90%_84%_at_58%_52%,#000_42%,transparent_80%)] [-webkit-mask-image:radial-gradient(ellipse_90%_84%_at_58%_52%,#000_42%,transparent_80%)] sm:absolute sm:right-0 sm:top-1/2 sm:block sm:w-[min(46%,34rem)] sm:-translate-y-1/2"
         />
       </div>
       {loading && (
