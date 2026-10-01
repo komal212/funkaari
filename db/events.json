@@ -1,6 +1,398 @@
 {
   "events": [
     {
+      "id": "ig-nps_gmc-2026-09-05-open-house-at-gmc-gopalapuram",
+      "title": "Open house at GMC Gopalapuram",
+      "date": "2026-09-05T10:00:00+05:30",
+      "time": "Saturday",
+      "city": "bangalore",
+      "area": "Bengaluru",
+      "venue": "GMC, Gopalapuram",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "open day",
+      "organizer": "Global Montessori Centre",
+      "description": "Families walk through the school, meet teachers and see the learning environment.",
+      "instagramHandle": "nps_gmc",
+      "instagramUrl": "https://www.instagram.com/p/Dc0toffMTcX/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "nps_gmc",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18054418574800634",
+          "url": "https://www.instagram.com/p/Dc0toffMTcX/",
+          "postedBy": "nps_gmc",
+          "postedAt": "2026-09-03T11:33:01.000Z",
+          "kind": "announcement",
+          "likes": 4,
+          "comments": 0,
+          "seenAt": "2026-10-01T16:32:55.154Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "Dc0toffMTcX"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "price",
+          "booking"
+        ],
+        "bookingNote": null,
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/Dc0toffMTcX.jpg",
+        "announcedAt": "2026-09-03T11:33:01.000Z",
+        "lastPostedAt": "2026-09-03T11:33:01.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 4,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-01T16:32:55.154Z",
+      "updatedAt": "2026-10-01T16:32:55.154Z"
+    },
+    {
+      "id": "ig-nps_gmc-2026-09-12-open-house-at-gmc-gopalapuram",
+      "title": "Open house at GMC Gopalapuram",
+      "date": "2026-09-12T10:00:00+05:30",
+      "time": "Saturday",
+      "city": "bangalore",
+      "area": "Bengaluru",
+      "venue": "GMC, Gopalapuram",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "open day",
+      "organizer": "Global Montessori Centre",
+      "description": "Families walk through the school and experience the learning environment.",
+      "instagramHandle": "nps_gmc",
+      "instagramUrl": "https://www.instagram.com/p/DdJIXiLR_v1/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "nps_gmc",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18614008465024652",
+          "url": "https://www.instagram.com/p/DdJIXiLR_v1/",
+          "postedBy": "nps_gmc",
+          "postedAt": "2026-09-11T09:51:28.000Z",
+          "kind": "announcement",
+          "likes": 9,
+          "comments": 0,
+          "seenAt": "2026-10-01T16:32:55.154Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdJIXiLR_v1"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "price",
+          "booking"
+        ],
+        "bookingNote": null,
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/DdJIXiLR_v1.jpg",
+        "announcedAt": "2026-09-11T09:51:28.000Z",
+        "lastPostedAt": "2026-09-11T09:51:28.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 9,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-01T16:32:55.154Z",
+      "updatedAt": "2026-10-01T16:32:55.154Z"
+    },
+    {
+      "id": "ig-nps_gmc-2026-09-19-open-house-at-gmc-gopalapuram",
+      "title": "Open house at GMC Gopalapuram",
+      "date": "2026-09-19T10:00:00+05:30",
+      "time": "Saturday",
+      "city": "bangalore",
+      "area": "Bengaluru",
+      "venue": "GMC, Gopalapuram",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "open day",
+      "organizer": "Global Montessori Centre",
+      "description": "Families walk through the school and experience the learning environment.",
+      "instagramHandle": "nps_gmc",
+      "instagramUrl": "https://www.instagram.com/p/DdbGjTzx_kp/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "nps_gmc",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18183298861418894",
+          "url": "https://www.instagram.com/p/DdbGjTzx_kp/",
+          "postedBy": "nps_gmc",
+          "postedAt": "2026-09-18T09:21:55.000Z",
+          "kind": "announcement",
+          "likes": 0,
+          "comments": 0,
+          "seenAt": "2026-10-01T16:32:55.154Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdbGjTzx_kp"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "price",
+          "booking"
+        ],
+        "bookingNote": null,
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/DdbGjTzx_kp.jpg",
+        "announcedAt": "2026-09-18T09:21:55.000Z",
+        "lastPostedAt": "2026-09-18T09:21:55.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 0,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-01T16:32:55.154Z",
+      "updatedAt": "2026-10-01T16:32:55.154Z"
+    },
+    {
+      "id": "ig-ekyavana.earlyyears-2026-09-19-ekya-vana-haralur-campus-launch",
+      "title": "Ekya Vana Haralur campus launch",
+      "date": "2026-09-19T10:00:00+05:30",
+      "time": "Afternoon",
+      "city": "bangalore",
+      "area": "Haralur",
+      "venue": "Ekya Vana Early Years, Haralur",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "open day",
+      "organizer": "Ekya Vana Early Years",
+      "description": "Families visit the newly opened nature campus in Haralur, with a sandpit, water park and nature trail.",
+      "instagramHandle": "ekyavana.earlyyears",
+      "instagramUrl": "https://www.instagram.com/p/Dcxm4HSDzNA/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "ekyavana.earlyyears",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18103252643615601",
+          "url": "https://www.instagram.com/p/Dcxm4HSDzNA/",
+          "postedBy": "ekyavana.earlyyears",
+          "postedAt": "2026-09-02T06:36:14.000Z",
+          "kind": "announcement",
+          "likes": 29,
+          "comments": 0,
+          "seenAt": "2026-10-01T16:32:55.154Z"
+        },
+        {
+          "postId": "18471971473112182",
+          "url": "https://www.instagram.com/p/DdG5ykrj1ri/",
+          "postedBy": "ekyavana.earlyyears",
+          "postedAt": "2026-09-10T13:05:33.000Z",
+          "kind": "reminder",
+          "likes": 17,
+          "comments": 0,
+          "seenAt": "2026-10-01T16:32:55.154Z"
+        },
+        {
+          "postId": "17952314769036231",
+          "url": "https://www.instagram.com/p/DdOyBDpAIQo/",
+          "postedBy": "ekyavana.earlyyears",
+          "postedAt": "2026-09-13T14:31:33.000Z",
+          "kind": "reminder",
+          "likes": 33,
+          "comments": 0,
+          "seenAt": "2026-10-01T16:32:55.154Z"
+        },
+        {
+          "postId": "18460962301184507",
+          "url": "https://www.instagram.com/p/DdQ2trRvp5C/",
+          "postedBy": "ekyavana.earlyyears",
+          "postedAt": "2026-09-14T09:55:39.000Z",
+          "kind": "reminder",
+          "likes": 24,
+          "comments": 1,
+          "seenAt": "2026-10-01T16:32:55.154Z"
+        },
+        {
+          "postId": "17907801516550249",
+          "url": "https://www.instagram.com/p/DdV1jNFDzP8/",
+          "postedBy": "ekyavana.earlyyears",
+          "postedAt": "2026-09-16T08:17:06.000Z",
+          "kind": "reminder",
+          "likes": 42,
+          "comments": 3,
+          "seenAt": "2026-10-01T16:32:55.154Z"
+        },
+        {
+          "postId": "17929056780167011",
+          "url": "https://www.instagram.com/reel/Ddb77kPvDCz/",
+          "postedBy": "ekyavana.earlyyears",
+          "postedAt": "2026-09-18T17:11:32.000Z",
+          "kind": "update",
+          "likes": 48,
+          "comments": 1,
+          "seenAt": "2026-10-01T16:32:55.154Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "Dcxm4HSDzNA",
+          "DdG5ykrj1ri",
+          "DdOyBDpAIQo",
+          "DdQ2trRvp5C",
+          "DdV1jNFDzP8",
+          "Ddb77kPvDCz"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "price"
+        ],
+        "bookingNote": "Register via link in bio",
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/Dcxm4HSDzNA.jpg",
+        "announcedAt": "2026-09-02T06:36:14.000Z",
+        "lastPostedAt": "2026-09-18T17:11:32.000Z",
+        "postCount": 6,
+        "engagement": {
+          "likes": 193,
+          "comments": 5
+        }
+      },
+      "createdAt": "2026-10-01T16:32:55.154Z",
+      "updatedAt": "2026-10-01T16:32:55.154Z"
+    },
+    {
+      "id": "ig-neevearlyyears-2026-09-22-open-day-at-neev-early-years",
+      "title": "Open Day at Neev Early Years",
+      "date": "2026-09-22T09:30:00+05:30",
+      "time": "9:30 AM – 12:30 PM",
+      "city": "bangalore",
+      "area": null,
+      "venue": null,
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "open day",
+      "organizer": "Neev Early Years",
+      "description": "Families get a glimpse of a day in the life of a young learner at Neev's branches.",
+      "instagramHandle": "neevearlyyears",
+      "instagramUrl": "https://www.instagram.com/p/DdBI3byhJR3/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "neevearlyyears",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18379497262228050",
+          "url": "https://www.instagram.com/p/DdBI3byhJR3/",
+          "postedBy": "neevearlyyears",
+          "postedAt": "2026-09-08T07:27:04.000Z",
+          "kind": "announcement",
+          "likes": 19,
+          "comments": 0,
+          "seenAt": "2026-10-01T16:32:55.154Z"
+        },
+        {
+          "postId": "18105633545032792",
+          "url": "https://www.instagram.com/p/DdYqRp6hP4z/",
+          "postedBy": "neevearlyyears",
+          "postedAt": "2026-09-17T10:36:22.000Z",
+          "kind": "reminder",
+          "likes": 14,
+          "comments": 0,
+          "seenAt": "2026-10-01T16:32:55.154Z"
+        },
+        {
+          "postId": "18336574609276809",
+          "url": "https://www.instagram.com/p/DdjIqCDBvbR/",
+          "postedBy": "neevearlyyears",
+          "postedAt": "2026-09-21T12:14:15.000Z",
+          "kind": "reminder",
+          "likes": 6,
+          "comments": 0,
+          "seenAt": "2026-10-01T16:32:55.154Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdBI3byhJR3",
+          "DdYqRp6hP4z",
+          "DdjIqCDBvbR"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "venue",
+          "area",
+          "price"
+        ],
+        "bookingNote": "Register via link in bio",
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/DdBI3byhJR3.jpg",
+        "announcedAt": "2026-09-08T07:27:04.000Z",
+        "lastPostedAt": "2026-09-21T12:14:15.000Z",
+        "postCount": 3,
+        "engagement": {
+          "likes": 39,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-01T16:32:55.154Z",
+      "updatedAt": "2026-10-01T16:32:55.154Z"
+    },
+    {
       "id": "forum-south-around-the-world",
       "title": "Around the World at Forum South",
       "date": "2026-09-22T16:00:00+05:30",
@@ -49,6 +441,218 @@
       "updatedAt": "2026-09-30T12:37:18.854Z"
     },
     {
+      "id": "ig-airaa_academy-2026-09-26-airaa-academy-admissions-drive",
+      "title": "Airaa Academy admissions drive",
+      "date": "2026-09-26T10:00:00+05:30",
+      "time": "26 September 2026",
+      "city": "bangalore",
+      "area": null,
+      "venue": null,
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "open day",
+      "organizer": "Airaa Academy",
+      "description": "Families tour the Airaa Academy campus and meet teachers across grade levels, including Pre-Primary.",
+      "instagramHandle": "airaa_academy",
+      "instagramUrl": "https://www.instagram.com/reel/DdjYPkcgcyn/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "airaa_academy",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18116680816763793",
+          "url": "https://www.instagram.com/reel/DdjYPkcgcyn/",
+          "postedBy": "airaa_academy",
+          "postedAt": "2026-09-21T14:30:04.000Z",
+          "kind": "announcement",
+          "likes": 79,
+          "comments": 0,
+          "seenAt": "2026-10-01T16:32:55.154Z"
+        },
+        {
+          "postId": "18491650531099501",
+          "url": "https://www.instagram.com/reel/DdoPK3BhL26/",
+          "postedBy": "airaa_academy",
+          "postedAt": "2026-09-23T11:47:59.000Z",
+          "kind": "reminder",
+          "likes": 35,
+          "comments": 2,
+          "seenAt": "2026-10-01T16:32:55.154Z"
+        },
+        {
+          "postId": "18196845262379120",
+          "url": "https://www.instagram.com/reel/DdrKIWegYya/",
+          "postedBy": "airaa_academy",
+          "postedAt": "2026-09-24T15:00:17.000Z",
+          "kind": "reminder",
+          "likes": 26,
+          "comments": 0,
+          "seenAt": "2026-10-01T16:32:55.154Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdjYPkcgcyn",
+          "DdoPK3BhL26",
+          "DdrKIWegYya"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "venue",
+          "area",
+          "price"
+        ],
+        "bookingNote": "Contact the Pre-Primary admissions number to know more",
+        "contactPhone": "89045 84041",
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/DdjYPkcgcyn.jpg",
+        "announcedAt": "2026-09-21T14:30:04.000Z",
+        "lastPostedAt": "2026-09-24T15:00:17.000Z",
+        "postCount": 3,
+        "engagement": {
+          "likes": 140,
+          "comments": 2
+        }
+      },
+      "createdAt": "2026-10-01T16:32:55.154Z",
+      "updatedAt": "2026-10-01T16:32:55.154Z"
+    },
+    {
+      "id": "ig-ekyavana.earlyyears-2026-09-26-open-house-at-ekya-vanas-new-cam",
+      "title": "Open house at Ekya Vana's new campuses",
+      "date": "2026-09-26T10:00:00+05:30",
+      "time": "10 AM – 12 PM",
+      "city": "bangalore",
+      "area": "Bengaluru",
+      "venue": "Ekya Vana Early Years, Manyata Tech Park & Haralur",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "open day",
+      "organizer": "Ekya Vana Early Years",
+      "description": "Families tour the campuses, meet educators and explore the nature-based learning spaces.",
+      "instagramHandle": "ekyavana.earlyyears",
+      "instagramUrl": "https://www.instagram.com/p/DdjGzV0SA8J/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "ekyavana.earlyyears",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18132998647642717",
+          "url": "https://www.instagram.com/p/DdjGzV0SA8J/",
+          "postedBy": "ekyavana.earlyyears",
+          "postedAt": "2026-09-21T12:02:49.000Z",
+          "kind": "announcement",
+          "likes": 22,
+          "comments": 1,
+          "seenAt": "2026-10-01T16:32:55.154Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdjGzV0SA8J"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "price"
+        ],
+        "bookingNote": "Register via link in bio",
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/DdjGzV0SA8J.jpg",
+        "announcedAt": "2026-09-21T12:02:49.000Z",
+        "lastPostedAt": "2026-09-21T12:02:49.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 22,
+          "comments": 1
+        }
+      },
+      "createdAt": "2026-10-01T16:32:55.154Z",
+      "updatedAt": "2026-10-01T16:32:55.154Z"
+    },
+    {
+      "id": "ig-akshatha01_kulkarni-2026-10-01-childrens-biennale-at-ekya-schoo",
+      "title": "Children's Biennale at Ekya School",
+      "date": "2026-10-01T10:00:00+05:30",
+      "ongoing": true,
+      "time": "Closes in October",
+      "city": "bangalore",
+      "area": "Bengaluru",
+      "venue": "Ekya School, NICE Road",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "art",
+      "organizer": "Ekya School",
+      "description": "Families walk through student-built installations on the Future of Nature theme and collect passport stamps.",
+      "instagramHandle": "akshatha01_kulkarni",
+      "instagramUrl": "https://www.instagram.com/reel/DdEX3_juprb/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "akshatha01_kulkarni",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18353110828175867",
+          "url": "https://www.instagram.com/reel/DdEX3_juprb/",
+          "postedBy": "akshatha01_kulkarni",
+          "postedAt": "2026-09-09T13:30:10.000Z",
+          "kind": "announcement",
+          "likes": 145,
+          "comments": 6,
+          "seenAt": "2026-10-01T16:33:55.185Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdEX3_juprb"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "ongoing",
+        "missing": [
+          "price",
+          "booking"
+        ],
+        "bookingNote": null,
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/DdEX3_juprb.jpg",
+        "announcedAt": "2026-09-09T13:30:10.000Z",
+        "lastPostedAt": "2026-09-09T13:30:10.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 145,
+          "comments": 6
+        }
+      },
+      "createdAt": "2026-10-01T16:33:55.185Z",
+      "updatedAt": "2026-10-01T16:33:55.185Z"
+    },
+    {
       "id": "ig-play_cove-2026-10-02-rhino-storytime-playdate-at-hobb",
       "title": "Rhino storytime playdate at Hobby Ghar",
       "date": "2026-10-02T10:00:00+05:30",
@@ -92,6 +696,8 @@
         "bookingIds": []
       },
       "details": {
+        "listingType": "dated",
+        "missing": [],
         "bookingNote": "Registration link in bio",
         "contactPhone": null,
         "availability": "Limited spots",
@@ -312,6 +918,10 @@
         "bookingIds": []
       },
       "details": {
+        "listingType": "dated",
+        "missing": [
+          "price"
+        ],
         "bookingNote": "Register now",
         "contactPhone": "9663373111",
         "availability": null,
@@ -372,6 +982,8 @@
         "bookingIds": []
       },
       "details": {
+        "listingType": "dated",
+        "missing": [],
         "bookingNote": "DM to register",
         "contactPhone": null,
         "availability": null,
@@ -429,6 +1041,10 @@
         "bookingIds": []
       },
       "details": {
+        "listingType": "dated",
+        "missing": [
+          "price"
+        ],
         "bookingNote": null,
         "contactPhone": "7259916605",
         "availability": "Limited spots",

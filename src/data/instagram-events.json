@@ -1,7 +1,30 @@
 {
-  "generatedAt": "2026-10-01T16:00:43.461Z",
-  "run": "2026-10-01-b2",
+  "generatedAt": "2026-10-01T16:33:55.185Z",
+  "run": "2026-10-01-b4",
   "events": [
+    {
+      "id": "ig-akshatha01_kulkarni-2026-10-01-childrens-biennale-at-ekya-schoo",
+      "title": "Children's Biennale at Ekya School",
+      "date": "2026-10-01T10:00:00+05:30",
+      "ongoing": true,
+      "time": "Closes in October",
+      "city": "bangalore",
+      "area": "Bengaluru",
+      "venue": "Ekya School, NICE Road",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "art",
+      "organizer": "Ekya School",
+      "description": "Families walk through student-built installations on the Future of Nature theme and collect passport stamps.",
+      "instagramHandle": "akshatha01_kulkarni",
+      "instagramUrl": "https://www.instagram.com/reel/DdEX3_juprb/",
+      "fromInstagram": true,
+      "isFree": false
+    },
     {
       "id": "ig-play_cove-2026-10-02-rhino-storytime-playdate-at-hobb",
       "title": "Rhino storytime playdate at Hobby Ghar",

@@ -1,0 +1,32 @@
+{
+  "run": "2026-10-01-b4",
+  "pack": {
+    "at": "2026-10-01T16:33:42.430Z",
+    "pending": 1,
+    "skippedOld": 0,
+    "duplicates": 0,
+    "packets": [
+      {
+        "packet": 1,
+        "posts": 1
+      }
+    ]
+  },
+  "updatedAt": "2026-10-01T16:33:55.197Z",
+  "match": {
+    "at": "2026-10-01T16:33:55.112Z",
+    "counts": {
+      "new": 1
+    },
+    "resolvePackets": 0
+  },
+  "apply": {
+    "at": "2026-10-01T16:33:55.185Z",
+    "created": 1,
+    "attached": 0,
+    "updated": 0,
+    "cancelled": 0,
+    "notEvent": 0,
+    "siteEvents": 5
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "run": "2026-10-01-b3",
+  "pack": {
+    "at": "2026-10-01T16:27:10.412Z",
+    "pending": 90,
+    "skippedOld": 0,
+    "duplicates": 1,
+    "packets": [
+      {
+        "packet": 1,
+        "posts": 23
+      },
+      {
+        "packet": 2,
+        "posts": 22
+      },
+      {
+        "packet": 3,
+        "posts": 22
+      },
+      {
+        "packet": 4,
+        "posts": 23
+      }
+    ]
+  },
+  "updatedAt": "2026-10-01T16:32:55.178Z",
+  "match": {
+    "at": "2026-10-01T16:31:56.430Z",
+    "counts": {
+      "not_event": 74,
+      "new": 3,
+      "resolve": 13
+    },
+    "resolvePackets": 2
+  },
+  "apply": {
+    "at": "2026-10-01T16:32:55.154Z",
+    "created": 7,
+    "attached": 8,
+    "updated": 1,
+    "cancelled": 0,
+    "notEvent": 74,
+    "siteEvents": 4
+  }
+}
