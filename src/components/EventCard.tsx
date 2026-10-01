@@ -76,7 +76,7 @@ export function EventCard({ event }: EventCardProps) {
         </p>
       </div>
       <div
-        className={`h-28 min-w-0 overflow-hidden bg-lavender-50 sm:h-36 sm:w-56 sm:shrink-0 ${style.field}`}
+        className={`aspect-[3/4] w-full min-w-0 overflow-hidden bg-lavender-50 sm:w-48 sm:shrink-0 ${style.field}`}
       >
         {event.imageUrl ? (
           <img
