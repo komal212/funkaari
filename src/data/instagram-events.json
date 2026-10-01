@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-01T10:38:10.198Z",
-  "run": "2026-10-01",
+  "generatedAt": "2026-10-01T16:00:43.461Z",
+  "run": "2026-10-01-b2",
   "events": [
     {
       "id": "ig-play_cove-2026-10-02-rhino-storytime-playdate-at-hobb",
@@ -25,6 +25,29 @@
       "fromInstagram": true,
       "isFree": false,
       "price": "₹1,199"
+    },
+    {
+      "id": "ig-acemontessori-2026-10-10-ace-montessori-open-house-2026",
+      "title": "ACE Montessori Open House 2026",
+      "date": "2026-10-10T10:00:00+05:30",
+      "time": "10:00 AM – 2:00 PM",
+      "city": "bangalore",
+      "area": "Jayanagar",
+      "venue": "ACE Montessori, Jayanagar",
+      "ageMinMonths": 24,
+      "ageMaxYears": 6,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "open day",
+      "organizer": "ACE Montessori",
+      "description": "Families tour the Montessori classrooms, meet the team and learn about the curriculum.",
+      "instagramHandle": "acemontessori",
+      "instagramUrl": "https://www.instagram.com/reel/Dd78z3oCF7a/",
+      "fromInstagram": true,
+      "isFree": false
     },
     {
       "id": "ig-eravoo.blr-2026-10-12-baala-sambrahma-dasara-celebrati",

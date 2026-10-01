@@ -270,6 +270,65 @@
       "updatedAt": "2026-09-30T12:34:16.291Z"
     },
     {
+      "id": "ig-acemontessori-2026-10-10-ace-montessori-open-house-2026",
+      "title": "ACE Montessori Open House 2026",
+      "date": "2026-10-10T10:00:00+05:30",
+      "time": "10:00 AM – 2:00 PM",
+      "city": "bangalore",
+      "area": "Jayanagar",
+      "venue": "ACE Montessori, Jayanagar",
+      "ageMinMonths": 24,
+      "ageMaxYears": 6,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "open day",
+      "organizer": "ACE Montessori",
+      "description": "Families tour the Montessori classrooms, meet the team and learn about the curriculum.",
+      "instagramHandle": "acemontessori",
+      "instagramUrl": "https://www.instagram.com/reel/Dd78z3oCF7a/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "acemontessori",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18077709272446533",
+          "url": "https://www.instagram.com/reel/Dd78z3oCF7a/",
+          "postedBy": "acemontessori",
+          "postedAt": "2026-10-01T03:32:08.000Z",
+          "kind": "announcement",
+          "likes": 67,
+          "comments": 1,
+          "seenAt": "2026-10-01T16:00:43.461Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "Dd78z3oCF7a"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "bookingNote": "Register now",
+        "contactPhone": "9663373111",
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/Dd78z3oCF7a.jpg",
+        "announcedAt": "2026-10-01T03:32:08.000Z",
+        "lastPostedAt": "2026-10-01T03:32:08.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 67,
+          "comments": 1
+        }
+      },
+      "createdAt": "2026-10-01T16:00:43.461Z",
+      "updatedAt": "2026-10-01T16:00:43.461Z"
+    },
+    {
       "id": "ig-eravoo.blr-2026-10-12-baala-sambrahma-dasara-celebrati",
       "title": "Baala Sambrahma Dasara celebration",
       "date": "2026-10-12T10:00:00+05:30",
