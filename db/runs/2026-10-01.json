@@ -1,53 +1,58 @@
 {
   "run": "2026-10-01",
   "fetch": {
-    "at": "2026-10-01T09:44:01.604Z",
+    "at": "2026-10-01T10:33:17.585Z",
     "handles": [
       {
         "handle": "play_cove",
         "fetched": 12,
-        "added": 12,
-        "images": 12,
+        "added": 0,
+        "refreshed": 12,
+        "images": 0,
         "error": null
       },
       {
         "handle": "eravoo.blr",
         "fetched": 25,
-        "added": 25,
-        "images": 19,
+        "added": 0,
+        "refreshed": 25,
+        "images": 0,
         "error": null
       },
       {
         "handle": "the_two_messy_hands",
-        "fetched": 46,
-        "added": 46,
-        "images": 30,
+        "fetched": 47,
+        "added": 1,
+        "refreshed": 46,
+        "images": 1,
         "error": null
       },
       {
         "handle": "popapuddle",
         "fetched": 20,
-        "added": 20,
-        "images": 13,
+        "added": 0,
+        "refreshed": 20,
+        "images": 0,
         "error": null
       },
       {
         "handle": "forumsouthbengaluru",
         "fetched": 77,
-        "added": 77,
-        "images": 50,
+        "added": 0,
+        "refreshed": 77,
+        "images": 0,
         "error": null
       }
     ],
-    "fetched": 180,
-    "added": 180,
-    "images": 124,
+    "fetched": 181,
+    "added": 1,
+    "images": 1,
     "errors": 0
   },
-  "updatedAt": "2026-10-01T09:48:08.693Z",
+  "updatedAt": "2026-10-01T10:38:10.208Z",
   "pack": {
-    "at": "2026-10-01T09:44:50.179Z",
-    "pending": 95,
+    "at": "2026-10-01T10:33:44.221Z",
+    "pending": 96,
     "skippedOld": 85,
     "packets": [
       {
@@ -64,7 +69,7 @@
       },
       {
         "packet": 4,
-        "posts": 28
+        "posts": 29
       },
       {
         "packet": 5,
@@ -73,22 +78,22 @@
     ]
   },
   "match": {
-    "at": "2026-10-01T09:47:22.432Z",
+    "at": "2026-10-01T10:37:04.701Z",
     "counts": {
       "new": 1,
-      "not_event": 90,
+      "not_event": 91,
       "resolve": 2,
       "attach": 2
     },
     "resolvePackets": 1
   },
   "apply": {
-    "at": "2026-10-01T09:48:08.683Z",
+    "at": "2026-10-01T10:38:10.198Z",
     "created": 3,
     "attached": 2,
     "updated": 0,
     "cancelled": 0,
-    "notEvent": 90,
+    "notEvent": 91,
     "siteEvents": 3
   }
 }

@@ -78,8 +78,11 @@
           "postId": "18082648736334515",
           "url": "https://www.instagram.com/p/Dd0hsA6Boqh/",
           "postedBy": "play_cove",
+          "postedAt": "2026-09-28T06:33:24.000Z",
           "kind": "announcement",
-          "seenAt": "2026-10-01T09:48:08.683Z"
+          "likes": 8,
+          "comments": 0,
+          "seenAt": "2026-10-01T10:38:10.198Z"
         }
       ],
       "matchKeys": {
@@ -88,8 +91,22 @@
         ],
         "bookingIds": []
       },
-      "createdAt": "2026-10-01T09:48:08.683Z",
-      "updatedAt": "2026-10-01T09:48:08.683Z"
+      "details": {
+        "bookingNote": "Registration link in bio",
+        "contactPhone": null,
+        "availability": "Limited spots",
+        "collaborators": [],
+        "postImage": "/events/posts/Dd0hsA6Boqh.jpg",
+        "announcedAt": "2026-09-28T06:33:24.000Z",
+        "lastPostedAt": "2026-09-28T06:33:24.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 8,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-01T10:38:10.198Z",
+      "updatedAt": "2026-10-01T10:38:10.198Z"
     },
     {
       "id": "aura-circle-time",
@@ -119,18 +136,14 @@
       "status": "scheduled",
       "sources": [
         {
-          "postId": null,
+          "postId": "18484269649111273",
           "url": "https://www.instagram.com/p/Ddi6EEpgjE2/",
           "postedBy": "the_two_messy_hands",
           "kind": "announcement",
-          "seenAt": "2026-09-30T12:34:16.291Z"
-        },
-        {
-          "postId": "18484269649111273",
-          "url": "https://www.instagram.com/reel/Ddi6EEpgjE2/",
-          "postedBy": "the_two_messy_hands",
-          "kind": "repost",
-          "seenAt": "2026-10-01T09:48:08.683Z"
+          "seenAt": "2026-09-30T12:34:16.291Z",
+          "postedAt": "2026-09-21T10:13:02.000Z",
+          "likes": 14,
+          "comments": 2
         }
       ],
       "matchKeys": {
@@ -141,7 +154,23 @@
       },
       "seeded": true,
       "createdAt": "2026-09-30T12:34:16.291Z",
-      "updatedAt": "2026-10-01T09:48:08.683Z"
+      "updatedAt": "2026-10-01T10:38:10.198Z",
+      "details": {
+        "bookingNote": "DM to know more",
+        "contactPhone": null,
+        "availability": "Limited spots",
+        "collaborators": [
+          "auramontessori0823"
+        ],
+        "postImage": "/events/posts/Ddi6EEpgjE2.jpg",
+        "announcedAt": "2026-09-21T10:13:02.000Z",
+        "lastPostedAt": "2026-09-21T10:13:02.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 14,
+          "comments": 2
+        }
+      }
     },
     {
       "id": "eravoo-art-play-october",
@@ -172,18 +201,14 @@
       "status": "scheduled",
       "sources": [
         {
-          "postId": null,
-          "url": "https://www.instagram.com/p/DdWQ--sqoTY/",
-          "postedBy": "eravoo.blr",
-          "kind": "announcement",
-          "seenAt": "2026-09-30T12:34:16.291Z"
-        },
-        {
           "postId": "17889131292682065",
           "url": "https://www.instagram.com/p/DdWQ--sqoTY/",
           "postedBy": "eravoo.blr",
-          "kind": "repost",
-          "seenAt": "2026-10-01T09:48:08.683Z"
+          "kind": "announcement",
+          "seenAt": "2026-09-30T12:34:16.291Z",
+          "postedAt": "2026-09-16T12:16:56.000Z",
+          "likes": 21,
+          "comments": 0
         }
       ],
       "matchKeys": {
@@ -194,7 +219,21 @@
       },
       "seeded": true,
       "createdAt": "2026-09-30T12:34:16.291Z",
-      "updatedAt": "2026-10-01T09:48:08.683Z"
+      "updatedAt": "2026-10-01T10:38:10.198Z",
+      "details": {
+        "bookingNote": "Register via link in bio or DM",
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/DdWQ--sqoTY.jpg",
+        "announcedAt": "2026-09-16T12:16:56.000Z",
+        "lastPostedAt": "2026-09-16T12:16:56.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 21,
+          "comments": 0
+        }
+      }
     },
     {
       "id": "allevents-clown-festival",
@@ -260,8 +299,11 @@
           "postId": "17936641845383581",
           "url": "https://www.instagram.com/p/Dd0h3ovKFvw/",
           "postedBy": "eravoo.blr",
+          "postedAt": "2026-09-28T06:21:41.000Z",
           "kind": "announcement",
-          "seenAt": "2026-10-01T09:48:08.683Z"
+          "likes": 16,
+          "comments": 1,
+          "seenAt": "2026-10-01T10:38:10.198Z"
         }
       ],
       "matchKeys": {
@@ -270,8 +312,22 @@
         ],
         "bookingIds": []
       },
-      "createdAt": "2026-10-01T09:48:08.683Z",
-      "updatedAt": "2026-10-01T09:48:08.683Z"
+      "details": {
+        "bookingNote": "DM to register",
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/Dd0h3ovKFvw.jpg",
+        "announcedAt": "2026-09-28T06:21:41.000Z",
+        "lastPostedAt": "2026-09-28T06:21:41.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 16,
+          "comments": 1
+        }
+      },
+      "createdAt": "2026-10-01T10:38:10.198Z",
+      "updatedAt": "2026-10-01T10:38:10.198Z"
     },
     {
       "id": "ig-the_two_messy_hands-2026-10-12-the-makers-edit-craft-camp-for-k",
@@ -300,8 +356,11 @@
           "postId": "18117425237057708",
           "url": "https://www.instagram.com/reel/Dd39D4xhGrI/",
           "postedBy": "the_two_messy_hands",
+          "postedAt": "2026-09-29T14:17:50.000Z",
           "kind": "announcement",
-          "seenAt": "2026-10-01T09:48:08.683Z"
+          "likes": 7,
+          "comments": 0,
+          "seenAt": "2026-10-01T10:38:10.198Z"
         }
       ],
       "matchKeys": {
@@ -310,8 +369,22 @@
         ],
         "bookingIds": []
       },
-      "createdAt": "2026-10-01T09:48:08.683Z",
-      "updatedAt": "2026-10-01T09:48:08.683Z"
+      "details": {
+        "bookingNote": null,
+        "contactPhone": "7259916605",
+        "availability": "Limited spots",
+        "collaborators": [],
+        "postImage": "/events/posts/Dd39D4xhGrI.jpg",
+        "announcedAt": "2026-09-29T14:17:50.000Z",
+        "lastPostedAt": "2026-09-29T14:17:50.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 7,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-01T10:38:10.198Z",
+      "updatedAt": "2026-10-01T10:38:10.198Z"
     },
     {
       "id": "little-beats-festival",
