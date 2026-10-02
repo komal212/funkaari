@@ -203,6 +203,74 @@ export function tokenOverlap(a, b) {
   return hit / Math.min(ta.size, tb.size);
 }
 
+const MONTH = "jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|june?|july?|aug(?:ust)?|sep(?:t(?:ember)?)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?";
+const DATE_SIGNAL = new RegExp(
+  [
+    `\\b\\d{1,2}(?:st|nd|rd|th)?\\s*(?:of\\s+)?(?:${MONTH})\\b`,
+    `\\b(?:${MONTH})\\.?\\s*\\d{1,2}(?:st|nd|rd|th)?\\b`,
+    "\\b(?:monday|tuesday|wednesday|thursday|friday|saturday|sunday)s?\\b",
+    "\\b\\d{1,2}\\s*[/.-]\\s*\\d{1,2}(?:\\s*[/.-]\\s*\\d{2,4})?\\b",
+    "\\b\\d{1,2}(?::\\d{2})?\\s*(?:am|pm)\\b",
+    "\\b(?:this|next) (?:weekend|week)\\b",
+    "\\bsave the date\\b",
+  ].join("|"),
+  "i",
+);
+const EVENT_SIGNAL = new RegExp(
+  "\\b(?:" +
+    [
+      // what
+      "workshops?", "play ?dates?", "play ?groups?", "play ?sessions?", "sessions?", "events?", "camps?",
+      "bootcamps?", "class(?:es)?", "courses?", "programs?", "programmes?", "batch(?:es)?", "story ?time",
+      "story ?telling", "storytellers?", "read[ -]?alouds?", "open (?:house|day)s?", "fest(?:ival)?s?", "fairs?",
+      "carnivals?", "melas?", "bazaars?", "markets?", "flea", "pop[ -]?ups?", "shows?", "puppet(?:ry)?", "magic",
+      "theatre", "theater", "plays?", "musicals?", "exhibitions?", "exhibits?", "biennale", "installations?",
+      "museum", "gallery", "treks?", "hikes?", "walks?", "trails?", "farm visit", "nature", "outings?",
+      "excursions?", "field trips?", "meet ?ups?", "concerts?", "gigs?", "jam", "drum circle", "performances?",
+      "recitals?", "screenings?", "movie", "drop[ -]?in", "trials?", "demos?", "masterclass(?:es)?",
+      "competitions?", "contests?", "championships?", "tournaments?", "races?", "runs?", "marathon",
+      "sports day", "games?", "activit(?:y|ies)", "celebrations?", "parties", "party", "picnics?", "gatherings?",
+      "dandiya", "garba", "baking", "cooking", "craft(?:s|ing)?", "painting", "pottery", "clay", "art",
+      "dance", "music", "yoga", "football", "swimming", "skating", "summer", "winter", "holiday",
+      "dussehra", "diwali", "navratri", "halloween", "christmas",
+      // when and where
+      "upcoming", "coming soon", "happening", "starts?", "starting", "begins?", "launch(?:ing)?", "join us",
+      "see you", "don'?t miss", "mark your calendars?", "every (?:week|weekend)", "weekly", "weekends?",
+      "today", "tonight", "tomorrow", "till", "until", "onwards", "from \\d", "venue", "location", "address",
+      "at our (?:studio|centre|center|space|campus)",
+      // how to attend
+      "register(?:ed)?", "registrations?", "rsvp", "enrol(?:l|ment|ling)?", "book(?:ing|ings|ed)?",
+      "reserve", "tickets?", "passes?", "slots?", "seats?", "spots?", "sign ?up", "entry", "free",
+      "fees?", "price", "cost", "per (?:child|kid|person|family)", "limited", "hurry", "last (?:few|chance)",
+      "sold out", "link in bio", "dm", "whats ?app", "call", "contact", "enquir(?:e|y|ies)", "inquir(?:e|y|ies)",
+      "ages?", "years?", "yrs", "months?", "toddlers?", "parents?", "families", "family",
+    ].join("|") +
+    ")\\b|₹|\\brs\\.?\\s*\\d",
+  "i",
+);
+
+/** Caption with hashtags, mentions, links and emoji removed, whitespace collapsed. */
+export function captionText(caption) {
+  return String(caption || "")
+    .replace(/https?:\/\/\S+/g, " ")
+    .replace(/[#@][\p{L}\p{N}_.]+/gu, " ")
+    .replace(/[^\p{L}\p{N}\p{P}\p{Sc}\s]/gu, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+/**
+ * Why a post is worth sending to an extract worker, or null if it is not.
+ * `flyer` when the caption is near-empty (details are likely in the image), else `date` or `keyword`.
+ */
+export function eventSignal(caption) {
+  const text = captionText(caption);
+  if (text.length < 60) return "flyer";
+  if (DATE_SIGNAL.test(text)) return "date";
+  if (EVENT_SIGNAL.test(text)) return "keyword";
+  return null;
+}
+
 export function normalizeArea(area) {
   return String(area || "").trim().toLowerCase();
 }

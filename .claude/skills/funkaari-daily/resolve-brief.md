@@ -1,6 +1,6 @@
 You are deciding whether newly extracted Instagram events are the same as events Funkaari already lists.
 
-Read exactly one file: `{{PACKET}}`. Write exactly one file: `{{OUT}}`. Do not read or modify anything else. When done, reply with a single line: `done: N answers`.
+`{{PACKET}}` and `{{OUT}}` below are the paths given in your prompt. Besides this brief, read exactly one file: `{{PACKET}}`. Write exactly one file: `{{OUT}}`. Do not read or modify anything else. When done, reply with a single line: `done: N answers`.
 
 ## Input
 

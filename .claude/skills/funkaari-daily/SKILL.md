@@ -5,7 +5,7 @@ description: Daily Funkaari pipeline. Fetch new Instagram posts from every follo
 
 # Funkaari daily run
 
-You are the orchestrator. You run scripts, hand work to Sonnet workers, check their output with scripts, and commit. **You never read captions or images yourself.** Everything model-heavy goes to workers created with `create_agent` using model `anthropic/sonnet-5`, effort `medium`.
+You are the orchestrator. You run scripts, hand work to Sonnet workers, check their output with scripts, and commit. **You never read captions or images yourself.** Everything model-heavy goes to workers created with `create_agent` using model `anthropic/sonnet-5`, effort `low`.
 
 Set `RUN` to today's date in IST as `YYYY-MM-DD` (the scripts default to this when `--run` is omitted). Use `--handles a,b,c` on fetch and pack only when asked to test a subset.
 
@@ -23,11 +23,19 @@ Needs network access outside the sandbox. Exit code 2 means the Instagram token 
 npm run ig:pack -- --run $RUN
 ```
 
-Prints up to 5 packets with their input and output paths. If it prints `nothing to extract`, skip to step 6.
+Prints up to 5 packets with their input and output paths. Posts whose caption has no date, event keyword or booking cue are marked `skipped_filter` and never reach a worker (near-empty flyer captions always go through). Add `--no-filter` to send everything. If it prints `nothing to extract`, skip to step 6.
 
 ## 3. Extract with Sonnet workers
 
-For each packet, create one worker. Read `extract-brief.md` next to this file, replace `{{PACKET}}` with the packet's `in` path and `{{OUT}}` with its `out` path, and pass that text as the agent prompt. Title: `Extract packet N`. Create all packets' workers in one go; they run in parallel. Keep the agent ids: you reuse the workers in step 5.
+For each packet, create one worker. Do not paste the brief; pass this short prompt with the packet's `in` and `out` paths filled in:
+
+```
+Read .claude/skills/funkaari-daily/extract-brief.md and follow it exactly.
+{{PACKET}} = <in path>
+{{OUT}} = <out path>
+```
+
+Title: `Extract packet N`. Create all packets' workers in one go; they run in parallel. Keep the agent ids: you reuse the workers in step 5.
 
 Wait for every worker to report back. Then:
 
@@ -47,7 +55,7 @@ Prints counts per action and any resolve packets. `no resolve step needed` means
 
 ## 5. Resolve look-alikes
 
-For each resolve packet, message an idle worker from step 3 (or create a new Sonnet medium one if none is left). Send `resolve-brief.md` with `{{PACKET}}` and `{{OUT}}` filled in. Wait, then:
+For each resolve packet, message an idle worker from step 3 (or create a new Sonnet low one if none is left). Send the same short prompt pointing to `.claude/skills/funkaari-daily/resolve-brief.md` with that packet's `{{PACKET}}` and `{{OUT}}`. Wait, then:
 
 ```
 npm run ig:validate -- --run $RUN --stage resolve
@@ -71,6 +79,6 @@ Stage only pipeline outputs: `db/`, `src/data/instagram-events.json`, `public/ev
 ## Notes
 
 - Scratch for a run lives in `.context/runs/$RUN/` and is not committed.
-- To re-triage a post, delete its line from `db/triage.json` and run again from step 2.
+- To re-triage a post, delete its line from `db/triage.json` and run again from step 2. To review every filtered post again, delete all `skipped_filter` lines and run pack with `--no-filter`.
 - Workers share this checkout. Their only writes are their own `{{OUT}}` file.
 - If a worker goes silent for more than 10 minutes, create a replacement for that packet.

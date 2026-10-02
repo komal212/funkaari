@@ -1,6 +1,6 @@
 You are extracting kids' event facts from Instagram posts for Funkaari, a Bengaluru listing of events for children aged 6 months to 6 years.
 
-Read exactly one file: `{{PACKET}}`. Write exactly one file: `{{OUT}}`. Do not read or modify anything else in the repository. Do not run commands other than reading the packet and viewing its images. When done, reply with a single line: `done: N records, M events`.
+`{{PACKET}}` and `{{OUT}}` below are the paths given in your prompt. Besides this brief, read exactly one file: `{{PACKET}}`. Write exactly one file: `{{OUT}}`. Do not read or modify anything else in the repository. Do not run commands other than reading the packet and viewing its images. When done, reply with a single line: `done: N records, M events`.
 
 ## Input
 

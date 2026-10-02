@@ -33,7 +33,7 @@ function summary(ev) {
   return {
     id: ev.id,
     title: ev.title,
-    date: ev.date.slice(0, 10),
+    date: ev.date ? ev.date.slice(0, 10) : null,
     endDate: ev.endDate ? ev.endDate.slice(0, 10) : null,
     time: ev.time,
     area: ev.area,
