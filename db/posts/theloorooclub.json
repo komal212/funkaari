@@ -1,9 +1,22 @@
 {
   "handle": "theloorooclub",
-  "latestPostAt": "2026-09-10T06:35:50.000Z",
-  "lastFetchedAt": "2026-10-01T11:41:42.310Z",
+  "latestPostAt": "2026-10-01T12:14:10.000Z",
+  "lastFetchedAt": "2026-10-02T06:29:02.531Z",
   "fetchError": null,
   "posts": [
+    {
+      "id": "17967243228190384",
+      "shortcode": "Dd84mmgAY9c",
+      "url": "https://www.instagram.com/p/Dd84mmgAY9c/",
+      "type": "CAROUSEL_ALBUM",
+      "postedAt": "2026-10-01T12:14:10.000Z",
+      "caption": "What if your child’s playdate came with an art date for you too? \n\nIntroducing Art Café: The Colour Edition with corospace \n\nUpstairs, the grown-ups slow down with The Nature Palette, exploring colour through flowers, leaves, spices and natural pigments 🌸\n\nDownstairs, the little ones wonder… what happens when the crayons quit? 🖍️ \nInspired by The Day the Crayons Quit, they’ll mix, paint, squish, make and discover colour in all sorts of unexpected places.\n\nCome together, or come just for the session you love. Adults and children can register separately too.\n\nBecause why should the kids have all the fun ♥️\n\nKids: Ages 3–8 | Grown-ups: All welcome\nRegister using the link in our bio",
+      "mediaCount": 4,
+      "likes": 31,
+      "comments": 1,
+      "engagementAt": "2026-10-02T06:29:02.531Z",
+      "fetchedAt": "2026-10-02T06:29:02.531Z"
+    },
     {
       "id": "18124003663662748",
       "shortcode": "DdGNCYxhHt9",
@@ -14,7 +27,7 @@
       "mediaCount": 1,
       "likes": 393,
       "comments": 2,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -27,7 +40,7 @@
       "mediaCount": 1,
       "likes": 78,
       "comments": 1,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -38,11 +51,11 @@
       "postedAt": "2026-09-07T12:46:21.000Z",
       "caption": "thecourtyardcommunity & The LooRoo Club present\nOur beloved Ganesha Play Date! \n\nGanesha Habba is here, and one of our favourite play dates is back!\n\nThis year, Mr. Lokesh joins us again, showing the children how a simple lump of clay can slowly take shape into their very own little Ganesha to take home.\n\nThere’ll be flowers to play with, stories about Ganesha, little sweet treats to make, art to create and lots of getting our hands messy.\n\nAnd of course, it wouldn’t be a LooRoo play date without plenty of nature, sensory play and curious little things to squish, mix, mould and discover along the way.\n\nA morning of making, playing and celebrating Ganesha together! 🐘\n\nPlease register using the link in our bio :)",
       "mediaCount": 13,
-      "likes": 89,
+      "likes": 90,
       "comments": 1,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     }
   ],
-  "mediaCount": 550
+  "mediaCount": 551
 }

@@ -1,7 +1,7 @@
 {
   "handle": "pepschoolv2",
   "latestPostAt": "2026-09-14T08:18:24.000Z",
-  "lastFetchedAt": "2026-10-01T11:41:42.310Z",
+  "lastFetchedAt": "2026-10-02T06:29:02.531Z",
   "fetchError": null,
   "posts": [
     {
@@ -14,7 +14,7 @@
       "mediaCount": 11,
       "likes": 10,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {

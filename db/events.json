@@ -64,6 +64,259 @@
       "updatedAt": "2026-10-01T16:32:55.154Z"
     },
     {
+      "id": "ig-ekyaschools-2026-09-05-ekya-childrens-biennale-future-o",
+      "title": "Ekya Children's Biennale: Future of Cities",
+      "date": "2026-09-05T10:00:00+05:30",
+      "endDate": "2026-09-06T23:59:59+05:30",
+      "time": "10 AM – 3 PM",
+      "city": "bangalore",
+      "area": "BTM Layout",
+      "venue": "Ekya School, BTM Layout",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "art",
+      "organizer": "Ekya Schools",
+      "description": "Children's art biennale themed Future of Cities with hands-on creative activities.",
+      "instagramHandle": "ekyaschools",
+      "instagramUrl": "https://www.instagram.com/reel/DcyPdypPVbW/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "ekyaschools",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18123714799813495",
+          "url": "https://www.instagram.com/reel/DcyPdypPVbW/",
+          "postedBy": "ekyaschools",
+          "postedAt": "2026-09-02T12:30:08.000Z",
+          "kind": "announcement",
+          "likes": 93,
+          "comments": 0,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DcyPdypPVbW"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "price"
+        ],
+        "bookingNote": "Register via link in bio",
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/DcyPdypPVbW.jpg",
+        "announcedAt": "2026-09-02T12:30:08.000Z",
+        "lastPostedAt": "2026-09-02T12:30:08.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 93,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T06:44:34.821Z",
+      "updatedAt": "2026-10-02T06:44:34.821Z"
+    },
+    {
+      "id": "ig-blrcreativecircus-2026-09-06-bcc-carnival-the-boho-edit",
+      "title": "BCC Carnival: The Boho Edit",
+      "date": "2026-09-06T12:00:00+05:30",
+      "time": "12 PM – 7 PM",
+      "city": "bangalore",
+      "area": "Yeshwantpur",
+      "venue": "Bangalore Creative Circus, Yeshwantpur",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "festival",
+      "organizer": "Bangalore Creative Circus",
+      "description": "A Sunday market day of shopping, crafting, eating and hanging out, open to families.",
+      "instagramHandle": "blrcreativecircus",
+      "instagramUrl": "https://www.instagram.com/reel/DcyVnQjyAn9/",
+      "fromInstagram": true,
+      "isFree": true,
+      "organizerHandle": "blrcreativecircus",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18113359103077882",
+          "url": "https://www.instagram.com/reel/DcyVnQjyAn9/",
+          "postedBy": "blrcreativecircus",
+          "postedAt": "2026-09-02T13:31:11.000Z",
+          "kind": "announcement",
+          "likes": 202,
+          "comments": 9,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DcyVnQjyAn9"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [],
+        "bookingNote": "Free entry, no registration needed",
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/DcyVnQjyAn9.jpg",
+        "announcedAt": "2026-09-02T13:31:11.000Z",
+        "lastPostedAt": "2026-09-02T13:31:11.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 202,
+          "comments": 9
+        }
+      },
+      "createdAt": "2026-10-02T06:44:34.821Z",
+      "updatedAt": "2026-10-02T06:44:34.821Z"
+    },
+    {
+      "id": "ig-bondoverbindings-2026-09-09-pebbles-n-pages-little-lit-fest",
+      "title": "Pebbles n Pages Little Lit Fest session",
+      "date": "2026-09-09T10:00:00+05:30",
+      "time": "See post",
+      "city": "bangalore",
+      "area": null,
+      "venue": "Thanisandra Campus",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "festival",
+      "organizer": "Bond Over Bindings",
+      "description": "A Little Lit Fest session at Thanisandra Campus with storytellers as part of Pebbles n Pages.",
+      "instagramHandle": "bondoverbindings",
+      "instagramUrl": "https://www.instagram.com/p/DdDJsHlvi8M/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "bondoverbindings",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18140849275720084",
+          "url": "https://www.instagram.com/p/DdDJsHlvi8M/",
+          "postedBy": "bondoverbindings",
+          "postedAt": "2026-09-09T02:07:34.000Z",
+          "kind": "announcement",
+          "likes": 6,
+          "comments": 0,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdDJsHlvi8M"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "area",
+          "time",
+          "price",
+          "booking"
+        ],
+        "bookingNote": null,
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [
+          "abaldfatindiangirl",
+          "sriharshagn",
+          "littleredhenpreschools"
+        ],
+        "postImage": "/events/posts/DdDJsHlvi8M.jpg",
+        "announcedAt": "2026-09-09T02:07:34.000Z",
+        "lastPostedAt": "2026-09-09T02:07:34.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 6,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T06:44:34.821Z",
+      "updatedAt": "2026-10-02T06:44:34.821Z"
+    },
+    {
+      "id": "ig-bondoverbindings-2026-09-11-gajapati-kulapati-author-meet-an",
+      "title": "Gajapati Kulapati author meet and greet",
+      "date": "2026-09-11T16:30:00+05:30",
+      "time": "4:30 PM – 6:00 PM",
+      "city": "bangalore",
+      "area": "Jakkur",
+      "venue": "Bond Over Bindings, Jakkur",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "workshop",
+      "organizer": "Bond Over Bindings",
+      "description": "Meet Gajapati Kulapati creator Ashok Rajagopalan for storytelling, playtime and an author meet and greet.",
+      "instagramHandle": "bondoverbindings",
+      "instagramUrl": "https://www.instagram.com/p/Dc-1Ip7MgbH/",
+      "fromInstagram": true,
+      "isFree": false,
+      "price": "₹250",
+      "organizerHandle": "bondoverbindings",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18074367809413536",
+          "url": "https://www.instagram.com/p/Dc-1Ip7MgbH/",
+          "postedBy": "bondoverbindings",
+          "postedAt": "2026-09-07T09:51:00.000Z",
+          "kind": "announcement",
+          "likes": 39,
+          "comments": 9,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "Dc-1Ip7MgbH"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [],
+        "bookingNote": "DM 7676104144 or sign up at bondoverbindings.com",
+        "contactPhone": "7676104144",
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/Dc-1Ip7MgbH.jpg",
+        "announcedAt": "2026-09-07T09:51:00.000Z",
+        "lastPostedAt": "2026-09-07T09:51:00.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 39,
+          "comments": 9
+        }
+      },
+      "createdAt": "2026-10-02T06:44:34.821Z",
+      "updatedAt": "2026-10-02T06:44:34.821Z"
+    },
+    {
       "id": "ig-nps_gmc-2026-09-12-open-house-at-gmc-gopalapuram",
       "title": "Open house at GMC Gopalapuram",
       "date": "2026-09-12T10:00:00+05:30",
@@ -125,6 +378,211 @@
       },
       "createdAt": "2026-10-01T16:32:55.154Z",
       "updatedAt": "2026-10-01T16:32:55.154Z"
+    },
+    {
+      "id": "ig-theloorooclub-2026-09-12-the-ganesha-habba-play-date",
+      "title": "The Ganesha Habba Play Date",
+      "date": "2026-09-12T10:30:00+05:30",
+      "time": "10:30 AM – 12:00 PM",
+      "city": "bangalore",
+      "area": "Shantinagar",
+      "venue": "The Courtyard, Shantinagar",
+      "ageMinMonths": 36,
+      "ageMaxYears": 10,
+      "ageGroups": [
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "workshop",
+      "organizer": "The LooRoo Club",
+      "description": "Kids and parents read Ganesha stories, mould clay idols and enjoy sensory play together.",
+      "instagramHandle": "theloorooclub",
+      "instagramUrl": "https://www.instagram.com/p/Dc_JNVJgQkV/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "theloorooclub",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18130567903661186",
+          "url": "https://www.instagram.com/p/Dc_JNVJgQkV/",
+          "postedBy": "theloorooclub",
+          "postedAt": "2026-09-07T12:46:21.000Z",
+          "kind": "announcement",
+          "likes": 90,
+          "comments": 1,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "17881584819622243",
+          "url": "https://www.instagram.com/reel/DdBm5sxBi_t/",
+          "postedBy": "theloorooclub",
+          "postedAt": "2026-09-08T11:49:21.000Z",
+          "kind": "reminder",
+          "likes": 78,
+          "comments": 1,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "18124003663662748",
+          "url": "https://www.instagram.com/reel/DdGNCYxhHt9/",
+          "postedBy": "theloorooclub",
+          "postedAt": "2026-09-10T06:35:50.000Z",
+          "kind": "reminder",
+          "likes": 393,
+          "comments": 2,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "Dc_JNVJgQkV",
+          "DdBm5sxBi_t",
+          "DdGNCYxhHt9"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "price"
+        ],
+        "bookingNote": "Register using the link in bio",
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [
+          "thecourtyardcommunity"
+        ],
+        "postImage": "/events/posts/Dc_JNVJgQkV.jpg",
+        "announcedAt": "2026-09-07T12:46:21.000Z",
+        "lastPostedAt": "2026-09-10T06:35:50.000Z",
+        "postCount": 3,
+        "engagement": {
+          "likes": 561,
+          "comments": 4
+        }
+      },
+      "createdAt": "2026-10-02T06:44:34.821Z",
+      "updatedAt": "2026-10-02T06:44:34.821Z"
+    },
+    {
+      "id": "ig-bondoverbindings-2026-09-12-ganesha-clay-modelling-workshop",
+      "title": "Ganesha clay modelling workshop",
+      "date": "2026-09-12T16:00:00+05:30",
+      "time": "4:00 PM – 6:00 PM",
+      "city": "bangalore",
+      "area": "Jakkur",
+      "venue": "Bond Over Bindings, Jakkur",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "art",
+      "organizer": "Bond Over Bindings",
+      "description": "Children shape their own clay Ganesha with artist Babitha Pai; all materials included.",
+      "instagramHandle": "bondoverbindings",
+      "instagramUrl": "https://www.instagram.com/p/DdBi9wGyG2H/",
+      "fromInstagram": true,
+      "isFree": false,
+      "price": "₹350",
+      "organizerHandle": "bondoverbindings",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18112464112963112",
+          "url": "https://www.instagram.com/p/DdBi9wGyG2H/",
+          "postedBy": "bondoverbindings",
+          "postedAt": "2026-09-08T11:09:58.000Z",
+          "kind": "announcement",
+          "likes": 9,
+          "comments": 0,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdBi9wGyG2H"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [],
+        "bookingNote": "DM 7676104144 or sign up at bondoverbindings.com",
+        "contactPhone": "7676104144",
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/DdBi9wGyG2H.jpg",
+        "announcedAt": "2026-09-08T11:09:58.000Z",
+        "lastPostedAt": "2026-09-08T11:09:58.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 9,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T06:44:34.821Z",
+      "updatedAt": "2026-10-02T06:44:34.821Z"
+    },
+    {
+      "id": "ig-bondoverbindings-2026-09-13-whispered-pages-storytelling-nab",
+      "title": "Whispered Pages storytelling: Nabiya",
+      "date": "2026-09-13T10:30:00+05:30",
+      "time": "10:30 AM – 11:30 AM",
+      "city": "bangalore",
+      "area": "Jakkur",
+      "venue": "Bond Over Bindings, Jakkur",
+      "ageMinMonths": 72,
+      "ageGroups": [
+        "4-6yr"
+      ],
+      "category": "workshop",
+      "organizer": "Bond Over Bindings",
+      "description": "Author Chatura Rao leads an intimate story session exploring the book Nabiya with children and families.",
+      "instagramHandle": "bondoverbindings",
+      "instagramUrl": "https://www.instagram.com/p/DdBk_ouPAf2/",
+      "fromInstagram": true,
+      "isFree": true,
+      "organizerHandle": "bondoverbindings",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "17965336905167736",
+          "url": "https://www.instagram.com/p/DdBk_ouPAf2/",
+          "postedBy": "bondoverbindings",
+          "postedAt": "2026-09-08T11:27:40.000Z",
+          "kind": "announcement",
+          "likes": 11,
+          "comments": 0,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdBk_ouPAf2"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [],
+        "bookingNote": "DM / WhatsApp 7676104144 to sign up",
+        "contactPhone": "7676104144",
+        "availability": "Spaces are limited",
+        "collaborators": [],
+        "postImage": "/events/posts/DdBk_ouPAf2.jpg",
+        "announcedAt": "2026-09-08T11:27:40.000Z",
+        "lastPostedAt": "2026-09-08T11:27:40.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 11,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T06:44:34.821Z",
+      "updatedAt": "2026-10-02T06:44:34.821Z"
     },
     {
       "id": "ig-openhouse.school-2026-09-13-ganesha-idol-painting-for-kids",
@@ -368,6 +826,290 @@
       "updatedAt": "2026-10-01T16:32:55.154Z"
     },
     {
+      "id": "ig-kai.early.years-2026-09-19-kai-alumni-playdate-reunion-morn",
+      "title": "Kai alumni playdate reunion morning",
+      "date": "2026-09-19T10:00:00+05:30",
+      "time": "10:00 AM – 11:30 AM",
+      "city": "bangalore",
+      "area": "Whitefield",
+      "venue": "Kai Early Years",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "open day",
+      "organizer": "Kai Early Years",
+      "description": "Kai alumni children reconnect and play while parents catch up over coffee.",
+      "instagramHandle": "kai.early.years",
+      "instagramUrl": "https://www.instagram.com/p/DdGyP_MGmYG/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "kai.early.years",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18117852052987425",
+          "url": "https://www.instagram.com/p/DdGyP_MGmYG/",
+          "postedBy": "kai.early.years",
+          "postedAt": "2026-09-10T11:59:39.000Z",
+          "kind": "announcement",
+          "likes": 13,
+          "comments": 0,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdGyP_MGmYG"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "price"
+        ],
+        "bookingNote": "Call +91 72041 42123 to RSVP",
+        "contactPhone": "7204142123",
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/DdGyP_MGmYG.jpg",
+        "announcedAt": "2026-09-10T11:59:39.000Z",
+        "lastPostedAt": "2026-09-10T11:59:39.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 13,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T06:44:34.821Z",
+      "updatedAt": "2026-10-02T06:44:34.821Z"
+    },
+    {
+      "id": "ig-kangaroo_kids_belathur-2026-09-19-annual-sports-meet-2026-27-at-ka",
+      "title": "Annual Sports Meet 2026-27 at Kangaroo Kids",
+      "date": "2026-09-19T10:00:00+05:30",
+      "time": "9:30 AM onwards",
+      "city": "bangalore",
+      "area": "Whitefield",
+      "venue": "3Lok Football Academy, Whitefield",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "sports",
+      "organizer": "Kangaroo Kids Belathur",
+      "description": "Preschool annual sports meet with running, play and team games for children.",
+      "instagramHandle": "kangaroo_kids_belathur",
+      "instagramUrl": "https://www.instagram.com/reel/DdRUjRIT3EN/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "kangaroo_kids_belathur",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18079838777380235",
+          "url": "https://www.instagram.com/reel/DdRUjRIT3EN/",
+          "postedBy": "kangaroo_kids_belathur",
+          "postedAt": "2026-09-14T14:14:51.000Z",
+          "kind": "announcement",
+          "likes": 31,
+          "comments": 3,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "17911327911284843",
+          "url": "https://www.instagram.com/reel/DdaJzCOhfb4/",
+          "postedBy": "kangaroo_kids_belathur",
+          "postedAt": "2026-09-18T00:30:02.000Z",
+          "kind": "update",
+          "likes": 37,
+          "comments": 1,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdRUjRIT3EN",
+          "DdaJzCOhfb4"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "price",
+          "booking"
+        ],
+        "bookingNote": null,
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/DdRUjRIT3EN.jpg",
+        "announcedAt": "2026-09-14T14:14:51.000Z",
+        "lastPostedAt": "2026-09-18T00:30:02.000Z",
+        "postCount": 2,
+        "engagement": {
+          "likes": 68,
+          "comments": 4
+        }
+      },
+      "createdAt": "2026-10-02T06:44:34.821Z",
+      "updatedAt": "2026-10-02T06:44:34.821Z"
+    },
+    {
+      "id": "ig-blrcreativecircus-2026-09-19-trunk-tales-ganapati-warli-and-g",
+      "title": "Trunk Tales: Ganapati Warli and Gond art",
+      "date": "2026-09-19T11:15:00+05:30",
+      "time": "11:15 AM – 1:15 PM",
+      "city": "bangalore",
+      "area": "Yeshwantpur",
+      "venue": "Bangalore Creative Circus, Yeshwantpur",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "workshop",
+      "organizer": "Bangalore Creative Circus",
+      "description": "Children sculpt a Ganapati, explore Warli and Gond art, and join storytelling and movement.",
+      "instagramHandle": "blrcreativecircus",
+      "instagramUrl": "https://www.instagram.com/reel/DdT4P8pSTo-/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "blrcreativecircus",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18028694075903809",
+          "url": "https://www.instagram.com/reel/DdT4P8pSTo-/",
+          "postedBy": "blrcreativecircus",
+          "postedAt": "2026-09-15T14:03:54.000Z",
+          "kind": "announcement",
+          "likes": 42,
+          "comments": 0,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdT4P8pSTo-"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "price"
+        ],
+        "bookingNote": "DM tvastra_creativewellness or mamatathemohini to register",
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [
+          "tvastra_creativewellness",
+          "mamatathemohini"
+        ],
+        "postImage": "/events/posts/DdT4P8pSTo-.jpg",
+        "announcedAt": "2026-09-15T14:03:54.000Z",
+        "lastPostedAt": "2026-09-15T14:03:54.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 42,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T06:44:34.821Z",
+      "updatedAt": "2026-10-02T06:44:34.821Z"
+    },
+    {
+      "id": "ig-bondoverbindings-2026-09-19-gruffalo-granny-book-launch-part",
+      "title": "Gruffalo Granny book launch party",
+      "date": "2026-09-19T16:30:00+05:30",
+      "time": "4:30 PM – 6:00 PM",
+      "city": "bangalore",
+      "area": "Jakkur",
+      "venue": "Bond Over Bindings, Jakkur",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "workshop",
+      "organizer": "Bond Over Bindings",
+      "description": "Launch party for Gruffalo Granny with read-aloud, sensory play and Gruffalo-themed activities.",
+      "instagramHandle": "bondoverbindings",
+      "instagramUrl": "https://www.instagram.com/p/DdG20B1y8EJ/",
+      "fromInstagram": true,
+      "isFree": false,
+      "price": "₹799",
+      "organizerHandle": "bondoverbindings",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18114656188979738",
+          "url": "https://www.instagram.com/p/DdG20B1y8EJ/",
+          "postedBy": "bondoverbindings",
+          "postedAt": "2026-09-10T12:39:35.000Z",
+          "kind": "announcement",
+          "likes": 36,
+          "comments": 7,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "17957214597238092",
+          "url": "https://www.instagram.com/reel/DdOchzJMoWd/",
+          "postedBy": "bondoverbindings",
+          "postedAt": "2026-09-13T11:37:00.000Z",
+          "kind": "reminder",
+          "likes": 76,
+          "comments": 15,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "18126255682869942",
+          "url": "https://www.instagram.com/reel/DdbQLqKPURS/",
+          "postedBy": "bondoverbindings",
+          "postedAt": "2026-09-18T10:46:45.000Z",
+          "kind": "reminder",
+          "likes": 20,
+          "comments": 0,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdG20B1y8EJ",
+          "DdOchzJMoWd",
+          "DdbQLqKPURS"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [],
+        "bookingNote": "DM 7676104144 / Sign up on bondoverbindings.com",
+        "contactPhone": "7676104144",
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/DdG20B1y8EJ.jpg",
+        "announcedAt": "2026-09-10T12:39:35.000Z",
+        "lastPostedAt": "2026-09-18T10:46:45.000Z",
+        "postCount": 3,
+        "engagement": {
+          "likes": 132,
+          "comments": 22
+        }
+      },
+      "createdAt": "2026-10-02T06:44:34.821Z",
+      "updatedAt": "2026-10-02T06:44:34.821Z"
+    },
+    {
       "id": "ig-neevearlyyears-2026-09-22-open-day-at-neev-early-years",
       "title": "Open Day at Neev Early Years",
       "date": "2026-09-22T09:30:00+05:30",
@@ -500,6 +1242,267 @@
       "seeded": true,
       "createdAt": "2026-09-30T12:34:16.291Z",
       "updatedAt": "2026-09-30T12:37:18.854Z"
+    },
+    {
+      "id": "ig-rhythmnrhyme.in-2026-09-23-rhythm-n-rhyme-bugs-batch-at-kyd",
+      "title": "Rhythm N Rhyme Bugs batch at KYDZ ADDA",
+      "date": "2026-09-23T16:15:00+05:30",
+      "ongoing": true,
+      "time": "Wednesdays, 4:15 PM to 5:00 PM, 9 weeks",
+      "city": "bangalore",
+      "area": "Bannerghatta",
+      "venue": "KYDZ ADDA, Bannerghatta Road",
+      "ageMinMonths": 11,
+      "ageMaxYears": 2.5,
+      "ageGroups": [
+        "6-12mo",
+        "1-2yr",
+        "2-3yr"
+      ],
+      "category": "music",
+      "organizer": "Rhythm N Rhyme",
+      "description": "Weekly rhythm and rhymes music session for babies and toddlers at KYDZ ADDA, Bannerghatta Road.",
+      "instagramHandle": "rhythmnrhyme.in",
+      "instagramUrl": "https://www.instagram.com/p/DdIo9XWN5O8/",
+      "fromInstagram": true,
+      "bookingUrl": "https://register.rhythmnrhyme.com/",
+      "isFree": false,
+      "organizerHandle": "rhythmnrhyme.in",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "17995565663823308",
+          "url": "https://www.instagram.com/p/DdIo9XWN5O8/",
+          "postedBy": "rhythmnrhyme.in",
+          "postedAt": "2026-09-11T05:53:08.000Z",
+          "kind": "announcement",
+          "likes": 5,
+          "comments": 0,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "17994120995830401",
+          "url": "https://www.instagram.com/p/DdLdr_nS6pA/",
+          "postedBy": "rhythmnrhyme.in",
+          "postedAt": "2026-09-12T07:38:03.000Z",
+          "kind": "update",
+          "likes": 2,
+          "comments": 0,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "18115927015974766",
+          "url": "https://www.instagram.com/p/DdXuws7NcC6/",
+          "postedBy": "rhythmnrhyme.in",
+          "postedAt": "2026-09-17T01:57:01.000Z",
+          "kind": "reminder",
+          "likes": 0,
+          "comments": 0,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "17964183858282242",
+          "url": "https://www.instagram.com/p/Ddbb3awmwNZ/",
+          "postedBy": "rhythmnrhyme.in",
+          "postedAt": "2026-09-18T12:28:07.000Z",
+          "kind": "reminder",
+          "likes": 8,
+          "comments": 0,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "18101238077341652",
+          "url": "https://www.instagram.com/reel/Dds2O3jRdV_/",
+          "postedBy": "rhythmnrhyme.in",
+          "postedAt": "2026-09-25T06:47:00.000Z",
+          "kind": "reminder",
+          "likes": 4,
+          "comments": 0,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdIo9XWN5O8",
+          "DdLdr_nS6pA",
+          "DdXuws7NcC6",
+          "Ddbb3awmwNZ",
+          "Dds2O3jRdV_"
+        ],
+        "bookingIds": [
+          "url:register.rhythmnrhyme.com",
+          "url:rhythmnrhyme.com/schedule.html"
+        ]
+      },
+      "details": {
+        "listingType": "ongoing",
+        "missing": [],
+        "bookingNote": null,
+        "contactPhone": "9663899238",
+        "availability": "Spots fill fast",
+        "collaborators": [],
+        "postImage": "/events/posts/DdIo9XWN5O8.jpg",
+        "announcedAt": "2026-09-11T05:53:08.000Z",
+        "lastPostedAt": "2026-09-25T06:47:00.000Z",
+        "postCount": 5,
+        "engagement": {
+          "likes": 19,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T06:44:34.821Z",
+      "updatedAt": "2026-10-02T06:44:34.821Z",
+      "price": "₹4600"
+    },
+    {
+      "id": "ig-lindenmontessori-2026-09-26-linden-montessori-open-house",
+      "title": "Linden Montessori Open House",
+      "date": "2026-09-26T09:30:00+05:30",
+      "time": "9.30 am to 1 pm",
+      "city": "bangalore",
+      "area": "Whitefield",
+      "venue": "Linden Montessori",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "open day",
+      "organizer": "Linden Montessori",
+      "description": "Families visit the campus to see the Montessori and Cambridge curriculum in action.",
+      "instagramHandle": "lindenmontessori",
+      "instagramUrl": "https://www.instagram.com/reel/DdliE5jOioA/",
+      "fromInstagram": true,
+      "bookingUrl": "http://www.lindenmontessori.in",
+      "isFree": false,
+      "organizerHandle": "lindenmontessori",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18108816233612157",
+          "url": "https://www.instagram.com/reel/DdliE5jOioA/",
+          "postedBy": "lindenmontessori",
+          "postedAt": "2026-09-22T10:35:48.000Z",
+          "kind": "announcement",
+          "likes": 10,
+          "comments": 0,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "18079677764386130",
+          "url": "https://www.instagram.com/reel/DdoCnV_u-XD/",
+          "postedBy": "lindenmontessori",
+          "postedAt": "2026-09-23T09:58:53.000Z",
+          "kind": "reminder",
+          "likes": 13,
+          "comments": 0,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "18489035617097192",
+          "url": "https://www.instagram.com/reel/DdtJI9NO2tr/",
+          "postedBy": "lindenmontessori",
+          "postedAt": "2026-09-25T09:34:34.000Z",
+          "kind": "reminder",
+          "likes": 23,
+          "comments": 0,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdliE5jOioA",
+          "DdoCnV_u-XD",
+          "DdtJI9NO2tr"
+        ],
+        "bookingIds": [
+          "url:lindenmontessori.in"
+        ]
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "price"
+        ],
+        "bookingNote": null,
+        "contactPhone": "6366414962",
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/DdliE5jOioA.jpg",
+        "announcedAt": "2026-09-22T10:35:48.000Z",
+        "lastPostedAt": "2026-09-25T09:34:34.000Z",
+        "postCount": 3,
+        "engagement": {
+          "likes": 46,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T06:44:34.821Z",
+      "updatedAt": "2026-10-02T06:44:34.821Z"
+    },
+    {
+      "id": "ig-ekyaschools-2026-09-26-ekya-schools-open-house-morning",
+      "title": "Ekya Schools open house morning",
+      "date": "2026-09-26T09:30:00+05:30",
+      "time": "Grade 1 onwards: 9:30–10:30 AM; Early Years: 11:30 AM–12:30 PM",
+      "city": "bangalore",
+      "area": null,
+      "venue": "Ekya School, ITPL and Ekya School, NICE Road",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "open day",
+      "organizer": "Ekya Schools",
+      "description": "Open house morning to meet educators and explore learning spaces for Early Years and Grade 1 onwards.",
+      "instagramHandle": "ekyaschools",
+      "instagramUrl": "https://www.instagram.com/p/DdoXhfno3eK/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "ekyaschools",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18143600110538762",
+          "url": "https://www.instagram.com/p/DdoXhfno3eK/",
+          "postedBy": "ekyaschools",
+          "postedAt": "2026-09-23T13:00:07.000Z",
+          "kind": "announcement",
+          "likes": 24,
+          "comments": 0,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdoXhfno3eK"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "area",
+          "price"
+        ],
+        "bookingNote": "Register via link in bio",
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/DdoXhfno3eK.jpg",
+        "announcedAt": "2026-09-23T13:00:07.000Z",
+        "lastPostedAt": "2026-09-23T13:00:07.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 24,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T06:44:34.821Z",
+      "updatedAt": "2026-10-02T06:44:34.821Z"
     },
     {
       "id": "ig-airaa_academy-2026-09-26-airaa-academy-admissions-drive",
@@ -714,6 +1717,695 @@
       "updatedAt": "2026-10-02T05:46:04.820Z"
     },
     {
+      "id": "ig-ekya_nava-2026-09-26-ekya-nava-open-house",
+      "title": "Ekya Nava Open House",
+      "date": "2026-09-26T10:00:00+05:30",
+      "time": "10:00 AM – 11:30 AM",
+      "city": "bangalore",
+      "area": "Bengaluru",
+      "venue": "Ekya Nava, Panathur",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "open day",
+      "organizer": "Ekya Nava",
+      "description": "Families visit classrooms to see how learning is designed around the learner at Ekya Nava.",
+      "instagramHandle": "ekya_nava",
+      "instagramUrl": "https://www.instagram.com/p/DdnwCrJydff/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "ekya_nava",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18010914803764163",
+          "url": "https://www.instagram.com/p/DdnwCrJydff/",
+          "postedBy": "ekya_nava",
+          "postedAt": "2026-09-23T07:15:21.000Z",
+          "kind": "announcement",
+          "likes": 7,
+          "comments": 0,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdnwCrJydff"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "price",
+          "booking"
+        ],
+        "bookingNote": null,
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/DdnwCrJydff.jpg",
+        "announcedAt": "2026-09-23T07:15:21.000Z",
+        "lastPostedAt": "2026-09-23T07:15:21.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 7,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T06:44:34.821Z",
+      "updatedAt": "2026-10-02T06:44:34.821Z"
+    },
+    {
+      "id": "ig-neevliteraturefestival-2026-09-26-neev-literature-festival-2026-st",
+      "title": "Neev Literature Festival 2026: Stories from the Heart",
+      "date": "2026-09-26T10:00:00+05:30",
+      "endDate": "2026-09-27T23:59:59+05:30",
+      "time": "See post",
+      "city": "bangalore",
+      "area": "Yemalur",
+      "venue": "Neev Academy, Yemalur",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "festival",
+      "organizer": "Neev Literature Festival",
+      "description": "10th edition children's literature festival with authors, masterclasses and stories at Neev Academy.",
+      "instagramHandle": "neevliteraturefestival",
+      "instagramUrl": "https://www.instagram.com/reel/DdYkry6IY-j/",
+      "fromInstagram": true,
+      "isFree": true,
+      "organizerHandle": "neevliteraturefestival",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18112983215105829",
+          "url": "https://www.instagram.com/reel/DdYkry6IY-j/",
+          "postedBy": "neevliteraturefestival",
+          "postedAt": "2026-09-17T09:47:51.000Z",
+          "kind": "update",
+          "likes": 127,
+          "comments": 1,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "18088465250220018",
+          "url": "https://www.instagram.com/p/DddEWmUjxgB/",
+          "postedBy": "neevliteraturefestival",
+          "postedAt": "2026-09-19T03:41:08.000Z",
+          "kind": "reminder",
+          "likes": 130,
+          "comments": 1,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "18113208565973329",
+          "url": "https://www.instagram.com/p/DdeY_sFGZbd/",
+          "postedBy": "neevliteraturefestival",
+          "postedAt": "2026-09-19T16:00:45.000Z",
+          "kind": "reminder",
+          "likes": 57,
+          "comments": 0,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "18122948992678146",
+          "url": "https://www.instagram.com/p/DdfuyhcCBGE/",
+          "postedBy": "neevliteraturefestival",
+          "postedAt": "2026-09-20T04:30:26.000Z",
+          "kind": "reminder",
+          "likes": 51,
+          "comments": 0,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "17971783992129112",
+          "url": "https://www.instagram.com/reel/Ddgwc3mvuz0/",
+          "postedBy": "neevliteraturefestival",
+          "postedAt": "2026-09-20T14:05:34.000Z",
+          "kind": "reminder",
+          "likes": null,
+          "comments": 3,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "18066970781774559",
+          "url": "https://www.instagram.com/p/Ddgy2S1jyZi/",
+          "postedBy": "neevliteraturefestival",
+          "postedAt": "2026-09-20T14:25:08.000Z",
+          "kind": "reminder",
+          "likes": 61,
+          "comments": 1,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "18448304278124430",
+          "url": "https://www.instagram.com/p/DdivA7XDsbs/",
+          "postedBy": "neevliteraturefestival",
+          "postedAt": "2026-09-21T08:30:07.000Z",
+          "kind": "reminder",
+          "likes": 43,
+          "comments": 1,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "18427070524199720",
+          "url": "https://www.instagram.com/p/Ddi8PGpnVND/",
+          "postedBy": "neevliteraturefestival",
+          "postedAt": "2026-09-21T10:25:40.000Z",
+          "kind": "reminder",
+          "likes": 21,
+          "comments": 1,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "18132508336731498",
+          "url": "https://www.instagram.com/reel/Ddlf8PPvT0Y/",
+          "postedBy": "neevliteraturefestival",
+          "postedAt": "2026-09-22T10:17:16.000Z",
+          "kind": "reminder",
+          "likes": null,
+          "comments": 3,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "18048312710811292",
+          "url": "https://www.instagram.com/reel/Ddli2plSFcn/",
+          "postedBy": "neevliteraturefestival",
+          "postedAt": "2026-09-22T10:44:49.000Z",
+          "kind": "reminder",
+          "likes": null,
+          "comments": 2,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "17873584236584091",
+          "url": "https://www.instagram.com/p/Ddnz90ZnVkx/",
+          "postedBy": "neevliteraturefestival",
+          "postedAt": "2026-09-23T07:49:36.000Z",
+          "kind": "reminder",
+          "likes": 16,
+          "comments": 0,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "18105960281193998",
+          "url": "https://www.instagram.com/reel/DdoAZAty5hY/",
+          "postedBy": "neevliteraturefestival",
+          "postedAt": "2026-09-23T09:39:27.000Z",
+          "kind": "reminder",
+          "likes": null,
+          "comments": 1,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "17907189483558737",
+          "url": "https://www.instagram.com/p/DdptVFFCYPj/",
+          "postedBy": "neevliteraturefestival",
+          "postedAt": "2026-09-24T01:30:06.000Z",
+          "kind": "reminder",
+          "likes": 23,
+          "comments": 0,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "18337074646286575",
+          "url": "https://www.instagram.com/reel/DdqkZY7K3IV/",
+          "postedBy": "neevliteraturefestival",
+          "postedAt": "2026-09-24T09:31:40.000Z",
+          "kind": "reminder",
+          "likes": null,
+          "comments": 3,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "18425145259151284",
+          "url": "https://www.instagram.com/reel/Ddql_nYPtCZ/",
+          "postedBy": "neevliteraturefestival",
+          "postedAt": "2026-09-24T09:46:21.000Z",
+          "kind": "reminder",
+          "likes": null,
+          "comments": 3,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "17973366929940316",
+          "url": "https://www.instagram.com/reel/DdqsooDvOUg/",
+          "postedBy": "neevliteraturefestival",
+          "postedAt": "2026-09-24T10:44:04.000Z",
+          "kind": "reminder",
+          "likes": null,
+          "comments": 3,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "17942520294348859",
+          "url": "https://www.instagram.com/reel/Ddqy_ftz0YA/",
+          "postedBy": "neevliteraturefestival",
+          "postedAt": "2026-09-24T11:39:48.000Z",
+          "kind": "reminder",
+          "likes": null,
+          "comments": 3,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "18117732104095070",
+          "url": "https://www.instagram.com/reel/DdqzivFIJ4d/",
+          "postedBy": "neevliteraturefestival",
+          "postedAt": "2026-09-24T11:44:31.000Z",
+          "kind": "reminder",
+          "likes": null,
+          "comments": 1,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "18072476756727490",
+          "url": "https://www.instagram.com/reel/DdrK9Hmvmwo/",
+          "postedBy": "neevliteraturefestival",
+          "postedAt": "2026-09-24T15:08:50.000Z",
+          "kind": "reminder",
+          "likes": null,
+          "comments": 11,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "18089252828288371",
+          "url": "https://www.instagram.com/p/DdsmubJj_ed/",
+          "postedBy": "neevliteraturefestival",
+          "postedAt": "2026-09-25T04:30:06.000Z",
+          "kind": "reminder",
+          "likes": 28,
+          "comments": 0,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "18631653799023720",
+          "url": "https://www.instagram.com/reel/Ddsw8lkPa0_/",
+          "postedBy": "neevliteraturefestival",
+          "postedAt": "2026-09-25T05:59:44.000Z",
+          "kind": "reminder",
+          "likes": null,
+          "comments": 1,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "18128763460686056",
+          "url": "https://www.instagram.com/p/Dds1MTZHd_0/",
+          "postedBy": "neevliteraturefestival",
+          "postedAt": "2026-09-25T06:36:31.000Z",
+          "kind": "reminder",
+          "likes": 15,
+          "comments": 0,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "17992435710029146",
+          "url": "https://www.instagram.com/reel/Dds_0YjPElN/",
+          "postedBy": "neevliteraturefestival",
+          "postedAt": "2026-09-25T08:10:08.000Z",
+          "kind": "reminder",
+          "likes": null,
+          "comments": 0,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "18640635322055349",
+          "url": "https://www.instagram.com/reel/DdtB-1bPAmJ/",
+          "postedBy": "neevliteraturefestival",
+          "postedAt": "2026-09-25T08:28:54.000Z",
+          "kind": "reminder",
+          "likes": null,
+          "comments": 2,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "17957922513216659",
+          "url": "https://www.instagram.com/reel/DdwXj0eApXd/",
+          "postedBy": "neevliteraturefestival",
+          "postedAt": "2026-09-26T15:35:14.000Z",
+          "kind": "reminder",
+          "likes": 191,
+          "comments": 1,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdYkry6IY-j",
+          "DddEWmUjxgB",
+          "DdeY_sFGZbd",
+          "DdfuyhcCBGE",
+          "Ddgwc3mvuz0",
+          "Ddgy2S1jyZi",
+          "DdivA7XDsbs",
+          "Ddi8PGpnVND",
+          "Ddlf8PPvT0Y",
+          "Ddli2plSFcn",
+          "Ddnz90ZnVkx",
+          "DdoAZAty5hY",
+          "DdptVFFCYPj",
+          "DdqkZY7K3IV",
+          "Ddql_nYPtCZ",
+          "DdqsooDvOUg",
+          "Ddqy_ftz0YA",
+          "DdqzivFIJ4d",
+          "DdrK9Hmvmwo",
+          "DdsmubJj_ed",
+          "Ddsw8lkPa0_",
+          "Dds1MTZHd_0",
+          "Dds_0YjPElN",
+          "DdtB-1bPAmJ",
+          "DdwXj0eApXd"
+        ],
+        "bookingIds": [
+          "url:neevliteraturefestival.org/nlf-2026"
+        ]
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "time"
+        ],
+        "bookingNote": "Register via link in bio",
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/DdYkry6IY-j.jpg",
+        "announcedAt": "2026-09-17T09:47:51.000Z",
+        "lastPostedAt": "2026-09-26T15:35:14.000Z",
+        "postCount": 25,
+        "engagement": {
+          "likes": 763,
+          "comments": 42
+        }
+      },
+      "createdAt": "2026-10-02T06:44:34.821Z",
+      "updatedAt": "2026-10-02T06:44:34.821Z",
+      "bookingUrl": "https://www.neevliteraturefestival.org/nlf-2026/"
+    },
+    {
+      "id": "ig-bondoverbindings-2026-09-26-mubbles-doodle-and-paint-party",
+      "title": "Mubbles doodle and paint party",
+      "date": "2026-09-26T16:00:00+05:30",
+      "time": "4:00 PM onwards",
+      "city": "bangalore",
+      "area": "Jakkur",
+      "venue": "Bond Over Bindings, Jakkur",
+      "ageMinMonths": 72,
+      "ageGroups": [
+        "4-6yr"
+      ],
+      "category": "art",
+      "organizer": "Bond Over Bindings",
+      "description": "Book read, caricature session and rock painting party inspired by Meet the Mubbles.",
+      "instagramHandle": "bondoverbindings",
+      "instagramUrl": "https://www.instagram.com/p/DdgYCACMquT/",
+      "fromInstagram": true,
+      "isFree": false,
+      "price": "₹199",
+      "organizerHandle": "bondoverbindings",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18145891303569732",
+          "url": "https://www.instagram.com/p/DdgYCACMquT/",
+          "postedBy": "bondoverbindings",
+          "postedAt": "2026-09-20T10:30:52.000Z",
+          "kind": "announcement",
+          "likes": 22,
+          "comments": 2,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdgYCACMquT"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [],
+        "bookingNote": "DM 7676104144; sign up at bondoverbindings.com",
+        "contactPhone": "7676104144",
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/DdgYCACMquT.jpg",
+        "announcedAt": "2026-09-20T10:30:52.000Z",
+        "lastPostedAt": "2026-09-20T10:30:52.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 22,
+          "comments": 2
+        }
+      },
+      "createdAt": "2026-10-02T06:44:34.821Z",
+      "updatedAt": "2026-10-02T06:44:34.821Z"
+    },
+    {
+      "id": "ig-new_abc_learning-2026-09-27-a-mindful-morning-at-cubbon-park",
+      "title": "A mindful morning at Cubbon Park",
+      "date": "2026-09-27T09:30:00+05:30",
+      "time": "9:30 AM – 12:00 PM",
+      "city": "bangalore",
+      "area": "Bengaluru",
+      "venue": "Cubbon Park",
+      "ageMinMonths": 0,
+      "ageGroups": [
+        "6-12mo",
+        "1-2yr",
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "workshop",
+      "organizer": "ABC Learning",
+      "description": "Family morning with art therapy, yoga, brain gym games and movement-led storytelling for parents and little ones.",
+      "instagramHandle": "new_abc_learning",
+      "instagramUrl": "https://www.instagram.com/p/DddFXikSjne/",
+      "fromInstagram": true,
+      "bookingUrl": "https://forms.gle/9FPAL7GFMs2J752K9",
+      "isFree": false,
+      "organizerHandle": "new_abc_learning",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18465889294142525",
+          "url": "https://www.instagram.com/p/DddFXikSjne/",
+          "postedBy": "new_abc_learning",
+          "postedAt": "2026-09-19T03:50:03.000Z",
+          "kind": "announcement",
+          "likes": 4,
+          "comments": 0,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "17983547670114362",
+          "url": "https://www.instagram.com/reel/DdlfCeUSrFD/",
+          "postedBy": "new_abc_learning",
+          "postedAt": "2026-09-22T10:16:07.000Z",
+          "kind": "reminder",
+          "likes": 36,
+          "comments": 0,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DddFXikSjne",
+          "DdlfCeUSrFD"
+        ],
+        "bookingIds": [
+          "url:forms.gle/9fpal7gfms2j752k9"
+        ]
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "price"
+        ],
+        "bookingNote": "Register via link or DM",
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [
+          "peace.in.patterns.studio"
+        ],
+        "postImage": "/events/posts/DddFXikSjne.jpg",
+        "announcedAt": "2026-09-19T03:50:03.000Z",
+        "lastPostedAt": "2026-09-22T10:16:07.000Z",
+        "postCount": 2,
+        "engagement": {
+          "likes": 40,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T06:44:34.821Z",
+      "updatedAt": "2026-10-02T06:44:34.821Z"
+    },
+    {
+      "id": "ig-bondoverbindings-2026-09-27-whispered-pages-storytelling-the",
+      "title": "Whispered Pages storytelling: The Dot",
+      "date": "2026-09-27T10:30:00+05:30",
+      "time": "10:30 AM – 11:30 AM",
+      "city": "bangalore",
+      "area": "Jakkur",
+      "venue": "Bond Over Bindings, Jakkur",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "workshop",
+      "organizer": "Bond Over Bindings",
+      "description": "Storyteller Ria Sarkar brings The Dot by Peter H. Reynolds alive for children and families.",
+      "instagramHandle": "bondoverbindings",
+      "instagramUrl": "https://www.instagram.com/p/DdlpRHWvbQi/",
+      "fromInstagram": true,
+      "isFree": true,
+      "organizerHandle": "bondoverbindings",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18100719611657839",
+          "url": "https://www.instagram.com/p/DdlpRHWvbQi/",
+          "postedBy": "bondoverbindings",
+          "postedAt": "2026-09-22T11:37:41.000Z",
+          "kind": "announcement",
+          "likes": 16,
+          "comments": 0,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdlpRHWvbQi"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [],
+        "bookingNote": "DM / WhatsApp 7676104144",
+        "contactPhone": "7676104144",
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/DdlpRHWvbQi.jpg",
+        "announcedAt": "2026-09-22T11:37:41.000Z",
+        "lastPostedAt": "2026-09-22T11:37:41.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 16,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T06:44:34.821Z",
+      "updatedAt": "2026-10-02T06:44:34.821Z"
+    },
+    {
+      "id": "ig-momsofblr-2026-09-27-playdate-and-garba-workshop-for",
+      "title": "Playdate and Garba workshop for moms and kids",
+      "date": "2026-09-27T14:00:00+05:30",
+      "time": "2:00 PM – 3:30 PM",
+      "city": "bangalore",
+      "area": "Haralur",
+      "venue": "Skadoosh, Haralur",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "workshop",
+      "organizer": "Moms of Bangalore",
+      "description": "Moms learn Garba while children play at the adjacent play area with another adult.",
+      "instagramHandle": "momsofblr",
+      "instagramUrl": "https://www.instagram.com/p/DdYR01MEbMa/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "momsofblr",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18018423029939114",
+          "url": "https://www.instagram.com/p/DdYR01MEbMa/",
+          "postedBy": "momsofblr",
+          "postedAt": "2026-09-17T07:02:40.000Z",
+          "kind": "announcement",
+          "likes": 65,
+          "comments": 15,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "18128771161776557",
+          "url": "https://www.instagram.com/reel/DdiyfQnRtYj/",
+          "postedBy": "momsofblr",
+          "postedAt": "2026-09-21T09:02:40.000Z",
+          "kind": "update",
+          "likes": 1,
+          "comments": 1,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "17875927761562663",
+          "url": "https://www.instagram.com/reel/Ddi0dv0P2O6/",
+          "postedBy": "momsofblr",
+          "postedAt": "2026-09-21T09:18:27.000Z",
+          "kind": "reminder",
+          "likes": 64,
+          "comments": 4,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "17913326601466593",
+          "url": "https://www.instagram.com/reel/DdjJpgistEh/",
+          "postedBy": "momsofblr",
+          "postedAt": "2026-09-21T12:23:40.000Z",
+          "kind": "reminder",
+          "likes": 1,
+          "comments": 0,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdYR01MEbMa",
+          "DdiyfQnRtYj",
+          "Ddi0dv0P2O6",
+          "DdjJpgistEh"
+        ],
+        "bookingIds": [
+          "url:forms.gle/4vk7ddexpeqvrjk49"
+        ]
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [],
+        "bookingNote": "Link in bio to register",
+        "contactPhone": null,
+        "availability": "Limited registrations, register ASAP",
+        "collaborators": [],
+        "postImage": "/events/posts/DdYR01MEbMa.jpg",
+        "announcedAt": "2026-09-17T07:02:40.000Z",
+        "lastPostedAt": "2026-09-21T12:23:40.000Z",
+        "postCount": 4,
+        "engagement": {
+          "likes": 131,
+          "comments": 20
+        }
+      },
+      "createdAt": "2026-10-02T06:44:34.821Z",
+      "updatedAt": "2026-10-02T06:44:34.821Z",
+      "price": "₹1,499 for one mom + one child + one accompanying adult",
+      "bookingUrl": "https://forms.gle/4Vk7dDExpEqVrjk49"
+    },
+    {
       "id": "ig-akshatha01_kulkarni-2026-10-01-childrens-biennale-at-ekya-schoo",
       "title": "Children's Biennale at Ekya School",
       "date": "2026-10-01T10:00:00+05:30",
@@ -907,6 +2599,137 @@
       "updatedAt": "2026-10-02T05:46:04.820Z"
     },
     {
+      "id": "ig-corospace-2026-10-02-coro-playscape-drop-in-play-spac",
+      "title": "Coro Playscape drop-in play space",
+      "date": "2026-10-02T10:00:00+05:30",
+      "ongoing": true,
+      "time": "See post",
+      "city": "bangalore",
+      "area": "Bengaluru",
+      "venue": "Coro",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "workshop",
+      "organizer": "Coro",
+      "description": "A dedicated play space for children to move, explore and play freely, open for walk-ins.",
+      "instagramHandle": "corospace",
+      "instagramUrl": "https://www.instagram.com/p/Dc04PSFGpL0/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "corospace",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18091376075641814",
+          "url": "https://www.instagram.com/p/Dc04PSFGpL0/",
+          "postedBy": "corospace",
+          "postedAt": "2026-09-03T13:05:40.000Z",
+          "kind": "announcement",
+          "likes": 71,
+          "comments": 4,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "Dc04PSFGpL0"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "ongoing",
+        "missing": [
+          "time",
+          "price"
+        ],
+        "bookingNote": "Walk-ins welcome, DM to find out more",
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/Dc04PSFGpL0.jpg",
+        "announcedAt": "2026-09-03T13:05:40.000Z",
+        "lastPostedAt": "2026-09-03T13:05:40.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 71,
+          "comments": 4
+        }
+      },
+      "createdAt": "2026-10-02T06:44:34.821Z",
+      "updatedAt": "2026-10-02T06:44:34.821Z"
+    },
+    {
+      "id": "ig-corospace-2026-10-02-sunday-reading-hours-at-coro",
+      "title": "Sunday reading hours at Coro",
+      "date": "2026-10-02T10:00:00+05:30",
+      "ongoing": true,
+      "time": "Sundays",
+      "city": "bangalore",
+      "area": "Bengaluru",
+      "venue": "Coro",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "workshop",
+      "organizer": "Coro",
+      "description": "Sunday reading corner where families grab a book, find a nook and read together over coffee.",
+      "instagramHandle": "corospace",
+      "instagramUrl": "https://www.instagram.com/p/DdWZdkDmo_l/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "corospace",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18177379237434878",
+          "url": "https://www.instagram.com/p/DdWZdkDmo_l/",
+          "postedBy": "corospace",
+          "postedAt": "2026-09-16T13:30:03.000Z",
+          "kind": "announcement",
+          "likes": 36,
+          "comments": 2,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdWZdkDmo_l"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "ongoing",
+        "missing": [
+          "price",
+          "booking"
+        ],
+        "bookingNote": null,
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [
+          "champacabooks",
+          "plume.delicacies"
+        ],
+        "postImage": "/events/posts/DdWZdkDmo_l.jpg",
+        "announcedAt": "2026-09-16T13:30:03.000Z",
+        "lastPostedAt": "2026-09-16T13:30:03.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 36,
+          "comments": 2
+        }
+      },
+      "createdAt": "2026-10-02T06:44:34.821Z",
+      "updatedAt": "2026-10-02T06:44:34.821Z"
+    },
+    {
       "id": "aura-circle-time",
       "title": "Circle Time at Áura Montessori",
       "date": "2026-10-03T10:00:00+05:30",
@@ -1068,6 +2891,376 @@
       "updatedAt": "2026-09-30T12:34:16.291Z"
     },
     {
+      "id": "ig-bondoverbindings-2026-10-03-canato-jimo-picture-book-afterno",
+      "title": "Canato Jimo picture book afternoon",
+      "date": "2026-10-03T16:00:00+05:30",
+      "time": "4:00 PM – 5:30 PM",
+      "city": "bangalore",
+      "area": "Jakkur",
+      "venue": "Bond Over Bindings",
+      "ageMinMonths": 48,
+      "ageGroups": [
+        "4-6yr"
+      ],
+      "category": "workshop",
+      "organizer": "Bond Over Bindings",
+      "description": "Picture book maker Canato Jimo leads a wordless read, musical jamming and an art activity.",
+      "instagramHandle": "bondoverbindings",
+      "instagramUrl": "https://www.instagram.com/p/Dd1Jq12zETE/",
+      "fromInstagram": true,
+      "isFree": false,
+      "price": "₹250 per child + 1 parent",
+      "organizerHandle": "bondoverbindings",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18093823952652431",
+          "url": "https://www.instagram.com/p/Dd1Jq12zETE/",
+          "postedBy": "bondoverbindings",
+          "postedAt": "2026-09-28T12:09:25.000Z",
+          "kind": "announcement",
+          "likes": 134,
+          "comments": 3,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "18106972058612838",
+          "url": "https://www.instagram.com/reel/Dd9ES0SsXMe/",
+          "postedBy": "bondoverbindings",
+          "postedAt": "2026-10-01T13:57:04.000Z",
+          "kind": "reminder",
+          "likes": 44,
+          "comments": 5,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "Dd1Jq12zETE",
+          "Dd9ES0SsXMe"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [],
+        "bookingNote": "DM / WhatsApp 7676104144 to sign up",
+        "contactPhone": "7676104144",
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/Dd1Jq12zETE.jpg",
+        "announcedAt": "2026-09-28T12:09:25.000Z",
+        "lastPostedAt": "2026-10-01T13:57:04.000Z",
+        "postCount": 2,
+        "engagement": {
+          "likes": 178,
+          "comments": 8
+        }
+      },
+      "createdAt": "2026-10-02T06:44:34.821Z",
+      "updatedAt": "2026-10-02T06:44:34.821Z"
+    },
+    {
+      "id": "ig-littlemillennium_mahadevapura-2026-10-04-little-millennium-annual-sports",
+      "title": "Little Millennium Annual Sports Fest 2026-27",
+      "date": "2026-10-04T09:30:00+05:30",
+      "time": "9:30 AM onwards",
+      "city": "bangalore",
+      "area": "Mahadevapura",
+      "venue": "Lowry Memorial School & College Sports Arena, B. Narayanapura",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "sports",
+      "organizer": "Little Millennium Preschool, B. Narayanapura Mahadevapura",
+      "description": "Little Millennium's preschoolers run, jump and compete at their annual sports day.",
+      "instagramHandle": "littlemillennium_mahadevapura",
+      "instagramUrl": "https://www.instagram.com/reel/Dd8anExx2m6/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "littlemillennium_mahadevapura",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "17993057937023013",
+          "url": "https://www.instagram.com/reel/Dd8anExx2m6/",
+          "postedBy": "littlemillennium_mahadevapura",
+          "postedAt": "2026-10-01T07:52:45.000Z",
+          "kind": "announcement",
+          "likes": 13,
+          "comments": 0,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "17957770317228065",
+          "url": "https://www.instagram.com/reel/Dd8l4mTMxj3/",
+          "postedBy": "littlemillennium_mahadevapura",
+          "postedAt": "2026-10-01T09:33:24.000Z",
+          "kind": "reminder",
+          "likes": 34,
+          "comments": 2,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "Dd8anExx2m6",
+          "Dd8l4mTMxj3"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "price",
+          "booking"
+        ],
+        "bookingNote": null,
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/Dd8anExx2m6.jpg",
+        "announcedAt": "2026-10-01T07:52:45.000Z",
+        "lastPostedAt": "2026-10-01T09:33:24.000Z",
+        "postCount": 2,
+        "engagement": {
+          "likes": 47,
+          "comments": 2
+        }
+      },
+      "createdAt": "2026-10-02T06:44:34.821Z",
+      "updatedAt": "2026-10-02T06:44:34.821Z"
+    },
+    {
+      "id": "ig-blrcreativecircus-2026-10-04-tree-walk-through-mahalakshmi-la",
+      "title": "Tree walk through Mahalakshmi Layout",
+      "date": "2026-10-04T11:15:00+05:30",
+      "time": "11:15 AM – 12:15 PM",
+      "city": "bangalore",
+      "area": "Mahalakshmi Layout",
+      "venue": "Starting near Mahalakshmi Metro Station, ending at Bangalore Creative Circus",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "camp",
+      "organizer": "Bangalore Creative Circus",
+      "description": "A guided walk discovering the trees and stories of Mahalakshmi Layout, open to all ages.",
+      "instagramHandle": "blrcreativecircus",
+      "instagramUrl": "https://www.instagram.com/p/Dd30mcBSkUY/",
+      "fromInstagram": true,
+      "isFree": false,
+      "price": "₹835",
+      "organizerHandle": "blrcreativecircus",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18128003800698817",
+          "url": "https://www.instagram.com/p/Dd30mcBSkUY/",
+          "postedBy": "blrcreativecircus",
+          "postedAt": "2026-09-29T13:03:03.000Z",
+          "kind": "announcement",
+          "likes": 120,
+          "comments": 3,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "Dd30mcBSkUY"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [],
+        "bookingNote": "Link in bio to register",
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/Dd30mcBSkUY.jpg",
+        "announcedAt": "2026-09-29T13:03:03.000Z",
+        "lastPostedAt": "2026-09-29T13:03:03.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 120,
+          "comments": 3
+        }
+      },
+      "createdAt": "2026-10-02T06:44:34.821Z",
+      "updatedAt": "2026-10-02T06:44:34.821Z"
+    },
+    {
+      "id": "ig-blrcreativecircus-2026-10-04-bcc-carnival-climate-week-editio",
+      "title": "BCC Carnival: Climate Week Edition",
+      "date": "2026-10-04T12:00:00+05:30",
+      "time": "12 PM – 7 PM",
+      "city": "bangalore",
+      "area": "Yeshwantpur",
+      "venue": "Bangalore Creative Circus, Yeshwantpur",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "festival",
+      "organizer": "Bangalore Creative Circus",
+      "description": "Conscious brands, workshops, climate conversations, art activities and live performances.",
+      "instagramHandle": "blrcreativecircus",
+      "instagramUrl": "https://www.instagram.com/reel/DdgmYfRMIKp/",
+      "fromInstagram": true,
+      "isFree": true,
+      "organizerHandle": "blrcreativecircus",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18126635951508545",
+          "url": "https://www.instagram.com/reel/DdgmYfRMIKp/",
+          "postedBy": "blrcreativecircus",
+          "postedAt": "2026-09-20T12:35:37.000Z",
+          "kind": "announcement",
+          "likes": 73,
+          "comments": 0,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "18341657533284458",
+          "url": "https://www.instagram.com/p/DdyqKk8ElvM/",
+          "postedBy": "blrcreativecircus",
+          "postedAt": "2026-09-27T12:55:36.000Z",
+          "kind": "update",
+          "likes": 596,
+          "comments": 20,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "17887474041479163",
+          "url": "https://www.instagram.com/p/Dd87xJykvkl/",
+          "postedBy": "blrcreativecircus",
+          "postedAt": "2026-10-01T12:41:49.000Z",
+          "kind": "reminder",
+          "likes": 166,
+          "comments": 3,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdgmYfRMIKp",
+          "DdyqKk8ElvM",
+          "Dd87xJykvkl"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [],
+        "bookingNote": "Open to all ages, no registrations required",
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/DdgmYfRMIKp.jpg",
+        "announcedAt": "2026-09-20T12:35:37.000Z",
+        "lastPostedAt": "2026-10-01T12:41:49.000Z",
+        "postCount": 3,
+        "engagement": {
+          "likes": 835,
+          "comments": 23
+        }
+      },
+      "createdAt": "2026-10-02T06:44:34.821Z",
+      "updatedAt": "2026-10-02T06:44:34.821Z"
+    },
+    {
+      "id": "ig-rhythmnrhyme.in-2026-10-06-rhythm-n-rhyme-new-batches-acros",
+      "title": "Rhythm N Rhyme new batches across Bengaluru",
+      "date": "2026-10-06T10:00:00+05:30",
+      "endDate": "2026-10-28T23:59:59+05:30",
+      "ongoing": true,
+      "time": "Domlur starts Oct 6, Cunningham Road starts Oct 8, Basavanagudi starts Oct 23, Banashankari starts Oct 28",
+      "city": "bangalore",
+      "area": null,
+      "venue": null,
+      "ageMinMonths": 6,
+      "ageMaxYears": 4,
+      "ageGroups": [
+        "6-12mo",
+        "1-2yr",
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "music",
+      "organizer": "Rhythm N Rhyme",
+      "description": "New music batches for babies and toddlers starting across Domlur, Cunningham Road, Basavanagudi and Banashankari.",
+      "instagramHandle": "rhythmnrhyme.in",
+      "instagramUrl": "https://www.instagram.com/p/Dd4FvOKKZef/",
+      "fromInstagram": true,
+      "bookingUrl": "https://rhythmnrhyme.com/schedule.html",
+      "isFree": false,
+      "price": "₹4600",
+      "organizerHandle": "rhythmnrhyme.in",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "17892216282434853",
+          "url": "https://www.instagram.com/p/Dd4FvOKKZef/",
+          "postedBy": "rhythmnrhyme.in",
+          "postedAt": "2026-09-29T15:45:54.000Z",
+          "kind": "update",
+          "likes": 3,
+          "comments": 0,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "17911322148497461",
+          "url": "https://www.instagram.com/p/Dd-pR4MKY82/",
+          "postedBy": "rhythmnrhyme.in",
+          "postedAt": "2026-10-02T04:41:08.000Z",
+          "kind": "update",
+          "likes": 1,
+          "comments": 0,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "Dd4FvOKKZef",
+          "Dd-pR4MKY82"
+        ],
+        "bookingIds": [
+          "url:rhythmnrhyme.com/schedule.html"
+        ]
+      },
+      "details": {
+        "listingType": "ongoing",
+        "missing": [
+          "venue",
+          "area"
+        ],
+        "bookingNote": "Paid trial class available before enrolling for the full session",
+        "contactPhone": null,
+        "availability": "Spaces fill quickly",
+        "collaborators": [],
+        "postImage": "/events/posts/Dd4FvOKKZef.jpg",
+        "announcedAt": "2026-09-29T15:45:54.000Z",
+        "lastPostedAt": "2026-10-02T04:41:08.000Z",
+        "postCount": 2,
+        "engagement": {
+          "likes": 4,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T06:44:34.821Z",
+      "updatedAt": "2026-10-02T06:44:34.821Z"
+    },
+    {
       "id": "ig-acemontessori-2026-10-10-ace-montessori-open-house-2026",
       "title": "ACE Montessori Open House 2026",
       "date": "2026-10-10T10:00:00+05:30",
@@ -1129,6 +3322,271 @@
       },
       "createdAt": "2026-10-01T16:00:43.461Z",
       "updatedAt": "2026-10-01T16:00:43.461Z"
+    },
+    {
+      "id": "ig-daisy_montessori_official-2026-10-10-toddler-discovery-morning-at-dai",
+      "title": "Toddler Discovery Morning at Daisy Montessori",
+      "date": "2026-10-10T10:00:00+05:30",
+      "time": "10:00 AM – 11:30 AM or 11:45 AM – 1:15 PM",
+      "city": "bangalore",
+      "area": "Hebbal",
+      "venue": "Daisy Montessori Preschool & Daycare, Near Manyata Tech Park, Bengaluru",
+      "ageMinMonths": 18,
+      "ageMaxYears": 4,
+      "ageGroups": [
+        "1-2yr",
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "open day",
+      "organizer": "Daisy Montessori",
+      "description": "Toddlers try Montessori activities across Practical Life, Sensorial, Language and Music; parents tour the classroom and meet teachers.",
+      "instagramHandle": "daisy_montessori_official",
+      "instagramUrl": "https://www.instagram.com/p/Dd4VLvvTqeQ/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "daisy_montessori_official",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18061495508623389",
+          "url": "https://www.instagram.com/p/Dd4VLvvTqeQ/",
+          "postedBy": "daisy_montessori_official",
+          "postedAt": "2026-09-29T17:47:46.000Z",
+          "kind": "announcement",
+          "likes": 8,
+          "comments": 0,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        },
+        {
+          "postId": "17876261184567091",
+          "url": "https://www.instagram.com/p/Dd66yGWos4o/",
+          "postedBy": "daisy_montessori_official",
+          "postedAt": "2026-09-30T17:54:50.000Z",
+          "kind": "reminder",
+          "likes": 2,
+          "comments": 0,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "Dd4VLvvTqeQ",
+          "Dd66yGWos4o"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "price"
+        ],
+        "bookingNote": "Prior registration required, WhatsApp to book",
+        "contactPhone": "9108029204",
+        "availability": "Limited registrations",
+        "collaborators": [],
+        "postImage": "/events/posts/Dd4VLvvTqeQ.jpg",
+        "announcedAt": "2026-09-29T17:47:46.000Z",
+        "lastPostedAt": "2026-09-30T17:54:50.000Z",
+        "postCount": 2,
+        "engagement": {
+          "likes": 10,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T06:44:34.821Z",
+      "updatedAt": "2026-10-02T06:44:34.821Z"
+    },
+    {
+      "id": "ig-umiearlyyears-2026-10-10-open-house-at-umi-early-years",
+      "title": "Open house at Umi Early Years",
+      "date": "2026-10-10T10:00:00+05:30",
+      "time": "10 AM – 4 PM",
+      "city": "bangalore",
+      "area": "Sanjay Nagar",
+      "venue": "70, 2nd Cross, KEB Layout 1st Stage, Sanjay Nagar, Bengaluru 560094",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "open day",
+      "organizer": "Umi Early Years",
+      "description": "Families explore the preschool spaces, meet teachers and learn about its play-based, mindful approach to learning.",
+      "instagramHandle": "umiearlyyears",
+      "instagramUrl": "https://www.instagram.com/p/DdqhuojKjfr/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "umiearlyyears",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18113260000984631",
+          "url": "https://www.instagram.com/p/DdqhuojKjfr/",
+          "postedBy": "umiearlyyears",
+          "postedAt": "2026-09-24T09:10:54.000Z",
+          "kind": "announcement",
+          "likes": 9,
+          "comments": 0,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdqhuojKjfr"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "price"
+        ],
+        "bookingNote": null,
+        "contactPhone": "8618191747",
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/DdqhuojKjfr.jpg",
+        "announcedAt": "2026-09-24T09:10:54.000Z",
+        "lastPostedAt": "2026-09-24T09:10:54.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 9,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T06:44:34.821Z",
+      "updatedAt": "2026-10-02T06:44:34.821Z"
+    },
+    {
+      "id": "ig-theloorooclub-2026-10-10-art-cafe-the-colour-edition",
+      "title": "Art Cafe: The Colour Edition",
+      "date": "2026-10-10T10:30:00+05:30",
+      "time": "10:30 AM – 12:00 PM",
+      "city": "bangalore",
+      "area": "Domlur",
+      "venue": "Coro, Domlur",
+      "ageMinMonths": 36,
+      "ageMaxYears": 8,
+      "ageGroups": [
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "art",
+      "organizer": "The LooRoo Club",
+      "description": "Kids mix and paint inspired by The Day the Crayons Quit, with a parallel session for adults.",
+      "instagramHandle": "theloorooclub",
+      "instagramUrl": "https://www.instagram.com/p/Dd84mmgAY9c/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "theloorooclub",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "17967243228190384",
+          "url": "https://www.instagram.com/p/Dd84mmgAY9c/",
+          "postedBy": "theloorooclub",
+          "postedAt": "2026-10-01T12:14:10.000Z",
+          "kind": "announcement",
+          "likes": 31,
+          "comments": 1,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "Dd84mmgAY9c"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "price"
+        ],
+        "bookingNote": "Register using the link in bio; kids and adults can register separately",
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [
+          "corospace"
+        ],
+        "postImage": "/events/posts/Dd84mmgAY9c.jpg",
+        "announcedAt": "2026-10-01T12:14:10.000Z",
+        "lastPostedAt": "2026-10-01T12:14:10.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 31,
+          "comments": 1
+        }
+      },
+      "createdAt": "2026-10-02T06:44:34.821Z",
+      "updatedAt": "2026-10-02T06:44:34.821Z"
+    },
+    {
+      "id": "ig-kai.early.years-2026-10-10-a-spooktacular-halloween-at-kai",
+      "title": "A Spooktacular Halloween at Kai",
+      "date": "2026-10-10T16:30:00+05:30",
+      "time": "4:30 PM – 6:30 PM",
+      "city": "bangalore",
+      "area": "Whitefield",
+      "venue": "Kai Early Years",
+      "ageMinMonths": 12,
+      "ageMaxYears": 8,
+      "ageGroups": [
+        "1-2yr",
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "festival",
+      "organizer": "Kai Early Years",
+      "description": "Trick-or-treat, costume parade, crafts and games for children aged 1 to 8.",
+      "instagramHandle": "kai.early.years",
+      "instagramUrl": "https://www.instagram.com/p/Dd3opgeGrMc/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "kai.early.years",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "17913209373463098",
+          "url": "https://www.instagram.com/p/Dd3opgeGrMc/",
+          "postedBy": "kai.early.years",
+          "postedAt": "2026-09-29T11:18:33.000Z",
+          "kind": "announcement",
+          "likes": 17,
+          "comments": 0,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "Dd3opgeGrMc"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "price"
+        ],
+        "bookingNote": "Call to register, limited seats",
+        "contactPhone": "7204142123",
+        "availability": "Limited seats, register early",
+        "collaborators": [],
+        "postImage": "/events/posts/Dd3opgeGrMc.jpg",
+        "announcedAt": "2026-09-29T11:18:33.000Z",
+        "lastPostedAt": "2026-09-29T11:18:33.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 17,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T06:44:34.821Z",
+      "updatedAt": "2026-10-02T06:44:34.821Z"
     },
     {
       "id": "ig-bangaloredrumjam-2026-10-10-community-drum-circle-in-whitefi",
@@ -1193,6 +3651,132 @@
       },
       "createdAt": "2026-10-01T12:50:41.321Z",
       "updatedAt": "2026-10-01T12:50:41.321Z"
+    },
+    {
+      "id": "ig-pipkoramangala1stblock-2026-10-11-vidyabhyasam-pooja-for-vidyaramb",
+      "title": "Vidyabhyasam pooja for Vidyarambham",
+      "date": "2026-10-11T09:30:00+05:30",
+      "time": "9:30 AM",
+      "city": "bangalore",
+      "area": "Koramangala",
+      "venue": "Peas in Pod Preschool & Daycare, No 17, 1st Block, 1st Main, Koramangala",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "festival",
+      "organizer": "Peas in Pod Preschool & Daycare",
+      "description": "A traditional Vidyabhyasam pooja marking a child's first steps into learning, open for all.",
+      "instagramHandle": "pipkoramangala1stblock",
+      "instagramUrl": "https://www.instagram.com/p/Dd-lRMHP2Ci/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "pipkoramangala1stblock",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18131472289751693",
+          "url": "https://www.instagram.com/p/Dd-lRMHP2Ci/",
+          "postedBy": "pipkoramangala1stblock",
+          "postedAt": "2026-10-02T04:03:45.000Z",
+          "kind": "announcement",
+          "likes": 1,
+          "comments": 0,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "Dd-lRMHP2Ci"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "price"
+        ],
+        "bookingNote": null,
+        "contactPhone": "7619228597",
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/Dd-lRMHP2Ci.jpg",
+        "announcedAt": "2026-10-02T04:03:45.000Z",
+        "lastPostedAt": "2026-10-02T04:03:45.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 1,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T06:44:34.821Z",
+      "updatedAt": "2026-10-02T06:44:34.821Z"
+    },
+    {
+      "id": "ig-littleelly_kasavanahalli-2026-10-12-dussehra-camp-at-little-elly-kas",
+      "title": "Dussehra Camp at Little Elly Kasavanahalli",
+      "date": "2026-10-12T09:30:00+05:30",
+      "endDate": "2026-10-17T23:59:59+05:30",
+      "time": "9:30 AM – 12:30 PM",
+      "city": "bangalore",
+      "area": "Kasavanahalli",
+      "venue": "Little Elly, Kasavanahalli (Near Lakasa)",
+      "ageMinMonths": 24,
+      "ageMaxYears": 10,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "camp",
+      "organizer": "Little Elly Kasavanahalli",
+      "description": "Dussehra-themed camp with art, dance, yoga, outdoor games, storytelling and rangoli making.",
+      "instagramHandle": "littleelly_kasavanahalli",
+      "instagramUrl": "https://www.instagram.com/reel/Dd8UAHwSug_/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "littleelly_kasavanahalli",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18116912455780877",
+          "url": "https://www.instagram.com/reel/Dd8UAHwSug_/",
+          "postedBy": "littleelly_kasavanahalli",
+          "postedAt": "2026-10-01T06:54:35.000Z",
+          "kind": "announcement",
+          "likes": 1,
+          "comments": 0,
+          "seenAt": "2026-10-02T06:44:34.821Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "Dd8UAHwSug_"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "price"
+        ],
+        "bookingNote": "Registration open, transport available, call to book",
+        "contactPhone": "7760142266",
+        "availability": "Limited seats only, hurry up",
+        "collaborators": [],
+        "postImage": "/events/posts/Dd8UAHwSug_.jpg",
+        "announcedAt": "2026-10-01T06:54:35.000Z",
+        "lastPostedAt": "2026-10-01T06:54:35.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 1,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T06:44:34.821Z",
+      "updatedAt": "2026-10-02T06:44:34.821Z"
     },
     {
       "id": "ig-eravoo.blr-2026-10-12-baala-sambrahma-dasara-celebrati",

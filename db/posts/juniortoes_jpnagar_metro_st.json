@@ -1,9 +1,22 @@
 {
   "handle": "juniortoes_jpnagar_metro_st",
-  "latestPostAt": "2026-09-23T05:29:36.000Z",
-  "lastFetchedAt": "2026-10-01T11:41:42.310Z",
+  "latestPostAt": "2026-10-02T05:39:56.000Z",
+  "lastFetchedAt": "2026-10-02T06:29:02.531Z",
   "fetchError": null,
   "posts": [
+    {
+      "id": "18010470185993096",
+      "shortcode": "Dd-wJOlk1TG",
+      "url": "https://www.instagram.com/reel/Dd-wJOlk1TG/",
+      "type": "VIDEO",
+      "postedAt": "2026-10-02T05:39:56.000Z",
+      "caption": "Happy Gandhi Jayanti! 💐\n\nMay the timeless values of truth, non-violence, kindness, and compassion inspire us to create a better world. Let us remember Mahatma Gandhi’s teachings and encourage young minds to follow the path of peace, unity, and harmony. May his ideals continue inspiring generations.\n\n#GandhiJayanti #HappyGandhiJayanti #MahatmaGandhi #TruthAndNonViolence #PeaceAndHarmony",
+      "mediaCount": 1,
+      "likes": 2,
+      "comments": 0,
+      "engagementAt": "2026-10-02T06:29:02.531Z",
+      "fetchedAt": "2026-10-02T06:29:02.531Z"
+    },
     {
       "id": "18165432964478610",
       "shortcode": "Ddnj0yVTFdm",
@@ -14,7 +27,7 @@
       "mediaCount": 1,
       "likes": 2,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -27,7 +40,7 @@
       "mediaCount": 1,
       "likes": 16,
       "comments": 1,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -40,7 +53,7 @@
       "mediaCount": 1,
       "likes": 7,
       "comments": 2,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -53,9 +66,9 @@
       "mediaCount": 1,
       "likes": 11,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     }
   ],
-  "mediaCount": 160
+  "mediaCount": 161
 }

@@ -1,9 +1,22 @@
 {
   "handle": "kangarookids_arekere",
-  "latestPostAt": "2026-09-30T12:24:08.000Z",
-  "lastFetchedAt": "2026-10-01T11:41:42.310Z",
+  "latestPostAt": "2026-10-01T12:33:04.000Z",
+  "lastFetchedAt": "2026-10-02T06:29:02.531Z",
   "fetchError": null,
   "posts": [
+    {
+      "id": "18001154792807708",
+      "shortcode": "Dd86sDCzO9G",
+      "url": "https://www.instagram.com/reel/Dd86sDCzO9G/",
+      "type": "VIDEO",
+      "postedAt": "2026-10-01T12:33:04.000Z",
+      "caption": "#kangarookids#kids#preschoolactivities#playgroup#Bengaluru",
+      "mediaCount": 1,
+      "likes": 5,
+      "comments": 0,
+      "engagementAt": "2026-10-02T06:29:02.531Z",
+      "fetchedAt": "2026-10-02T06:29:02.531Z"
+    },
     {
       "id": "17919120921446535",
       "shortcode": "Dd6UeBhAt5Q",
@@ -12,9 +25,9 @@
       "postedAt": "2026-09-30T12:24:08.000Z",
       "caption": "#kangarookids#kids#Bengaluru#preschool#playgroup",
       "mediaCount": 1,
-      "likes": 4,
+      "likes": 6,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -27,7 +40,7 @@
       "mediaCount": 1,
       "likes": 4,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -40,7 +53,7 @@
       "mediaCount": 1,
       "likes": 12,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -53,7 +66,7 @@
       "mediaCount": 1,
       "likes": 5,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -66,7 +79,7 @@
       "mediaCount": 1,
       "likes": 5,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -79,7 +92,7 @@
       "mediaCount": 1,
       "likes": 3,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -92,9 +105,9 @@
       "mediaCount": 1,
       "likes": 6,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     }
   ],
-  "mediaCount": 222
+  "mediaCount": 223
 }

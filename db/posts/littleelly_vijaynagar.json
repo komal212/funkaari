@@ -1,9 +1,22 @@
 {
   "handle": "littleelly_vijaynagar",
-  "latestPostAt": "2026-09-30T14:33:10.000Z",
-  "lastFetchedAt": "2026-10-01T11:41:42.310Z",
+  "latestPostAt": "2026-10-01T13:50:09.000Z",
+  "lastFetchedAt": "2026-10-02T06:29:02.531Z",
   "fetchError": null,
   "posts": [
+    {
+      "id": "18333737500272038",
+      "shortcode": "Dd9Da77SFOK",
+      "url": "https://www.instagram.com/reel/Dd9Da77SFOK/",
+      "type": "VIDEO",
+      "postedAt": "2026-10-01T13:50:09.000Z",
+      "caption": "🎨 Watch primary colors come together and transform into beautiful secondary colors! 💛+💙➡️💚\n\nA simple and satisfying color-mixing experiment that makes learning fun! ✨\n\n#ColorMixing #SecondaryColors #ArtAndScience #LearningThroughPlay #creativelearning",
+      "mediaCount": 1,
+      "likes": 9,
+      "comments": 0,
+      "engagementAt": "2026-10-02T06:29:02.531Z",
+      "fetchedAt": "2026-10-02T06:29:02.531Z"
+    },
     {
       "id": "17910301428550048",
       "shortcode": "Dd6jqXayfEG",
@@ -12,9 +25,9 @@
       "postedAt": "2026-09-30T14:33:10.000Z",
       "caption": "🧒✨ Pouring with purpose — developing focus, coordination & confidence!\n\n#littleelly #preschoolactivities #admissionsopen #learningthroughplay #pouring",
       "mediaCount": 1,
-      "likes": 6,
+      "likes": 7,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -25,9 +38,9 @@
       "postedAt": "2026-09-30T10:58:37.000Z",
       "caption": "✨ Learning Hindi, One Letter at a Time!\nOur little learners had fun arranging Hindi letters and building their language skills through hands-on learning. 🧒📚❤️",
       "mediaCount": 1,
-      "likes": 7,
+      "likes": 8,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -40,7 +53,7 @@
       "mediaCount": 1,
       "likes": 7,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -53,7 +66,7 @@
       "mediaCount": 1,
       "likes": 19,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -66,7 +79,7 @@
       "mediaCount": 1,
       "likes": 8,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -79,7 +92,7 @@
       "mediaCount": 1,
       "likes": 26,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -92,7 +105,7 @@
       "mediaCount": 1,
       "likes": 9,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -105,7 +118,7 @@
       "mediaCount": 1,
       "likes": 13,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -118,7 +131,7 @@
       "mediaCount": 1,
       "likes": 25,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -131,7 +144,7 @@
       "mediaCount": 1,
       "likes": 7,
       "comments": 1,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -144,9 +157,9 @@
       "mediaCount": 1,
       "likes": 14,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     }
   ],
-  "mediaCount": 48
+  "mediaCount": 49
 }

@@ -1,9 +1,22 @@
 {
   "handle": "rhythmnrhyme.in",
-  "latestPostAt": "2026-09-29T15:45:54.000Z",
-  "lastFetchedAt": "2026-10-01T11:41:42.310Z",
+  "latestPostAt": "2026-10-02T04:41:08.000Z",
+  "lastFetchedAt": "2026-10-02T06:29:02.531Z",
   "fetchError": null,
   "posts": [
+    {
+      "id": "17911322148497461",
+      "shortcode": "Dd-pR4MKY82",
+      "url": "https://www.instagram.com/p/Dd-pR4MKY82/",
+      "type": "IMAGE",
+      "postedAt": "2026-10-02T04:41:08.000Z",
+      "caption": "🎉Rhythm N Rhyme Music Classes are Back This October!\n\nWe’d love for your little one to join us for a magical musical journey filled with songs, rhythm, movement, bonding, and fun! 💛\n\n📍 Choose a location near you:\n\n🌟 Domlur (Bugs: 6 months to 2 years) Starts 6th October\n\n🌟 Cunningham Road (Bugs: 6 months to 2 years) Starts 8th October\n\n🌟 Banashankari (Bugs: 12 months to 2.5 years) Starts 28th October\n\n🌟 Basavanagudi • Bugs: 9 months to 2 years • Bunnies: 2 to 4 years Starts 23rd October\n\n✨ Only 11 children per batch, ensuring a warm, engaging, and personalised experience for every child.\n\n🤔Not sure yet? \nYou can join the first class as a paid trial and then decide whether you’d like to enrol for the remaining sessions. Both options are available in the registration link.\n👉 Find details and reserve your spot here: rhythmnrhyme.com/schedule.html\n\n🌈 Spaces fill quickly, so do book early! If you know families with little ones who would enjoy music, movement, and joyful early learning, we’d be grateful if you shared this message with them.\n\nLooking forward to making music with your little stars! ⭐🎶\nTeam Rhythm N Rhyme 💛",
+      "mediaCount": 1,
+      "likes": 1,
+      "comments": 0,
+      "engagementAt": "2026-10-02T06:29:02.531Z",
+      "fetchedAt": "2026-10-02T06:29:02.531Z"
+    },
     {
       "id": "17892216282434853",
       "shortcode": "Dd4FvOKKZef",
@@ -14,7 +27,7 @@
       "mediaCount": 1,
       "likes": 3,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -27,7 +40,7 @@
       "mediaCount": 1,
       "likes": 4,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -40,7 +53,7 @@
       "mediaCount": 7,
       "likes": 8,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -53,7 +66,7 @@
       "mediaCount": 1,
       "likes": 0,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -66,7 +79,7 @@
       "mediaCount": 1,
       "likes": 2,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -79,9 +92,9 @@
       "mediaCount": 1,
       "likes": 5,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     }
   ],
-  "mediaCount": 761
+  "mediaCount": 762
 }

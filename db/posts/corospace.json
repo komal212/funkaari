@@ -1,7 +1,7 @@
 {
   "handle": "corospace",
   "latestPostAt": "2026-10-01T09:47:10.000Z",
-  "lastFetchedAt": "2026-10-01T11:41:42.310Z",
+  "lastFetchedAt": "2026-10-02T06:29:02.531Z",
   "fetchError": null,
   "posts": [
     {
@@ -12,9 +12,9 @@
       "postedAt": "2026-10-01T09:47:10.000Z",
       "caption": "",
       "mediaCount": 19,
-      "likes": 9,
+      "likes": 14,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -27,7 +27,7 @@
       "mediaCount": 1,
       "likes": 11,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -38,9 +38,9 @@
       "postedAt": "2026-09-28T10:44:28.000Z",
       "caption": "Different roles, one community, that’s the Coro magic ✨",
       "mediaCount": 1,
-      "likes": 95,
+      "likes": 96,
       "comments": 4,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -53,7 +53,7 @@
       "mediaCount": 1,
       "likes": 51,
       "comments": 4,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -66,7 +66,7 @@
       "mediaCount": 1,
       "likes": 39,
       "comments": 2,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -79,7 +79,7 @@
       "mediaCount": 11,
       "likes": 36,
       "comments": 2,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -92,7 +92,7 @@
       "mediaCount": 1,
       "likes": 12,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -105,7 +105,7 @@
       "mediaCount": 1,
       "likes": 72,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -118,7 +118,7 @@
       "mediaCount": 3,
       "likes": 5,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -131,7 +131,7 @@
       "mediaCount": 1,
       "likes": 9,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -144,7 +144,7 @@
       "mediaCount": 11,
       "likes": 24,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -157,7 +157,7 @@
       "mediaCount": 9,
       "likes": 8,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -170,7 +170,7 @@
       "mediaCount": 9,
       "likes": 10,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -183,7 +183,7 @@
       "mediaCount": 1,
       "likes": 19,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -196,7 +196,7 @@
       "mediaCount": 9,
       "likes": 71,
       "comments": 4,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -209,7 +209,7 @@
       "mediaCount": 1,
       "likes": 13,
       "comments": 1,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:29:02.531Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
