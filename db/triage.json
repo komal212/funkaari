@@ -4365,5 +4365,740 @@
     "handle": "akshatha01_kulkarni",
     "run": "2026-10-01-b4",
     "eventId": "ig-akshatha01_kulkarni-2026-10-01-childrens-biennale-at-ekya-schoo"
+  },
+  "18116625596061948": {
+    "status": "new_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "bangaloredrumjam",
+    "run": "2026-10-01-b01",
+    "eventId": "ig-bangaloredrumjam-2026-10-10-community-drum-circle-in-whitefi"
+  },
+  "17989249163861801": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "bangaloredrumjam",
+    "run": "2026-10-01-b01",
+    "note": "Recap of a past drum circle; the next session has no date."
+  },
+  "18097604978173993": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "bangaloredrumjam",
+    "run": "2026-10-01-b01",
+    "note": "Corporate team-building promo with no dated public event."
+  },
+  "18171452254455803": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "bangaloredrumjam",
+    "run": "2026-10-01-b01",
+    "note": "Behind-the-scenes setup reel with no event date."
+  },
+  "18090956144189225": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "bangaloredrumjam",
+    "run": "2026-10-01-b01",
+    "note": "Recap of a past 50th birthday drum circle."
+  },
+  "18457378078189378": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "bangaloredrumjam",
+    "run": "2026-10-01-b01",
+    "note": "Recap of a past 50th birthday celebration."
+  },
+  "18128211064769717": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "bangaloredrumjam",
+    "run": "2026-10-01-b01",
+    "note": "Past session recap; next jam dates are not announced."
+  },
+  "18639950788053730": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "bangaloredrumjam",
+    "run": "2026-10-01-b01",
+    "note": "Past session recap; next jam dates are not announced."
+  },
+  "18127594399833799": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "bangaloredrumjam",
+    "run": "2026-10-01-b01",
+    "note": "Drum circle on 20 Sep 2026 at Soulstaje HSR has already ended."
+  },
+  "18146039416489533": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "bangaloredrumjam",
+    "run": "2026-10-01-b01",
+    "note": "Bappa Beats drum circle on 20 Sep 2026 has already ended."
+  },
+  "17878593978690851": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "bangaloredrumjam",
+    "run": "2026-10-01-b01",
+    "note": "Bappa Beats drum circle the week of 14 Sep has already ended."
+  },
+  "17894509731672571": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "bangaloredrumjam",
+    "run": "2026-10-01-b01",
+    "note": "Ganesh Chaturthi greeting with no event details."
+  },
+  "18486320785106707": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "bangaloredrumjam",
+    "run": "2026-10-01-b01",
+    "note": "HSR drum jam on 20 Sep 2026 has already ended."
+  },
+  "18128033599745530": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "bangaloredrumjam",
+    "run": "2026-10-01-b01",
+    "note": "Community drum circle on 20 Sep 2026 has already ended."
+  },
+  "18034114097838228": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "bangaloredrumjam",
+    "run": "2026-10-01-b01",
+    "note": "Community drum circle on 20 Sep 2026 has already ended."
+  },
+  "18110048443841692": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "bangaloredrumjam",
+    "run": "2026-10-01-b01",
+    "note": "Janmashtami greeting and a collaboration call, with no dated event."
+  },
+  "18112891687989511": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "bangaloredrumjam",
+    "run": "2026-10-01-b01",
+    "note": "Promo to book a private drum circle, with no public date."
+  },
+  "18121793078485030": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "bangaloredrumjam",
+    "run": "2026-10-01-b01",
+    "note": "Promo to book a private drum circle, with no public date."
+  },
+  "18131852215642557": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "bangaloredrumjam",
+    "run": "2026-10-01-b01",
+    "note": "Father-daughter drumming recap with a general DM booking line and no date."
+  },
+  "18116605580012318": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "patoblr",
+    "run": "2026-10-01-b01",
+    "note": "September classroom recap; the booking line is for a class spot, not a dated event."
+  },
+  "17949232491269462": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "shrotahouse",
+    "run": "2026-10-01-b01",
+    "note": "Adult classical concert clip with no future date, time, or booking."
+  },
+  "18039755123637158": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "shrotahouse",
+    "run": "2026-10-01-b01",
+    "note": "Parent testimonial and undated kids-party promo, not a calendar event."
+  },
+  "18149000833558099": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "shrotahouse",
+    "run": "2026-10-01-b01",
+    "note": "Obituary for a classical vocalist, not a kids event."
+  },
+  "17866267233663145": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "shrotahouse",
+    "run": "2026-10-01-b01",
+    "note": "Unplanned rainy-evening singing clip with no bookable date."
+  },
+  "18352377691216944": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "shrotahouse",
+    "run": "2026-10-01-b01",
+    "note": "Festive-season music highlight reel with no dated event."
+  },
+  "18010115495762402": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "shrotahouse",
+    "run": "2026-10-01-b01",
+    "note": "App feature promotion for concert notes, not a happening."
+  },
+  "17896175388667826": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "shrotahouse",
+    "run": "2026-10-01-b01",
+    "note": "Completed kids music camp recap; next camps have no date."
+  },
+  "18012722798966362": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "shrotahouse",
+    "run": "2026-10-01-b01",
+    "note": "Stay-tuned teaser with no date, time, or venue."
+  },
+  "17921620023204401": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "shrotahouse",
+    "run": "2026-10-01-b01",
+    "note": "Parent testimonial highlight with no dated happening."
+  },
+  "18129192398510128": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "ubikakoramangala",
+    "run": "2026-10-01-b01",
+    "note": "Classroom art and play recap with no date."
+  },
+  "18115211620974193": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "ubikakoramangala",
+    "run": "2026-10-01-b01",
+    "note": "Past Ganesh Chaturthi preschool celebration recap, already over."
+  },
+  "18009091307988157": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "happy_kydz",
+    "run": "2026-10-01-b01",
+    "note": "Play-area promo with no date, time, or session to attend."
+  },
+  "17910587394497643": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "happy_kydz",
+    "run": "2026-10-01-b01",
+    "note": "Play-area group photo with no dated session."
+  },
+  "18081986687336530": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "happy_kydz",
+    "run": "2026-10-01-b01",
+    "note": "School-group highlight with no dated public event."
+  },
+  "18033811232840323": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "happy_kydz",
+    "run": "2026-10-01-b01",
+    "note": "Private birthday party clip with no bookable date."
+  },
+  "18019449041927568": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "happy_kydz",
+    "run": "2026-10-01-b01",
+    "note": "Tissue art class ended 27 September, before today."
+  },
+  "17886577164476181": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "happy_kydz",
+    "run": "2026-10-01-b01",
+    "note": "School-trip venue pitch with no specific date."
+  },
+  "17870441556639671": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "happy_kydz",
+    "run": "2026-10-01-b01",
+    "note": "Venue collaboration call for hosts, not a dated kids event."
+  },
+  "17912819454462605": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "happy_kydz",
+    "run": "2026-10-01-b01",
+    "note": "Private birthday setup with no public date."
+  },
+  "18381191716224888": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "happy_kydz",
+    "run": "2026-10-01-b01",
+    "note": "Recap of a past Ganesha workshop, no upcoming date."
+  },
+  "18100983959023594": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "happy_kydz",
+    "run": "2026-10-01-b01",
+    "note": "Ganesh Chaturthi greeting, not a dated event."
+  },
+  "17910281898283414": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "happy_kydz",
+    "run": "2026-10-01-b01",
+    "note": "Ganesh painting workshop ended 13 September, before today."
+  },
+  "17969038827139791": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "happy_kydz",
+    "run": "2026-10-01-b01",
+    "note": "Play-area promo with no dated session."
+  },
+  "18423990895196360": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "happy_kydz",
+    "run": "2026-10-01-b01",
+    "note": "Recap of a past dental camp, no upcoming date."
+  },
+  "17931799806393549": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "happy_kydz",
+    "run": "2026-10-01-b01",
+    "note": "Private birthday party clip with no bookable date."
+  },
+  "17906447415333444": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "slurp.studio",
+    "run": "2026-10-01-b01",
+    "note": "Recap of a past adult biryani class; next classes have no date."
+  },
+  "18107063789264993": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "slurp.studio",
+    "run": "2026-10-01-b01",
+    "note": "Corporate team cooking recap for adults, no date."
+  },
+  "18150033259555457": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "slurp.studio",
+    "run": "2026-10-01-b01",
+    "note": "Adult biryani masterclass on 19 September already ended."
+  },
+  "17905467420487252": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "slurp.studio",
+    "run": "2026-10-01-b01",
+    "note": "Corporate team outing recap for adults, no date."
+  },
+  "17987109120056989": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "slurp.studio",
+    "run": "2026-10-01-b01",
+    "note": "Undated corporate cook-along offer for adults, not a kids event."
+  },
+  "18145749286562782": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "littleredhenpreschools",
+    "run": "2026-10-01-b01",
+    "note": "Educator book photo, not a children's event."
+  },
+  "18446247913133662": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "littleredhenpreschools",
+    "run": "2026-10-01-b01",
+    "note": "Past staff first-aid training, not a session for children."
+  },
+  "17923623159199287": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "littleredhenpreschools",
+    "run": "2026-10-01-b01",
+    "note": "Photo recap of a past literature programme, no upcoming date."
+  },
+  "18187129498409053": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "tickleright",
+    "run": "2026-10-01-b01",
+    "note": "Dubai centre promo for regular 50-minute classes, with no dated happening."
+  },
+  "18345187924270325": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "tickleright",
+    "run": "2026-10-01-b01",
+    "note": "Parent testimonial about a child's class progress, with no dated event."
+  },
+  "18393017497163132": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "tickleright",
+    "run": "2026-10-01-b01",
+    "note": "World Heart Day greeting and classroom moments, not a bookable event."
+  },
+  "18434006305180310": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "tickleright",
+    "run": "2026-10-01-b01",
+    "note": "Founder FAQ video about the programme, with no dated event."
+  },
+  "17952678708262296": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "tickleright",
+    "run": "2026-10-01-b01",
+    "note": "Behind-the-scenes tour of the Juhu centre, not a bookable session."
+  },
+  "18031371398675190": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "tickleright",
+    "run": "2026-10-01-b01",
+    "note": "Free parent orientation in Goregaon on 28 Sep 2026 already ended before today."
+  },
+  "18028437818885828": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "tickleright",
+    "run": "2026-10-01-b01",
+    "note": "LEGO comment prompt and classroom highlight, with no dated event."
+  },
+  "18040002521835273": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "tickleright",
+    "run": "2026-10-01-b01",
+    "note": "Pune centre enrolment promo asking parents to comment, with no session date."
+  },
+  "18109254167173943": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "tickleright",
+    "run": "2026-10-01-b01",
+    "note": "Parent testimonial plus an undated Goregaon orientation invite, with no calendar date."
+  },
+  "18375768196237613": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "tickleright",
+    "run": "2026-10-01-b01",
+    "note": "Parenting tips about a child's first class, with no dated session."
+  },
+  "18102865244260740": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "tickleright",
+    "run": "2026-10-01-b01",
+    "note": "Enrolment call for free orientations this week, with no venue or specific date, and that week is already over."
+  },
+  "17863542519676246": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "tickleright",
+    "run": "2026-10-01-b01",
+    "note": "Parenting tip about singing with a child, with no dated event."
+  },
+  "18126783706758739": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "tickleright",
+    "run": "2026-10-01-b01",
+    "note": "Founder talk about teaching and programme ages, with no dated event."
+  },
+  "18088997078212021": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "tickleright",
+    "run": "2026-10-01-b01",
+    "note": "Parenting tip about letting children make mistakes, with no dated event."
+  },
+  "18234016123320422": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "tickleright",
+    "run": "2026-10-01-b01",
+    "note": "Parent testimonial about a child's progress, with no dated event."
+  },
+  "18433243075180943": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "tickleright",
+    "run": "2026-10-01-b01",
+    "note": "Classroom philosophy reel about play, with no dated event."
+  },
+  "18115937944787582": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "tickleright",
+    "run": "2026-10-01-b01",
+    "note": "Parenting tip about talking to babies, with no dated event."
+  },
+  "18094922714400000": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "tickleright",
+    "run": "2026-10-01-b01",
+    "note": "Undated free-orientation enrolment call across centres; the mentioned week is already over."
+  },
+  "17948615049270161": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "tickleright",
+    "run": "2026-10-01-b01",
+    "note": "Programme promo about curiosity, with no dated session."
+  },
+  "17972019347940434": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "tickleright",
+    "run": "2026-10-01-b01",
+    "note": "Explains what a free orientation includes, with no specific date or venue."
+  },
+  "18094643759537160": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "tickleright",
+    "run": "2026-10-01-b01",
+    "note": "Explains the weekly 50-minute class format, with no specific date."
+  },
+  "18109739918022775": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "tickleright",
+    "run": "2026-10-01-b01",
+    "note": "Teachers' Day greeting, not a bookable event."
+  },
+  "18622510351054816": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "tickleright",
+    "run": "2026-10-01-b01",
+    "note": "Learning-myths carousel of parenting tips, with no dated event."
+  },
+  "17862170982677671": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "tickleright",
+    "run": "2026-10-01-b01",
+    "note": "NIBM Pune enrolment promo asking for a comment to get orientation details, with no date."
+  },
+  "18113789833800114": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "tickleright",
+    "run": "2026-10-01-b01",
+    "note": "Parent testimonials from Chhatrapati Sambhajinagar with an undated orientation invite."
+  },
+  "17939157942348634": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "tickleright",
+    "run": "2026-10-01-b01",
+    "note": "Parent testimonial about a year of classes, with no dated event."
+  },
+  "18121243474934086": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "ants_montessori_rammurthynagar",
+    "run": "2026-10-01-b01",
+    "note": "Classroom recap of a living and non-living sorting activity, no date."
+  },
+  "18116844892967672": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "ants_montessori_rammurthynagar",
+    "run": "2026-10-01-b01",
+    "note": "In-school birthday celebration recap, not a public dated event."
+  },
+  "17948674875056769": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "ants_montessori_rammurthynagar",
+    "run": "2026-10-01-b01",
+    "note": "Classroom art and craft recap of an aeroplane activity, no date."
+  },
+  "18237087385316327": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "ants_montessori_rammurthynagar",
+    "run": "2026-10-01-b01",
+    "note": "Classroom alphabet matching recap, no date or booking."
+  },
+  "17907533085519628": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "ants_montessori_rammurthynagar",
+    "run": "2026-10-01-b01",
+    "note": "Past hygiene demo recap for enrolled children, no future date."
+  },
+  "18111757538122327": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "ants_montessori_rammurthynagar",
+    "run": "2026-10-01-b01",
+    "note": "Classroom shape-painting recap, no date."
+  },
+  "18089244494671236": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "ants_montessori_rammurthynagar",
+    "run": "2026-10-01-b01",
+    "note": "Classroom paper-cutting activity recap, no date."
+  },
+  "18177374971427447": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "ants_montessori_rammurthynagar",
+    "run": "2026-10-01-b01",
+    "note": "Classroom circle-time fine-motor recap, no date."
+  },
+  "17971994163134001": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "ants_montessori_rammurthynagar",
+    "run": "2026-10-01-b01",
+    "note": "Classroom style highlight with no date or venue."
+  },
+  "17957111904230442": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "ants_montessori_rammurthynagar",
+    "run": "2026-10-01-b01",
+    "note": "Classroom number-order activity recap, no date."
+  },
+  "18335418772274311": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "ants_montessori_rammurthynagar",
+    "run": "2026-10-01-b01",
+    "note": "Classroom paper-craft recap, no date."
+  },
+  "18144755380561306": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "ants_montessori_rammurthynagar",
+    "run": "2026-10-01-b01",
+    "note": "Recap of an abacus demo already held, no upcoming date."
+  },
+  "17988585516050259": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "ants_montessori_rammurthynagar",
+    "run": "2026-10-01-b01",
+    "note": "In-school Ganesh Chaturthi celebration recap, not a bookable event."
+  },
+  "17966358540179553": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "ants_montessori_rammurthynagar",
+    "run": "2026-10-01-b01",
+    "note": "In-school Ganesh Chaturthi chanting recap, no public date."
+  },
+  "18332413399275172": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "ants_montessori_rammurthynagar",
+    "run": "2026-10-01-b01",
+    "note": "Classroom circle-time bag-packing recap, no date."
+  },
+  "18045138959813206": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "ants_montessori_rammurthynagar",
+    "run": "2026-10-01-b01",
+    "note": "In-school coloring competition on 5 September 2026, already over."
+  },
+  "17981291808114143": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "ants_montessori_rammurthynagar",
+    "run": "2026-10-01-b01",
+    "note": "Classroom word-search circle-time recap, no date."
+  },
+  "18072579605709376": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "ants_montessori_rammurthynagar",
+    "run": "2026-10-01-b01",
+    "note": "Free abacus demo on 12 September 2026 ended before today."
+  },
+  "18143228803584186": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "ants_montessori_rammurthynagar",
+    "run": "2026-10-01-b01",
+    "note": "Teachers' Day thank-you recap, not a bookable event."
+  },
+  "17969441415149205": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "ants_montessori_rammurthynagar",
+    "run": "2026-10-01-b01",
+    "note": "Teachers' Day greeting and in-school wishes, no public event."
+  },
+  "17916274770241332": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "ants_montessori_rammurthynagar",
+    "run": "2026-10-01-b01",
+    "note": "Classroom story enactment recap, no date."
+  },
+  "17916248556239905": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "ants_montessori_rammurthynagar",
+    "run": "2026-10-01-b01",
+    "note": "Classroom bindi flower craft recap, no date."
+  },
+  "18087683087213412": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "ants_montessori_rammurthynagar",
+    "run": "2026-10-01-b01",
+    "note": "Krishna Janmashtami greeting, not a dated event."
+  },
+  "17909625459287573": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "ants_montessori_rammurthynagar",
+    "run": "2026-10-01-b01",
+    "note": "Janmashtami classroom celebration greeting, no bookable date."
+  },
+  "18068189873748938": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "ants_montessori_rammurthynagar",
+    "run": "2026-10-01-b01",
+    "note": "Classroom sound-matching activity recap, no date."
+  },
+  "18185621728363499": {
+    "status": "not_event",
+    "at": "2026-10-01T12:50:41.321Z",
+    "handle": "ants_montessori_rammurthynagar",
+    "run": "2026-10-01-b01",
+    "note": "Regular in-school sports play recap, no specific date."
   }
 }

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-01T16:33:55.185Z",
-  "run": "2026-10-01-b4",
+  "generatedAt": "2026-10-02T05:26:31.483Z",
+  "run": "merge",
   "events": [
     {
       "id": "ig-akshatha01_kulkarni-2026-10-01-childrens-biennale-at-ekya-schoo",
@@ -71,6 +71,30 @@
       "instagramUrl": "https://www.instagram.com/reel/Dd78z3oCF7a/",
       "fromInstagram": true,
       "isFree": false
+    },
+    {
+      "id": "ig-bangaloredrumjam-2026-10-10-community-drum-circle-in-whitefi",
+      "title": "Community drum circle in Whitefield",
+      "date": "2026-10-10T17:00:00+05:30",
+      "time": "5:00 PM onwards",
+      "city": "bangalore",
+      "area": "Whitefield",
+      "venue": "URU, Whitefield",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "music",
+      "organizer": "Bangalore Drum Jam",
+      "description": "Families play drums together in an open circle, with no experience required.",
+      "instagramHandle": "bangaloredrumjam",
+      "instagramUrl": "https://www.instagram.com/reel/Dd5KtmiB9Hc/",
+      "fromInstagram": true,
+      "bookingUrl": "https://sl1nk.com/zxdyyw4",
+      "isFree": false,
+      "price": "₹199"
     },
     {
       "id": "ig-eravoo.blr-2026-10-12-baala-sambrahma-dasara-celebrati",

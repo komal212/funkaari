@@ -939,6 +939,70 @@
       "updatedAt": "2026-10-01T16:00:43.461Z"
     },
     {
+      "id": "ig-bangaloredrumjam-2026-10-10-community-drum-circle-in-whitefi",
+      "title": "Community drum circle in Whitefield",
+      "date": "2026-10-10T17:00:00+05:30",
+      "time": "5:00 PM onwards",
+      "city": "bangalore",
+      "area": "Whitefield",
+      "venue": "URU, Whitefield",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "music",
+      "organizer": "Bangalore Drum Jam",
+      "description": "Families play drums together in an open circle, with no experience required.",
+      "instagramHandle": "bangaloredrumjam",
+      "instagramUrl": "https://www.instagram.com/reel/Dd5KtmiB9Hc/",
+      "fromInstagram": true,
+      "bookingUrl": "https://sl1nk.com/zxdyyw4",
+      "isFree": false,
+      "price": "₹199",
+      "organizerHandle": "bangaloredrumjam",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18116625596061948",
+          "url": "https://www.instagram.com/reel/Dd5KtmiB9Hc/",
+          "postedBy": "bangaloredrumjam",
+          "postedAt": "2026-09-30T01:35:04.000Z",
+          "kind": "announcement",
+          "likes": 17,
+          "comments": 0,
+          "seenAt": "2026-10-01T12:50:41.321Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "Dd5KtmiB9Hc"
+        ],
+        "bookingIds": [
+          "url:sl1nk.com/zxdyyw4"
+        ]
+      },
+      "details": {
+        "bookingNote": null,
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/Dd5KtmiB9Hc.jpg",
+        "announcedAt": "2026-09-30T01:35:04.000Z",
+        "lastPostedAt": "2026-09-30T01:35:04.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 17,
+          "comments": 0
+        },
+        "listingType": "dated",
+        "missing": []
+      },
+      "createdAt": "2026-10-01T12:50:41.321Z",
+      "updatedAt": "2026-10-01T12:50:41.321Z"
+    },
+    {
       "id": "ig-eravoo.blr-2026-10-12-baala-sambrahma-dasara-celebrati",
       "title": "Baala Sambrahma Dasara celebration",
       "date": "2026-10-12T10:00:00+05:30",
