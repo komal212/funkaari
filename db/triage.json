@@ -5100,5 +5100,587 @@
     "handle": "ants_montessori_rammurthynagar",
     "run": "2026-10-01-b01",
     "note": "Regular in-school sports play recap, no specific date."
+  },
+  "17945026050326779": {
+    "status": "skipped_filter",
+    "at": "2026-10-02T05:43:25.566Z",
+    "handle": "anandi_school"
+  },
+  "18093677999648551": {
+    "status": "skipped_filter",
+    "at": "2026-10-02T05:43:25.566Z",
+    "handle": "anandi_school"
+  },
+  "18042655343820382": {
+    "status": "skipped_filter",
+    "at": "2026-10-02T05:43:25.566Z",
+    "handle": "anandi_school"
+  },
+  "18073778921734083": {
+    "status": "skipped_filter",
+    "at": "2026-10-02T05:43:25.566Z",
+    "handle": "anandi_school"
+  },
+  "17947656942269854": {
+    "status": "skipped_filter",
+    "at": "2026-10-02T05:43:25.566Z",
+    "handle": "anandi_school"
+  },
+  "17923530957203506": {
+    "status": "skipped_filter",
+    "at": "2026-10-02T05:43:25.566Z",
+    "handle": "anandi_school"
+  },
+  "18110473322277275": {
+    "status": "skipped_filter",
+    "at": "2026-10-02T05:43:25.566Z",
+    "handle": "aurralismontessori"
+  },
+  "18314631955304286": {
+    "status": "skipped_filter",
+    "at": "2026-10-02T05:43:25.566Z",
+    "handle": "aurralismontessori"
+  },
+  "17908117869307171": {
+    "status": "skipped_filter",
+    "at": "2026-10-02T05:43:25.566Z",
+    "handle": "aurralismontessori"
+  },
+  "18337299808257447": {
+    "status": "skipped_filter",
+    "at": "2026-10-02T05:43:25.566Z",
+    "handle": "eurokids_electroniccity_ph2"
+  },
+  "18047138390664279": {
+    "status": "skipped_filter",
+    "at": "2026-10-02T05:43:25.566Z",
+    "handle": "eurokids_electroniccity_ph2"
+  },
+  "17989829661016840": {
+    "status": "skipped_filter",
+    "at": "2026-10-02T05:43:25.566Z",
+    "handle": "eurokids_electroniccity_ph2"
+  },
+  "18078842414348495": {
+    "status": "skipped_filter",
+    "at": "2026-10-02T05:43:25.566Z",
+    "handle": "eurokids_electroniccity_ph2"
+  },
+  "18076090070711896": {
+    "status": "skipped_filter",
+    "at": "2026-10-02T05:43:25.566Z",
+    "handle": "eurokids_electroniccity_ph2"
+  },
+  "17983221960097672": {
+    "status": "skipped_filter",
+    "at": "2026-10-02T05:43:25.566Z",
+    "handle": "eurokids_electroniccity_ph2"
+  },
+  "18109924760174871": {
+    "status": "skipped_filter",
+    "at": "2026-10-02T05:43:25.566Z",
+    "handle": "floretzacademy"
+  },
+  "18124173110490013": {
+    "status": "skipped_filter",
+    "at": "2026-10-02T05:43:25.566Z",
+    "handle": "floretzacademy"
+  },
+  "18017970158729231": {
+    "status": "skipped_filter",
+    "at": "2026-10-02T05:43:25.566Z",
+    "handle": "kangarookidssingasandra"
+  },
+  "18108598022353219": {
+    "status": "skipped_filter",
+    "at": "2026-10-02T05:43:25.566Z",
+    "handle": "kangarookidssingasandra"
+  },
+  "18349700575219722": {
+    "status": "skipped_old",
+    "at": "2026-10-02T05:43:25.566Z",
+    "handle": "openhouse.school"
+  },
+  "18107181398134060": {
+    "status": "skipped_old",
+    "at": "2026-10-02T05:43:25.566Z",
+    "handle": "openhouse.school"
+  },
+  "18132693529672267": {
+    "status": "skipped_filter",
+    "at": "2026-10-02T05:43:25.566Z",
+    "handle": "openhouse.school"
+  },
+  "17920588431427868": {
+    "status": "skipped_old",
+    "at": "2026-10-02T05:43:25.566Z",
+    "handle": "vidyasagarpreschool"
+  },
+  "18476132797119165": {
+    "status": "skipped_filter",
+    "at": "2026-10-02T05:43:25.566Z",
+    "handle": "vidyasagarpreschool"
+  },
+  "18125388511868218": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "kangarookidssingasandra",
+    "run": "2026-10-02",
+    "note": "Classroom recap of a past Janmashtami celebration, no bookable event."
+  },
+  "18148615258485346": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "kangarookidssingasandra",
+    "run": "2026-10-02",
+    "note": "Classroom recap of Teachers' Day celebration, no date or booking."
+  },
+  "18056664338632233": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "kangarookidssingasandra",
+    "run": "2026-10-02",
+    "note": "Only hashtags, no event details or date."
+  },
+  "18115733225018389": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "kangarookidssingasandra",
+    "run": "2026-10-02",
+    "note": "In-class curriculum activity (rainbow salad making), not an attendable event."
+  },
+  "18086961395477912": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "kangarookidssingasandra",
+    "run": "2026-10-02",
+    "note": "Empty caption image post with no event details."
+  },
+  "18108906974464777": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "kangarookidssingasandra",
+    "run": "2026-10-02",
+    "note": "Classroom recap of Ganesha Chaturthi celebration, no date or booking."
+  },
+  "18132755941647840": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "kangarookidssingasandra",
+    "run": "2026-10-02",
+    "note": "Recap of playgroup volunteers visiting an old age home, not a bookable event."
+  },
+  "18114032492082355": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "dibberpreschool.bellandur",
+    "run": "2026-10-02",
+    "note": "Classroom recap of Onam celebration, no date or booking."
+  },
+  "18189057337391919": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "dibberpreschool.bellandur",
+    "run": "2026-10-02",
+    "note": "Classroom recap of Raksha Bandhan celebration, no date or booking."
+  },
+  "18112901969013766": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "dibberpreschool.bellandur",
+    "run": "2026-10-02",
+    "note": "Classroom recap of Krishna Janmashtami celebration, no date or booking."
+  },
+  "17958299550228273": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "dibberpreschool.bellandur",
+    "run": "2026-10-02",
+    "note": "Classroom recap of Grandparents' Day celebration, no date or booking."
+  },
+  "18128632378749933": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "dibberpreschool.bellandur",
+    "run": "2026-10-02",
+    "note": "Recap of a past parent-teacher Celebration of Learning event, no future date or booking."
+  },
+  "17931955347147370": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "vidyashilpschoolsarjapur",
+    "run": "2026-10-02",
+    "note": "Recap of a puja ceremony for a new school campus, not a children's event."
+  },
+  "18126301952306866": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "vidyashilpschoolsarjapur",
+    "run": "2026-10-02",
+    "note": "Recap of a past Parent Orientation for prospective parents, no future date or booking, adults-only session."
+  },
+  "18110947328037683": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "openhouse.school",
+    "run": "2026-10-02",
+    "note": "Teachers' Day greeting post, no event or date."
+  },
+  "17924253240414165": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "openhouse.school",
+    "run": "2026-10-02",
+    "note": "At-home activity idea reel, not a bookable event."
+  },
+  "17874595596566887": {
+    "status": "new_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "openhouse.school",
+    "run": "2026-10-02",
+    "eventId": "ig-openhouse.school-2026-10-02-toddler-club-weekly-themed-sessi"
+  },
+  "18351551239171678": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "openhouse.school",
+    "run": "2026-10-02",
+    "note": "Music classroom highlight reel promoting trial classes via comment, no date."
+  },
+  "18344502355270628": {
+    "status": "new_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "openhouse.school",
+    "run": "2026-10-02",
+    "eventId": "ig-openhouse.school-2026-09-13-ganesha-idol-painting-for-kids"
+  },
+  "18040508702821860": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "openhouse.school",
+    "run": "2026-10-02",
+    "note": "Recap post of past Ganesh Chaturthi and Grandparents Day celebrations, no upcoming event."
+  },
+  "18114380386814761": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "openhouse.school",
+    "run": "2026-10-02",
+    "note": "At-home DIY activity reel, not a bookable event."
+  },
+  "18334388278259768": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "openhouse.school",
+    "run": "2026-10-02",
+    "note": "Recap reel of a past garden visit by enrolled students, not an open event."
+  },
+  "17976283160915668": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "openhouse.school",
+    "run": "2026-10-02",
+    "note": "Guess-the-beat engagement reel, no event or date."
+  },
+  "17869091775646382": {
+    "status": "new_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "openhouse.school",
+    "run": "2026-10-02",
+    "eventId": "ig-openhouse.school-2026-09-26-taco-party-playdate-for-toddlers"
+  },
+  "18067577693749736": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "openhouse.school",
+    "run": "2026-10-02",
+    "note": "Congratulatory post for a teacher and students at a championship, not an event listing."
+  },
+  "18129270556784511": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "openhouse.school",
+    "run": "2026-10-02",
+    "note": "Guess-the-song engagement reel, no event or date."
+  },
+  "18110728112039055": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "aurralismontessori",
+    "run": "2026-10-02",
+    "note": "Recap reel of an Independence Day classroom celebration, no bookable event."
+  },
+  "18070245215572640": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "aurralismontessori",
+    "run": "2026-10-02",
+    "note": "Classroom moment/highlight reel about hands-on learning, no date or booking info."
+  },
+  "18111921677042238": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "aurralismontessori",
+    "run": "2026-10-02",
+    "note": "Recap of an in-school Janmashtami celebration for enrolled children, not a public event."
+  },
+  "18437445163178345": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "aurralismontessori",
+    "run": "2026-10-02",
+    "note": "Classroom moments reel, no event."
+  },
+  "18078505085362094": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "aurralismontessori",
+    "run": "2026-10-02",
+    "note": "Classroom moments reel about child development, no event."
+  },
+  "17945919120067170": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "aurralismontessori",
+    "run": "2026-10-02",
+    "note": "Recap/throwback reel of past Janmashtami celebration, no bookable event."
+  },
+  "18111356350846165": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "aurralismontessori",
+    "run": "2026-10-02",
+    "note": "Recap of a school farm trip for enrolled students, not a public bookable event."
+  },
+  "18219820834342290": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "aurralismontessori",
+    "run": "2026-10-02",
+    "note": "General classroom highlight reel, no date or booking info."
+  },
+  "17991271163993658": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "eurokids_electroniccity_ph2",
+    "run": "2026-10-02",
+    "note": "Recap reel of an in-school Janmashtami celebration, not a public event."
+  },
+  "17979834606105837": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "eurokids_electroniccity_ph2",
+    "run": "2026-10-02",
+    "note": "Admissions/parenting-tip promo post, no date."
+  },
+  "18117660991954226": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "eurokids_electroniccity_ph2",
+    "run": "2026-10-02",
+    "note": "Parenting tips/learning-through-play promo, no date."
+  },
+  "18124746928868156": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "floretzacademy",
+    "run": "2026-10-02",
+    "note": "School admissions promo reel, no date or booking info."
+  },
+  "17977043951915155": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "floretzacademy",
+    "run": "2026-10-02",
+    "note": "Classroom curriculum/sensorial activity promo reel, no date."
+  },
+  "18102661576970893": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "anandi_school",
+    "run": "2026-10-02",
+    "note": "Admissions promotion for a new Gurgaon campus, no bookable event."
+  },
+  "18095985644647655": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "anandi_school",
+    "run": "2026-10-02",
+    "note": "News about a student's robotics competition qualification, not an event."
+  },
+  "18071248802734722": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "anandi_school",
+    "run": "2026-10-02",
+    "note": "Book recommendation post for long weekend reading, no date or venue."
+  },
+  "18104257397258291": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "anandi_school",
+    "run": "2026-10-02",
+    "note": "Trivia video about the Rubik's Cube, not an event."
+  },
+  "17944551783341646": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "anandi_school",
+    "run": "2026-10-02",
+    "note": "Classroom recap of a book-tasting activity, no date or booking."
+  },
+  "18099221753635369": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "anandi_school",
+    "run": "2026-10-02",
+    "note": "Student reaction video about field projects, a recap, not an event."
+  },
+  "18000174722798294": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "anandi_school",
+    "run": "2026-10-02",
+    "note": "Classroom recap of this week's field projects."
+  },
+  "17869519605642400": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "anandi_school",
+    "run": "2026-10-02",
+    "note": "Dated session on Oct 10 but explicitly for Grades 6-10, outside the 6-month to 6-year audience."
+  },
+  "18633576808024481": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "anandi_school",
+    "run": "2026-10-02",
+    "note": "Classroom recap of this week's field projects."
+  },
+  "17916217125459577": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "anandi_school",
+    "run": "2026-10-02",
+    "note": "Student-led campus tour video, a promotional recap, not a bookable event."
+  },
+  "18006832613987634": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "firstcryintellitotsjpnagar",
+    "run": "2026-10-02",
+    "note": "Krishna Janmashtami celebration recap at the preschool, not a bookable event."
+  },
+  "18231408673325772": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "firstcryintellitotsjpnagar",
+    "run": "2026-10-02",
+    "note": "Ganesh Chaturthi festival greeting, no event details."
+  },
+  "18631914805005681": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "firstcryintellitotsjpnagar",
+    "run": "2026-10-02",
+    "note": "Grandparents' Day celebration recap, not a future bookable event."
+  },
+  "18107625284272677": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "vidyasagarpreschool",
+    "run": "2026-10-02",
+    "note": "Recap of a past Janmashtami celebration at the preschool, no bookable event."
+  },
+  "18123055717823119": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "vidyasagarpreschool",
+    "run": "2026-10-02",
+    "note": "Recap of a past Janmashtami celebration at the preschool, no bookable event."
+  },
+  "18140846308585043": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "vidyasagarpreschool",
+    "run": "2026-10-02",
+    "note": "Teachers' Day appreciation recap, no bookable event for children."
+  },
+  "17989235067061570": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "vidyasagarpreschool",
+    "run": "2026-10-02",
+    "note": "Classroom recap of a tabla session, no date or booking info."
+  },
+  "18106861106608064": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "vidyasagarpreschool",
+    "run": "2026-10-02",
+    "note": "Award recognition post for a student, not an event."
+  },
+  "18031185971887071": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "vidyasagarpreschool",
+    "run": "2026-10-02",
+    "note": "Recap of past intramural sports activity, no bookable event."
+  },
+  "18104219776958221": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "vidyasagarpreschool",
+    "run": "2026-10-02",
+    "note": "Recap of a past Ganesha Chaturthi celebration, no bookable event."
+  },
+  "18019495397721872": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "vidyasagarpreschool",
+    "run": "2026-10-02",
+    "note": "Recap of a past Ganesha Chaturthi celebration, no bookable event."
+  },
+  "18126561289838351": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "vidyasagarpreschool",
+    "run": "2026-10-02",
+    "note": "Award recognition post for students, not an event."
+  },
+  "18106602023242687": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "vidyasagarpreschool",
+    "run": "2026-10-02",
+    "note": "Classroom curriculum recap on five senses, no date or booking info."
+  },
+  "18134279128674308": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "vidyasagarpreschool",
+    "run": "2026-10-02",
+    "note": "Recap of past Grandparents' Day celebration, no bookable event."
+  },
+  "18104543348195982": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "vidyasagarpreschool",
+    "run": "2026-10-02",
+    "note": "Recap of a past Open Day already held, no future date or booking info."
+  },
+  "18629501917045455": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "vidyasagarpreschool",
+    "run": "2026-10-02",
+    "note": "School ranking and award announcement, not an event."
+  },
+  "18098593055454054": {
+    "status": "not_event",
+    "at": "2026-10-02T05:46:04.820Z",
+    "handle": "vidyasagarpreschool",
+    "run": "2026-10-02",
+    "note": "Classroom recap of a handprint activity, no date or booking info."
   }
 }

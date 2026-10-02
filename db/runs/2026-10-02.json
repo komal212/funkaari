@@ -1,0 +1,140 @@
+{
+  "run": "2026-10-02",
+  "fetch": {
+    "at": "2026-10-02T05:42:31.841Z",
+    "handles": [
+      {
+        "handle": "kangarookidssingasandra",
+        "fetched": 9,
+        "added": 0,
+        "refreshed": 9,
+        "images": 9,
+        "error": null
+      },
+      {
+        "handle": "vidyashilpschoolsarjapur",
+        "fetched": 2,
+        "added": 0,
+        "refreshed": 2,
+        "images": 2,
+        "error": null
+      },
+      {
+        "handle": "dibberpreschool.bellandur",
+        "fetched": 5,
+        "added": 0,
+        "refreshed": 5,
+        "images": 5,
+        "error": null
+      },
+      {
+        "handle": "anandi_school",
+        "fetched": 16,
+        "added": 0,
+        "refreshed": 16,
+        "images": 26,
+        "error": null
+      },
+      {
+        "handle": "openhouse.school",
+        "fetched": 13,
+        "added": 0,
+        "refreshed": 13,
+        "images": 19,
+        "error": null
+      },
+      {
+        "handle": "eurokids_electroniccity_ph2",
+        "fetched": 9,
+        "added": 0,
+        "refreshed": 9,
+        "images": 9,
+        "error": null
+      },
+      {
+        "handle": "firstcryintellitotsjpnagar",
+        "fetched": 3,
+        "added": 0,
+        "refreshed": 3,
+        "images": 3,
+        "error": null
+      },
+      {
+        "handle": "floretzacademy",
+        "fetched": 4,
+        "added": 0,
+        "refreshed": 4,
+        "images": 6,
+        "error": null
+      },
+      {
+        "handle": "vidyasagarpreschool",
+        "fetched": 15,
+        "added": 0,
+        "refreshed": 15,
+        "images": 15,
+        "error": null
+      },
+      {
+        "handle": "aurralismontessori",
+        "fetched": 11,
+        "added": 0,
+        "refreshed": 11,
+        "images": 21,
+        "error": null
+      }
+    ],
+    "fetched": 87,
+    "added": 0,
+    "images": 115,
+    "errors": 0
+  },
+  "updatedAt": "2026-10-02T05:46:04.831Z",
+  "pack": {
+    "at": "2026-10-02T05:43:25.566Z",
+    "pending": 66,
+    "skippedOld": 3,
+    "duplicates": 0,
+    "filtered": 21,
+    "packets": [
+      {
+        "packet": 1,
+        "posts": 14
+      },
+      {
+        "packet": 2,
+        "posts": 12
+      },
+      {
+        "packet": 3,
+        "posts": 13
+      },
+      {
+        "packet": 4,
+        "posts": 13
+      },
+      {
+        "packet": 5,
+        "posts": 14
+      }
+    ]
+  },
+  "match": {
+    "at": "2026-10-02T05:45:32.462Z",
+    "counts": {
+      "not_event": 63,
+      "new": 1,
+      "resolve": 2
+    },
+    "resolvePackets": 1
+  },
+  "apply": {
+    "at": "2026-10-02T05:46:04.820Z",
+    "created": 3,
+    "attached": 0,
+    "updated": 0,
+    "cancelled": 0,
+    "notEvent": 63,
+    "siteEvents": 7
+  }
+}

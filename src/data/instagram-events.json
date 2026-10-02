@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-02T05:26:31.483Z",
-  "run": "merge",
+  "generatedAt": "2026-10-02T05:46:04.820Z",
+  "run": "2026-10-02",
   "events": [
     {
       "id": "ig-akshatha01_kulkarni-2026-10-01-childrens-biennale-at-ekya-schoo",
@@ -48,6 +48,30 @@
       "fromInstagram": true,
       "isFree": false,
       "price": "₹1,199"
+    },
+    {
+      "id": "ig-openhouse.school-2026-10-02-toddler-club-weekly-themed-sessi",
+      "title": "Toddler Club weekly themed sessions",
+      "date": "2026-10-02T10:00:00+05:30",
+      "ongoing": true,
+      "time": "See post",
+      "city": "bangalore",
+      "area": "Bengaluru",
+      "venue": "Openhouse",
+      "ageMinMonths": 12,
+      "ageMaxYears": 3,
+      "ageGroups": [
+        "1-2yr",
+        "2-3yr",
+        "3-4yr"
+      ],
+      "category": "workshop",
+      "organizer": "Openhouse",
+      "description": "Weekly themed sessions for toddlers with a parent joining in, from petal scooping to puddle jumping and circus play.",
+      "instagramHandle": "openhouse.school",
+      "instagramUrl": "https://www.instagram.com/p/DdBQfh8n6-S/",
+      "fromInstagram": true,
+      "isFree": false
     },
     {
       "id": "ig-acemontessori-2026-10-10-ace-montessori-open-house-2026",

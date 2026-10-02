@@ -127,6 +127,67 @@
       "updatedAt": "2026-10-01T16:32:55.154Z"
     },
     {
+      "id": "ig-openhouse.school-2026-09-13-ganesha-idol-painting-for-kids",
+      "title": "Ganesha idol painting for kids",
+      "date": "2026-09-13T14:00:00+05:30",
+      "time": "2 PM – 6 PM",
+      "city": "bangalore",
+      "area": "HSR Layout",
+      "venue": "Openhouse HSR & Haralur",
+      "ageMinMonths": 60,
+      "ageMaxYears": 10,
+      "ageGroups": [
+        "4-6yr"
+      ],
+      "category": "art",
+      "organizer": "Openhouse",
+      "description": "Children paint and take home their own Ganesha idol while parents join in playful activities inspired by his stories.",
+      "instagramHandle": "openhouse.school",
+      "instagramUrl": "https://www.instagram.com/p/DdJtleHH0kK/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "openhouse.school",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18344502355270628",
+          "url": "https://www.instagram.com/p/DdJtleHH0kK/",
+          "postedBy": "openhouse.school",
+          "postedAt": "2026-09-11T15:16:37.000Z",
+          "kind": "announcement",
+          "likes": 21,
+          "comments": 0,
+          "seenAt": "2026-10-02T05:46:04.820Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdJtleHH0kK"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "price"
+        ],
+        "bookingNote": "Book your spot via the link in bio",
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/DdJtleHH0kK.jpg",
+        "announcedAt": "2026-09-11T15:16:37.000Z",
+        "lastPostedAt": "2026-09-11T15:16:37.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 21,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T05:46:04.820Z",
+      "updatedAt": "2026-10-02T05:46:04.820Z"
+    },
+    {
       "id": "ig-nps_gmc-2026-09-19-open-house-at-gmc-gopalapuram",
       "title": "Open house at GMC Gopalapuram",
       "date": "2026-09-19T10:00:00+05:30",
@@ -589,6 +650,70 @@
       "updatedAt": "2026-10-01T16:32:55.154Z"
     },
     {
+      "id": "ig-openhouse.school-2026-09-26-taco-party-playdate-for-toddlers",
+      "title": "Taco party playdate for toddlers",
+      "date": "2026-09-26T10:00:00+05:30",
+      "time": "10AM – 11AM | 11:30AM – 12:30PM",
+      "city": "bangalore",
+      "area": "Bengaluru",
+      "venue": null,
+      "ageMinMonths": 12,
+      "ageMaxYears": 3,
+      "ageGroups": [
+        "1-2yr",
+        "2-3yr",
+        "3-4yr"
+      ],
+      "category": "art",
+      "organizer": "Openhouse",
+      "description": "Parent and child playdate making colourful taco fillings, pretend guacamole, decorating tacos and fiesta hats.",
+      "instagramHandle": "openhouse.school",
+      "instagramUrl": "https://www.instagram.com/p/Ddnv7Hbko5x/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "openhouse.school",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "17869091775646382",
+          "url": "https://www.instagram.com/p/Ddnv7Hbko5x/",
+          "postedBy": "openhouse.school",
+          "postedAt": "2026-09-23T07:14:16.000Z",
+          "kind": "announcement",
+          "likes": 19,
+          "comments": 1,
+          "seenAt": "2026-10-02T05:46:04.820Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "Ddnv7Hbko5x"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "venue",
+          "price"
+        ],
+        "bookingNote": "Book your spot through the link in bio",
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/Ddnv7Hbko5x.jpg",
+        "announcedAt": "2026-09-23T07:14:16.000Z",
+        "lastPostedAt": "2026-09-23T07:14:16.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 19,
+          "comments": 1
+        }
+      },
+      "createdAt": "2026-10-02T05:46:04.820Z",
+      "updatedAt": "2026-10-02T05:46:04.820Z"
+    },
+    {
       "id": "ig-akshatha01_kulkarni-2026-10-01-childrens-biennale-at-ekya-schoo",
       "title": "Children's Biennale at Ekya School",
       "date": "2026-10-01T10:00:00+05:30",
@@ -713,6 +838,73 @@
       },
       "createdAt": "2026-10-01T10:38:10.198Z",
       "updatedAt": "2026-10-01T10:38:10.198Z"
+    },
+    {
+      "id": "ig-openhouse.school-2026-10-02-toddler-club-weekly-themed-sessi",
+      "title": "Toddler Club weekly themed sessions",
+      "date": "2026-10-02T10:00:00+05:30",
+      "ongoing": true,
+      "time": "See post",
+      "city": "bangalore",
+      "area": null,
+      "venue": null,
+      "ageMinMonths": 12,
+      "ageMaxYears": 3,
+      "ageGroups": [
+        "1-2yr",
+        "2-3yr",
+        "3-4yr"
+      ],
+      "category": "workshop",
+      "organizer": "Openhouse",
+      "description": "Weekly themed sessions for toddlers with a parent joining in, from petal scooping to puddle jumping and circus play.",
+      "instagramHandle": "openhouse.school",
+      "instagramUrl": "https://www.instagram.com/p/DdBQfh8n6-S/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "openhouse.school",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "17874595596566887",
+          "url": "https://www.instagram.com/p/DdBQfh8n6-S/",
+          "postedBy": "openhouse.school",
+          "postedAt": "2026-09-08T08:28:29.000Z",
+          "kind": "announcement",
+          "likes": 16,
+          "comments": 0,
+          "seenAt": "2026-10-02T05:46:04.820Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdBQfh8n6-S"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "ongoing",
+        "missing": [
+          "venue",
+          "area",
+          "time",
+          "price"
+        ],
+        "bookingNote": "Book via website",
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/DdBQfh8n6-S.jpg",
+        "announcedAt": "2026-09-08T08:28:29.000Z",
+        "lastPostedAt": "2026-09-08T08:28:29.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 16,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T05:46:04.820Z",
+      "updatedAt": "2026-10-02T05:46:04.820Z"
     },
     {
       "id": "aura-circle-time",
@@ -984,6 +1176,8 @@
         ]
       },
       "details": {
+        "listingType": "dated",
+        "missing": [],
         "bookingNote": null,
         "contactPhone": null,
         "availability": null,
@@ -995,9 +1189,7 @@
         "engagement": {
           "likes": 17,
           "comments": 0
-        },
-        "listingType": "dated",
-        "missing": []
+        }
       },
       "createdAt": "2026-10-01T12:50:41.321Z",
       "updatedAt": "2026-10-01T12:50:41.321Z"
