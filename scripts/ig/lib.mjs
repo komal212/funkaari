@@ -216,34 +216,18 @@ const DATE_SIGNAL = new RegExp(
   ].join("|"),
   "i",
 );
+// Booking cues and specific event types only. Broad words ("family", "ages", "music", "celebration")
+// appear in nearly every preschool post and made the filter useless; see the 2026-10-02 audit in the handoff.
 const EVENT_SIGNAL = new RegExp(
   "\\b(?:" +
     [
-      // what
-      "workshops?", "play ?dates?", "play ?groups?", "play ?sessions?", "sessions?", "events?", "camps?",
-      "bootcamps?", "class(?:es)?", "courses?", "programs?", "programmes?", "batch(?:es)?", "story ?time",
-      "story ?telling", "storytellers?", "read[ -]?alouds?", "open (?:house|day)s?", "fest(?:ival)?s?", "fairs?",
-      "carnivals?", "melas?", "bazaars?", "markets?", "flea", "pop[ -]?ups?", "shows?", "puppet(?:ry)?", "magic",
-      "theatre", "theater", "plays?", "musicals?", "exhibitions?", "exhibits?", "biennale", "installations?",
-      "museum", "gallery", "treks?", "hikes?", "walks?", "trails?", "farm visit", "nature", "outings?",
-      "excursions?", "field trips?", "meet ?ups?", "concerts?", "gigs?", "jam", "drum circle", "performances?",
-      "recitals?", "screenings?", "movie", "drop[ -]?in", "trials?", "demos?", "masterclass(?:es)?",
-      "competitions?", "contests?", "championships?", "tournaments?", "races?", "runs?", "marathon",
-      "sports day", "games?", "activit(?:y|ies)", "celebrations?", "parties", "party", "picnics?", "gatherings?",
-      "dandiya", "garba", "baking", "cooking", "craft(?:s|ing)?", "painting", "pottery", "clay", "art",
-      "dance", "music", "yoga", "football", "swimming", "skating", "summer", "winter", "holiday",
-      "dussehra", "diwali", "navratri", "halloween", "christmas",
-      // when and where
-      "upcoming", "coming soon", "happening", "starts?", "starting", "begins?", "launch(?:ing)?", "join us",
-      "see you", "don'?t miss", "mark your calendars?", "every (?:week|weekend)", "weekly", "weekends?",
-      "today", "tonight", "tomorrow", "till", "until", "onwards", "from \\d", "venue", "location", "address",
-      "at our (?:studio|centre|center|space|campus)",
       // how to attend
-      "register(?:ed)?", "registrations?", "rsvp", "enrol(?:l|ment|ling)?", "book(?:ing|ings|ed)?",
-      "reserve", "tickets?", "passes?", "slots?", "seats?", "spots?", "sign ?up", "entry", "free",
-      "fees?", "price", "cost", "per (?:child|kid|person|family)", "limited", "hurry", "last (?:few|chance)",
-      "sold out", "link in bio", "dm", "whats ?app", "call", "contact", "enquir(?:e|y|ies)", "inquir(?:e|y|ies)",
-      "ages?", "years?", "yrs", "months?", "toddlers?", "parents?", "families", "family",
+      "register(?:ed)?", "registrations?", "rsvp", "book (?:now|your|a)", "bookings?", "tickets?", "slots?",
+      "seats?", "spots? (?:left|available)", "sign ?up", "venue", "entry", "fees?", "link in bio", "dm (?:to|us|for)",
+      // what
+      "workshops?", "play ?dates?", "story ?time", "open (?:house|day)s?", "drop[ -]?in", "trial class(?:es)?",
+      "camps?", "exhibitions?", "biennale", "treks?", "nature walks?", "puppet(?:ry)?", "magic show", "concerts?",
+      "screenings?", "carnivals?", "melas?", "fairs?", "masterclass(?:es)?", "meet ?ups?",
     ].join("|") +
     ")\\b|₹|\\brs\\.?\\s*\\d",
   "i",
