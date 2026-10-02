@@ -1,9 +1,22 @@
 {
   "handle": "abcplanet_info_alur",
-  "latestPostAt": "2026-09-04T05:24:57.000Z",
-  "lastFetchedAt": "2026-10-01T11:41:42.310Z",
+  "latestPostAt": "2026-10-02T01:30:07.000Z",
+  "lastFetchedAt": "2026-10-02T06:55:18.973Z",
   "fetchError": null,
   "posts": [
+    {
+      "id": "18435011488176328",
+      "shortcode": "Dd-TsOyEUzr",
+      "url": "https://www.instagram.com/p/Dd-TsOyEUzr/",
+      "type": "IMAGE",
+      "postedAt": "2026-10-02T01:30:07.000Z",
+      "caption": "🇮🇳✨ Wishing You a Very Happy Gandhi Jayanti! ✨🇮🇳\nMay the values of truth, peace, kindness, and non-violence inspire us to create a brighter and better tomorrow. Let us remember Mahatma Gandhi’s timeless teachings and spread love, harmony, and positivity wherever we go. 🌿🕊️\nWishing everyone a peaceful, meaningful, and inspiring Gandhi Jayanti! 🇮🇳❤️\n\n.\n.\n.\n.\n.\n.\n.\n.\n.\n\n#HappyGandhiJayanti #GandhiJayanti #MahatmaGandhi #GandhiJayanti2026 #Truth #Peace #Kindness #NonViolence #LoveAndHarmony #PositiveValues #BetterTomorrow #Unity #PeaceAndHarmony",
+      "mediaCount": 1,
+      "likes": 3,
+      "comments": 0,
+      "engagementAt": "2026-10-02T06:55:18.973Z",
+      "fetchedAt": "2026-10-02T06:55:18.973Z"
+    },
     {
       "id": "18127602514690777",
       "shortcode": "Dc2n_QksUoA",
@@ -14,9 +27,9 @@
       "mediaCount": 1,
       "likes": 50,
       "comments": 1,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:55:18.973Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     }
   ],
-  "mediaCount": 327
+  "mediaCount": 328
 }

@@ -1,7 +1,31 @@
 {
-  "generatedAt": "2026-10-02T06:44:34.821Z",
-  "run": "2026-10-02-r1",
+  "generatedAt": "2026-10-02T07:11:54.956Z",
+  "run": "2026-10-02-r2",
   "events": [
+    {
+      "id": "ig-palettebuddy-2026-09-18-palette-buddy-september-workshop",
+      "title": "Palette Buddy September workshop series",
+      "date": "2026-09-18T10:00:00+05:30",
+      "endDate": "2026-09-30T23:59:59+05:30",
+      "ongoing": true,
+      "time": "Weekday mornings 12–2 PM and weekend afternoons 5–7 PM",
+      "city": "bangalore",
+      "area": "Electronic City",
+      "venue": "Palette Buddy Art Studio, Above TVS Showroom, Bettadasanapura main road, Electronic City Phase 1",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "art",
+      "organizer": "Palette Buddy Art Studio",
+      "description": "A rotating series of resin, lippan, mandala, tote bag and sip-and-paint sessions through the month.",
+      "instagramHandle": "palettebuddy",
+      "instagramUrl": "https://www.instagram.com/p/DdTZdIsR3v8/",
+      "fromInstagram": true,
+      "isFree": false
+    },
     {
       "id": "ig-rhythmnrhyme.in-2026-09-23-rhythm-n-rhyme-bugs-batch-at-kyd",
       "title": "Rhythm N Rhyme Bugs batch at KYDZ ADDA",
@@ -146,6 +170,189 @@
       "isFree": false
     },
     {
+      "id": "ig-thefireflyterrace-2026-10-02-walk-in-art-activities-at-firefl",
+      "title": "Walk-in art activities at Firefly Terrace",
+      "date": "2026-10-02T10:00:00+05:30",
+      "ongoing": true,
+      "time": "See post",
+      "city": "bangalore",
+      "area": "Jayanagar",
+      "venue": "The Firefly Terrace, Jayanagar",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "art",
+      "organizer": "The Firefly Terrace",
+      "description": "Ten walk-in art activities to pick from, no experience or prior booking needed.",
+      "instagramHandle": "thefireflyterrace",
+      "instagramUrl": "https://www.instagram.com/p/DdODJHCgT4n/",
+      "fromInstagram": true,
+      "isFree": false
+    },
+    {
+      "id": "ig-skadoosh.playarea-2026-10-02-weekend-playdate-at-skadoosh-pla",
+      "title": "Weekend playdate at Skadoosh play areas",
+      "date": "2026-10-02T10:00:00+05:30",
+      "ongoing": true,
+      "time": "See post",
+      "city": "bangalore",
+      "area": "Varthur",
+      "venue": "Skadoosh Haralur, Silver County Road, Haralur, Above D-Mart, Bangalore; Skadoosh Varthur, Varthur-Sarjapur Road, Bangalore",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "workshop",
+      "organizer": "Skadoosh Play Area",
+      "description": "Drop-in play area with soft play and pretend play for toddlers through older kids.",
+      "instagramHandle": "skadoosh.playarea",
+      "instagramUrl": "https://www.instagram.com/reel/Dc5DfdxT1Oo/",
+      "fromInstagram": true,
+      "isFree": false
+    },
+    {
+      "id": "ig-palettebuddy-2026-10-02-painting-classes-for-kids-and-ad",
+      "title": "Painting classes for kids and adults",
+      "date": "2026-10-02T10:00:00+05:30",
+      "ongoing": true,
+      "time": "See post",
+      "city": "bangalore",
+      "area": "Electronic City",
+      "venue": "Palette Buddy Art Studio, Above TVS Showroom, Bettadasanapura main road, Electronic City Phase 1",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "art",
+      "organizer": "Palette Buddy Art Studio",
+      "description": "Ongoing painting classes open to both children and adults.",
+      "instagramHandle": "palettebuddy",
+      "instagramUrl": "https://www.instagram.com/reel/DdIsMB2BnsN/",
+      "fromInstagram": true,
+      "isFree": false
+    },
+    {
+      "id": "ig-palettebuddy-2026-10-02-drawing-classes-at-palette-buddy",
+      "title": "Drawing classes at Palette Buddy",
+      "date": "2026-10-02T10:00:00+05:30",
+      "ongoing": true,
+      "time": "See post",
+      "city": "bangalore",
+      "area": "Electronic City",
+      "venue": "Palette Buddy Art Studio, Above TVS Showroom, Bettadasanapura main road, Electronic City Phase 1",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "art",
+      "organizer": "Palette Buddy Art Studio",
+      "description": "Ongoing drawing classes open to children and adults.",
+      "instagramHandle": "palettebuddy",
+      "instagramUrl": "https://www.instagram.com/reel/DddSn-aBGj7/",
+      "fromInstagram": true,
+      "isFree": false
+    },
+    {
+      "id": "ig-palettebuddy-2026-10-02-diy-studio-at-palette-buddy",
+      "title": "DIY studio at Palette Buddy",
+      "date": "2026-10-02T10:00:00+05:30",
+      "ongoing": true,
+      "time": "See post",
+      "city": "bangalore",
+      "area": "Electronic City",
+      "venue": "Palette Buddy Art Studio, Above TVS Showroom, Bettadasanapura main road, Electronic City Phase 1",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "art",
+      "organizer": "Palette Buddy Art Studio",
+      "description": "A walk-in DIY art studio session with coffee and creative projects.",
+      "instagramHandle": "palettebuddy",
+      "instagramUrl": "https://www.instagram.com/reel/DdvUILJh6L1/",
+      "fromInstagram": true,
+      "isFree": false
+    },
+    {
+      "id": "ig-thefireflyterrace-2026-10-02-tiny-explorers-weekly-art-and-se",
+      "title": "Tiny Explorers weekly art and sensory play",
+      "date": "2026-10-02T11:00:00+05:30",
+      "ongoing": true,
+      "time": "Every Tuesday, 11 AM – 12 PM",
+      "city": "bangalore",
+      "area": "Jayanagar",
+      "venue": "The Firefly Terrace, Jayanagar",
+      "ageMinMonths": 12,
+      "ageMaxYears": 2,
+      "ageGroups": [
+        "1-2yr",
+        "2-3yr"
+      ],
+      "category": "art",
+      "organizer": "The Firefly Terrace",
+      "description": "A weekly art and sensory play session for 1 to 2 year olds, with a parent alongside them.",
+      "instagramHandle": "thefireflyterrace",
+      "instagramUrl": "https://www.instagram.com/p/DdI5mdchfQ3/",
+      "fromInstagram": true,
+      "isFree": false,
+      "price": "₹3,000 for 4 weeks"
+    },
+    {
+      "id": "ig-kurioustots-2026-10-02-the-little-stage-monthly-kids-co",
+      "title": "The Little Stage monthly kids' concert",
+      "date": "2026-10-02T11:30:00+05:30",
+      "ongoing": true,
+      "time": "1st Sunday of every month, 11:30 AM",
+      "city": "bangalore",
+      "area": "Bengaluru",
+      "venue": "Urban Solace Cafe, Ulsoor",
+      "ageMinMonths": 48,
+      "ageMaxYears": 15,
+      "ageGroups": [
+        "4-6yr"
+      ],
+      "category": "music",
+      "organizer": "Kurious Tots",
+      "description": "Children perform a solo, duet or trio song on a real microphone at a monthly café concert.",
+      "instagramHandle": "kurioustots",
+      "instagramUrl": "https://www.instagram.com/p/Ddq642xBe-q/",
+      "fromInstagram": true,
+      "isFree": true
+    },
+    {
+      "id": "ig-attagalatta-2026-10-03-daughter-of-the-ocean-kids-film",
+      "title": "Daughter of the Ocean: kids film screening",
+      "date": "2026-10-03T14:30:00+05:30",
+      "time": "2:30 PM to 3:30 PM",
+      "city": "bangalore",
+      "area": "Indiranagar",
+      "venue": "Atta Galatta, Indiranagar",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "art",
+      "organizer": "Atta Galatta",
+      "description": "Special Diwali screening of an animated fantasy film about Goddess Lakshmi for kids.",
+      "instagramHandle": "attagalatta",
+      "instagramUrl": "https://www.instagram.com/p/DdzAebizody/",
+      "fromInstagram": true,
+      "isFree": false
+    },
+    {
       "id": "ig-bondoverbindings-2026-10-03-canato-jimo-picture-book-afterno",
       "title": "Canato Jimo picture book afternoon",
       "date": "2026-10-03T16:00:00+05:30",
@@ -261,6 +468,52 @@
       "bookingUrl": "https://rhythmnrhyme.com/schedule.html",
       "isFree": false,
       "price": "₹4600"
+    },
+    {
+      "id": "ig-palettebuddy-2026-10-07-palette-buddy-october-workshop-s",
+      "title": "Palette Buddy October workshop series",
+      "date": "2026-10-07T10:00:00+05:30",
+      "endDate": "2026-10-18T23:59:59+05:30",
+      "ongoing": true,
+      "time": "Weekday mornings 11 AM – 1 PM and weekends afternoons",
+      "city": "bangalore",
+      "area": "Electronic City",
+      "venue": "Palette Buddy Art Studio, Above TVS Showroom, Bettadasanapura main road, Electronic City Phase 1",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "art",
+      "organizer": "Palette Buddy Art Studio",
+      "description": "A rotating series of crochet art, Durga Mata painting, acrylic painting and tote bag sessions through October.",
+      "instagramHandle": "palettebuddy",
+      "instagramUrl": "https://www.instagram.com/p/Dd59tp7T-vt/",
+      "fromInstagram": true,
+      "isFree": false
+    },
+    {
+      "id": "ig-palettebuddy-2026-10-09-durga-mata-painting-workshop-at",
+      "title": "Durga Mata Painting Workshop at Palette Buddy",
+      "date": "2026-10-09T11:00:00+05:30",
+      "time": "11 AM – 1 PM",
+      "city": "bangalore",
+      "area": "Electronic City",
+      "venue": "Palette Buddy Art Studio, Above TVS Showroom, Bettadasanapura main road, Electronic City Phase 1",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "art",
+      "organizer": "Palette Buddy Art Studio",
+      "description": "Participants paint a Durga Mata artwork guided by the studio's instructors.",
+      "instagramHandle": "palettebuddy",
+      "instagramUrl": "https://www.instagram.com/reel/Dd-w3cAB2Yu/",
+      "fromInstagram": true,
+      "isFree": false
     },
     {
       "id": "ig-acemontessori-2026-10-10-ace-montessori-open-house-2026",
@@ -424,6 +677,55 @@
       "isFree": false
     },
     {
+      "id": "ig-dhaatupuppettheater-2026-10-11-bali-in-bengaluru-puppet-perform",
+      "title": "Bali in Bengaluru: Puppet performance and workshop",
+      "date": "2026-10-11T10:00:00+05:30",
+      "endDate": "2026-10-12T23:59:59+05:30",
+      "time": "Shadow puppetry workshop 11–12 Oct; joint puppet performance on 12 Oct",
+      "city": "bangalore",
+      "area": "Bengaluru",
+      "venue": "Mandala Cultural Centre, Kanakapura Road",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "art",
+      "organizer": "Dhaatu Puppet Museum",
+      "description": "A collaboration between Indian string puppetry and Indonesian Wayang Kulit, with a joint performance and immersive workshop.",
+      "instagramHandle": "dhaatupuppettheater",
+      "instagramUrl": "https://www.instagram.com/reel/Dd9dWfpTUTn/",
+      "fromInstagram": true,
+      "bookingUrl": "https://bookmyshow.com",
+      "isFree": false
+    },
+    {
+      "id": "ig-dhaatupuppettheater-2026-10-11-dhaatu-navaratra-mahotsava-2026",
+      "title": "Dhaatu Navaratra Mahotsava 2026: Doll Exhibition",
+      "date": "2026-10-11T10:30:00+05:30",
+      "endDate": "2026-11-01T23:59:59+05:30",
+      "time": "10:30 AM – 7:00 PM, with storytelling, puppet shows, dance festival and kolaata on select dates",
+      "city": "bangalore",
+      "area": "Bengaluru",
+      "venue": "Mandala Cultural Centre, Kanakapura Rd, Opp. Silk Institute Metro Station, Talaghattapura",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "festival",
+      "organizer": "Dhaatu Puppet Theatre",
+      "description": "A month-long family doll exhibition with storytelling, puppet shows, dance festival and kolaata sessions.",
+      "instagramHandle": "dhaatupuppettheater",
+      "instagramUrl": "https://www.instagram.com/p/DdTMs-TxJvI/",
+      "fromInstagram": true,
+      "isFree": false,
+      "price": "Free entry Oct 11–20, ₹100 Oct 21–Nov 1",
+      "bookingUrl": "https://www.mandalabengaluru.com"
+    },
+    {
       "id": "ig-littleelly_kasavanahalli-2026-10-12-dussehra-camp-at-little-elly-kas",
       "title": "Dussehra Camp at Little Elly Kasavanahalli",
       "date": "2026-10-12T09:30:00+05:30",
@@ -491,6 +793,74 @@
       "instagramUrl": "https://www.instagram.com/reel/Dd39D4xhGrI/",
       "fromInstagram": true,
       "isFree": false
+    },
+    {
+      "id": "ig-sebbabangalore-2026-10-17-sebba-durga-puja-2026",
+      "title": "SEBBA Durga Puja 2026",
+      "date": "2026-10-17T10:00:00+05:30",
+      "endDate": "2026-10-21T23:59:59+05:30",
+      "time": "See post",
+      "city": "bangalore",
+      "area": "HSR Layout",
+      "venue": "White Housse, HSR Layout",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "festival",
+      "organizer": "South East Bengaluru Bengali Association (SEBBA)",
+      "description": "A community Durga Puja festival with music, dance, food and cultural programmes for the whole family.",
+      "instagramHandle": "sebbabangalore",
+      "instagramUrl": "https://www.instagram.com/reel/DdLLJ75J9Me/",
+      "fromInstagram": true,
+      "isFree": false
+    },
+    {
+      "id": "ig-sebbabangalore-2026-10-18-ashtami-evening-tribute-to-asha",
+      "title": "Ashtami evening tribute to Asha Bhosle & R.D. Burman",
+      "date": "2026-10-18T18:00:00+05:30",
+      "time": "6:00 PM onwards",
+      "city": "bangalore",
+      "area": "HSR Layout",
+      "venue": "White Housse, HSR Layout",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "music",
+      "organizer": "South East Bengaluru Bengali Association (SEBBA)",
+      "description": "A family musical evening of Asha Bhosle and R.D. Burman songs during Durga Puja celebrations.",
+      "instagramHandle": "sebbabangalore",
+      "instagramUrl": "https://www.instagram.com/reel/DdqQQfMJWIk/",
+      "fromInstagram": true,
+      "isFree": false
+    },
+    {
+      "id": "ig-sebbabangalore-2026-10-19-sebba-durga-puja-drawing-competi",
+      "title": "SEBBA Durga Puja Drawing Competition 2026",
+      "date": "2026-10-19T10:00:00+05:30",
+      "time": "See post",
+      "city": "bangalore",
+      "area": "HSR Layout",
+      "venue": "White Housse, HSR Layout",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "art",
+      "organizer": "South East Bengaluru Bengali Association (SEBBA)",
+      "description": "A free drawing competition for children held as part of the Durga Puja celebrations.",
+      "instagramHandle": "sebbabangalore",
+      "instagramUrl": "https://www.instagram.com/p/Dd3NeI-JfXF/",
+      "fromInstagram": true,
+      "bookingUrl": "https://sebba.in/sebba-durga-puja-drawing-competition-2026/",
+      "isFree": true
     }
   ]
 }

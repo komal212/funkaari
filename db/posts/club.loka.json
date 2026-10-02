@@ -1,7 +1,7 @@
 {
   "handle": "club.loka",
   "latestPostAt": "2026-09-28T12:30:04.000Z",
-  "lastFetchedAt": "2026-10-01T11:41:42.310Z",
+  "lastFetchedAt": "2026-10-02T06:55:18.973Z",
   "fetchError": null,
   "posts": [
     {
@@ -14,7 +14,7 @@
       "mediaCount": 5,
       "likes": 18,
       "comments": 1,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:55:18.973Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -27,7 +27,7 @@
       "mediaCount": 6,
       "likes": 6,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:55:18.973Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -40,7 +40,7 @@
       "mediaCount": 1,
       "likes": 8,
       "comments": 1,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:55:18.973Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -53,7 +53,7 @@
       "mediaCount": 1,
       "likes": 11,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:55:18.973Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -66,7 +66,7 @@
       "mediaCount": 1,
       "likes": 5,
       "comments": 1,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:55:18.973Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -79,7 +79,7 @@
       "mediaCount": 1,
       "likes": 9,
       "comments": 1,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:55:18.973Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -92,7 +92,7 @@
       "mediaCount": 1,
       "likes": 8,
       "comments": 1,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:55:18.973Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -105,7 +105,7 @@
       "mediaCount": 1,
       "likes": 5,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:55:18.973Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -118,7 +118,7 @@
       "mediaCount": 7,
       "likes": 10,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:55:18.973Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -131,7 +131,7 @@
       "mediaCount": 1,
       "likes": 4,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:55:18.973Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -144,7 +144,7 @@
       "mediaCount": 1,
       "likes": 33,
       "comments": 1,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:55:18.973Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -157,7 +157,7 @@
       "mediaCount": 1,
       "likes": 6,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:55:18.973Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -170,7 +170,7 @@
       "mediaCount": 1,
       "likes": 29,
       "comments": 1,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:55:18.973Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -183,7 +183,7 @@
       "mediaCount": 1,
       "likes": 15,
       "comments": 2,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:55:18.973Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -196,7 +196,7 @@
       "mediaCount": 1,
       "likes": 28,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:55:18.973Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     }
   ],

@@ -1,9 +1,22 @@
 {
   "handle": "dhaatupuppettheater",
-  "latestPostAt": "2026-09-26T06:03:02.000Z",
-  "lastFetchedAt": "2026-10-01T11:41:42.310Z",
+  "latestPostAt": "2026-10-01T17:35:50.000Z",
+  "lastFetchedAt": "2026-10-02T06:58:06.992Z",
   "fetchError": null,
   "posts": [
+    {
+      "id": "18133955395648323",
+      "shortcode": "Dd9dWfpTUTn",
+      "url": "https://www.instagram.com/reel/Dd9dWfpTUTn/",
+      "type": "VIDEO",
+      "postedAt": "2026-10-01T17:35:50.000Z",
+      "caption": "Book your tickets to witness a special collaboration between Traditional Indian String Puppetry and Indonesian Wayang Kulit. Artists from both traditions share the stage, bringing their puppet play practices into conversation.\n\n📆12th October, 2026.  PUPPET PERFORMANCE\nA joint puppet performance between Bali and India, led by Padma Shri awardee Smt. Anupama Hoskere and team, along with Padma Shri awardee Dr. I Wayan Dibia and team.\n\n📅11-12th October, 2026.  SHADOW PUPPETRY WORKSHOP\nImmersive two day workshop led by Dr. I Wayan Dibia and team.\n\nPart of Bali in Bengaluru, by param_foundation In association with Dhaatu Puppet Museum and mandalabengaluru , Kanakapura Road.\n\nBook tickets at bookmyshow.com \nDetails and link in paramculture bio.\n\n#param #baliinbengaluru #dhaatupuppetmuseum\n#paramculture #puppetry mandalabengaluru",
+      "mediaCount": 1,
+      "likes": 15,
+      "comments": 0,
+      "engagementAt": "2026-10-02T06:58:06.992Z",
+      "fetchedAt": "2026-10-02T06:58:06.992Z"
+    },
     {
       "id": "18282518614290579",
       "shortcode": "DdvWJ9zEbfv",
@@ -14,7 +27,7 @@
       "mediaCount": 3,
       "likes": 40,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:58:06.992Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -27,7 +40,7 @@
       "mediaCount": 1,
       "likes": 28,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:58:06.992Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -38,9 +51,9 @@
       "postedAt": "2026-09-16T13:42:59.000Z",
       "caption": "The 31st year of the Dhaatu Navaratra Mahotsava 2026 is here. Save the date, check out the variety of events and have a fun day with the family!\n\nSwipe the post for details.\n\nShows:\nDonor passes for first few rows available at www.mandalabengaluru.com\n\n#dhaatu #dolls #navaratradolls #dhaatupuppetmuseum  #bengaluruevents",
       "mediaCount": 9,
-      "likes": 84,
+      "likes": 86,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:58:06.992Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     },
     {
@@ -53,9 +66,9 @@
       "mediaCount": 1,
       "likes": 99,
       "comments": 0,
-      "engagementAt": "2026-10-01T11:41:42.310Z",
+      "engagementAt": "2026-10-02T06:58:06.992Z",
       "fetchedAt": "2026-10-01T11:41:42.310Z"
     }
   ],
-  "mediaCount": 283
+  "mediaCount": 285
 }

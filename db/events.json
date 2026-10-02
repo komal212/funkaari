@@ -127,6 +127,141 @@
       "updatedAt": "2026-10-02T06:44:34.821Z"
     },
     {
+      "id": "ig-skadoosh.playarea-2026-09-05-pop-up-paint-bar-at-skadoosh-var",
+      "title": "Pop-up paint bar at Skadoosh Varthur",
+      "date": "2026-09-05T12:00:00+05:30",
+      "time": "12PM onwards",
+      "city": "bangalore",
+      "area": "Varthur",
+      "venue": "Skadoosh, Varthur",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "art",
+      "organizer": "Skadoosh Play Area",
+      "description": "Children pick a mould and paint a fridge magnet or mini Ganesha idol to take home.",
+      "instagramHandle": "skadoosh.playarea",
+      "instagramUrl": "https://www.instagram.com/p/DcytdZfTr_u/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "skadoosh.playarea",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "17907556101523465",
+          "url": "https://www.instagram.com/p/DcytdZfTr_u/",
+          "postedBy": "skadoosh.playarea",
+          "postedAt": "2026-09-02T16:53:34.000Z",
+          "kind": "announcement",
+          "likes": 23,
+          "comments": 1,
+          "seenAt": "2026-10-02T07:10:14.028Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DcytdZfTr_u"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "price",
+          "booking"
+        ],
+        "bookingNote": null,
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/DcytdZfTr_u.jpg",
+        "announcedAt": "2026-09-02T16:53:34.000Z",
+        "lastPostedAt": "2026-09-02T16:53:34.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 23,
+          "comments": 1
+        }
+      },
+      "createdAt": "2026-10-02T07:10:14.028Z",
+      "updatedAt": "2026-10-02T07:10:14.028Z"
+    },
+    {
+      "id": "ig-palettebuddy-2026-09-05-sip-and-paint-workshop-at-palett",
+      "title": "Sip and Paint Workshop at Palette Buddy",
+      "date": "2026-09-05T17:00:00+05:30",
+      "time": "5 PM – 7 PM",
+      "city": "bangalore",
+      "area": "Electronic City",
+      "venue": "Palette Buddy Art Studio, Above TVS Showroom, Bettadasanapura main road, Electronic City Phase 1",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "art",
+      "organizer": "Palette Buddy Art Studio",
+      "description": "Participants sip a drink and paint a guided canvas, with all art materials included.",
+      "instagramHandle": "palettebuddy",
+      "instagramUrl": "https://www.instagram.com/p/DcxuycHoAKG/",
+      "fromInstagram": true,
+      "isFree": false,
+      "price": "₹1,200",
+      "organizerHandle": "palettebuddy",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "17894544234398990",
+          "url": "https://www.instagram.com/p/DcxuycHoAKG/",
+          "postedBy": "palettebuddy",
+          "postedAt": "2026-09-02T07:45:26.000Z",
+          "kind": "announcement",
+          "likes": 1,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:11:54.956Z"
+        },
+        {
+          "postId": "18119480524900154",
+          "url": "https://www.instagram.com/reel/Dc0ek7BID31/",
+          "postedBy": "palettebuddy",
+          "postedAt": "2026-09-03T09:21:53.000Z",
+          "kind": "reminder",
+          "likes": 2,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:11:54.956Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DcxuycHoAKG",
+          "Dc0ek7BID31"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [],
+        "bookingNote": "Visit the studio for registration",
+        "contactPhone": "7349339397",
+        "availability": "Limited seats",
+        "collaborators": [],
+        "postImage": "/events/posts/DcxuycHoAKG.jpg",
+        "announcedAt": "2026-09-02T07:45:26.000Z",
+        "lastPostedAt": "2026-09-03T09:21:53.000Z",
+        "postCount": 2,
+        "engagement": {
+          "likes": 3,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T07:11:54.956Z",
+      "updatedAt": "2026-10-02T07:11:54.956Z"
+    },
+    {
       "id": "ig-blrcreativecircus-2026-09-06-bcc-carnival-the-boho-edit",
       "title": "BCC Carnival: The Boho Edit",
       "date": "2026-09-06T12:00:00+05:30",
@@ -185,6 +320,135 @@
       },
       "createdAt": "2026-10-02T06:44:34.821Z",
       "updatedAt": "2026-10-02T06:44:34.821Z"
+    },
+    {
+      "id": "ig-palettebuddy-2026-09-06-resin-workshop-at-palette-buddy",
+      "title": "Resin Workshop at Palette Buddy",
+      "date": "2026-09-06T12:00:00+05:30",
+      "time": "12 PM – 2 PM",
+      "city": "bangalore",
+      "area": "Electronic City",
+      "venue": "Palette Buddy Art Studio, Above TVS Showroom, Bettadasanapura main road, Electronic City Phase 1",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "art",
+      "organizer": "Palette Buddy Art Studio",
+      "description": "Participants learn resin art basics and create their own take-home piece.",
+      "instagramHandle": "palettebuddy",
+      "instagramUrl": "https://www.instagram.com/p/Dc3Ha0UzOtq/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "palettebuddy",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18487548199099389",
+          "url": "https://www.instagram.com/p/Dc3Ha0UzOtq/",
+          "postedBy": "palettebuddy",
+          "postedAt": "2026-09-04T09:56:51.000Z",
+          "kind": "announcement",
+          "likes": 0,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:11:54.956Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "Dc3Ha0UzOtq"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "price"
+        ],
+        "bookingNote": "Visit the studio for registration",
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/Dc3Ha0UzOtq.jpg",
+        "announcedAt": "2026-09-04T09:56:51.000Z",
+        "lastPostedAt": "2026-09-04T09:56:51.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 0,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T07:11:54.956Z",
+      "updatedAt": "2026-10-02T07:11:54.956Z"
+    },
+    {
+      "id": "ig-kydzadda-2026-09-07-clay-ganesha-workshop-at-kydzadd",
+      "title": "Clay Ganesha workshop at KydzAdda",
+      "date": "2026-09-07T10:00:00+05:30",
+      "endDate": "2026-09-12T23:59:59+05:30",
+      "time": "See post",
+      "city": "bangalore",
+      "area": "Bengaluru",
+      "venue": "KydzAdda, Banashankari & Bannerghatta Road",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "art",
+      "organizer": "KydzAdda",
+      "description": "Children shape and create their own clay Ganesha idol in a hands-on festive activity.",
+      "instagramHandle": "kydzadda",
+      "instagramUrl": "https://www.instagram.com/p/DdDeCbMzmYo/",
+      "fromInstagram": true,
+      "bookingUrl": "https://kydzadda.com/events/chocolate-ganesh-making-workshop/",
+      "isFree": false,
+      "organizerHandle": "kydzadda",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18134439874724433",
+          "url": "https://www.instagram.com/p/DdDeCbMzmYo/",
+          "postedBy": "kydzadda",
+          "postedAt": "2026-09-09T05:06:42.000Z",
+          "kind": "announcement",
+          "likes": 4,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:11:54.956Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdDeCbMzmYo"
+        ],
+        "bookingIds": [
+          "url:kydzadda.com/events/chocolate-ganesh-making-workshop"
+        ]
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "time",
+          "price"
+        ],
+        "bookingNote": null,
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/DdDeCbMzmYo.jpg",
+        "announcedAt": "2026-09-09T05:06:42.000Z",
+        "lastPostedAt": "2026-09-09T05:06:42.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 4,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T07:11:54.956Z",
+      "updatedAt": "2026-10-02T07:11:54.956Z"
     },
     {
       "id": "ig-bondoverbindings-2026-09-09-pebbles-n-pages-little-lit-fest",
@@ -254,6 +518,152 @@
       },
       "createdAt": "2026-10-02T06:44:34.821Z",
       "updatedAt": "2026-10-02T06:44:34.821Z"
+    },
+    {
+      "id": "ig-palettebuddy-2026-09-09-mandala-art-workshop-at-palette",
+      "title": "Mandala Art Workshop at Palette Buddy",
+      "date": "2026-09-09T12:00:00+05:30",
+      "time": "12 PM – 2 PM",
+      "city": "bangalore",
+      "area": "Electronic City",
+      "venue": "Palette Buddy Art Studio, Above TVS Showroom, Bettadasanapura main road, Electronic City Phase 1",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "art",
+      "organizer": "Palette Buddy Art Studio",
+      "description": "Participants create and colour their own mandala artwork.",
+      "instagramHandle": "palettebuddy",
+      "instagramUrl": "https://www.instagram.com/p/Dc3HGVwTnhO/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "palettebuddy",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "17930835246397076",
+          "url": "https://www.instagram.com/p/Dc3HGVwTnhO/",
+          "postedBy": "palettebuddy",
+          "postedAt": "2026-09-07T05:45:06.000Z",
+          "kind": "announcement",
+          "likes": 2,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:11:54.956Z"
+        },
+        {
+          "postId": "17953437576254517",
+          "url": "https://www.instagram.com/reel/DdBX9ONT27C/",
+          "postedBy": "palettebuddy",
+          "postedAt": "2026-09-08T09:34:23.000Z",
+          "kind": "reminder",
+          "likes": 0,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:11:54.956Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "Dc3HGVwTnhO",
+          "DdBX9ONT27C"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "price"
+        ],
+        "bookingNote": "Visit the studio for registration",
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/Dc3HGVwTnhO.jpg",
+        "announcedAt": "2026-09-07T05:45:06.000Z",
+        "lastPostedAt": "2026-09-08T09:34:23.000Z",
+        "postCount": 2,
+        "engagement": {
+          "likes": 2,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T07:11:54.956Z",
+      "updatedAt": "2026-10-02T07:11:54.956Z"
+    },
+    {
+      "id": "ig-palettebuddy-2026-09-11-resin-art-workshop-at-palette-bu",
+      "title": "Resin Art Workshop at Palette Buddy",
+      "date": "2026-09-11T12:00:00+05:30",
+      "time": "12 PM – 2 PM",
+      "city": "bangalore",
+      "area": "Electronic City",
+      "venue": "Palette Buddy Art Studio, Above TVS Showroom, Bettadasanapura main road, Electronic City Phase 1",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "art",
+      "organizer": "Palette Buddy Art Studio",
+      "description": "Participants learn resin art basics and create their own take-home piece.",
+      "instagramHandle": "palettebuddy",
+      "instagramUrl": "https://www.instagram.com/reel/DdDxOQzzAkM/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "palettebuddy",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "17963678745185927",
+          "url": "https://www.instagram.com/reel/DdDxOQzzAkM/",
+          "postedBy": "palettebuddy",
+          "postedAt": "2026-09-09T07:54:40.000Z",
+          "kind": "announcement",
+          "likes": 0,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:11:54.956Z"
+        },
+        {
+          "postId": "18094909526547594",
+          "url": "https://www.instagram.com/p/DdD2WiSzGBU/",
+          "postedBy": "palettebuddy",
+          "postedAt": "2026-09-09T08:37:54.000Z",
+          "kind": "reminder",
+          "likes": 0,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:11:54.956Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdDxOQzzAkM",
+          "DdD2WiSzGBU"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "price"
+        ],
+        "bookingNote": "Pre-registration required",
+        "contactPhone": "7349339397",
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/DdDxOQzzAkM.jpg",
+        "announcedAt": "2026-09-09T07:54:40.000Z",
+        "lastPostedAt": "2026-09-09T08:37:54.000Z",
+        "postCount": 2,
+        "engagement": {
+          "likes": 0,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T07:11:54.956Z",
+      "updatedAt": "2026-10-02T07:11:54.956Z"
     },
     {
       "id": "ig-bondoverbindings-2026-09-11-gajapati-kulapati-author-meet-an",
@@ -466,6 +876,67 @@
       "updatedAt": "2026-10-02T06:44:34.821Z"
     },
     {
+      "id": "ig-marshmelloo.blr-2026-09-12-ganesh-chaturthi-ganesha-paintin",
+      "title": "Ganesh Chaturthi Ganesha painting at Marshmelloo",
+      "date": "2026-09-12T14:00:00+05:30",
+      "time": "2–4 PM",
+      "city": "bangalore",
+      "area": "Rajajinagar",
+      "venue": "Marshmelloo, Rajajinagar",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "art",
+      "organizer": "Marshmelloo",
+      "description": "Children paint their own Ganesha idol in a festive, creative afternoon session.",
+      "instagramHandle": "marshmelloo.blr",
+      "instagramUrl": "https://www.instagram.com/p/DdCGTIRTDHm/",
+      "fromInstagram": true,
+      "isFree": false,
+      "price": "₹999",
+      "organizerHandle": "marshmelloo.blr",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18430840654180303",
+          "url": "https://www.instagram.com/p/DdCGTIRTDHm/",
+          "postedBy": "marshmelloo.blr",
+          "postedAt": "2026-09-08T16:20:37.000Z",
+          "kind": "announcement",
+          "likes": 3,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:10:14.028Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdCGTIRTDHm"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [],
+        "bookingNote": "DM us or call for registrations and details",
+        "contactPhone": "7795094500",
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/DdCGTIRTDHm.jpg",
+        "announcedAt": "2026-09-08T16:20:37.000Z",
+        "lastPostedAt": "2026-09-08T16:20:37.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 3,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T07:10:14.028Z",
+      "updatedAt": "2026-10-02T07:10:14.028Z"
+    },
+    {
       "id": "ig-bondoverbindings-2026-09-12-ganesha-clay-modelling-workshop",
       "title": "Ganesha clay modelling workshop",
       "date": "2026-09-12T16:00:00+05:30",
@@ -525,6 +996,79 @@
       },
       "createdAt": "2026-10-02T06:44:34.821Z",
       "updatedAt": "2026-10-02T06:44:34.821Z"
+    },
+    {
+      "id": "ig-palettebuddy-2026-09-12-sip-and-paint-workshop-at-palett",
+      "title": "Sip and Paint Workshop at Palette Buddy",
+      "date": "2026-09-12T17:00:00+05:30",
+      "time": "5 PM – 7 PM",
+      "city": "bangalore",
+      "area": "Electronic City",
+      "venue": "Palette Buddy Art Studio, Above TVS Showroom, Bettadasanapura main road, Electronic City Phase 1",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "art",
+      "organizer": "Palette Buddy Art Studio",
+      "description": "Participants sip a drink and paint a guided canvas at the studio.",
+      "instagramHandle": "palettebuddy",
+      "instagramUrl": "https://www.instagram.com/reel/DdGjT-Uoizt/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "palettebuddy",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18413464465158505",
+          "url": "https://www.instagram.com/reel/DdGjT-Uoizt/",
+          "postedBy": "palettebuddy",
+          "postedAt": "2026-09-10T09:50:33.000Z",
+          "kind": "announcement",
+          "likes": 1,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:11:54.956Z"
+        },
+        {
+          "postId": "18131181445735756",
+          "url": "https://www.instagram.com/p/DdJB3SFzUcu/",
+          "postedBy": "palettebuddy",
+          "postedAt": "2026-09-11T08:54:38.000Z",
+          "kind": "reminder",
+          "likes": 0,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:11:54.956Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdGjT-Uoizt",
+          "DdJB3SFzUcu"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "price"
+        ],
+        "bookingNote": "Visit the studio for pre-registration",
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/DdGjT-Uoizt.jpg",
+        "announcedAt": "2026-09-10T09:50:33.000Z",
+        "lastPostedAt": "2026-09-11T08:54:38.000Z",
+        "postCount": 2,
+        "engagement": {
+          "likes": 1,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T07:11:54.956Z",
+      "updatedAt": "2026-10-02T07:11:54.956Z"
     },
     {
       "id": "ig-bondoverbindings-2026-09-13-whispered-pages-storytelling-nab",
@@ -644,6 +1188,125 @@
       },
       "createdAt": "2026-10-02T05:46:04.820Z",
       "updatedAt": "2026-10-02T05:46:04.820Z"
+    },
+    {
+      "id": "ig-palettebuddy-2026-09-18-palette-buddy-september-workshop",
+      "title": "Palette Buddy September workshop series",
+      "date": "2026-09-18T10:00:00+05:30",
+      "endDate": "2026-09-30T23:59:59+05:30",
+      "ongoing": true,
+      "time": "Weekday mornings 12–2 PM and weekend afternoons 5–7 PM",
+      "city": "bangalore",
+      "area": "Electronic City",
+      "venue": "Palette Buddy Art Studio, Above TVS Showroom, Bettadasanapura main road, Electronic City Phase 1",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "art",
+      "organizer": "Palette Buddy Art Studio",
+      "description": "A rotating series of resin, lippan, mandala, tote bag and sip-and-paint sessions through the month.",
+      "instagramHandle": "palettebuddy",
+      "instagramUrl": "https://www.instagram.com/p/DdTZdIsR3v8/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "palettebuddy",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "17900053905656804",
+          "url": "https://www.instagram.com/p/DdTZdIsR3v8/",
+          "postedBy": "palettebuddy",
+          "postedAt": "2026-09-15T09:33:11.000Z",
+          "kind": "announcement",
+          "likes": 1,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:11:54.956Z"
+        },
+        {
+          "postId": "17955087072249327",
+          "url": "https://www.instagram.com/p/DdV-BVnT4Qt/",
+          "postedBy": "palettebuddy",
+          "postedAt": "2026-09-16T09:31:10.000Z",
+          "kind": "reminder",
+          "likes": 0,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:11:54.956Z"
+        },
+        {
+          "postId": "18030370550674770",
+          "url": "https://www.instagram.com/p/DdYazUdzYPg/",
+          "postedBy": "palettebuddy",
+          "postedAt": "2026-09-17T08:21:09.000Z",
+          "kind": "reminder",
+          "likes": 0,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:11:54.956Z"
+        },
+        {
+          "postId": "18112760303017169",
+          "url": "https://www.instagram.com/p/DdbIFFITOEl/",
+          "postedBy": "palettebuddy",
+          "postedAt": "2026-09-18T09:35:16.000Z",
+          "kind": "reminder",
+          "likes": 0,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:11:54.956Z"
+        },
+        {
+          "postId": "18196181740390243",
+          "url": "https://www.instagram.com/p/DdbIwUnzw6f/",
+          "postedBy": "palettebuddy",
+          "postedAt": "2026-09-21T05:45:04.000Z",
+          "kind": "reminder",
+          "likes": 1,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:11:54.956Z"
+        },
+        {
+          "postId": "18123201254488015",
+          "url": "https://www.instagram.com/reel/DdlcPAjzGat/",
+          "postedBy": "palettebuddy",
+          "postedAt": "2026-09-22T09:44:53.000Z",
+          "kind": "reminder",
+          "likes": 1,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:11:54.956Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdTZdIsR3v8",
+          "DdV-BVnT4Qt",
+          "DdYazUdzYPg",
+          "DdbIFFITOEl",
+          "DdbIwUnzw6f",
+          "DdlcPAjzGat"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "ongoing",
+        "missing": [
+          "price"
+        ],
+        "bookingNote": "Pre-registration only, call for details",
+        "contactPhone": "7349339397",
+        "availability": "Spots limited",
+        "collaborators": [],
+        "postImage": "/events/posts/DdTZdIsR3v8.jpg",
+        "announcedAt": "2026-09-15T09:33:11.000Z",
+        "lastPostedAt": "2026-09-22T09:44:53.000Z",
+        "postCount": 6,
+        "engagement": {
+          "likes": 3,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T07:11:54.956Z",
+      "updatedAt": "2026-10-02T07:11:54.956Z"
     },
     {
       "id": "ig-nps_gmc-2026-09-19-open-house-at-gmc-gopalapuram",
@@ -962,6 +1625,130 @@
       "updatedAt": "2026-10-02T06:44:34.821Z"
     },
     {
+      "id": "ig-attagalatta-2026-09-19-my-big-feelings-parent-child-wor",
+      "title": "My Big Feelings parent-child workshop",
+      "date": "2026-09-19T11:00:00+05:30",
+      "time": "11:00 AM to 1:00 PM",
+      "city": "bangalore",
+      "area": "Indiranagar",
+      "venue": "Atta Galatta, Indiranagar",
+      "ageMinMonths": 48,
+      "ageMaxYears": 12,
+      "ageGroups": [
+        "4-6yr"
+      ],
+      "category": "workshop",
+      "organizer": "Atta Galatta",
+      "description": "Interactive parent-child workshop with stories and hands-on activities to explore emotions together.",
+      "instagramHandle": "attagalatta",
+      "instagramUrl": "https://www.instagram.com/p/DdQToE3zoIL/",
+      "fromInstagram": true,
+      "isFree": false,
+      "price": "₹499 per parent-child pair",
+      "organizerHandle": "attagalatta",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18116687014759482",
+          "url": "https://www.instagram.com/p/DdQToE3zoIL/",
+          "postedBy": "attagalatta",
+          "postedAt": "2026-09-14T05:05:08.000Z",
+          "kind": "announcement",
+          "likes": 9,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:10:14.028Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdQToE3zoIL"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [],
+        "bookingNote": "Register via link in bio",
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/DdQToE3zoIL.jpg",
+        "announcedAt": "2026-09-14T05:05:08.000Z",
+        "lastPostedAt": "2026-09-14T05:05:08.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 9,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T07:10:14.028Z",
+      "updatedAt": "2026-10-02T07:10:14.028Z"
+    },
+    {
+      "id": "ig-attagalatta-2026-09-19-bhajan-clubbing-for-kids",
+      "title": "Bhajan Clubbing for Kids",
+      "date": "2026-09-19T11:00:00+05:30",
+      "time": "11 AM to 12 Noon",
+      "city": "bangalore",
+      "area": "Indiranagar",
+      "venue": "Atta Galatta, Indiranagar",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "music",
+      "organizer": "Atta Galatta",
+      "description": "Interactive concert mixing soulful bhajans, mythology-inspired stories and music for kids.",
+      "instagramHandle": "attagalatta",
+      "instagramUrl": "https://www.instagram.com/p/DdQUMRDzGKB/",
+      "fromInstagram": true,
+      "bookingUrl": "https://urbanaut.app/spot/kids-bhajan-clubbing",
+      "isFree": false,
+      "price": "₹499 per parent & child",
+      "organizerHandle": "attagalatta",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18088252580277240",
+          "url": "https://www.instagram.com/p/DdQUMRDzGKB/",
+          "postedBy": "attagalatta",
+          "postedAt": "2026-09-14T05:30:05.000Z",
+          "kind": "announcement",
+          "likes": 17,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:10:14.028Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdQUMRDzGKB"
+        ],
+        "bookingIds": [
+          "url:urbanaut.app/spot/kids-bhajan-clubbing"
+        ]
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [],
+        "bookingNote": null,
+        "contactPhone": "9632510126",
+        "availability": "Limited seats available",
+        "collaborators": [],
+        "postImage": "/events/posts/DdQUMRDzGKB.jpg",
+        "announcedAt": "2026-09-14T05:30:05.000Z",
+        "lastPostedAt": "2026-09-14T05:30:05.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 17,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T07:10:14.028Z",
+      "updatedAt": "2026-10-02T07:10:14.028Z"
+    },
+    {
       "id": "ig-blrcreativecircus-2026-09-19-trunk-tales-ganapati-warli-and-g",
       "title": "Trunk Tales: Ganapati Warli and Gond art",
       "date": "2026-09-19T11:15:00+05:30",
@@ -1025,6 +1812,83 @@
       },
       "createdAt": "2026-10-02T06:44:34.821Z",
       "updatedAt": "2026-10-02T06:44:34.821Z"
+    },
+    {
+      "id": "ig-attagalatta-2026-09-19-build-theatre-for-young-audience",
+      "title": "BUILD: theatre for young audiences",
+      "date": "2026-09-19T15:00:00+05:30",
+      "endDate": "2026-09-20T23:59:59+05:30",
+      "time": "3:00 PM to 4:00 PM",
+      "city": "bangalore",
+      "area": "Indiranagar",
+      "venue": "Atta Galatta, Indiranagar",
+      "ageMinMonths": 24,
+      "ageMaxYears": 5,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "art",
+      "organizer": "Atta Galatta",
+      "description": "Non-verbal theatre performance using sticks and clay exploring play, movement and sound for toddlers.",
+      "instagramHandle": "attagalatta",
+      "instagramUrl": "https://www.instagram.com/p/DdQfuWXzVwd/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "attagalatta",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18350693257222342",
+          "url": "https://www.instagram.com/p/DdQfuWXzVwd/",
+          "postedBy": "attagalatta",
+          "postedAt": "2026-09-14T06:31:09.000Z",
+          "kind": "announcement",
+          "likes": 51,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:10:14.028Z"
+        },
+        {
+          "postId": "18138688345718148",
+          "url": "https://www.instagram.com/p/DdWfPmUE131/",
+          "postedBy": "attagalatta",
+          "postedAt": "2026-09-16T14:21:26.000Z",
+          "kind": "reminder",
+          "likes": 126,
+          "comments": 1,
+          "seenAt": "2026-10-02T07:10:14.028Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdQfuWXzVwd",
+          "DdWfPmUE131"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "price"
+        ],
+        "bookingNote": "Tickets via link in bio",
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [
+          "toystoytheatre"
+        ],
+        "postImage": "/events/posts/DdQfuWXzVwd.jpg",
+        "announcedAt": "2026-09-14T06:31:09.000Z",
+        "lastPostedAt": "2026-09-16T14:21:26.000Z",
+        "postCount": 2,
+        "engagement": {
+          "likes": 177,
+          "comments": 1
+        }
+      },
+      "createdAt": "2026-10-02T07:10:14.028Z",
+      "updatedAt": "2026-10-02T07:10:14.028Z"
     },
     {
       "id": "ig-bondoverbindings-2026-09-19-gruffalo-granny-book-launch-part",
@@ -1108,6 +1972,69 @@
       },
       "createdAt": "2026-10-02T06:44:34.821Z",
       "updatedAt": "2026-10-02T06:44:34.821Z"
+    },
+    {
+      "id": "ig-kurioustots-2026-09-20-the-community-songbook-chapter-2",
+      "title": "The Community Songbook, Chapter 2",
+      "date": "2026-09-20T11:00:00+05:30",
+      "time": "11:00 AM",
+      "city": "bangalore",
+      "area": "Bengaluru",
+      "venue": "Little Sisters of the Poor, Hosur Road",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "music",
+      "organizer": "Kurious Tots",
+      "description": "A community singalong morning of music and games for a good cause.",
+      "instagramHandle": "kurioustots",
+      "instagramUrl": "https://www.instagram.com/p/Dc0vfg8uzrL/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "kurioustots",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "17964774519177358",
+          "url": "https://www.instagram.com/p/Dc0vfg8uzrL/",
+          "postedBy": "kurioustots",
+          "postedAt": "2026-09-03T11:49:18.000Z",
+          "kind": "announcement",
+          "likes": 8,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:11:54.956Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "Dc0vfg8uzrL"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "price",
+          "booking"
+        ],
+        "bookingNote": null,
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/Dc0vfg8uzrL.jpg",
+        "announcedAt": "2026-09-03T11:49:18.000Z",
+        "lastPostedAt": "2026-09-03T11:49:18.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 8,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T07:11:54.956Z",
+      "updatedAt": "2026-10-02T07:11:54.956Z"
     },
     {
       "id": "ig-neevearlyyears-2026-09-22-open-day-at-neev-early-years",
@@ -2110,6 +3037,145 @@
       "bookingUrl": "https://www.neevliteraturefestival.org/nlf-2026/"
     },
     {
+      "id": "ig-communities_of_bengaluru-2026-09-26-alpha-beta-carnival",
+      "title": "Alpha Beta Carnival",
+      "date": "2026-09-26T10:00:00+05:30",
+      "time": "10 AM – 7:30 PM",
+      "city": "bangalore",
+      "area": "Bengaluru",
+      "venue": "Hotel Royal Orchid, Domlur",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "festival",
+      "organizer": "Communities of Bengaluru",
+      "description": "A family carnival with 40+ brands for shopping, messy art, slime, bead charms, football and food.",
+      "instagramHandle": "communities_of_bengaluru",
+      "instagramUrl": "https://www.instagram.com/p/Ddgz7tyzPpz/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "communities_of_bengaluru",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "17871980616638519",
+          "url": "https://www.instagram.com/p/Ddgz7tyzPpz/",
+          "postedBy": "communities_of_bengaluru",
+          "postedAt": "2026-09-20T14:36:24.000Z",
+          "kind": "announcement",
+          "likes": 5,
+          "comments": 2,
+          "seenAt": "2026-10-02T07:10:14.028Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "Ddgz7tyzPpz"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "price",
+          "booking"
+        ],
+        "bookingNote": null,
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/Ddgz7tyzPpz.jpg",
+        "announcedAt": "2026-09-20T14:36:24.000Z",
+        "lastPostedAt": "2026-09-20T14:36:24.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 5,
+          "comments": 2
+        }
+      },
+      "createdAt": "2026-10-02T07:10:14.028Z",
+      "updatedAt": "2026-10-02T07:10:14.028Z"
+    },
+    {
+      "id": "ig-travelwithkids_india-2026-09-26-interactive-read-aloud-rooster-r",
+      "title": "Interactive read-aloud: Rooster Raga",
+      "date": "2026-09-26T11:00:00+05:30",
+      "time": "11:00 am to 12:00 noon",
+      "city": "bangalore",
+      "area": "Indiranagar",
+      "venue": "Atta Galatta, Indiranagar, Bangalore",
+      "ageMinMonths": 48,
+      "ageMaxYears": 7,
+      "ageGroups": [
+        "4-6yr"
+      ],
+      "category": "workshop",
+      "organizer": "Travel With Kids India",
+      "description": "Interactive read-aloud of Rooster Raga with activities and conversations for children.",
+      "instagramHandle": "travelwithkids_india",
+      "instagramUrl": "https://www.instagram.com/p/Dc7vrHWk_YG/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "travelwithkids_india",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "17985476676043365",
+          "url": "https://www.instagram.com/p/Dc7vrHWk_YG/",
+          "postedBy": "travelwithkids_india",
+          "postedAt": "2026-09-06T05:05:30.000Z",
+          "kind": "announcement",
+          "likes": 89,
+          "comments": 48,
+          "seenAt": "2026-10-02T07:10:14.028Z"
+        },
+        {
+          "postId": "18148703905570515",
+          "url": "https://www.instagram.com/p/DdhBASIzH6k/",
+          "postedBy": "attagalatta",
+          "postedAt": "2026-09-21T04:00:09.000Z",
+          "kind": "repost",
+          "likes": 19,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:10:14.028Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "Dc7vrHWk_YG",
+          "DdhBASIzH6k"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "price"
+        ],
+        "bookingNote": "DM for details",
+        "contactPhone": "9742517312",
+        "availability": null,
+        "collaborators": [
+          "tulikabooks",
+          "skillitreaders",
+          "travelwithkidsindia"
+        ],
+        "postImage": "/events/posts/Dc7vrHWk_YG.jpg",
+        "announcedAt": "2026-09-06T05:05:30.000Z",
+        "lastPostedAt": "2026-09-21T04:00:09.000Z",
+        "postCount": 2,
+        "engagement": {
+          "likes": 108,
+          "comments": 48
+        }
+      },
+      "createdAt": "2026-10-02T07:10:14.028Z",
+      "updatedAt": "2026-10-02T07:10:14.028Z"
+    },
+    {
       "id": "ig-bondoverbindings-2026-09-26-mubbles-doodle-and-paint-party",
       "title": "Mubbles doodle and paint party",
       "date": "2026-09-26T16:00:00+05:30",
@@ -2309,6 +3375,79 @@
       "updatedAt": "2026-10-02T06:44:34.821Z"
     },
     {
+      "id": "ig-palettebuddy-2026-09-27-tote-bag-painting-workshop-at-pa",
+      "title": "Tote Bag Painting Workshop at Palette Buddy",
+      "date": "2026-09-27T12:00:00+05:30",
+      "time": "12 PM – 2 PM",
+      "city": "bangalore",
+      "area": "Electronic City",
+      "venue": "Palette Buddy Art Studio, Above TVS Showroom, Bettadasanapura main road, Electronic City Phase 1",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "art",
+      "organizer": "Palette Buddy Art Studio",
+      "description": "Participants design and paint their own tote bag to take home.",
+      "instagramHandle": "palettebuddy",
+      "instagramUrl": "https://www.instagram.com/reel/DdqlkPqoGJF/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "palettebuddy",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18151256902540871",
+          "url": "https://www.instagram.com/reel/DdqlkPqoGJF/",
+          "postedBy": "palettebuddy",
+          "postedAt": "2026-09-24T09:42:19.000Z",
+          "kind": "announcement",
+          "likes": 4,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:11:54.956Z"
+        },
+        {
+          "postId": "18061992524790882",
+          "url": "https://www.instagram.com/p/DdtJGTToyiz/",
+          "postedBy": "palettebuddy",
+          "postedAt": "2026-09-25T09:30:33.000Z",
+          "kind": "reminder",
+          "likes": 0,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:11:54.956Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdqlkPqoGJF",
+          "DdtJGTToyiz"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "price"
+        ],
+        "bookingNote": "Visit the studio for pre-registration",
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/DdqlkPqoGJF.jpg",
+        "announcedAt": "2026-09-24T09:42:19.000Z",
+        "lastPostedAt": "2026-09-25T09:30:33.000Z",
+        "postCount": 2,
+        "engagement": {
+          "likes": 4,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T07:11:54.956Z",
+      "updatedAt": "2026-10-02T07:11:54.956Z"
+    },
+    {
       "id": "ig-momsofblr-2026-09-27-playdate-and-garba-workshop-for",
       "title": "Playdate and Garba workshop for moms and kids",
       "date": "2026-09-27T14:00:00+05:30",
@@ -2404,6 +3543,68 @@
       "updatedAt": "2026-10-02T06:44:34.821Z",
       "price": "₹1,499 for one mom + one child + one accompanying adult",
       "bookingUrl": "https://forms.gle/4Vk7dDExpEqVrjk49"
+    },
+    {
+      "id": "ig-palettebuddy-2026-09-30-eco-resin-tray-workshop-at-palet",
+      "title": "Eco Resin Tray Workshop at Palette Buddy",
+      "date": "2026-09-30T12:00:00+05:30",
+      "time": "12 PM – 2 PM",
+      "city": "bangalore",
+      "area": "Electronic City",
+      "venue": "Palette Buddy Art Studio, Above TVS Showroom, Bettadasanapura main road, Electronic City Phase 1",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "art",
+      "organizer": "Palette Buddy Art Studio",
+      "description": "Participants create a simple eco-friendly resin tray using sustainable materials.",
+      "instagramHandle": "palettebuddy",
+      "instagramUrl": "https://www.instagram.com/p/DdtIxZ0IIKC/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "palettebuddy",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18098766551551459",
+          "url": "https://www.instagram.com/p/DdtIxZ0IIKC/",
+          "postedBy": "palettebuddy",
+          "postedAt": "2026-09-28T05:35:06.000Z",
+          "kind": "announcement",
+          "likes": 0,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:11:54.956Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdtIxZ0IIKC"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "price"
+        ],
+        "bookingNote": "Visit the studio for pre-registration",
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/DdtIxZ0IIKC.jpg",
+        "announcedAt": "2026-09-28T05:35:06.000Z",
+        "lastPostedAt": "2026-09-28T05:35:06.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 0,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T07:11:54.956Z",
+      "updatedAt": "2026-10-02T07:11:54.956Z"
     },
     {
       "id": "ig-akshatha01_kulkarni-2026-10-01-childrens-biennale-at-ekya-schoo",
@@ -2730,6 +3931,516 @@
       "updatedAt": "2026-10-02T06:44:34.821Z"
     },
     {
+      "id": "ig-thefireflyterrace-2026-10-02-walk-in-art-activities-at-firefl",
+      "title": "Walk-in art activities at Firefly Terrace",
+      "date": "2026-10-02T10:00:00+05:30",
+      "ongoing": true,
+      "time": "See post",
+      "city": "bangalore",
+      "area": "Jayanagar",
+      "venue": "The Firefly Terrace, Jayanagar",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "art",
+      "organizer": "The Firefly Terrace",
+      "description": "Ten walk-in art activities to pick from, no experience or prior booking needed.",
+      "instagramHandle": "thefireflyterrace",
+      "instagramUrl": "https://www.instagram.com/p/DdODJHCgT4n/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "thefireflyterrace",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18152722126520427",
+          "url": "https://www.instagram.com/p/DdODJHCgT4n/",
+          "postedBy": "thefireflyterrace",
+          "postedAt": "2026-09-13T07:41:57.000Z",
+          "kind": "announcement",
+          "likes": null,
+          "comments": 5,
+          "seenAt": "2026-10-02T07:10:14.028Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdODJHCgT4n"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "ongoing",
+        "missing": [
+          "time",
+          "price"
+        ],
+        "bookingNote": "DM to book your slot or call 9972707950",
+        "contactPhone": "9972707950",
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/DdODJHCgT4n.jpg",
+        "announcedAt": "2026-09-13T07:41:57.000Z",
+        "lastPostedAt": "2026-09-13T07:41:57.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 0,
+          "comments": 5
+        }
+      },
+      "createdAt": "2026-10-02T07:10:14.028Z",
+      "updatedAt": "2026-10-02T07:10:14.028Z"
+    },
+    {
+      "id": "ig-skadoosh.playarea-2026-10-02-weekend-playdate-at-skadoosh-pla",
+      "title": "Weekend playdate at Skadoosh play areas",
+      "date": "2026-10-02T10:00:00+05:30",
+      "ongoing": true,
+      "time": "See post",
+      "city": "bangalore",
+      "area": "Varthur",
+      "venue": "Skadoosh Haralur, Silver County Road, Haralur, Above D-Mart, Bangalore; Skadoosh Varthur, Varthur-Sarjapur Road, Bangalore",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "workshop",
+      "organizer": "Skadoosh Play Area",
+      "description": "Drop-in play area with soft play and pretend play for toddlers through older kids.",
+      "instagramHandle": "skadoosh.playarea",
+      "instagramUrl": "https://www.instagram.com/reel/Dc5DfdxT1Oo/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "skadoosh.playarea",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18112174481100465",
+          "url": "https://www.instagram.com/reel/Dc5DfdxT1Oo/",
+          "postedBy": "skadoosh.playarea",
+          "postedAt": "2026-09-05T04:01:48.000Z",
+          "kind": "announcement",
+          "likes": 34,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:10:14.028Z"
+        },
+        {
+          "postId": "18113901367788366",
+          "url": "https://www.instagram.com/reel/Dc5ELZ6za8t/",
+          "postedBy": "skadoosh.playarea",
+          "postedAt": "2026-09-05T04:08:12.000Z",
+          "kind": "reminder",
+          "likes": 425,
+          "comments": 4,
+          "seenAt": "2026-10-02T07:10:14.028Z"
+        },
+        {
+          "postId": "18352581472171405",
+          "url": "https://www.instagram.com/reel/DdRQ97-TRlF/",
+          "postedBy": "skadoosh.playarea",
+          "postedAt": "2026-09-14T13:42:21.000Z",
+          "kind": "reminder",
+          "likes": 10,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:10:14.028Z"
+        },
+        {
+          "postId": "18092907305253705",
+          "url": "https://www.instagram.com/reel/Dd39tI1TTCU/",
+          "postedBy": "skadoosh.playarea",
+          "postedAt": "2026-09-29T14:23:18.000Z",
+          "kind": "reminder",
+          "likes": 21,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:10:14.028Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "Dc5DfdxT1Oo",
+          "Dc5ELZ6za8t",
+          "DdRQ97-TRlF",
+          "Dd39tI1TTCU"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "ongoing",
+        "missing": [
+          "time",
+          "price"
+        ],
+        "bookingNote": null,
+        "contactPhone": "08049367878",
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/Dc5DfdxT1Oo.jpg",
+        "announcedAt": "2026-09-05T04:01:48.000Z",
+        "lastPostedAt": "2026-09-29T14:23:18.000Z",
+        "postCount": 4,
+        "engagement": {
+          "likes": 490,
+          "comments": 4
+        }
+      },
+      "createdAt": "2026-10-02T07:10:14.028Z",
+      "updatedAt": "2026-10-02T07:10:14.028Z"
+    },
+    {
+      "id": "ig-palettebuddy-2026-10-02-painting-classes-for-kids-and-ad",
+      "title": "Painting classes for kids and adults",
+      "date": "2026-10-02T10:00:00+05:30",
+      "ongoing": true,
+      "time": "See post",
+      "city": "bangalore",
+      "area": "Electronic City",
+      "venue": "Palette Buddy Art Studio, Above TVS Showroom, Bettadasanapura main road, Electronic City Phase 1",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "art",
+      "organizer": "Palette Buddy Art Studio",
+      "description": "Ongoing painting classes open to both children and adults.",
+      "instagramHandle": "palettebuddy",
+      "instagramUrl": "https://www.instagram.com/reel/DdIsMB2BnsN/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "palettebuddy",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18193728319386899",
+          "url": "https://www.instagram.com/reel/DdIsMB2BnsN/",
+          "postedBy": "palettebuddy",
+          "postedAt": "2026-09-11T05:45:08.000Z",
+          "kind": "announcement",
+          "likes": 1,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:11:54.956Z"
+        },
+        {
+          "postId": "18115920346847550",
+          "url": "https://www.instagram.com/reel/Ddx4_VYBRu4/",
+          "postedBy": "palettebuddy",
+          "postedAt": "2026-09-27T05:45:06.000Z",
+          "kind": "reminder",
+          "likes": 1,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:11:54.956Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdIsMB2BnsN",
+          "Ddx4_VYBRu4"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "ongoing",
+        "missing": [
+          "time",
+          "price"
+        ],
+        "bookingNote": "Register at the studio",
+        "contactPhone": "7349339397",
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/DdIsMB2BnsN.jpg",
+        "announcedAt": "2026-09-11T05:45:08.000Z",
+        "lastPostedAt": "2026-09-27T05:45:06.000Z",
+        "postCount": 2,
+        "engagement": {
+          "likes": 2,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T07:11:54.956Z",
+      "updatedAt": "2026-10-02T07:11:54.956Z"
+    },
+    {
+      "id": "ig-palettebuddy-2026-10-02-drawing-classes-at-palette-buddy",
+      "title": "Drawing classes at Palette Buddy",
+      "date": "2026-10-02T10:00:00+05:30",
+      "ongoing": true,
+      "time": "See post",
+      "city": "bangalore",
+      "area": "Electronic City",
+      "venue": "Palette Buddy Art Studio, Above TVS Showroom, Bettadasanapura main road, Electronic City Phase 1",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "art",
+      "organizer": "Palette Buddy Art Studio",
+      "description": "Ongoing drawing classes open to children and adults.",
+      "instagramHandle": "palettebuddy",
+      "instagramUrl": "https://www.instagram.com/reel/DddSn-aBGj7/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "palettebuddy",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "17947925874057549",
+          "url": "https://www.instagram.com/reel/DddSn-aBGj7/",
+          "postedBy": "palettebuddy",
+          "postedAt": "2026-09-20T06:00:04.000Z",
+          "kind": "announcement",
+          "likes": 0,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:11:54.956Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DddSn-aBGj7"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "ongoing",
+        "missing": [
+          "time",
+          "price"
+        ],
+        "bookingNote": "Visit the studio for registration",
+        "contactPhone": "7349339397",
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/DddSn-aBGj7.jpg",
+        "announcedAt": "2026-09-20T06:00:04.000Z",
+        "lastPostedAt": "2026-09-20T06:00:04.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 0,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T07:11:54.956Z",
+      "updatedAt": "2026-10-02T07:11:54.956Z"
+    },
+    {
+      "id": "ig-palettebuddy-2026-10-02-diy-studio-at-palette-buddy",
+      "title": "DIY studio at Palette Buddy",
+      "date": "2026-10-02T10:00:00+05:30",
+      "ongoing": true,
+      "time": "See post",
+      "city": "bangalore",
+      "area": "Electronic City",
+      "venue": "Palette Buddy Art Studio, Above TVS Showroom, Bettadasanapura main road, Electronic City Phase 1",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "art",
+      "organizer": "Palette Buddy Art Studio",
+      "description": "A walk-in DIY art studio session with coffee and creative projects.",
+      "instagramHandle": "palettebuddy",
+      "instagramUrl": "https://www.instagram.com/reel/DdvUILJh6L1/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "palettebuddy",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18083871608696005",
+          "url": "https://www.instagram.com/reel/DdvUILJh6L1/",
+          "postedBy": "palettebuddy",
+          "postedAt": "2026-09-26T05:45:06.000Z",
+          "kind": "announcement",
+          "likes": 2,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:11:54.956Z"
+        },
+        {
+          "postId": "18097178891382589",
+          "url": "https://www.instagram.com/reel/Dd0dISEh07f/",
+          "postedBy": "palettebuddy",
+          "postedAt": "2026-09-28T05:40:08.000Z",
+          "kind": "reminder",
+          "likes": 4,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:11:54.956Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdvUILJh6L1",
+          "Dd0dISEh07f"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "ongoing",
+        "missing": [
+          "time",
+          "price"
+        ],
+        "bookingNote": "Visit the studio to find out more",
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/DdvUILJh6L1.jpg",
+        "announcedAt": "2026-09-26T05:45:06.000Z",
+        "lastPostedAt": "2026-09-28T05:40:08.000Z",
+        "postCount": 2,
+        "engagement": {
+          "likes": 6,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T07:11:54.956Z",
+      "updatedAt": "2026-10-02T07:11:54.956Z"
+    },
+    {
+      "id": "ig-thefireflyterrace-2026-10-02-tiny-explorers-weekly-art-and-se",
+      "title": "Tiny Explorers weekly art and sensory play",
+      "date": "2026-10-02T11:00:00+05:30",
+      "ongoing": true,
+      "time": "Every Tuesday, 11 AM – 12 PM",
+      "city": "bangalore",
+      "area": "Jayanagar",
+      "venue": "The Firefly Terrace, Jayanagar",
+      "ageMinMonths": 12,
+      "ageMaxYears": 2,
+      "ageGroups": [
+        "1-2yr",
+        "2-3yr"
+      ],
+      "category": "art",
+      "organizer": "The Firefly Terrace",
+      "description": "A weekly art and sensory play session for 1 to 2 year olds, with a parent alongside them.",
+      "instagramHandle": "thefireflyterrace",
+      "instagramUrl": "https://www.instagram.com/p/DdI5mdchfQ3/",
+      "fromInstagram": true,
+      "isFree": false,
+      "price": "₹3,000 for 4 weeks",
+      "organizerHandle": "thefireflyterrace",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18017141300924341",
+          "url": "https://www.instagram.com/p/DdI5mdchfQ3/",
+          "postedBy": "thefireflyterrace",
+          "postedAt": "2026-09-11T07:43:44.000Z",
+          "kind": "announcement",
+          "likes": 13,
+          "comments": 5,
+          "seenAt": "2026-10-02T07:10:14.028Z"
+        },
+        {
+          "postId": "18105343940248287",
+          "url": "https://www.instagram.com/reel/DdVqh9Fhe9e/",
+          "postedBy": "thefireflyterrace",
+          "postedAt": "2026-09-16T06:47:23.000Z",
+          "kind": "reminder",
+          "likes": null,
+          "comments": 1,
+          "seenAt": "2026-10-02T07:10:14.028Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdI5mdchfQ3",
+          "DdVqh9Fhe9e"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "ongoing",
+        "missing": [],
+        "bookingNote": "DM TINY to reserve your spot",
+        "contactPhone": null,
+        "availability": "Only 10 spots per batch",
+        "collaborators": [],
+        "postImage": "/events/posts/DdI5mdchfQ3.jpg",
+        "announcedAt": "2026-09-11T07:43:44.000Z",
+        "lastPostedAt": "2026-09-16T06:47:23.000Z",
+        "postCount": 2,
+        "engagement": {
+          "likes": 13,
+          "comments": 6
+        }
+      },
+      "createdAt": "2026-10-02T07:10:14.028Z",
+      "updatedAt": "2026-10-02T07:10:14.028Z"
+    },
+    {
+      "id": "ig-kurioustots-2026-10-02-the-little-stage-monthly-kids-co",
+      "title": "The Little Stage monthly kids' concert",
+      "date": "2026-10-02T11:30:00+05:30",
+      "ongoing": true,
+      "time": "1st Sunday of every month, 11:30 AM",
+      "city": "bangalore",
+      "area": "Bengaluru",
+      "venue": "Urban Solace Cafe, Ulsoor",
+      "ageMinMonths": 48,
+      "ageMaxYears": 15,
+      "ageGroups": [
+        "4-6yr"
+      ],
+      "category": "music",
+      "organizer": "Kurious Tots",
+      "description": "Children perform a solo, duet or trio song on a real microphone at a monthly café concert.",
+      "instagramHandle": "kurioustots",
+      "instagramUrl": "https://www.instagram.com/p/Ddq642xBe-q/",
+      "fromInstagram": true,
+      "isFree": true,
+      "organizerHandle": "kurioustots",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18050572697804182",
+          "url": "https://www.instagram.com/p/Ddq642xBe-q/",
+          "postedBy": "kurioustots",
+          "postedAt": "2026-09-24T12:47:52.000Z",
+          "kind": "announcement",
+          "likes": 18,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:11:54.956Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "Ddq642xBe-q"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "ongoing",
+        "missing": [],
+        "bookingNote": "Registrations open 1st October",
+        "contactPhone": null,
+        "availability": "Slots limited",
+        "collaborators": [
+          "myurbansolace"
+        ],
+        "postImage": "/events/posts/Ddq642xBe-q.jpg",
+        "announcedAt": "2026-09-24T12:47:52.000Z",
+        "lastPostedAt": "2026-09-24T12:47:52.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 18,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T07:11:54.956Z",
+      "updatedAt": "2026-10-02T07:11:54.956Z"
+    },
+    {
       "id": "aura-circle-time",
       "title": "Circle Time at Áura Montessori",
       "date": "2026-10-03T10:00:00+05:30",
@@ -2855,6 +4566,68 @@
           "comments": 0
         }
       }
+    },
+    {
+      "id": "ig-attagalatta-2026-10-03-daughter-of-the-ocean-kids-film",
+      "title": "Daughter of the Ocean: kids film screening",
+      "date": "2026-10-03T14:30:00+05:30",
+      "time": "2:30 PM to 3:30 PM",
+      "city": "bangalore",
+      "area": "Indiranagar",
+      "venue": "Atta Galatta, Indiranagar",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "art",
+      "organizer": "Atta Galatta",
+      "description": "Special Diwali screening of an animated fantasy film about Goddess Lakshmi for kids.",
+      "instagramHandle": "attagalatta",
+      "instagramUrl": "https://www.instagram.com/p/DdzAebizody/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "attagalatta",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18375139213215246",
+          "url": "https://www.instagram.com/p/DdzAebizody/",
+          "postedBy": "attagalatta",
+          "postedAt": "2026-09-28T06:30:02.000Z",
+          "kind": "announcement",
+          "likes": 19,
+          "comments": 7,
+          "seenAt": "2026-10-02T07:10:14.028Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdzAebizody"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "price"
+        ],
+        "bookingNote": "Register via link in bio",
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/DdzAebizody.jpg",
+        "announcedAt": "2026-09-28T06:30:02.000Z",
+        "lastPostedAt": "2026-09-28T06:30:02.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 19,
+          "comments": 7
+        }
+      },
+      "createdAt": "2026-10-02T07:10:14.028Z",
+      "updatedAt": "2026-10-02T07:10:14.028Z"
     },
     {
       "id": "allevents-clown-festival",
@@ -3259,6 +5032,132 @@
       },
       "createdAt": "2026-10-02T06:44:34.821Z",
       "updatedAt": "2026-10-02T06:44:34.821Z"
+    },
+    {
+      "id": "ig-palettebuddy-2026-10-07-palette-buddy-october-workshop-s",
+      "title": "Palette Buddy October workshop series",
+      "date": "2026-10-07T10:00:00+05:30",
+      "endDate": "2026-10-18T23:59:59+05:30",
+      "ongoing": true,
+      "time": "Weekday mornings 11 AM – 1 PM and weekends afternoons",
+      "city": "bangalore",
+      "area": "Electronic City",
+      "venue": "Palette Buddy Art Studio, Above TVS Showroom, Bettadasanapura main road, Electronic City Phase 1",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "art",
+      "organizer": "Palette Buddy Art Studio",
+      "description": "A rotating series of crochet art, Durga Mata painting, acrylic painting and tote bag sessions through October.",
+      "instagramHandle": "palettebuddy",
+      "instagramUrl": "https://www.instagram.com/p/Dd59tp7T-vt/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "palettebuddy",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18125459081508451",
+          "url": "https://www.instagram.com/p/Dd59tp7T-vt/",
+          "postedBy": "palettebuddy",
+          "postedAt": "2026-09-30T09:01:10.000Z",
+          "kind": "announcement",
+          "likes": 0,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:11:54.956Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "Dd59tp7T-vt"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "ongoing",
+        "missing": [
+          "price"
+        ],
+        "bookingNote": "Visit the studio for pre-registration",
+        "contactPhone": "7349339397",
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/Dd59tp7T-vt.jpg",
+        "announcedAt": "2026-09-30T09:01:10.000Z",
+        "lastPostedAt": "2026-09-30T09:01:10.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 0,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T07:11:54.956Z",
+      "updatedAt": "2026-10-02T07:11:54.956Z"
+    },
+    {
+      "id": "ig-palettebuddy-2026-10-09-durga-mata-painting-workshop-at",
+      "title": "Durga Mata Painting Workshop at Palette Buddy",
+      "date": "2026-10-09T11:00:00+05:30",
+      "time": "11 AM – 1 PM",
+      "city": "bangalore",
+      "area": "Electronic City",
+      "venue": "Palette Buddy Art Studio, Above TVS Showroom, Bettadasanapura main road, Electronic City Phase 1",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "art",
+      "organizer": "Palette Buddy Art Studio",
+      "description": "Participants paint a Durga Mata artwork guided by the studio's instructors.",
+      "instagramHandle": "palettebuddy",
+      "instagramUrl": "https://www.instagram.com/reel/Dd-w3cAB2Yu/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "palettebuddy",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18105651143201266",
+          "url": "https://www.instagram.com/reel/Dd-w3cAB2Yu/",
+          "postedBy": "palettebuddy",
+          "postedAt": "2026-10-02T05:45:07.000Z",
+          "kind": "reminder",
+          "likes": 0,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:11:54.956Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "Dd-w3cAB2Yu"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "price"
+        ],
+        "bookingNote": "Visit the studio for pre-registration",
+        "contactPhone": "7349339397",
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/Dd-w3cAB2Yu.jpg",
+        "announcedAt": "2026-10-02T05:45:07.000Z",
+        "lastPostedAt": "2026-10-02T05:45:07.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 0,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T07:11:54.956Z",
+      "updatedAt": "2026-10-02T07:11:54.956Z"
     },
     {
       "id": "ig-acemontessori-2026-10-10-ace-montessori-open-house-2026",
@@ -3715,6 +5614,162 @@
       "updatedAt": "2026-10-02T06:44:34.821Z"
     },
     {
+      "id": "ig-dhaatupuppettheater-2026-10-11-bali-in-bengaluru-puppet-perform",
+      "title": "Bali in Bengaluru: Puppet performance and workshop",
+      "date": "2026-10-11T10:00:00+05:30",
+      "endDate": "2026-10-12T23:59:59+05:30",
+      "time": "Shadow puppetry workshop 11–12 Oct; joint puppet performance on 12 Oct",
+      "city": "bangalore",
+      "area": "Bengaluru",
+      "venue": "Mandala Cultural Centre, Kanakapura Road",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "art",
+      "organizer": "Dhaatu Puppet Museum",
+      "description": "A collaboration between Indian string puppetry and Indonesian Wayang Kulit, with a joint performance and immersive workshop.",
+      "instagramHandle": "dhaatupuppettheater",
+      "instagramUrl": "https://www.instagram.com/reel/Dd9dWfpTUTn/",
+      "fromInstagram": true,
+      "bookingUrl": "https://bookmyshow.com",
+      "isFree": false,
+      "organizerHandle": "dhaatupuppettheater",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18133955395648323",
+          "url": "https://www.instagram.com/reel/Dd9dWfpTUTn/",
+          "postedBy": "dhaatupuppettheater",
+          "postedAt": "2026-10-01T17:35:50.000Z",
+          "kind": "announcement",
+          "likes": 15,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:10:14.028Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "Dd9dWfpTUTn"
+        ],
+        "bookingIds": [
+          "url:bookmyshow.com"
+        ]
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "price"
+        ],
+        "bookingNote": null,
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [
+          "param_foundation",
+          "mandalabengaluru"
+        ],
+        "postImage": "/events/posts/Dd9dWfpTUTn.jpg",
+        "announcedAt": "2026-10-01T17:35:50.000Z",
+        "lastPostedAt": "2026-10-01T17:35:50.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 15,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T07:10:14.028Z",
+      "updatedAt": "2026-10-02T07:10:14.028Z"
+    },
+    {
+      "id": "ig-dhaatupuppettheater-2026-10-11-dhaatu-navaratra-mahotsava-2026",
+      "title": "Dhaatu Navaratra Mahotsava 2026: Doll Exhibition",
+      "date": "2026-10-11T10:30:00+05:30",
+      "endDate": "2026-11-01T23:59:59+05:30",
+      "time": "10:30 AM – 7:00 PM, with storytelling, puppet shows, dance festival and kolaata on select dates",
+      "city": "bangalore",
+      "area": "Bengaluru",
+      "venue": "Mandala Cultural Centre, Kanakapura Rd, Opp. Silk Institute Metro Station, Talaghattapura",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "festival",
+      "organizer": "Dhaatu Puppet Theatre",
+      "description": "A month-long family doll exhibition with storytelling, puppet shows, dance festival and kolaata sessions.",
+      "instagramHandle": "dhaatupuppettheater",
+      "instagramUrl": "https://www.instagram.com/p/DdTMs-TxJvI/",
+      "fromInstagram": true,
+      "isFree": false,
+      "price": "Free entry Oct 11–20, ₹100 Oct 21–Nov 1",
+      "organizerHandle": "dhaatupuppettheater",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18031157180889535",
+          "url": "https://www.instagram.com/p/DdTMs-TxJvI/",
+          "postedBy": "dhaatupuppettheater",
+          "postedAt": "2026-09-15T07:41:46.000Z",
+          "kind": "announcement",
+          "likes": 99,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:10:14.028Z"
+        },
+        {
+          "postId": "18188016535363139",
+          "url": "https://www.instagram.com/p/DdWa1-Ck7j3/",
+          "postedBy": "dhaatupuppettheater",
+          "postedAt": "2026-09-16T13:42:59.000Z",
+          "kind": "reminder",
+          "likes": 86,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:10:14.028Z"
+        },
+        {
+          "postId": "18111243331844817",
+          "url": "https://www.instagram.com/reel/DdiruEpxTuY/",
+          "postedBy": "dhaatupuppettheater",
+          "postedAt": "2026-09-21T08:05:08.000Z",
+          "kind": "reminder",
+          "likes": 28,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:10:14.028Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdTMs-TxJvI",
+          "DdWa1-Ck7j3",
+          "DdiruEpxTuY"
+        ],
+        "bookingIds": [
+          "url:mandalabengaluru.com"
+        ]
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [],
+        "bookingNote": null,
+        "contactPhone": "9886193999",
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/DdTMs-TxJvI.jpg",
+        "announcedAt": "2026-09-15T07:41:46.000Z",
+        "lastPostedAt": "2026-09-21T08:05:08.000Z",
+        "postCount": 3,
+        "engagement": {
+          "likes": 213,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T07:10:14.028Z",
+      "updatedAt": "2026-10-02T07:10:14.028Z",
+      "bookingUrl": "https://www.mandalabengaluru.com"
+    },
+    {
       "id": "ig-littleelly_kasavanahalli-2026-10-12-dussehra-camp-at-little-elly-kas",
       "title": "Dussehra Camp at Little Elly Kasavanahalli",
       "date": "2026-10-12T09:30:00+05:30",
@@ -3900,6 +5955,210 @@
       },
       "createdAt": "2026-10-01T10:38:10.198Z",
       "updatedAt": "2026-10-01T10:38:10.198Z"
+    },
+    {
+      "id": "ig-sebbabangalore-2026-10-17-sebba-durga-puja-2026",
+      "title": "SEBBA Durga Puja 2026",
+      "date": "2026-10-17T10:00:00+05:30",
+      "endDate": "2026-10-21T23:59:59+05:30",
+      "time": "See post",
+      "city": "bangalore",
+      "area": "HSR Layout",
+      "venue": "White Housse, HSR Layout",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "festival",
+      "organizer": "South East Bengaluru Bengali Association (SEBBA)",
+      "description": "A community Durga Puja festival with music, dance, food and cultural programmes for the whole family.",
+      "instagramHandle": "sebbabangalore",
+      "instagramUrl": "https://www.instagram.com/reel/DdLLJ75J9Me/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "sebbabangalore",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "17990149659052555",
+          "url": "https://www.instagram.com/reel/DdLLJ75J9Me/",
+          "postedBy": "sebbabangalore",
+          "postedAt": "2026-09-12T04:57:18.000Z",
+          "kind": "announcement",
+          "likes": 50,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:11:54.956Z"
+        },
+        {
+          "postId": "17874804024635142",
+          "url": "https://www.instagram.com/p/DdtpCXpp4v_/",
+          "postedBy": "sebbabangalore",
+          "postedAt": "2026-09-25T14:09:35.000Z",
+          "kind": "reminder",
+          "likes": 31,
+          "comments": 0,
+          "seenAt": "2026-10-02T07:11:54.956Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdLLJ75J9Me",
+          "DdtpCXpp4v_"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "time",
+          "price",
+          "booking"
+        ],
+        "bookingNote": null,
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/DdLLJ75J9Me.jpg",
+        "announcedAt": "2026-09-12T04:57:18.000Z",
+        "lastPostedAt": "2026-09-25T14:09:35.000Z",
+        "postCount": 2,
+        "engagement": {
+          "likes": 81,
+          "comments": 0
+        }
+      },
+      "createdAt": "2026-10-02T07:11:54.956Z",
+      "updatedAt": "2026-10-02T07:11:54.956Z"
+    },
+    {
+      "id": "ig-sebbabangalore-2026-10-18-ashtami-evening-tribute-to-asha",
+      "title": "Ashtami evening tribute to Asha Bhosle & R.D. Burman",
+      "date": "2026-10-18T18:00:00+05:30",
+      "time": "6:00 PM onwards",
+      "city": "bangalore",
+      "area": "HSR Layout",
+      "venue": "White Housse, HSR Layout",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "music",
+      "organizer": "South East Bengaluru Bengali Association (SEBBA)",
+      "description": "A family musical evening of Asha Bhosle and R.D. Burman songs during Durga Puja celebrations.",
+      "instagramHandle": "sebbabangalore",
+      "instagramUrl": "https://www.instagram.com/reel/DdqQQfMJWIk/",
+      "fromInstagram": true,
+      "isFree": false,
+      "organizerHandle": "sebbabangalore",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18101770931199228",
+          "url": "https://www.instagram.com/reel/DdqQQfMJWIk/",
+          "postedBy": "sebbabangalore",
+          "postedAt": "2026-09-24T06:39:55.000Z",
+          "kind": "announcement",
+          "likes": 18,
+          "comments": 1,
+          "seenAt": "2026-10-02T07:11:54.956Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "DdqQQfMJWIk"
+        ],
+        "bookingIds": []
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "price",
+          "booking"
+        ],
+        "bookingNote": null,
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/DdqQQfMJWIk.jpg",
+        "announcedAt": "2026-09-24T06:39:55.000Z",
+        "lastPostedAt": "2026-09-24T06:39:55.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 18,
+          "comments": 1
+        }
+      },
+      "createdAt": "2026-10-02T07:11:54.956Z",
+      "updatedAt": "2026-10-02T07:11:54.956Z"
+    },
+    {
+      "id": "ig-sebbabangalore-2026-10-19-sebba-durga-puja-drawing-competi",
+      "title": "SEBBA Durga Puja Drawing Competition 2026",
+      "date": "2026-10-19T10:00:00+05:30",
+      "time": "See post",
+      "city": "bangalore",
+      "area": "HSR Layout",
+      "venue": "White Housse, HSR Layout",
+      "ageMinMonths": 24,
+      "ageGroups": [
+        "2-3yr",
+        "3-4yr",
+        "4-6yr"
+      ],
+      "category": "art",
+      "organizer": "South East Bengaluru Bengali Association (SEBBA)",
+      "description": "A free drawing competition for children held as part of the Durga Puja celebrations.",
+      "instagramHandle": "sebbabangalore",
+      "instagramUrl": "https://www.instagram.com/p/Dd3NeI-JfXF/",
+      "fromInstagram": true,
+      "bookingUrl": "https://sebba.in/sebba-durga-puja-drawing-competition-2026/",
+      "isFree": true,
+      "organizerHandle": "sebbabangalore",
+      "status": "scheduled",
+      "sources": [
+        {
+          "postId": "18107648600269001",
+          "url": "https://www.instagram.com/p/Dd3NeI-JfXF/",
+          "postedBy": "sebbabangalore",
+          "postedAt": "2026-09-29T07:21:07.000Z",
+          "kind": "announcement",
+          "likes": 11,
+          "comments": 2,
+          "seenAt": "2026-10-02T07:11:54.956Z"
+        }
+      ],
+      "matchKeys": {
+        "shortcodes": [
+          "Dd3NeI-JfXF"
+        ],
+        "bookingIds": [
+          "url:sebba.in/sebba-durga-puja-drawing-competition-2026"
+        ]
+      },
+      "details": {
+        "listingType": "dated",
+        "missing": [
+          "time"
+        ],
+        "bookingNote": null,
+        "contactPhone": null,
+        "availability": null,
+        "collaborators": [],
+        "postImage": "/events/posts/Dd3NeI-JfXF.jpg",
+        "announcedAt": "2026-09-29T07:21:07.000Z",
+        "lastPostedAt": "2026-09-29T07:21:07.000Z",
+        "postCount": 1,
+        "engagement": {
+          "likes": 11,
+          "comments": 2
+        }
+      },
+      "createdAt": "2026-10-02T07:11:54.956Z",
+      "updatedAt": "2026-10-02T07:11:54.956Z"
     },
     {
       "id": "little-beats-festival",
